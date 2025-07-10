@@ -2,19 +2,17 @@ project:
   type: book
   output-dir: _site
 
+bibliography: media/references.bib
+
 book:
   title: "PRC Data Challenge"
   chapters:
     - index.qmd
     - data.qmd
-  sidebar:
-    style: "docked"
-    search: false
-    contents:
-      - text: "Introduction"
-        href: idex.qmd
-      - section: "Data"
-        href: data.qmd
+    # - rankings.qmd
+    # - teams.qmd
+    - about.qmd
+
 
   navbar:
     background: light
@@ -204,11 +202,25 @@ book:
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
+    theme: cosmo
+    css: media/styles.css
     toc: true
+    number-depth: 1
 
+filters:
+  - acronyms
 
-
+acronyms:
+  loa_title: "List of Acronyms"
+  include_unused: false
+  insert_loa: "end"
+  insert_links: true
+  id_prefix: "acronyms_"
+  sorting: "alphabetical"
+  non_existing: "key"
+  # style: "long-short"
+  loa_format: '`**{shortname}**: {longname}`{=raw}'
+  loa_header_classes:
+  - unnumbered
+  fromfile:
+    - media/_acronyms.yml

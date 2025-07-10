@@ -1,1 +1,69 @@
 # Data
+We provide:
+
+1. flight list information and trajectories
+1. train and test sets for fuel flown for one or more intervals in each flight
+
+We use worldwide flights from which to learn and predict the amount of 
+fuel flown in one or more intervals of their airborne portion.
+This dataset is available in `flightlist.csv` and contains all flight
+details for the flights in both the train and test sets.
+
+We consequently provide \acr{ADS-B} position reports for all flights in
+the flight list. These flight trajectories are possibly incomplete,
+i.e. they can lack portions.
+
+## Dataset description
+
+### Overview
+
+The data has been split into two groups:
+
+* training set (`train.csv`)
+* test set (`test.csv`)
+
+The training set should be used to build your machine learning models.
+For the training set, we provide the outcome, the “ground truth”, for all
+the known intervals of fuel flown amount.
+Your model will be based on “features” like aircraft type and phase of the
+flight. You will also use feature engineering to create new features.
+
+The test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals
+of the flight. It is your job to predict these outcomes.
+For each interval in a flight in the test set, use the model you trained to
+predict the amount of fuel flown.
+
+
+## Contextual datasets
+
+The following datasets provide essential information to use in the engineering
+of your model.
+
+### Flight list
+The following is the list of columns in `flightlist.csv`:
+
+* `flight_id`: a unique identifier for the flight between \acr{ADEP} and
+  \acr{ADES}
+* `adep`: the \acr{ICAO} code of the origin of the flight
+* `ades`: the \acr{ICAO} code of the destination of the flight
+* `takeoff`: the \acr{UTC} timestamp of the take-off time
+* `landed`: the \acr{UTC} timestamp of the landing time
+* `icao24`: the \acr{ICAO} 24-bit address of the airframe carrying out the flight
+* `aircraft_type`: the \acr{ICAO} aircraft type code of the aircraft carrying
+  out the flight
+
+
+### Trajectories
+We have trajectory files for each flight...JUNZI details?
+
+Each trajectory is described by
+
+* `longitude`: longitude in \acr{DD} in [-180, 180] range
+* `latitude`: latitude in \acr{DD} in [-90, 90] range
+* `altitude`: altitude in feet [ft]
+* `timestamp`: timestamp with time zone
+* `groundspeed`: ground speed in knots [kt]
+* `track`: track angle in \acr{DD}
+* `track_unwrapped`: unwrapped track angle in \acr{DD}
+* `vertical_rate`: vertical rate of climb/descent (vertical_rate [ft/min])
+
