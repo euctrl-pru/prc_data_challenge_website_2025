@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PRC Data Challenge",
+    "section": "",
+    "text": "The Performance Review Commission (PRC) aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel flown at certain intervals of the flight.\n\n\n\nPRC Data Challenge\n\n\nADD a sort of 3D flight trajectory with portions for the intervals of fuel flown.\n\n\n\nList of Acronyms\n\nML: Machine Learning\nPRC: Performance Review Commission",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>PRC Data Challenge 2025</span>"
+    ]
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "2  Data",
+    "section": "",
+    "text": "Dataset description\nWe provide:\nWe use worldwide flights from which to learn and predict the amount of fuel flown in one or more intervals of their airborne portion. This dataset is available in flightlist.csv and contains all flight details for the flights in both the train and test sets.\nWe consequently provide Automatic Dependent Surveillance–Broadcast (ADS-B) position reports for all flights in the flight list. These flight trajectories are possibly incomplete, i.e. they can lack portions.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "data.html#dataset-description",
+    "href": "data.html#dataset-description",
+    "title": "2  Data",
+    "section": "",
+    "text": "Overview\nThe data has been split into two groups:\n\ntraining set (train.csv)\ntest set (test.csv)\n\nThe training set should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amount. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.\nThe test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals of the flight. It is your job to predict these outcomes. For each interval in a flight in the test set, use the model you trained to predict the amount of fuel flown.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "data.html#contextual-datasets",
+    "href": "data.html#contextual-datasets",
+    "title": "2  Data",
+    "section": "Contextual datasets",
+    "text": "Contextual datasets\nThe following datasets provide essential information to use in the engineering of your model.\n\nFlight list\nThe following is the list of columns in flightlist.csv:\n\nflight_id: a unique identifier for the flight between Aerodrome of DEParture (ADEP) and Aerodrome of DEStination (ADES)\nadep: the International Civil Aviation Organization (ICAO) code of the origin of the flight\nades: the ICAO code of the destination of the flight\ntakeoff: the Coordinated Universal Time (UTC) timestamp of the take-off time\nlanded: the UTC timestamp of the landing time\nicao24: the ICAO 24-bit address of the airframe carrying out the flight\naircraft_type: the ICAO aircraft type code of the aircraft carrying out the flight\n\n\n\nTrajectories\nWe have trajectory files for each flight…JUNZI details?\nEach trajectory is described by\n\nlongitude: longitude in Decimal degrees (DD) in [-180, 180] range\nlatitude: latitude in DD in [-90, 90] range\naltitude: altitude in feet [ft]\ntimestamp: timestamp with time zone\ngroundspeed: ground speed in knots [kt]\ntrack: track angle in DD\ntrack_unwrapped: unwrapped track angle in DD\nvertical_rate: vertical rate of climb/descent (vertical_rate [ft/min])",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "3  About",
+    "section": "",
+    "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European ATM performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of\nReference and Rules of\nProcedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nPRC: Performance Review Commission",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>About</span>"
+    ]
+  }
+]
