@@ -6,18 +6,18 @@ We provide:
 
 We use worldwide flights from which to learn and predict the amount of 
 fuel flown in one or more intervals of their airborne portion.
-This dataset is available in `flightlist.csv` and contains all flight
+This flights list is available in `flightlist.csv` and contains all flight
 details for the flights in both the train and test sets.
 
-We consequently provide \acr{ADS-B} position reports for all flights in
+We additionally provide \acr{ADS-B} position reports for all flights in
 the flight list. These flight trajectories are possibly incomplete,
 i.e. they can lack portions.
 
-## Dataset description
+## Fuel Flown Dataset description
 
 ### Overview
 
-The data has been split into two groups:
+The fuel flown data has been split into two groups:
 
 * training set (`train.csv`)
 * test set (`test.csv`)

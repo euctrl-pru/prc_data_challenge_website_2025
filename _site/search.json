@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "PRC Data Challenge",
     "section": "",
-    "text": "The Performance Review Commission (PRC) aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel flown at certain intervals of the flight.\n\n\n\nPRC Data Challenge\n\n\nADD a sort of 3D flight trajectory with portions for the intervals of fuel flown.\n\n\n\nList of Acronyms\n\nML: Machine Learning\nPRC: Performance Review Commission",
+    "text": "The Performance Review Commission (PRC) aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel flown at certain intervals of the flight.\nIMAGE TO BE CHANGED\n\n\n\nPRC Data Challenge\n\n\nADD a sort of 3D flight trajectory with portions for the intervals of fuel flown.\n\n\n\nList of Acronyms\n\nML: Machine Learning\nPRC: Performance Review Commission",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>PRC Data Challenge 2025</span>"
     ]
@@ -14,7 +14,7 @@
     "href": "data.html",
     "title": "2  Data",
     "section": "",
-    "text": "Dataset description\nWe provide:\nWe use worldwide flights from which to learn and predict the amount of fuel flown in one or more intervals of their airborne portion. This dataset is available in flightlist.csv and contains all flight details for the flights in both the train and test sets.\nWe consequently provide Automatic Dependent Surveillance–Broadcast (ADS-B) position reports for all flights in the flight list. These flight trajectories are possibly incomplete, i.e. they can lack portions.",
+    "text": "Fuel Flown Dataset description\nWe provide:\nWe use worldwide flights from which to learn and predict the amount of fuel flown in one or more intervals of their airborne portion. This flights list is available in flightlist.csv and contains all flight details for the flights in both the train and test sets.\nWe additionally provide Automatic Dependent Surveillance–Broadcast (ADS-B) position reports for all flights in the flight list. These flight trajectories are possibly incomplete, i.e. they can lack portions.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
     ]
@@ -47,6 +47,16 @@
     "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European ATM performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of\nReference and Rules of\nProcedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nPRC: Performance Review Commission",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>About</span>"
+    ]
+  },
+  {
+    "objectID": "data.html#fuel-flown-dataset-description",
+    "href": "data.html#fuel-flown-dataset-description",
+    "title": "2  Data",
+    "section": "",
+    "text": "Overview\nThe fuel flown data has been split into two groups:\n\ntraining set (train.csv)\ntest set (test.csv)\n\nThe training set should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amount. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.\nThe test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals of the flight. It is your job to predict these outcomes. For each interval in a flight in the test set, use the model you trained to predict the amount of fuel flown.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
     ]
   }
 ]
