@@ -8,10 +8,10 @@ book:
   title: "PRC Data Challenge"
   chapters:
     - index.qmd
-    - data.qmd
+    # - data.qmd
     # - rankings.qmd
     # - teams.qmd
-    - about.qmd
+    # - about.qmd
 
 
   navbar:
