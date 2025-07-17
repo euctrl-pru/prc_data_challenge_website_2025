@@ -10,6 +10,7 @@ acronyms:
 ## Leaderboard
 
 ::: {.callout-warning title="Attention"}
+some notifications...[BUT BETTER DISCORD CHANNEL]{fg="white" bg="red"}
 :::
 
 
@@ -47,6 +48,7 @@ tribble(
 ## Criteria for Ranking Submissions
 
 ::: {.callout-warning title="Attention"}
+something to say in case of issues
 :::
 
 
