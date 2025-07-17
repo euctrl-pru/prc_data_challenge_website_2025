@@ -52,7 +52,7 @@ something to say in case of issues
 :::
 
 
-Ranking will be based on  RMSE from `submission_set.csv`
+Ranking will be based on  RMSE from `submission.csv`
 
 
 ### Eligibility for Prize
