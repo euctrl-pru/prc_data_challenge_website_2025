@@ -14,39 +14,9 @@
     "href": "data.html",
     "title": "2  Data",
     "section": "",
-    "text": "Fuel Flown Dataset description\nWe provide:\nWe use worldwide flights from which to learn and predict the amount of fuel flown in one or more intervals of their airborne portion. This flights list is available in flightlist.csv and contains all flight details for the flights in both the train and test sets.\nWe additionally provide Automatic Dependent Surveillance–Broadcast (ADS-B) position reports for all flights in the flight list. These flight trajectories are possibly incomplete, i.e. they can lack portions.",
+    "text": "Fuel Flown Dataset description\nWe provide:\nWe use worldwide flights from which to learn and then predict the amount of fuel flown in one or more intervals of their airborne portion. This flights list is available in flights.csv and contains all flight details for the flights in both the train set, the test set and the submission set.\nWe provide Automatic Dependent Surveillance–Broadcast (ADS-B) position reports for all flights in the flight list. These flight trajectories are possibly incomplete, i.e. they can lack portions.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
-    ]
-  },
-  {
-    "objectID": "data.html#dataset-description",
-    "href": "data.html#dataset-description",
-    "title": "2  Data",
-    "section": "",
-    "text": "Overview\nThe data has been split into two groups:\n\ntraining set (train.csv)\ntest set (test.csv)\n\nThe training set should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amount. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.\nThe test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals of the flight. It is your job to predict these outcomes. For each interval in a flight in the test set, use the model you trained to predict the amount of fuel flown.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
-    ]
-  },
-  {
-    "objectID": "data.html#contextual-datasets",
-    "href": "data.html#contextual-datasets",
-    "title": "2  Data",
-    "section": "Contextual datasets",
-    "text": "Contextual datasets\nThe following datasets provide essential information to use in the engineering of your model.\n\nFlight list\nThe following is the list of columns in flightlist.csv:\n\nflight_id: a unique identifier for the flight between Aerodrome of DEParture (ADEP) and Aerodrome of DEStination (ADES)\nadep: the International Civil Aviation Organization (ICAO) code of the origin of the flight\nades: the ICAO code of the destination of the flight\ntakeoff: the Coordinated Universal Time (UTC) timestamp of the take-off time\nlanded: the UTC timestamp of the landing time\nicao24: the ICAO 24-bit address of the airframe carrying out the flight\naircraft_type: the ICAO aircraft type code of the aircraft carrying out the flight\n\n\n\nTrajectories\nWe have trajectory files for each flight…JUNZI details?\nEach trajectory is described by\n\nlongitude: longitude in Decimal degrees (DD) in [-180, 180] range\nlatitude: latitude in DD in [-90, 90] range\naltitude: altitude in feet [ft]\ntimestamp: timestamp with time zone\ngroundspeed: ground speed in knots [kt]\ntrack: track angle in DD\ntrack_unwrapped: unwrapped track angle in DD\nvertical_rate: vertical rate of climb/descent (vertical_rate [ft/min])",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "3  About",
-    "section": "",
-    "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European ATM performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of\nReference and Rules of\nProcedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nPRC: Performance Review Commission",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>About</span>"
     ]
   },
   {
@@ -54,9 +24,59 @@
     "href": "data.html#fuel-flown-dataset-description",
     "title": "2  Data",
     "section": "",
-    "text": "Overview\nThe fuel flown data has been split into two groups:\n\ntraining set (train.csv)\ntest set (test.csv)\n\nThe training set should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amount. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.\nThe test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals of the flight. It is your job to predict these outcomes. For each interval in a flight in the test set, use the model you trained to predict the amount of fuel flown.",
+    "text": "Overview\nThe fuel flown data has been split into two groups:\n\ntraining set (train.csv)\ntest set (test.csv)\n\nThe training set should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amounts. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.\nThe test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals of the flight. It is your job to predict these outcomes. For each interval in a flight in the test set, use the model you trained to predict the amount of fuel flown.\nprovide format and description for all 3\n\n\nSubmission format\nYou should submit a CSV file with exactly all entries in the submission.csv with a numerical value for fuel flown for a each interval\nflight_id,start,end,fuel-flown\n12345,\"2025-04-23 04:32:23\",\"2025-04-23 04:51:00\",135.6\n12345,\"2025-04-23 06:11:13\",\"2025-04-23 07:01:10\",153.2\n23456,\"2025-05-01 13:21:54\",\"2025-05-01 14:07:55\",198.1\n...",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "data.html#flights-list-and-trajectories-datasets",
+    "href": "data.html#flights-list-and-trajectories-datasets",
+    "title": "2  Data",
+    "section": "Flights list and Trajectories datasets",
+    "text": "Flights list and Trajectories datasets\nThe following datasets provide essential information to use in the engineering of your model.\n\nFlight list\nThe following is the list of columns in flightlist.csv:\n\nflight_id: a unique identifier for the flight between Aerodrome of DEParture (ADEP) and Aerodrome of DEStination (ADES)\nadep: the International Civil Aviation Organization (ICAO) code of the origin of the flight\nades: the ICAO code of the destination of the flight\ntakeoff: the Coordinated Universal Time (UTC) timestamp of the take-off time\nlanded: the UTC timestamp of the landing time\nicao24: the ICAO 24-bit address of the airframe carrying out the flight\naircraft_type: the ICAO aircraft type code of the aircraft carrying out the flight\n\n\n\nTrajectories\nWe have trajectory files for each flight…JUNZI details?\nEach trajectory is described by\n\nlongitude: longitude in Decimal degrees (DD) in [-180, 180] range\nlatitude: latitude in DD in [-90, 90] range\naltitude: altitude in feet [ft]\ntimestamp: timestamp with time zone\ngroundspeed: ground speed in knots [kt]\ntrack: track angle in DD\ntrack_unwrapped: unwrapped track angle in DD\nvertical_rate: vertical rate of climb/descent (vertical_rate [ft/min])",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
+    "objectID": "rankings.html",
+    "href": "rankings.html",
+    "title": "3  Rankings",
+    "section": "",
+    "text": "Leaderboard\nThe following table shows the best result per team’s submission at the deadline.\nTeam\nRank\nRMSE\nVersion\nDate\n\n\n\n\ncucu\n1\n11\n13\n2025-09-11 00:00:00\n\n\nbubu\n2\n23\n21\n2025-09-13 00:00:00",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Rankings</span>"
+    ]
+  },
+  {
+    "objectID": "rankings.html#leaderboard",
+    "href": "rankings.html#leaderboard",
+    "title": "3  Rankings",
+    "section": "",
+    "text": "Attention",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Rankings</span>"
+    ]
+  },
+  {
+    "objectID": "rankings.html#criteria-for-ranking-submissions",
+    "href": "rankings.html#criteria-for-ranking-submissions",
+    "title": "3  Rankings",
+    "section": "Criteria for Ranking Submissions",
+    "text": "Criteria for Ranking Submissions\n\n\n\n\n\n\nAttention\n\n\n\n\n\n\nRanking will be based on RMSE from submission_set.csv\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made available to be published under the GNU GPLv3 license on the Challenge github account.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Rankings</span>"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "4  About",
+    "section": "",
+    "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European ATM performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of\nReference and Rules of\nProcedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nPRC: Performance Review Commission",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>About</span>"
     ]
   }
 ]

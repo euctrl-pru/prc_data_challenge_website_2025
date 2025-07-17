@@ -17,4 +17,4 @@ flown** at certain intervals of the flight.
 ![PRC Data Challenge](media/prc_dc25.jpeg)
 
 
-ADD a sort of 3D flight trajectory with portions for the intervals of fuel flown.
+[ADD a sort of 3D flight trajectory with portions for the intervals of fuel flown.]{fg="white" bg="red"}

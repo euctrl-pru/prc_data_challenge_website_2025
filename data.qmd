@@ -1,17 +1,24 @@
 # Data
 We provide:
 
-1. flight list information and trajectories
-1. train and test sets for fuel flown for one or more intervals in each flight
+1. **flights list** information and **trajectories**
+1. **train set** and **test set** for fuel flown for one or more intervals
+   in each flight of the flights list
+1. **submission set**: each team will fill and submit their predictions
+   for fuel flow entries in this set which will then be used to rank for
+   the Data Challenge leaderboard.
 
-We use worldwide flights from which to learn and predict the amount of 
+We use worldwide flights from which to learn and then predict the amount of 
 fuel flown in one or more intervals of their airborne portion.
-This flights list is available in `flightlist.csv` and contains all flight
-details for the flights in both the train and test sets.
+This flights list is available in `flights.csv` and contains all flight
+details for the flights in both the train set, the test set and the submission
+set.
 
-We additionally provide \acr{ADS-B} position reports for all flights in
+We provide \acr{ADS-B} position reports for all flights in
 the flight list. These flight trajectories are possibly incomplete,
 i.e. they can lack portions.
+
+
 
 ## Fuel Flown Dataset description
 
@@ -24,7 +31,7 @@ The fuel flown data has been split into two groups:
 
 The training set should be used to build your machine learning models.
 For the training set, we provide the outcome, the “ground truth”, for all
-the known intervals of fuel flown amount.
+the known intervals of fuel flown amounts.
 Your model will be based on “features” like aircraft type and phase of the
 flight. You will also use feature engineering to create new features.
 
@@ -33,8 +40,23 @@ of the flight. It is your job to predict these outcomes.
 For each interval in a flight in the test set, use the model you trained to
 predict the amount of fuel flown.
 
+[provide format and description for all 3]{fg="white" bg="red"}
 
-## Contextual datasets
+
+### Submission format
+
+You should submit a CSV file with exactly all entries in the `submission.csv`
+with a numerical value for fuel flown for a each interval
+
+```
+flight_id,start,end,fuel-flown
+12345,"2025-04-23 04:32:23","2025-04-23 04:51:00",135.6
+12345,"2025-04-23 06:11:13","2025-04-23 07:01:10",153.2
+23456,"2025-05-01 13:21:54","2025-05-01 14:07:55",198.1
+...
+```
+
+## Flights list and Trajectories datasets
 
 The following datasets provide essential information to use in the engineering
 of your model.

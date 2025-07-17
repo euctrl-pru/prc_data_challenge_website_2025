@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./about.html" rel="next">
+<link href="./rankings.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -122,8 +122,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./rankings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Rankings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">About</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">About</span></span></a>
   </div>
 </li>
     </ul>
@@ -139,8 +145,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#fuel-flown-dataset-description" id="toc-fuel-flown-dataset-description" class="nav-link active" data-scroll-target="#fuel-flown-dataset-description">Fuel Flown Dataset description</a>
   <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#submission-format" id="toc-submission-format" class="nav-link" data-scroll-target="#submission-format">Submission format</a></li>
   </ul></li>
-  <li><a href="#contextual-datasets" id="toc-contextual-datasets" class="nav-link" data-scroll-target="#contextual-datasets">Contextual datasets</a>
+  <li><a href="#flights-list-and-trajectories-datasets" id="toc-flights-list-and-trajectories-datasets" class="nav-link" data-scroll-target="#flights-list-and-trajectories-datasets">Flights list and Trajectories datasets</a>
   <ul class="collapse">
   <li><a href="#flight-list" id="toc-flight-list" class="nav-link" data-scroll-target="#flight-list">Flight list</a></li>
   <li><a href="#trajectories" id="toc-trajectories" class="nav-link" data-scroll-target="#trajectories">Trajectories</a></li>
@@ -173,11 +180,12 @@ ul.task-list li input[type="checkbox"] {
 
 <p>We provide:</p>
 <ol type="1">
-<li>flight list information and trajectories</li>
-<li>train and test sets for fuel flown for one or more intervals in each flight</li>
+<li><strong>flights list</strong> information and <strong>trajectories</strong></li>
+<li><strong>train set</strong> and <strong>test set</strong> for fuel flown for one or more intervals in each flight of the flights list</li>
+<li><strong>submission set</strong>: each team will fill and submit their predictions for fuel flow entries in this set which will then be used to rank for the Data Challenge leaderboard.</li>
 </ol>
-<p>We use worldwide flights from which to learn and predict the amount of fuel flown in one or more intervals of their airborne portion. This flights list is available in <code>flightlist.csv</code> and contains all flight details for the flights in both the train and test sets.</p>
-<p>We additionally provide <a href="#acronyms_ADS_B">Automatic Dependent Surveillance–Broadcast (ADS-B)</a> position reports for all flights in the flight list. These flight trajectories are possibly incomplete, i.e.&nbsp;they can lack portions.</p>
+<p>We use worldwide flights from which to learn and then predict the amount of fuel flown in one or more intervals of their airborne portion. This flights list is available in <code>flights.csv</code> and contains all flight details for the flights in both the train set, the test set and the submission set.</p>
+<p>We provide <a href="#acronyms_ADS_B">Automatic Dependent Surveillance–Broadcast (ADS-B)</a> position reports for all flights in the flight list. These flight trajectories are possibly incomplete, i.e.&nbsp;they can lack portions.</p>
 <section id="fuel-flown-dataset-description" class="level2">
 <h2 class="anchored" data-anchor-id="fuel-flown-dataset-description">Fuel Flown Dataset description</h2>
 <section id="overview" class="level3">
@@ -187,12 +195,22 @@ ul.task-list li input[type="checkbox"] {
 <li>training set (<code>train.csv</code>)</li>
 <li>test set (<code>test.csv</code>)</li>
 </ul>
-<p>The training set should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amount. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.</p>
+<p>The training set should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amounts. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.</p>
 <p>The test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals of the flight. It is your job to predict these outcomes. For each interval in a flight in the test set, use the model you trained to predict the amount of fuel flown.</p>
+<p><span class="light-content" data-fg="white" data-bg="red" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: red;">provide format and description for all 3</span></p>
+</section>
+<section id="submission-format" class="level3">
+<h3 class="anchored" data-anchor-id="submission-format">Submission format</h3>
+<p>You should submit a CSV file with exactly all entries in the <code>submission.csv</code> with a numerical value for fuel flown for a each interval</p>
+<pre><code>flight_id,start,end,fuel-flown
+12345,"2025-04-23 04:32:23","2025-04-23 04:51:00",135.6
+12345,"2025-04-23 06:11:13","2025-04-23 07:01:10",153.2
+23456,"2025-05-01 13:21:54","2025-05-01 14:07:55",198.1
+...</code></pre>
 </section>
 </section>
-<section id="contextual-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="contextual-datasets">Contextual datasets</h2>
+<section id="flights-list-and-trajectories-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="flights-list-and-trajectories-datasets">Flights list and Trajectories datasets</h2>
 <p>The following datasets provide essential information to use in the engineering of your model.</p>
 <section id="flight-list" class="level3">
 <h3 class="anchored" data-anchor-id="flight-list">Flight list</h3>
@@ -644,8 +662,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./about.html" class="pagination-link" aria-label="About">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">About</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./rankings.html" class="pagination-link" aria-label="Rankings">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Rankings</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
