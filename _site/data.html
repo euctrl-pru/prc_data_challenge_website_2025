@@ -198,6 +198,19 @@ ul.task-list li input[type="checkbox"] {
 <p>The training set should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amounts. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.</p>
 <p>The test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals of the flight. It is your job to predict these outcomes. For each interval in a flight in the test set, use the model you trained to predict the amount of fuel flown.</p>
 <p><span class="light-content" data-fg="white" data-bg="red" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: red;">provide format and description for all 3</span></p>
+<p>The columns of the dataset are:</p>
+<ul>
+<li><code>flight_id</code>: a unique id identifying the flight</li>
+<li><code>timestamp</code>: a time instant (<a href="#acronyms_UTC">Coordinated Universal Time (UTC)</a>)</li>
+<li><code>icao24</code>: the <a href="#acronyms_ICAO">International Civil Aviation Organization (ICAO)</a> 24-bit address associated to the airframe</li>
+<li><code>tail_number</code>: the registration of the airframe</li>
+<li><code>typecode</code>: the <a href="#acronyms_ICAO">ICAO</a> aircraft type</li>
+<li><code>flight_number</code>: the flight number</li>
+<li><code>latitude</code>: the latitude (<a href="#acronyms_DD">Decimal degrees (DD)</a>)</li>
+<li><code>longitude</code>: the longitude (<a href="#acronyms_DD">DD</a>)</li>
+<li><code>altitude</code>: the altitude (feet)</li>
+<li><code>fob</code>: fuel on board value (sometimes kg, sometime tonnes?)</li>
+</ul>
 </section>
 <section id="submission-format" class="level3">
 <h3 class="anchored" data-anchor-id="submission-format">Submission format</h3>
@@ -217,9 +230,9 @@ ul.task-list li input[type="checkbox"] {
 <p>The following is the list of columns in <code>flightlist.csv</code>:</p>
 <ul>
 <li><code>flight_id</code>: a unique identifier for the flight between <a href="#acronyms_ADEP">Aerodrome of DEParture (ADEP)</a> and <a href="#acronyms_ADES">Aerodrome of DEStination (ADES)</a></li>
-<li><code>adep</code>: the <a href="#acronyms_ICAO">International Civil Aviation Organization (ICAO)</a> code of the origin of the flight</li>
+<li><code>adep</code>: the <a href="#acronyms_ICAO">ICAO</a> code of the origin of the flight</li>
 <li><code>ades</code>: the <a href="#acronyms_ICAO">ICAO</a> code of the destination of the flight</li>
-<li><code>takeoff</code>: the <a href="#acronyms_UTC">Coordinated Universal Time (UTC)</a> timestamp of the take-off time</li>
+<li><code>takeoff</code>: the <a href="#acronyms_UTC">UTC</a> timestamp of the take-off time</li>
 <li><code>landed</code>: the <a href="#acronyms_UTC">UTC</a> timestamp of the landing time</li>
 <li><code>icao24</code>: the <a href="#acronyms_ICAO">ICAO</a> 24-bit address of the airframe carrying out the flight</li>
 <li><code>aircraft_type</code>: the <a href="#acronyms_ICAO">ICAO</a> aircraft type code of the aircraft carrying out the flight</li>
@@ -230,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 <p>We have trajectory files for each flight…JUNZI details?</p>
 <p>Each trajectory is described by</p>
 <ul>
-<li><code>longitude</code>: longitude in <a href="#acronyms_DD">Decimal degrees (DD)</a> in [-180, 180] range</li>
+<li><code>longitude</code>: longitude in <a href="#acronyms_DD">DD</a> in [-180, 180] range</li>
 <li><code>latitude</code>: latitude in <a href="#acronyms_DD">DD</a> in [-90, 90] range</li>
 <li><code>altitude</code>: altitude in feet [ft]</li>
 <li><code>timestamp</code>: timestamp with time zone</li>

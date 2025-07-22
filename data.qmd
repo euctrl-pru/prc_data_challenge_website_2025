@@ -42,6 +42,20 @@ predict the amount of fuel flown.
 
 [provide format and description for all 3]{fg="white" bg="red"}
 
+The columns of the dataset are: 
+
+* `flight_id`: a unique id identifying the flight
+* `timestamp`: a time instant (\acr{UTC})
+* `icao24`: the \acr{ICAO} 24-bit address associated to the airframe
+* `tail_number`: the registration of the airframe
+* `typecode`: the \acr{ICAO} aircraft type
+* `flight_number`: the flight number
+* `latitude`: the latitude (\acr{DD})
+* `longitude`: the longitude (\acr{DD})
+* `altitude`: the altitude (feet)
+* `fob`: fuel on board value (sometimes kg, sometime tonnes?)
+
+
 
 ### Submission format
 
