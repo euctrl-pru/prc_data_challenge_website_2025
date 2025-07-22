@@ -12,9 +12,9 @@ edition and proposes to build \acr{ML} models to predict the **amount of fuel
 flown** at certain intervals of the flight.
 
 
-[**IMAGE TO BE CHANGED**]{fg="white" bg="red"}
+[**IMAGE TO BE CONFIRMED**]{fg="white" bg="red"}
 
-![PRC Data Challenge](media/prc_dc25.jpeg)
+![PRC Data Challenge](media/prc_dc25-01.jpg)
 
 
 [ADD a sort of 3D flight trajectory with portions for the intervals of fuel flown.]{fg="white" bg="red"}
