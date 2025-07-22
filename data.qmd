@@ -29,20 +29,19 @@ The fuel flown data has been split into two groups:
 * training set (`train.csv`)
 * test set (`test.csv`)
 
-The training set should be used to build your machine learning models.
+
+#### Training Set
+
+The _training set_ should be used to build your machine learning models.
 For the training set, we provide the outcome, the “ground truth”, for all
 the known intervals of fuel flown amounts.
 Your model will be based on “features” like aircraft type and phase of the
 flight. You will also use feature engineering to create new features.
 
-The test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals
-of the flight. It is your job to predict these outcomes.
-For each interval in a flight in the test set, use the model you trained to
-predict the amount of fuel flown.
 
-[provide format and description for all 3]{fg="white" bg="red"}
+[provide format and description for the _train set_]{fg="white" bg="red"}
 
-The columns of the dataset are: 
+The columns of the _train set_ are: 
 
 * `flight_id`: a unique id identifying the flight
 * `timestamp`: a time instant (\acr{UTC})
@@ -53,9 +52,21 @@ The columns of the dataset are:
 * `latitude`: the latitude (\acr{DD})
 * `longitude`: the longitude (\acr{DD})
 * `altitude`: the altitude (feet)
-* `fob`: fuel on board value (sometimes kg, sometime tonnes?)
+* `fob`: fuel on board value (sometimes in kg, sometimes in tonnes?)
 
 
+
+#### Test Set
+
+The _test set_ should be used to verify how well your model performs on unseen
+data. For the test set, we do not provide the ground truth for the relevant intervals
+of the flight. It is your job to predict these outcomes.
+For each interval in a flight in the test set, use the model you trained to
+predict the amount of fuel flown.
+
+[provide format and description for the test set]{fg="white" bg="red"}
+
+[it should follow the _train set_ format BUT in the end in the submission we ask for the DIFF between two timestamps!]{fg="white" bg="red"}
 
 ### Submission format
 
@@ -63,7 +74,7 @@ You should submit a CSV file with exactly all entries in the `submission.csv`
 with a numerical value for fuel flown for a each interval
 
 ```
-flight_id,start,end,fuel-flown
+flight_id,start,end,fuel_flown
 12345,"2025-04-23 04:32:23","2025-04-23 04:51:00",135.6
 12345,"2025-04-23 06:11:13","2025-04-23 07:01:10",153.2
 23456,"2025-05-01 13:21:54","2025-05-01 14:07:55",198.1
