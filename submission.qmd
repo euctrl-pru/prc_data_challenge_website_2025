@@ -8,7 +8,11 @@ acronyms:
 ---
 
 We provide a submission file for fuel where to fill the fuel burnt column.
+
 **Note**: each phase will have its own.
+
+
+Each team will have to submit in its own bucket.
 
 ### Submission format
 

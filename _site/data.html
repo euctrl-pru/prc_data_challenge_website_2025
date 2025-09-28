@@ -154,6 +154,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#fuel-burntflown" id="toc-fuel-burntflown" class="nav-link active" data-scroll-target="#fuel-burntflown">Fuel Burnt/Flown</a></li>
   <li><a href="#flight-list" id="toc-flight-list" class="nav-link" data-scroll-target="#flight-list">Flight list</a></li>
   <li><a href="#trajectories" id="toc-trajectories" class="nav-link" data-scroll-target="#trajectories">Trajectories</a></li>
+  <li><a href="#acronyms_HEADER_LOA" id="toc-acronyms_HEADER_LOA" class="nav-link" data-scroll-target="#acronyms_HEADER_LOA">List of Acronyms</a></li>
   </ul>
 </nav>
     </div>
@@ -218,6 +219,12 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 </div>
 </div>
 </div>
+<p>The temporal extent of the datasets covers the period Apr - Oct 2025.</p>
+<ul>
+<li>Apr - Aug: training dataset</li>
+<li>Sep 2025: phase 1 submission / ranking</li>
+<li>Oct 2025: phase 2 submission / final ranking</li>
+</ul>
 <section id="fuel-burntflown" class="level2">
 <h2 class="anchored" data-anchor-id="fuel-burntflown">Fuel Burnt/Flown</h2>
 <p>We collected fuel information (via Open-Source Intelligence (OSINT)) for flights between April and September 2025.</p>
@@ -225,8 +232,8 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 <ul>
 <li><code>idx</code>: row id</li>
 <li><code>flight_id</code>: a unique identifier of the flight in the flight list</li>
-<li><code>start</code>: a time instant (UTC)</li>
-<li><code>end</code>: a time instant (UTC)</li>
+<li><code>start</code>: a time instant (<a href="#acronyms_UTC">Coordinated Universal Time (UTC)</a>)</li>
+<li><code>end</code>: a time instant (<a href="#acronyms_UTC">UTC</a>)</li>
 <li><code>fob_start</code>: value of fuel on board at <code>start</code></li>
 <li><code>fob_end</code>: value of fuel on board at <code>end</code></li>
 <li><code>d_fob</code>: <code>fob_end</code> - <code>fob_start</code></li>
@@ -240,27 +247,27 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 <ul>
 <li><code>flight_id</code>: a unique identifier for the flight</li>
 <li><code>flight_date</code>: the date of the flight</li>
-<li><code>takeoff</code>: the UTC timestamp of the take-off time</li>
-<li><code>origin_name</code>: the name of ADEP</li>
-<li><code>origin_icao</code>: the ICAO code of the ADEP, the origin of the flight</li>
-<li><code>landed</code>: the UTC timestamp of the landing time</li>
-<li><code>destination_icao</code>: the ICAO code of the ADES, the destination of the flight</li>
-<li><code>destination_name</code>: the name of ADEP</li>
-<li><code>aircraft_type</code>: the ICAO aircraft type code of the aircraft carrying out the flight</li>
+<li><code>takeoff</code>: the <a href="#acronyms_UTC">UTC</a> timestamp of the take-off time</li>
+<li><code>origin_name</code>: the name of <a href="#acronyms_ADEP">Aerodrome of DEParture (ADEP)</a></li>
+<li><code>origin_icao</code>: the <a href="#acronyms_ICAO">International Civil Aviation Organization (ICAO)</a> code of the <a href="#acronyms_ADEP">ADEP</a>, the origin of the flight</li>
+<li><code>landed</code>: the <a href="#acronyms_UTC">UTC</a> timestamp of the landing time</li>
+<li><code>destination_icao</code>: the <a href="#acronyms_ICAO">ICAO</a> code of the <a href="#acronyms_ADES">Aerodrome of DEStination (ADES)</a>, the destination of the flight</li>
+<li><code>destination_name</code>: the name of <a href="#acronyms_ADEP">ADEP</a></li>
+<li><code>aircraft_type</code>: the <a href="#acronyms_ICAO">ICAO</a> aircraft type code of the aircraft carrying out the flight</li>
 </ul>
 </section>
 <section id="trajectories" class="level2">
 <h2 class="anchored" data-anchor-id="trajectories">Trajectories</h2>
-<p>We have trajectory files for each flight with fuel flow segments. These are (mainly) ADS-B position reports for the flights in the flight list as available in OpenSky Network historical database. These flight trajectories are possibly incomplete, i.e.&nbsp;they can lack portions. We have augmented these trajectories with positional information coming from ACARS; the <code>source</code> column would categorize the origin of the data, either <code>adsb</code> or <code>acars</code>.</p>
+<p>We have trajectory files for each flight with fuel flow segments. These are (mainly) <a href="#acronyms_ADS_B">Automatic Dependent Surveillance–Broadcast (ADS-B)</a> position reports for the flights in the flight list as available in OpenSky Network historical database. These flight trajectories are possibly incomplete, i.e.&nbsp;they can lack portions. We have augmented these trajectories with positional information coming from ACARS; the <code>source</code> column would categorize the origin of the data, either <code>adsb</code> or <code>acars</code>.</p>
 <p>Each trajectory is described by (units in square brackets)</p>
 <ul>
 <li><code>flight_id</code>: an identifier for the flight (details in the flight list dataset), i.e.&nbsp;<code>prc770822360</code></li>
 <li><code>timestamp</code>: timestamp for the position report [UTC]</li>
-<li><code>longitude</code>: longitude in DD in [-180, 180] range</li>
-<li><code>latitude</code>: latitude in DD in [-90, 90] range</li>
+<li><code>longitude</code>: longitude in <a href="#acronyms_DD">Decimal degrees (DD)</a> in [-180, 180] range</li>
+<li><code>latitude</code>: latitude in <a href="#acronyms_DD">DD</a> in [-90, 90] range</li>
 <li><code>altitude</code>: altitude [ft]</li>
 <li><code>groundspeed</code>: ground speed [knots, kt]</li>
-<li><code>track</code>: track angle in DD</li>
+<li><code>track</code>: track angle in <a href="#acronyms_DD">DD</a></li>
 <li><code>vertical_rate</code>: vertical rate of climb/descent [ft/min]</li>
 <li><code>mach</code>: the Mach number (from <code>source</code> = <code>acars</code>)</li>
 <li><code>typecode</code>: the ICAO aircraft type, i.e.&nbsp;<code>A21N</code> for the Airbus A321neo</li>
@@ -270,6 +277,17 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 </ul>
 
 
+</section>
+<section id="acronyms_HEADER_LOA" class="level1 loa unnumbered">
+<h1 class="loa unnumbered">List of Acronyms</h1>
+<div>
+<p><strong><span id="acronyms_ADEP">ADEP</span></strong>: Aerodrome of DEParture</p>
+<p><strong><span id="acronyms_ADES">ADES</span></strong>: Aerodrome of DEStination</p>
+<p><strong><span id="acronyms_ADS_B">ADS-B</span></strong>: Automatic Dependent Surveillance–Broadcast</p>
+<p><strong><span id="acronyms_DD">DD</span></strong>: Decimal degrees</p>
+<p><strong><span id="acronyms_ICAO">ICAO</span></strong>: International Civil Aviation Organization</p>
+<p><strong><span id="acronyms_UTC">UTC</span></strong>: Coordinated Universal Time</p>
+</div>
 </section>
 
 </main> <!-- /main -->

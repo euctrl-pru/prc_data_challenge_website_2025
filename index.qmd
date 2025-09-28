@@ -25,3 +25,9 @@ This is a data challenge that uses real data with all the inconsistencies,
 noise, holes of the real world: it is a *challenge* because it is tough 
 in its goal and in the available data, and not a mere tutorial or syntetic
 exercise.
+
+Follow up the data challenge on OSN [Discord {{< fa brands discord >}} channel `prc-data-competition`][prc-discord].
+
+
+
+[prc-discord]: <https://discord.com/channels/1252625490930307142/1304403918515605504> "Discord channel for PRC Data Challenge"

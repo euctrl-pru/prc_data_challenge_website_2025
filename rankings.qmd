@@ -11,11 +11,13 @@ acronyms:
 
 
 ::: {.callout-warning title="Attention"}
-some notifications...[BUT BETTER DISCORD CHANNEL]{fg="white" bg="red"}
+We will post URGENT/IMPORTANT news here but better to follow things up on
+[Discord {{< fa brands discord >}} channel `prc-data-competition`][prc-discord]
 :::
 
 
 The following table shows the best result per team's submission at the deadline.
+
 
 ```{r}
 #| echo: false
@@ -92,3 +94,7 @@ select final Awardees considering
 
 By participating in the Challenge, you agree to be bound by the final decision
 of the PRC Data Challenge selection committee. 
+
+
+
+[prc-discord]: <https://discord.com/channels/1252625490930307142/1304403918515605504> "Discord channel for PRC Data Challenge"
