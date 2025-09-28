@@ -50,6 +50,16 @@
     ]
   },
   {
+    "objectID": "data.html#airports",
+    "href": "data.html#airports",
+    "title": "2  Data",
+    "section": "Airports",
+    "text": "Airports\nThe airports dataset provides complementary positions as follows:\n\nicao: the ICAO code of the airport\nlongitude: the airport longitude in DD in [-180, 180] range\nlatitude: the airport latitude in DD in [-90, 90] range\nelevation: the airport elevation [ft]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
     "objectID": "submission.html",
     "href": "submission.html",
     "title": "3  Submissions",

@@ -154,6 +154,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#fuel-burntflown" id="toc-fuel-burntflown" class="nav-link active" data-scroll-target="#fuel-burntflown">Fuel Burnt/Flown</a></li>
   <li><a href="#flight-list" id="toc-flight-list" class="nav-link" data-scroll-target="#flight-list">Flight list</a></li>
   <li><a href="#trajectories" id="toc-trajectories" class="nav-link" data-scroll-target="#trajectories">Trajectories</a></li>
+  <li><a href="#airports" id="toc-airports" class="nav-link" data-scroll-target="#airports">Airports</a></li>
   <li><a href="#acronyms_HEADER_LOA" id="toc-acronyms_HEADER_LOA" class="nav-link" data-scroll-target="#acronyms_HEADER_LOA">List of Acronyms</a></li>
   </ul>
 </nav>
@@ -274,6 +275,16 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 <li><code>TAS</code>: <strong>T</strong>rue <strong>A</strong>ir<strong>S</strong>peed (from <code>source</code> = <code>acars</code>) [kt]</li>
 <li><code>CAS</code>: <strong>C</strong>alibrated <strong>A</strong>ir<strong>S</strong>peed (from <code>source</code> = <code>acars</code>) [kt]</li>
 <li><code>source</code>: the origin of the information; it can be <code>adsb</code> or <code>acars</code></li>
+</ul>
+</section>
+<section id="airports" class="level2">
+<h2 class="anchored" data-anchor-id="airports">Airports</h2>
+<p>The airports dataset provides complementary positions as follows:</p>
+<ul>
+<li><code>icao</code>: the <a href="#acronyms_ICAO">ICAO</a> code of the airport</li>
+<li><code>longitude</code>: the airport longitude in <a href="#acronyms_DD">DD</a> in [-180, 180] range</li>
+<li><code>latitude</code>: the airport latitude in <a href="#acronyms_DD">DD</a> in [-90, 90] range</li>
+<li><code>elevation</code>: the airport elevation [ft]</li>
 </ul>
 
 
