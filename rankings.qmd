@@ -9,6 +9,7 @@ acronyms:
 
 ## Leaderboard
 
+
 ::: {.callout-warning title="Attention"}
 some notifications...[BUT BETTER DISCORD CHANNEL]{fg="white" bg="red"}
 :::
@@ -51,8 +52,16 @@ tribble(
 something to say in case of issues
 :::
 
+Ranking will be based on the best RMSE of a team's submissions.
 
-Ranking will be based on  RMSE from `submission.csv`
+
+There will be two phases of submissions:
+
+1. phase 1: till 2025-11-09T23:59:59Z
+1. phase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z
+
+Ranking in each phase will be based on 2 distinct submission datasets.
+
 
 
 ### Eligibility for Prize

@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - data.qmd
+    - submission.qmd
     - rankings.qmd
     # - teams.qmd
     - about.qmd

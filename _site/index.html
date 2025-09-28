@@ -121,14 +121,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./submission.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Submissions</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./rankings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Rankings</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Rankings</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">About</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">About</span></span></a>
   </div>
 </li>
     </ul>
@@ -168,15 +174,21 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>The <a href="#acronyms_PRC">Performance Review Commission (PRC)</a> aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.</p>
-<p>The 2025 edition of the <a href="#acronyms_PRC">PRC</a> Data Challenge builds on top of the 2024 edition and proposes to build <a href="#acronyms_ML">Machine Learning (ML)</a> models to predict the <strong>amount of fuel flown</strong> at certain intervals of the flight.</p>
-<p><span class="light-content" data-fg="white" data-bg="red" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: red;"><strong>IMAGE TO BE CONFIRMED</strong></span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="media/prc_dc25-01.jpg" class="img-fluid figure-img"></p>
 <figcaption>PRC Data Challenge</figcaption>
 </figure>
 </div>
-<p><span class="light-content" data-fg="white" data-bg="red" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: red;">ADD a sort of 3D flight trajectory with portions for the intervals of fuel flown.</span></p>
+<p>The 2025 edition of the <a href="#acronyms_PRC">PRC</a> Data Challenge builds on top of the 2024 edition and proposes to build <a href="#acronyms_ML">Machine Learning (ML)</a> models to predict the <strong>amount of fuel burnt</strong> at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.</p>
+<p>An example of a flight from Amsterdam to San Francisco is shown below with the great circle trajectory in <span class="light-content" data-fg="white" data-bg="orange" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: orange;">orange</span> and the ACARS segments in <span class="light-content" data-fg="white" data-bg="blue" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: blue;">blue</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/nice_data.png" class="img-fluid figure-img"></p>
+<figcaption>Great circle (<span class="light-content" data-fg="white" data-bg="orange" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: orange;">orange</span>) and ACARS segment (<span class="light-content" data-fg="white" data-bg="blue" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: blue;">blue</span>) with fuel burnt info.</figcaption>
+</figure>
+</div>
+<p>This is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a <em>challenge</em> because it is tough in its goal and in the available data, and not a mere tutorial or syntetic exercise.</p>
 
 
 <section id="acronyms_HEADER_LOA" class="level1 loa unnumbered">

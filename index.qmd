@@ -7,14 +7,21 @@ Aviation background, to team up and compete to solve a (big-ish) Data Challenge
 of interest to the wider Aviation community using open data and openly sharing
 final solutions.
 
-The 2025 edition of the \acr{PRC} Data Challenge builds on top of the 2024
-edition and proposes to build \acr{ML} models to predict the **amount of fuel
-flown** at certain intervals of the flight.
-
-
-[**IMAGE TO BE CONFIRMED**]{fg="white" bg="red"}
-
 ![PRC Data Challenge](media/prc_dc25-01.jpg)
 
+The 2025 edition of the \acr{PRC} Data Challenge builds on top of the 2024
+edition and proposes to build \acr{ML} models to predict the **amount of fuel
+burnt** at certain intervals of the flight.
+The training dataset will consist of flight intervals and corresponding fuel
+burnt/flown amounts.
 
-[ADD a sort of 3D flight trajectory with portions for the intervals of fuel flown.]{fg="white" bg="red"}
+An example of a flight from Amsterdam to San Francisco is shown below with 
+the great  circle trajectory in [orange]{fg="white" bg="orange"} and the ACARS
+segments in [blue]{fg="white" bg="blue"}.
+
+![Great circle ([orange]{fg="white" bg="orange"}) and ACARS segment ([blue]{fg="white" bg="blue"}) with fuel burnt info.](media/nice_data.png)
+
+This is a data challenge that uses real data with all the inconsistencies,
+noise, holes of the real world: it is a *challenge* because it is tough 
+in its goal and in the available data, and not a mere tutorial or syntetic
+exercise.

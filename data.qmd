@@ -1,116 +1,106 @@
-# Data
-We provide:
-
-1. **flights list** information and **trajectories**
-1. **train set** and **test set** for fuel flown for one or more intervals
-   in each flight of the flights list
-1. **submission set**: each team will fill and submit their predictions
-   for fuel flow entries in this set which will then be used to rank for
-   the Data Challenge leaderboard.
-
-We use worldwide flights from which to learn and then predict the amount of 
-fuel flown in one or more intervals of their airborne portion.
-This flights list is available in `flights.csv` and contains all flight
-details for the flights in both the train set, the test set and the submission
-set.
-
-We provide \acr{ADS-B} position reports for all flights in
-the flight list. These flight trajectories are possibly incomplete,
-i.e. they can lack portions.
+---
+title: "Data"
+# format:
+#   html:
+#     toc: false
+acronyms:
+  insert_loa: false
+---
 
 
+We provide the following (logical) data sets:
 
-## Fuel Flown Dataset description
+1. **flights list** information
+1. (portions of) **trajectories** for the flights in the list
+1. **fuel burnt/flown** for one or more intervals in each flight
+1. **airport coordinates**
 
-### Overview
+In an ER diagram
 
-The fuel flown data has been split into two groups:
+```{mermaid}
+%%| label: fig-er-diagram
+%%| fig-cap: "Entity-Relationship diagram for PRC Data Challenge."
 
-* training set (`train.csv`)
-* test set (`test.csv`)
+erDiagram
+    FUEL_READING {
+    }
+    FLIGHT {
+    }
+    AIRPORT {
+    }
+    TRAJECTORY_POSITION {
+    }
 
-
-#### Training Set
-
-The _training set_ should be used to build your machine learning models.
-For the training set, we provide the outcome, the “ground truth”, for all
-the known intervals of fuel flown amounts.
-Your model will be based on “features” like aircraft type and phase of the
-flight. You will also use feature engineering to create new features.
-
-
-[provide format and description for the _train set_]{fg="white" bg="red"}
-
-The columns of the _train set_ are: 
-
-* `flight_id`: a unique id identifying the flight
-* `timestamp`: a time instant (\acr{UTC})
-* `icao24`: the \acr{ICAO} 24-bit address of the airframe
-* `tail_number`: the registration of the airframe
-* `typecode`: the \acr{ICAO} aircraft type
-* `flight_number`: the flight number
-* `latitude`: the latitude (\acr{DD})
-* `longitude`: the longitude (\acr{DD})
-* `altitude`: the altitude (feet)
-* `fob`: fuel on board value (sometimes in kg, sometimes in tonnes?)
-
-
-
-#### Test Set
-
-The _test set_ should be used to verify how well your model performs on unseen
-data. For the test set, we do not provide the ground truth for the relevant intervals
-of the flight. It is your job to predict these outcomes.
-For each interval in a flight in the test set, use the model you trained to
-predict the amount of fuel flown.
-
-[provide format and description for the test set]{fg="white" bg="red"}
-
-[it should follow the _train set_ format BUT in the end in the submission we ask for the DIFF between two timestamps!]{fg="white" bg="red"}
-
-### Submission format
-
-You should submit a CSV file with exactly all entries in the `submission.csv`
-with a numerical value for fuel flown for a each interval
+    
+    FUEL_READING }|--||  FLIGHT : has
+    FLIGHT       }o--|{  AIRPORT : has
+    FLIGHT       ||--|{  TRAJECTORY_POSITION : has 
 
 ```
-flight_id,start,end,fuel_flown
-12345,"2025-04-23 04:32:23","2025-04-23 04:51:00",135.6
-12345,"2025-04-23 06:11:13","2025-04-23 07:01:10",153.2
-23456,"2025-05-01 13:21:54","2025-05-01 14:07:55",198.1
-...
-```
 
-## Flights list and Trajectories datasets
 
-The following datasets provide essential information to use in the engineering
-of your model.
 
-### Flight list
-The following is the list of columns in `flightlist.csv`:
 
-* `flight_id`: a unique identifier for the flight between \acr{ADEP} and
-  \acr{ADES}
-* `adep`: the \acr{ICAO} code of the origin of the flight
-* `ades`: the \acr{ICAO} code of the destination of the flight
+## Fuel Burnt/Flown
+
+We collected fuel information (via Open-Source Intelligence (OSINT)) for
+flights between April and September 2025.
+
+The columns of the fuel flown/burnt dataset are (`d_` stands for delta): 
+
+* `idx`: row id
+* `flight_id`: a unique identifier of the flight in the flight list
+* `start`: a time instant (\acr{UTC})
+* `end`: a time instant (\acr{UTC})
+* `fob_start`: value of fuel on board at `start`
+* `fob_end`: value of fuel on board at `end`
+* `d_fob`: `fob_end` - `fob_start`
+* `likely_fob_unit`: likely unit of fob values
+* `fuel_kg`: fuel burnt between start and end
+
+
+## Flight list
+
+The following is the list of columns in the flight list dataset:
+
+* `flight_id`: a unique identifier for the flight
+* `flight_date`: the date of the flight
 * `takeoff`: the \acr{UTC} timestamp of the take-off time
+* `origin_name`: the name of \acr{ADEP}
+* `origin_icao`: the \acr{ICAO} code of the \acr{ADEP}, the origin of the flight
 * `landed`: the \acr{UTC} timestamp of the landing time
-* `icao24`: the \acr{ICAO} 24-bit address of the airframe carrying out the flight
+* `destination_icao`: the \acr{ICAO} code of the \acr{ADES}, the destination
+   of the flight
+* `destination_name`: the name of \acr{ADEP}
 * `aircraft_type`: the \acr{ICAO} aircraft type code of the aircraft carrying
   out the flight
 
 
-### Trajectories
-We have trajectory files for each flight...JUNZI details?
 
-Each trajectory is described by
+## Trajectories
 
+We have trajectory files for each flight with fuel flow segments.
+These are (mainly) \acr{ADS-B} position reports for the flights in
+the flight list as available in OpenSky Network historical database.
+These flight trajectories are possibly incomplete, i.e. they can lack portions.
+We have augmented these trajectories with positional information
+coming from ACARS; the `source` column would categorize the origin
+of the data, either `adsb` or `acars`.
+
+Each trajectory is described by (units in square brackets)
+
+* `flight_id`: an identifier for the flight (details in the flight
+               list dataset), i.e. `prc770822360`
+* `timestamp`: timestamp for the position report [UTC]
 * `longitude`: longitude in \acr{DD} in [-180, 180] range
 * `latitude`: latitude in \acr{DD} in [-90, 90] range
-* `altitude`: altitude in feet [ft]
-* `timestamp`: timestamp with time zone
-* `groundspeed`: ground speed in knots [kt]
+* `altitude`: altitude [ft]
+* `groundspeed`: ground speed [knots, kt]
 * `track`: track angle in \acr{DD}
-* `track_unwrapped`: unwrapped track angle in \acr{DD}
-* `vertical_rate`: vertical rate of climb/descent (vertical_rate [ft/min])
+* `vertical_rate`: vertical rate of climb/descent [ft/min]
+* `mach`: the Mach number (from `source` = `acars`)
+* `typecode`: the ICAO aircraft type, i.e. `A21N` for the Airbus A321neo
+* `TAS`: **T**rue **A**ir**S**peed (from `source` = `acars`) [kt]
+* `CAS`: **C**alibrated **A**ir**S**peed (from `source` = `acars`) [kt]
+* `source`: the origin of the information; it can be `adsb` or `acars`
 

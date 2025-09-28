@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./rankings.html" rel="next">
+<link href="./submission.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -69,6 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="media/styles.css">
@@ -122,14 +125,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./submission.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Submissions</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./rankings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Rankings</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Rankings</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">About</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">About</span></span></a>
   </div>
 </li>
     </ul>
@@ -142,17 +151,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#fuel-flown-dataset-description" id="toc-fuel-flown-dataset-description" class="nav-link active" data-scroll-target="#fuel-flown-dataset-description">Fuel Flown Dataset description</a>
-  <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#submission-format" id="toc-submission-format" class="nav-link" data-scroll-target="#submission-format">Submission format</a></li>
-  </ul></li>
-  <li><a href="#flights-list-and-trajectories-datasets" id="toc-flights-list-and-trajectories-datasets" class="nav-link" data-scroll-target="#flights-list-and-trajectories-datasets">Flights list and Trajectories datasets</a>
-  <ul class="collapse">
+  <li><a href="#fuel-burntflown" id="toc-fuel-burntflown" class="nav-link active" data-scroll-target="#fuel-burntflown">Fuel Burnt/Flown</a></li>
   <li><a href="#flight-list" id="toc-flight-list" class="nav-link" data-scroll-target="#flight-list">Flight list</a></li>
   <li><a href="#trajectories" id="toc-trajectories" class="nav-link" data-scroll-target="#trajectories">Trajectories</a></li>
-  </ul></li>
-  <li><a href="#acronyms_HEADER_LOA" id="toc-acronyms_HEADER_LOA" class="nav-link" data-scroll-target="#acronyms_HEADER_LOA">List of Acronyms</a></li>
   </ul>
 </nav>
     </div>
@@ -178,102 +179,97 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We provide:</p>
+<p>We provide the following (logical) data sets:</p>
 <ol type="1">
-<li><strong>flights list</strong> information and <strong>trajectories</strong></li>
-<li><strong>train set</strong> and <strong>test set</strong> for fuel flown for one or more intervals in each flight of the flights list</li>
-<li><strong>submission set</strong>: each team will fill and submit their predictions for fuel flow entries in this set which will then be used to rank for the Data Challenge leaderboard.</li>
+<li><strong>flights list</strong> information</li>
+<li>(portions of) <strong>trajectories</strong> for the flights in the list</li>
+<li><strong>fuel burnt/flown</strong> for one or more intervals in each flight</li>
+<li><strong>airport coordinates</strong></li>
 </ol>
-<p>We use worldwide flights from which to learn and then predict the amount of fuel flown in one or more intervals of their airborne portion. This flights list is available in <code>flights.csv</code> and contains all flight details for the flights in both the train set, the test set and the submission set.</p>
-<p>We provide <a href="#acronyms_ADS_B">Automatic Dependent Surveillance–Broadcast (ADS-B)</a> position reports for all flights in the flight list. These flight trajectories are possibly incomplete, i.e.&nbsp;they can lack portions.</p>
-<section id="fuel-flown-dataset-description" class="level2">
-<h2 class="anchored" data-anchor-id="fuel-flown-dataset-description">Fuel Flown Dataset description</h2>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>The fuel flown data has been split into two groups:</p>
-<ul>
-<li>training set (<code>train.csv</code>)</li>
-<li>test set (<code>test.csv</code>)</li>
-</ul>
-<section id="training-set" class="level4">
-<h4 class="anchored" data-anchor-id="training-set">Training Set</h4>
-<p>The <em>training set</em> should be used to build your machine learning models. For the training set, we provide the outcome, the “ground truth”, for all the known intervals of fuel flown amounts. Your model will be based on “features” like aircraft type and phase of the flight. You will also use feature engineering to create new features.</p>
-<p><span class="light-content" data-fg="white" data-bg="red" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: red;">provide format and description for the <em>train set</em></span></p>
-<p>The columns of the <em>train set</em> are:</p>
-<ul>
-<li><code>flight_id</code>: a unique id identifying the flight</li>
-<li><code>timestamp</code>: a time instant (<a href="#acronyms_UTC">Coordinated Universal Time (UTC)</a>)</li>
-<li><code>icao24</code>: the <a href="#acronyms_ICAO">International Civil Aviation Organization (ICAO)</a> 24-bit address of the airframe</li>
-<li><code>tail_number</code>: the registration of the airframe</li>
-<li><code>typecode</code>: the <a href="#acronyms_ICAO">ICAO</a> aircraft type</li>
-<li><code>flight_number</code>: the flight number</li>
-<li><code>latitude</code>: the latitude (<a href="#acronyms_DD">Decimal degrees (DD)</a>)</li>
-<li><code>longitude</code>: the longitude (<a href="#acronyms_DD">DD</a>)</li>
-<li><code>altitude</code>: the altitude (feet)</li>
-<li><code>fob</code>: fuel on board value (sometimes in kg, sometimes in tonnes?)</li>
-</ul>
-</section>
-<section id="test-set" class="level4">
-<h4 class="anchored" data-anchor-id="test-set">Test Set</h4>
-<p>The <em>test set</em> should be used to verify how well your model performs on unseen data. For the test set, we do not provide the ground truth for the relevant intervals of the flight. It is your job to predict these outcomes. For each interval in a flight in the test set, use the model you trained to predict the amount of fuel flown.</p>
-<p><span class="light-content" data-fg="white" data-bg="red" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: red;">provide format and description for the test set</span></p>
-<p><span class="light-content" data-fg="white" data-bg="red" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: red;">it should follow the <em>train set</em> format BUT in the end in the submission we ask for the DIFF between two timestamps!</span></p>
-</section>
-</section>
-<section id="submission-format" class="level3">
-<h3 class="anchored" data-anchor-id="submission-format">Submission format</h3>
-<p>You should submit a CSV file with exactly all entries in the <code>submission.csv</code> with a numerical value for fuel flown for a each interval</p>
-<pre><code>flight_id,start,end,fuel_flown
-12345,"2025-04-23 04:32:23","2025-04-23 04:51:00",135.6
-12345,"2025-04-23 06:11:13","2025-04-23 07:01:10",153.2
-23456,"2025-05-01 13:21:54","2025-05-01 14:07:55",198.1
-...</code></pre>
-</section>
-</section>
-<section id="flights-list-and-trajectories-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="flights-list-and-trajectories-datasets">Flights list and Trajectories datasets</h2>
-<p>The following datasets provide essential information to use in the engineering of your model.</p>
-<section id="flight-list" class="level3">
-<h3 class="anchored" data-anchor-id="flight-list">Flight list</h3>
-<p>The following is the list of columns in <code>flightlist.csv</code>:</p>
-<ul>
-<li><code>flight_id</code>: a unique identifier for the flight between <a href="#acronyms_ADEP">Aerodrome of DEParture (ADEP)</a> and <a href="#acronyms_ADES">Aerodrome of DEStination (ADES)</a></li>
-<li><code>adep</code>: the <a href="#acronyms_ICAO">ICAO</a> code of the origin of the flight</li>
-<li><code>ades</code>: the <a href="#acronyms_ICAO">ICAO</a> code of the destination of the flight</li>
-<li><code>takeoff</code>: the <a href="#acronyms_UTC">UTC</a> timestamp of the take-off time</li>
-<li><code>landed</code>: the <a href="#acronyms_UTC">UTC</a> timestamp of the landing time</li>
-<li><code>icao24</code>: the <a href="#acronyms_ICAO">ICAO</a> 24-bit address of the airframe carrying out the flight</li>
-<li><code>aircraft_type</code>: the <a href="#acronyms_ICAO">ICAO</a> aircraft type code of the aircraft carrying out the flight</li>
-</ul>
-</section>
-<section id="trajectories" class="level3">
-<h3 class="anchored" data-anchor-id="trajectories">Trajectories</h3>
-<p>We have trajectory files for each flight…JUNZI details?</p>
-<p>Each trajectory is described by</p>
-<ul>
-<li><code>longitude</code>: longitude in <a href="#acronyms_DD">DD</a> in [-180, 180] range</li>
-<li><code>latitude</code>: latitude in <a href="#acronyms_DD">DD</a> in [-90, 90] range</li>
-<li><code>altitude</code>: altitude in feet [ft]</li>
-<li><code>timestamp</code>: timestamp with time zone</li>
-<li><code>groundspeed</code>: ground speed in knots [kt]</li>
-<li><code>track</code>: track angle in <a href="#acronyms_DD">DD</a></li>
-<li><code>track_unwrapped</code>: unwrapped track angle in <a href="#acronyms_DD">DD</a></li>
-<li><code>vertical_rate</code>: vertical rate of climb/descent (vertical_rate [ft/min])</li>
-</ul>
-
-
-</section>
-</section>
-<section id="acronyms_HEADER_LOA" class="level1 loa unnumbered">
-<h1 class="loa unnumbered">List of Acronyms</h1>
+<p>In an ER diagram</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div id="fig-er-diagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-er-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
-<p><strong><span id="acronyms_ADEP">ADEP</span></strong>: Aerodrome of DEParture</p>
-<p><strong><span id="acronyms_ADES">ADES</span></strong>: Aerodrome of DEStination</p>
-<p><strong><span id="acronyms_ADS_B">ADS-B</span></strong>: Automatic Dependent Surveillance–Broadcast</p>
-<p><strong><span id="acronyms_DD">DD</span></strong>: Decimal degrees</p>
-<p><strong><span id="acronyms_ICAO">ICAO</span></strong>: International Civil Aviation Organization</p>
-<p><strong><span id="acronyms_UTC">UTC</span></strong>: Coordinated Universal Time</p>
+<pre class="mermaid mermaid-js" data-label="fig-er-diagram">erDiagram
+    FUEL_READING {
+    }
+    FLIGHT {
+    }
+    AIRPORT {
+    }
+    TRAJECTORY_POSITION {
+    }
+
+    
+    FUEL_READING }|--||  FLIGHT : has
+    FLIGHT       }o--|{  AIRPORT : has
+    FLIGHT       ||--|{  TRAJECTORY_POSITION : has 
+
+</pre>
 </div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-er-diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="fuel-burntflown" class="level2">
+<h2 class="anchored" data-anchor-id="fuel-burntflown">Fuel Burnt/Flown</h2>
+<p>We collected fuel information (via Open-Source Intelligence (OSINT)) for flights between April and September 2025.</p>
+<p>The columns of the fuel flown/burnt dataset are (<code>d_</code> stands for delta):</p>
+<ul>
+<li><code>idx</code>: row id</li>
+<li><code>flight_id</code>: a unique identifier of the flight in the flight list</li>
+<li><code>start</code>: a time instant (UTC)</li>
+<li><code>end</code>: a time instant (UTC)</li>
+<li><code>fob_start</code>: value of fuel on board at <code>start</code></li>
+<li><code>fob_end</code>: value of fuel on board at <code>end</code></li>
+<li><code>d_fob</code>: <code>fob_end</code> - <code>fob_start</code></li>
+<li><code>likely_fob_unit</code>: likely unit of fob values</li>
+<li><code>fuel_kg</code>: fuel burnt between start and end</li>
+</ul>
+</section>
+<section id="flight-list" class="level2">
+<h2 class="anchored" data-anchor-id="flight-list">Flight list</h2>
+<p>The following is the list of columns in the flight list dataset:</p>
+<ul>
+<li><code>flight_id</code>: a unique identifier for the flight</li>
+<li><code>flight_date</code>: the date of the flight</li>
+<li><code>takeoff</code>: the UTC timestamp of the take-off time</li>
+<li><code>origin_name</code>: the name of ADEP</li>
+<li><code>origin_icao</code>: the ICAO code of the ADEP, the origin of the flight</li>
+<li><code>landed</code>: the UTC timestamp of the landing time</li>
+<li><code>destination_icao</code>: the ICAO code of the ADES, the destination of the flight</li>
+<li><code>destination_name</code>: the name of ADEP</li>
+<li><code>aircraft_type</code>: the ICAO aircraft type code of the aircraft carrying out the flight</li>
+</ul>
+</section>
+<section id="trajectories" class="level2">
+<h2 class="anchored" data-anchor-id="trajectories">Trajectories</h2>
+<p>We have trajectory files for each flight with fuel flow segments. These are (mainly) ADS-B position reports for the flights in the flight list as available in OpenSky Network historical database. These flight trajectories are possibly incomplete, i.e.&nbsp;they can lack portions. We have augmented these trajectories with positional information coming from ACARS; the <code>source</code> column would categorize the origin of the data, either <code>adsb</code> or <code>acars</code>.</p>
+<p>Each trajectory is described by (units in square brackets)</p>
+<ul>
+<li><code>flight_id</code>: an identifier for the flight (details in the flight list dataset), i.e.&nbsp;<code>prc770822360</code></li>
+<li><code>timestamp</code>: timestamp for the position report [UTC]</li>
+<li><code>longitude</code>: longitude in DD in [-180, 180] range</li>
+<li><code>latitude</code>: latitude in DD in [-90, 90] range</li>
+<li><code>altitude</code>: altitude [ft]</li>
+<li><code>groundspeed</code>: ground speed [knots, kt]</li>
+<li><code>track</code>: track angle in DD</li>
+<li><code>vertical_rate</code>: vertical rate of climb/descent [ft/min]</li>
+<li><code>mach</code>: the Mach number (from <code>source</code> = <code>acars</code>)</li>
+<li><code>typecode</code>: the ICAO aircraft type, i.e.&nbsp;<code>A21N</code> for the Airbus A321neo</li>
+<li><code>TAS</code>: <strong>T</strong>rue <strong>A</strong>ir<strong>S</strong>peed (from <code>source</code> = <code>acars</code>) [kt]</li>
+<li><code>CAS</code>: <strong>C</strong>alibrated <strong>A</strong>ir<strong>S</strong>peed (from <code>source</code> = <code>acars</code>) [kt]</li>
+<li><code>source</code>: the origin of the information; it can be <code>adsb</code> or <code>acars</code></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -683,8 +679,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./rankings.html" class="pagination-link" aria-label="Rankings">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Rankings</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./submission.html" class="pagination-link" aria-label="Submissions">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Submissions</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
