@@ -24,7 +24,7 @@
     "href": "data.html#fuel-burntflown",
     "title": "2  Data",
     "section": "",
-    "text": "idx: row id\nflight_id: a unique identifier of the flight in the flight list\nstart: a time instant (Coordinated Universal Time (UTC))\nend: a time instant (UTC)\nfob_start: value of fuel on board at start\nfob_end: value of fuel on board at end\nd_fob: fob_end - fob_start\nlikely_fob_unit: likely unit of fob values\nfuel_kg: fuel burnt between start and end",
+    "text": "idx: row id\nflight_id: a unique identifier of the flight in the flight list\nstart: a time instant (Coordinated Universal Time (UTC))\nend: a time instant (UTC)\nfuel_kg: fuel burnt between start and end",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "data.html#flight-list",
     "title": "2  Data",
     "section": "Flight list",
-    "text": "Flight list\nThe following is the list of columns in the flight list dataset:\n\nflight_id: a unique identifier for the flight\nflight_date: the date of the flight\ntakeoff: the UTC timestamp of the take-off time\norigin_name: the name of Aerodrome of DEParture (ADEP)\norigin_icao: the International Civil Aviation Organization (ICAO) code of the ADEP, the origin of the flight\nlanded: the UTC timestamp of the landing time\ndestination_icao: the ICAO code of the Aerodrome of DEStination (ADES), the destination of the flight\ndestination_name: the name of ADEP\naircraft_type: the ICAO aircraft type code of the aircraft carrying out the flight",
+    "text": "Flight list\nThe following is the list of columns in the flight list dataset:\n\nflight_id: a unique identifier for the flight\nflight_date: the date of the flight\ntakeoff: the UTC timestamp of the take-off time\norigin_icao: the International Civil Aviation Organization (ICAO) code of the Aerodrome of DEParture (ADEP), the origin of the flight\norigin_name: the name of ADEP\nlanded: the UTC timestamp of the landing time\ndestination_icao: the ICAO code of the Aerodrome of DEStination (ADES), the destination of the flight\ndestination_name: the name of ADEP\naircraft_type: the ICAO aircraft type code of the aircraft carrying out the flight",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
     ]
@@ -66,12 +66,12 @@
     "section": "",
     "text": "We provide a submission file for fuel where to fill the fuel burnt column.\nNote: each phase will have its own.\nEach team will have to submit in its own bucket.\n\nSubmission format\nYou should submit a CSV file with exactly all entries in the CSV submission file with a numerical value for the fuel flown for a each interval, like\nidx flight_id    start               end                 fuel_kg\n  0 prc770822360 2025-04-13 04:31:04 2025-04-13 05:01:04   2500 \n  1 prc770822360 2025-04-13 05:01:04 2025-04-13 05:16:04   1200.\n  2 prc770822360 2025-04-13 05:16:04 2025-04-13 05:46:04   2500 \n  3 prc770822360 2025-04-13 05:46:04 2025-04-13 06:01:04   1300 \n...",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Submissions</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Submission</span>"
     ]
   },
   {
-    "objectID": "rankings.html",
-    "href": "rankings.html",
+    "objectID": "ranking.html",
+    "href": "ranking.html",
     "title": "4  Rankings",
     "section": "",
     "text": "Leaderboard\nThe following table shows the best result per team’s submission at the deadline.\nTeam\nRank\nRMSE\nVersion\nDate\n\n\n\n\ncucu\n1\n11\n13\n2025-09-11 00:00:00\n\n\nbubu\n2\n23\n21\n2025-09-13 00:00:00",
@@ -80,21 +80,21 @@
     ]
   },
   {
-    "objectID": "rankings.html#leaderboard",
-    "href": "rankings.html#leaderboard",
+    "objectID": "ranking.html#leaderboard",
+    "href": "ranking.html#leaderboard",
     "title": "4  Rankings",
     "section": "",
-    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on Discord  channel prc-data-competition",
+    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nDiscord  channel prc-data-competition",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Rankings</span>"
     ]
   },
   {
-    "objectID": "rankings.html#criteria-for-ranking-submissions",
-    "href": "rankings.html#criteria-for-ranking-submissions",
+    "objectID": "ranking.html#criteria-for-ranking-submissions",
+    "href": "ranking.html#criteria-for-ranking-submissions",
     "title": "4  Rankings",
     "section": "Criteria for Ranking Submissions",
-    "text": "Criteria for Ranking Submissions\n\n\n\n\n\n\nAttention\n\n\n\nsomething to say in case of issues\n\n\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases of submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\n\nRanking in each phase will be based on 2 distinct submission datasets.\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made available to be published under the GNU GPLv3 license on the Challenge github account.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
+    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases of submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on submission.csv\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nranking will be based on submission-final.csv\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made available to be published under the GNU GPLv3 license on the Challenge github account.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Rankings</span>"
     ]

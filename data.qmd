@@ -56,10 +56,6 @@ The columns of the fuel flown/burnt dataset are (`d_` stands for delta):
 * `flight_id`: a unique identifier of the flight in the flight list
 * `start`: a time instant (\acr{UTC})
 * `end`: a time instant (\acr{UTC})
-* `fob_start`: value of fuel on board at `start`
-* `fob_end`: value of fuel on board at `end`
-* `d_fob`: `fob_end` - `fob_start`
-* `likely_fob_unit`: likely unit of fob values
 * `fuel_kg`: fuel burnt between start and end
 
 
@@ -70,8 +66,8 @@ The following is the list of columns in the flight list dataset:
 * `flight_id`: a unique identifier for the flight
 * `flight_date`: the date of the flight
 * `takeoff`: the \acr{UTC} timestamp of the take-off time
-* `origin_name`: the name of \acr{ADEP}
 * `origin_icao`: the \acr{ICAO} code of the \acr{ADEP}, the origin of the flight
+* `origin_name`: the name of \acr{ADEP}
 * `landed`: the \acr{UTC} timestamp of the landing time
 * `destination_icao`: the \acr{ICAO} code of the \acr{ADES}, the destination
    of the flight

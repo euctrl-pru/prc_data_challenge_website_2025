@@ -1,5 +1,5 @@
 ---
-title: "Rankings"
+title: "Ranking"
 format:
   html:
     toc: false
@@ -11,7 +11,7 @@ acronyms:
 
 
 ::: {.callout-warning title="Attention"}
-We will post URGENT/IMPORTANT news here but better to follow things up on
+We will post URGENT/IMPORTANT news here but better to follow things up on \
 [Discord {{< fa brands discord >}} channel `prc-data-competition`][prc-discord]
 :::
 
@@ -50,19 +50,16 @@ tribble(
 
 ## Criteria for Ranking Submissions
 
-::: {.callout-warning title="Attention"}
-something to say in case of issues
-:::
-
 Ranking will be based on the best RMSE of a team's submissions.
 
 
 There will be two phases of submissions:
 
-1. phase 1: till 2025-11-09T23:59:59Z
-1. phase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z
+1. phase 1: till 2025-11-09T23:59:59Z \
+   Ranking will be based on `submission.csv`
+1. phase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z \
+   ranking will be based on `submission-final.csv` 
 
-Ranking in each phase will be based on 2 distinct submission datasets.
 
 
 

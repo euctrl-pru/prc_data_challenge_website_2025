@@ -1,5 +1,5 @@
 ---
-title: "Submissions"
+title: "Submission"
 # format:
 #   html:
 #     toc: false
@@ -7,23 +7,37 @@ acronyms:
   insert_loa: false
 ---
 
-We provide a submission file for fuel where to fill the fuel burnt column.
+We provide a submission file for each phase of the Challenge,
+`submission.csv` for phase 1 and `submission-final.csv` for phase 2.
 
-**Note**: each phase will have its own.
+Each team will have to submit its predictions in its own bucket, with a
+file name template as follows (for each phase respectively)
 
+> `submission_v<incremental integer>.csv`
+> `submission-final_v<incremental integers>.csv`
 
-Each team will have to submit in its own bucket.
+The `submission.csv` (`submission-final.csv`) file looks something like
+
+```
+idx,   flight_id,                start,                 end,  fuel_kg
+  0, prc770822360, 2025-04-13 04:31:04, 2025-04-13 05:01:04,         
+  1, prc770822360, 2025-04-13 05:01:04, 2025-04-13 05:16:04,         
+  2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,         
+  3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,         
+...
+
 
 ### Submission format
 
 You should submit a CSV file with exactly all entries in the CSV submission file
-with a numerical value for the fuel flown for a each interval, like
+with a numerical value for the fuel flown/burnt `fuel_kg` for a each interval,
+like (in fact only `idx` and `fuel_kg` will be considered by the ranking script)
 
 ```
-idx flight_id    start               end                 fuel_kg
-  0 prc770822360 2025-04-13 04:31:04 2025-04-13 05:01:04   2500 
-  1 prc770822360 2025-04-13 05:01:04 2025-04-13 05:16:04   1200.
-  2 prc770822360 2025-04-13 05:16:04 2025-04-13 05:46:04   2500 
-  3 prc770822360 2025-04-13 05:46:04 2025-04-13 06:01:04   1300 
+idx,    flight_id,               start,                end,  fuel_kg
+  0, prc770822360, 2025-04-13 04:31:04, 2025-04-13 05:01:04,    250.3 
+  1, prc770822360, 2025-04-13 05:01:04, 2025-04-13 05:16:04,    120.8
+  2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,   2500 
+  3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,   1300.9 
 ...
 ```

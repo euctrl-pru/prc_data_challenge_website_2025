@@ -10,7 +10,7 @@ book:
     - index.qmd
     - data.qmd
     - submission.qmd
-    - rankings.qmd
+    - ranking.qmd
     # - teams.qmd
     - about.qmd
 
