@@ -124,13 +124,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./submission.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Submission</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Submissions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ranking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ranking</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Rankings</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -183,11 +183,42 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>The 2025 edition of the <a href="#acronyms_PRC">PRC</a> Data Challenge builds on top of the 2024 edition and proposes to build <a href="#acronyms_ML">Machine Learning (ML)</a> models to predict the <strong>amount of fuel burnt</strong> at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.</p>
-<p>An example of a flight from Amsterdam to San Francisco is shown below with the great circle trajectory in <span class="light-content" data-fg="white" data-bg="orange" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: orange;">orange</span> and the ACARS segments in <span class="light-content" data-fg="white" data-bg="blue" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: blue;">blue</span>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="media/nice_data.png" class="img-fluid figure-img"></p>
-<figcaption>Great circle (<span class="light-content" data-fg="white" data-bg="orange" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: orange;">orange</span>) and ACARS segment (<span class="light-content" data-fg="white" data-bg="blue" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: blue;">blue</span>) with fuel burnt info.</figcaption>
+<p>A couple of examples of a flights shown below with the ACARS trajectory in <span class="light-content" data-fg="white" data-bg="orange" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: orange;">orange</span> and the ADS-B one in <span class="light-content" data-fg="white" data-bg="blue" style="color: white;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: blue;">blue</span>.</p>
+<div id="fig-flights" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-flights-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-flights" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-flight-01" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-flight-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="media/flight_02.jpeg" class="img-fluid figure-img" data-ref-parent="fig-flights">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-flight-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) well coverage
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-flights" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-flight-01" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-flight-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="media/flight_01.jpeg" class="img-fluid figure-img" data-ref-parent="fig-flights">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-flight-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) less complete coverage
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-flights-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Flight trajectories in the challenge dataset.
+</figcaption>
 </figure>
 </div>
 <p>This is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a <em>challenge</em> because it is tough in its goal and in the available data, and not a mere tutorial or syntetic exercise.</p>

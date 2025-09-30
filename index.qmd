@@ -15,11 +15,19 @@ burnt** at certain intervals of the flight.
 The training dataset will consist of flight intervals and corresponding fuel
 burnt/flown amounts.
 
-An example of a flight from Amsterdam to San Francisco is shown below with 
-the great  circle trajectory in [orange]{fg="white" bg="orange"} and the ACARS
-segments in [blue]{fg="white" bg="blue"}.
+A couple of examples of a flights shown below with 
+the ACARS trajectory in [orange]{fg="white" bg="orange"} and the ADS-B
+one in [blue]{fg="white" bg="blue"}.
 
-![Great circle ([orange]{fg="white" bg="orange"}) and ACARS segment ([blue]{fg="white" bg="blue"}) with fuel burnt info.](media/nice_data.png)
+::: {#fig-flights layout-nrow=2}
+
+![well coverage](media/flight_02.jpeg){#fig-flight-01}
+
+![less complete coverage](media/flight_01.jpeg){#fig-flight-01}
+
+Flight trajectories in the challenge dataset.
+:::
+
 
 This is a data challenge that uses real data with all the inconsistencies,
 noise, holes of the real world: it is a *challenge* because it is tough 
