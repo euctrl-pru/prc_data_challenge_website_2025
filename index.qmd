@@ -54,5 +54,12 @@ in its goal and in the available data, and not a mere tutorial or syntetic
 exercise.
 
 
+## Thanks
+
+The organization of this challenge would have not been possible without the
+creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and
+the help of the *Friend of OSN*, Allan, Quinten, Martin, Rainer, Xavier and
+Kamil among them.
+
 
 [prc-discord]: <https://discord.com/channels/1252625490930307142/1304403918515605504> "Discord channel for PRC Data Challenge"
