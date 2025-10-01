@@ -1,8 +1,8 @@
 ---
 title: "Submission"
-# format:
-#   html:
-#     toc: false
+format:
+  html:
+    toc: false
 acronyms:
   insert_loa: false
 ---

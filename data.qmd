@@ -1,8 +1,9 @@
 ---
 title: "Data"
-# format:
-#   html:
-#     toc: false
+format:
+  html: 
+    toc: true
+    toc-depth: 2
 ---
 
 

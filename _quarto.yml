@@ -14,8 +14,6 @@ book:
     - teams.qmd
     - about.qmd
 
-
-
 format:
   html:
     theme: cosmo
