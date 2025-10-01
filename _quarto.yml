@@ -11,7 +11,7 @@ book:
     - data.qmd
     - submission.qmd
     - ranking.qmd
-    # - teams.qmd
+    - teams.qmd
     - about.qmd
 
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Submission – PRC Data Challenge</title>
+<title>5&nbsp; Teams – PRC Data Challenge</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./ranking.html" rel="next">
-<link href="./data.html" rel="prev">
+<link href="./about.html" rel="next">
+<link href="./ranking.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="media/styles.css">
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-sidebar floating fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./submission.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Submission</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./teams.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Teams</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -122,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./submission.html" class="sidebar-item-text sidebar-link active">
+  <a href="./submission.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Submission</span></span></a>
   </div>
 </li>
@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./teams.html" class="sidebar-item-text sidebar-link">
+  <a href="./teams.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Teams</span></span></a>
   </div>
 </li>
@@ -149,21 +149,13 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#submission-format" id="toc-submission-format" class="nav-link active" data-scroll-target="#submission-format">Submission format</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Submission</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Teams</span></h1>
 </div>
 
 
@@ -180,32 +172,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>We provide a submission file for each phase of the Challenge, <code>submission.csv</code> for phase 1 and <code>submission-final.csv</code> for phase 2. These have companion trajectories and flight list.</p>
-<p>Each team will have to submit its predictions in its own bucket, with a file name template as follows (for each phase respectively)</p>
-<blockquote class="blockquote">
-<p><code>submission_v&lt;incremental integer&gt;.csv</code> <code>submission-final_v&lt;incremental integers&gt;.csv</code></p>
-</blockquote>
-<p>The <code>submission.csv</code> (<code>submission-final.csv</code>) file looks something like</p>
-<pre><code>idx,   flight_id,                start,                 end,  fuel_kg
-  0, prc770822360, 2025-04-13 04:31:04, 2025-04-13 05:01:04,         
-  1, prc770822360, 2025-04-13 05:01:04, 2025-04-13 05:16:04,         
-  2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,         
-  3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,         
-...</code></pre>
-<section id="submission-format" class="level3">
-<h3 class="anchored" data-anchor-id="submission-format">Submission format</h3>
-<p>You should submit a CSV file with exactly all entries in the CSV submission file with a numerical value for the fuel flown/burnt <code>fuel_kg</code> for a each interval, like:</p>
-<pre><code>idx,    flight_id,               start,                end,  fuel_kg
-  0, prc770822360, 2025-04-13 04:31:04, 2025-04-13 05:01:04,    250.3 
-  1, prc770822360, 2025-04-13 05:01:04, 2025-04-13 05:16:04,    120.8
-  2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,   2500 
-  3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,   1300.9 
-...</code></pre>
-<p>In fact only <code>idx</code> and <code>fuel_kg</code> will be considered by the ranking script when calculating the RMSE.</p>
-<p>Missing rows will be given a value of <code>0</code> (zero).</p>
+<p>This will contain registered teams details as per application form. This page is automatically generated from the details in the registration.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -609,13 +578,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./data.html" class="pagination-link" aria-label="Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span>
+      <a href="./ranking.html" class="pagination-link" aria-label="Ranking">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ranking</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ranking.html" class="pagination-link" aria-label="Ranking">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Ranking</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./about.html" class="pagination-link" aria-label="About">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">About</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

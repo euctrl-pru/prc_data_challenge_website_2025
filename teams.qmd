@@ -1,0 +1,12 @@
+---
+title: "Teams"
+format:
+  html:
+    toc: false
+acronyms:
+  insert_loa: false
+---
+
+
+This will contain registered teams details as per application form.
+This page is automatically generated from the details in the registration.

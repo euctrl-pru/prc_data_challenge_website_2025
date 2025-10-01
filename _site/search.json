@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "PRC Data Challenge",
     "section": "",
-    "text": "The Performance Review Commission (PRC) aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\n\n\n\nPRC Data Challenge\n\n\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nCheck the conditions for eligibility for prize and then fill the following team creation request form!\n\n\nRequest Team Creation!\n(The participation is open to all but for teams from Russia and Belarus.)\n\nFollow up the data challenge on OSN’s Discord  channel #prc-data-competition.\nBelow you can find a couple of plots of flights showing the ACARS trajectory in red and the ADS-B one in blue.\n\n\n\n\n\n\n\n\n\n\n\n(a) well coverage\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) less complete coverage\n\n\n\n\n\n\n\nFigure 1: Flight trajectories in the challenge dataset.\n\n\n\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or syntetic exercise.\n\n\n\nList of Acronyms\n\nML: Machine Learning\nPRC: Performance Review Commission",
+    "text": "The Performance Review Commission (PRC) aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\n\n\n\nPRC Data Challenge\n\n\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nCheck the conditions for eligibility for prize and then fill the following team creation request form!\n\n\nRequest Team Creation!\n(The participation is open to all but for teams from Russia and Belarus.)\n\nYour request will be processed and you will then receive the relevant info to access the datasets and be able to submit your predictions.\nRemember to follow up the data challenge on OSN’s Discord  channel #prc-data-competition.\n\nBelow you can find a couple of plots of flights showing the ACARS trajectory in red and the ADS-B one in blue.\n\n\n\n\n\n\n\n\n\n\n\n(a) well coverage\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) less complete coverage\n\n\n\n\n\n\n\nFigure 1: Flight trajectories in the challenge dataset.\n\n\n\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or syntetic exercise.\n\n\n\nList of Acronyms\n\nML: Machine Learning\nPRC: Performance Review Commission",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>PRC Data Challenge 2025</span>"
     ]
@@ -62,11 +62,11 @@
   {
     "objectID": "submission.html",
     "href": "submission.html",
-    "title": "3  Submissions",
+    "title": "3  Submission",
     "section": "",
-    "text": "We provide a submission file for fuel where to fill the fuel burnt column.\nNote: each phase will have its own.\nEach team will have to submit in its own bucket.\n\nSubmission format\nYou should submit a CSV file with exactly all entries in the CSV submission file with a numerical value for the fuel flown for a each interval, like\nidx flight_id    start               end                 fuel_kg\n  0 prc770822360 2025-04-13 04:31:04 2025-04-13 05:01:04   2500 \n  1 prc770822360 2025-04-13 05:01:04 2025-04-13 05:16:04   1200.\n  2 prc770822360 2025-04-13 05:16:04 2025-04-13 05:46:04   2500 \n  3 prc770822360 2025-04-13 05:46:04 2025-04-13 06:01:04   1300 \n...",
+    "text": "We provide a submission file for each phase of the Challenge, submission.csv for phase 1 and submission-final.csv for phase 2. These have companion trajectories and flight list.\nEach team will have to submit its predictions in its own bucket, with a file name template as follows (for each phase respectively)\n\nsubmission_v&lt;incremental integer&gt;.csv submission-final_v&lt;incremental integers&gt;.csv\n\nThe submission.csv (submission-final.csv) file looks something like\nidx,   flight_id,                start,                 end,  fuel_kg\n  0, prc770822360, 2025-04-13 04:31:04, 2025-04-13 05:01:04,         \n  1, prc770822360, 2025-04-13 05:01:04, 2025-04-13 05:16:04,         \n  2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,         \n  3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,         \n...\n\nSubmission format\nYou should submit a CSV file with exactly all entries in the CSV submission file with a numerical value for the fuel flown/burnt fuel_kg for a each interval, like:\nidx,    flight_id,               start,                end,  fuel_kg\n  0, prc770822360, 2025-04-13 04:31:04, 2025-04-13 05:01:04,    250.3 \n  1, prc770822360, 2025-04-13 05:01:04, 2025-04-13 05:16:04,    120.8\n  2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,   2500 \n  3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,   1300.9 \n...\nIn fact only idx and fuel_kg will be considered by the ranking script when calculating the RMSE.\nMissing rows will be given a value of 0 (zero).",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Submissions</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Submission</span>"
     ]
   },
   {
@@ -100,13 +100,23 @@
     ]
   },
   {
+    "objectID": "teams.html",
+    "href": "teams.html",
+    "title": "5  Teams",
+    "section": "",
+    "text": "This will contain registered teams details as per application form. This page is automatically generated from the details in the registration.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "5  About",
+    "title": "6  About",
     "section": "",
     "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European Air Traffic Management (ATM) performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of\nReference and Rules of\nProcedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nATM: Air Traffic Management\nPRC: Performance Review Commission",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>About</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>About</span>"
     ]
   }
 ]

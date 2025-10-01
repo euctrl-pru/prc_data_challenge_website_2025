@@ -9,6 +9,7 @@ acronyms:
 
 We provide a submission file for each phase of the Challenge,
 `submission.csv` for phase 1 and `submission-final.csv` for phase 2.
+These have companion trajectories and flight list.
 
 Each team will have to submit its predictions in its own bucket, with a
 file name template as follows (for each phase respectively)
@@ -25,13 +26,13 @@ idx,   flight_id,                start,                 end,  fuel_kg
   2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,         
   3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,         
 ...
-
+```
 
 ### Submission format
 
 You should submit a CSV file with exactly all entries in the CSV submission file
 with a numerical value for the fuel flown/burnt `fuel_kg` for a each interval,
-like (in fact only `idx` and `fuel_kg` will be considered by the ranking script)
+like:
 
 ```
 idx,    flight_id,               start,                end,  fuel_kg
@@ -41,3 +42,8 @@ idx,    flight_id,               start,                end,  fuel_kg
   3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,   1300.9 
 ...
 ```
+
+In fact only `idx` and `fuel_kg` will be considered by the ranking script when
+calculating the RMSE.
+
+Missing rows will be given a value of `0` (zero).

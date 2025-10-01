@@ -24,9 +24,15 @@ and then fill the following team creation request form!\
 [(The participation is open to all but for teams from Russia and Belarus.)]{.small }
 :::
 
-Follow up the data challenge on OSN's Discord {{< fa brands discord >}} channel [`#prc-data-competition`][prc-discord].
+Your request will be processed and you will then receive the relevant info to
+access the datasets and be able to submit your predictions.
 
 
+Remember to follow up the data challenge on OSN's Discord
+{{< fa brands discord >}} channel [`#prc-data-competition`][prc-discord].
+
+
+--------------------------
 
 Below you can find a couple of plots of flights showing 
 the ACARS trajectory in [**red**]{fg="white" bg="red"} and the ADS-B
