@@ -40,7 +40,7 @@ erDiagram
 
 The temporal extent of the datasets covers the period Apr - Oct 2025.
 
-* Apr - Aug: training dataset
+* Apr - Aug 2025: training dataset (3.1GiB)
 * Sep 2025: phase 1 submission / ranking
 * Oct 2025: phase 2 submission / final ranking
 
