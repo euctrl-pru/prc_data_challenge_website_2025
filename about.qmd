@@ -1,0 +1,25 @@
+---
+title: "About"
+#acronyms:
+#  insert_loa: false
+#  insert_links: false
+---
+This website describes the PRC Data Challenge, an initiative by the \acr{PRC}.
+
+The Performance Review Commission was established in 1998 by EUROCONTROL’s
+Permanent Commission.
+It provides **objective** information and **independent** advice to EUROCONTROL’s
+governing bodies on European \acr{ATM} performance, based on extensive research,
+data analysis and consultation with stakeholders.
+Its purpose is “*to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review*” [Article 1 of @prc-tor].
+
+You can find further details in the [AIU Portal PRC page][prcpage].
+
+[prcpage]: <https://ansperformance.eu/about/prc/> "PRC page"
+
+
+
+### References
+
+::: {#refs}
+:::
