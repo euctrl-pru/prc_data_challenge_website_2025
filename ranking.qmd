@@ -63,7 +63,7 @@ There will be two phases of submissions:
 
 
 
-### Eligibility for Prize
+### Eligibility for Prize {#eligibility}
 
 The winning submissions/solutions will only be eligible for the awards if
 

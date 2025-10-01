@@ -15,9 +15,22 @@ burnt** at certain intervals of the flight.
 The training dataset will consist of flight intervals and corresponding fuel
 burnt/flown amounts.
 
-A couple of examples of a flights shown below with 
-the ACARS trajectory in [orange]{fg="white" bg="orange"} and the ADS-B
-one in [blue]{fg="white" bg="blue"}.
+Check the conditions for [eligibility for prize](ranking.qmd#eligibility)
+and then fill the following team creation request form!\
+
+
+:::{.container .text-center}
+[Request Team Creation!](https://forms.gle/r4EJQf8mh7BT7jUx6){.btn .btn-primary .btn-lg role="button" data-toggle="tooltip" title="Request Team Creation" target="_blank"}  
+[(The participation is open to all but for teams from Russia and Belarus.)]{.small }
+:::
+
+Follow up the data challenge on OSN's Discord {{< fa brands discord >}} channel [`#prc-data-competition`][prc-discord].
+
+
+
+Below you can find a couple of plots of flights showing 
+the ACARS trajectory in [**red**]{fg="white" bg="red"} and the ADS-B
+one in [**blue**]{fg="white" bg="blue"}.
 
 ::: {#fig-flights layout-nrow=2}
 
@@ -33,8 +46,6 @@ This is a data challenge that uses real data with all the inconsistencies,
 noise, holes of the real world: it is a *challenge* because it is tough 
 in its goal and in the available data, and not a mere tutorial or syntetic
 exercise.
-
-Follow up the data challenge on OSN [Discord {{< fa brands discord >}} channel `prc-data-competition`][prc-discord].
 
 
 

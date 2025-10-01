@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "PRC Data Challenge",
     "section": "",
-    "text": "The Performance Review Commission (PRC) aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\n\n\n\nPRC Data Challenge\n\n\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nA couple of examples of a flights shown below with the ACARS trajectory in orange and the ADS-B one in blue.\n\n\n\n\n\n\n\n\n\n\n\n(a) well coverage\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) less complete coverage\n\n\n\n\n\n\n\nFigure 1: Flight trajectories in the challenge dataset.\n\n\n\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or syntetic exercise.\nFollow up the data challenge on OSN Discord  channel prc-data-competition.\n\n\n\nList of Acronyms\n\nML: Machine Learning\nPRC: Performance Review Commission",
+    "text": "The Performance Review Commission (PRC) aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\n\n\n\nPRC Data Challenge\n\n\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nCheck the conditions for eligibility for prize and then fill the following team creation request form!\n\n\nRequest Team Creation!\n(The participation is open to all but for teams from Russia and Belarus.)\n\nFollow up the data challenge on OSN’s Discord  channel #prc-data-competition.\nBelow you can find a couple of plots of flights showing the ACARS trajectory in red and the ADS-B one in blue.\n\n\n\n\n\n\n\n\n\n\n\n(a) well coverage\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) less complete coverage\n\n\n\n\n\n\n\nFigure 1: Flight trajectories in the challenge dataset.\n\n\n\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or syntetic exercise.\n\n\n\nList of Acronyms\n\nML: Machine Learning\nPRC: Performance Review Commission",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>PRC Data Challenge 2025</span>"
     ]
@@ -76,7 +76,7 @@
     "section": "",
     "text": "Leaderboard\nThe following table shows the best result per team’s submission at the deadline.\nTeam\nRank\nRMSE\nVersion\nDate\n\n\n\n\ncucu\n1\n11\n13\n2025-09-11 00:00:00\n\n\nbubu\n2\n23\n21\n2025-09-13 00:00:00",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Rankings</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ranking</span>"
     ]
   },
   {
@@ -86,7 +86,7 @@
     "section": "",
     "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nDiscord  channel prc-data-competition",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Rankings</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ranking</span>"
     ]
   },
   {
@@ -96,7 +96,7 @@
     "section": "Criteria for Ranking Submissions",
     "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases of submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on submission.csv\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nranking will be based on submission-final.csv\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made available to be published under the GNU GPLv3 license on the Challenge github account.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Rankings</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ranking</span>"
     ]
   },
   {
