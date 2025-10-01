@@ -15,6 +15,8 @@ burnt** at certain intervals of the flight.
 The training dataset will consist of flight intervals and corresponding fuel
 burnt/flown amounts.
 
+The competition runs (in two phases) from 1st Oct till 30th Nov 2025.  
+The total amount for the first 3 teams is 5000 EUR.  
 Check the conditions for [eligibility for prize](ranking.qmd#eligibility)
 and then fill the following team creation request form!\
 
@@ -50,7 +52,7 @@ Flight trajectories in the challenge dataset.
 
 This is a data challenge that uses real data with all the inconsistencies,
 noise, holes of the real world: it is a *challenge* because it is tough 
-in its goal and in the available data, and not a mere tutorial or syntetic
+in its goal and in the available data, and not a mere tutorial or synthetic
 exercise.
 
 
