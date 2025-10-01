@@ -1,0 +1,97 @@
+---
+title: "Ranking"
+format:
+  html:
+    toc: false
+acronyms:
+  insert_loa: false
+---
+
+## Leaderboard
+
+
+::: {.callout-warning title="Attention"}
+We will post URGENT/IMPORTANT news here but better to follow things up on \
+[Discord {{< fa brands discord >}} channel `prc-data-competition`][prc-discord]
+:::
+
+
+The following table shows the best result per team's submission at the deadline.
+
+
+```{r}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(ggplot2)
+library(jsonlite)
+library(here)
+library(gt)
+
+tribble(
+  ~team, ~rank, ~rmse, ~date, ~version,
+  "cucu", 1, 11, "2025-09-11", 13,
+  "bubu", 2, 23, "2025-09-13", 21
+) |> 
+  gt() |>
+  cols_label(
+    rmse = md("**RMSE**"),
+    rank = md("**Rank**"),
+    team = md("**Team**"),
+    date = md("**Date**"),
+    version = md("**Version**")
+  ) |>
+  fmt_datetime(columns = date) |>
+  cols_move_to_end(date)
+```
+
+
+
+
+## Criteria for Ranking Submissions
+
+Ranking will be based on the best RMSE of a team's submissions.
+
+
+There will be two phases of submissions:
+
+1. phase 1: till **2025-11-09T23:59:59Z** \
+   Ranking will be based on `submission.csv`
+1. phase 2: from **2025-11-10T00:00:00Z** till **2025-11-30T23:59:59Z** \
+   ranking will be based on `submission-final.csv` 
+
+
+
+
+### Eligibility for Prize {#eligibility}
+
+The winning submissions/solutions will only be eligible for the awards if
+
+* all source code and additional data sets used will be made available to be
+  published under the **GNU GPLv3 license** on the Challenge github account.
+* sufficient documentation is provided to understand and reproduce the results.
+* the solution is _original_: teams must use their own original solutions.
+  Re-using any existing implementation is only allowed if the original authors 
+  grant you the rights to use their solution and if you made significant
+  modifications to the algorithm or model.
+  In particular, simply re-using existing code and rewriting the data input and 
+  output mechanism is not sufficient. Adding parameters to the model and 
+  modifying filters to match the specific peculiarities of the data, however,
+  can be considered sufficient. 
+
+
+### Final Prize 
+
+The Selection Committee will review and discuss the top ranking teams and
+select final Awardees considering
+
+1. their final ranking score,
+1. the originality of the proposed model
+1. the open availability of the code and the relevant documentation provided.
+
+By participating in the Challenge, you agree to be bound by the final decision
+of the PRC Data Challenge selection committee. 
+
+
+
+[prc-discord]: <https://discord.com/channels/1252625490930307142/1304403918515605504> "Discord channel for PRC Data Challenge"

@@ -7,3 +7,59 @@ Aviation background, to team up and compete to solve a (big-ish) Data Challenge
 of interest to the wider Aviation community using open data and openly sharing
 final solutions.
 
+![PRC Data Challenge](media/prc_dc25-01.jpg)
+
+The 2025 edition of the \acr{PRC} Data Challenge builds on top of the 2024
+edition and proposes to build \acr{ML} models to predict the **amount of fuel
+burnt** at certain intervals of the flight.
+The training dataset will consist of flight intervals and corresponding fuel
+burnt/flown amounts.
+
+Check the conditions for [eligibility for prize](ranking.qmd#eligibility)
+and then fill the following team creation request form!\
+
+
+:::{.container .text-center}
+[Request Team Creation!](https://forms.gle/r4EJQf8mh7BT7jUx6){.btn .btn-primary .btn-lg role="button" data-toggle="tooltip" title="Request Team Creation" target="_blank"}  
+[(The participation is open to all but for teams from Russia and Belarus.)]{.small }
+:::
+
+Your request will be processed and you will then receive the relevant info to
+access the datasets and be able to submit your predictions.
+
+
+Remember to follow up the data challenge on OSN's Discord
+{{< fa brands discord >}} channel [`#prc-data-competition`][prc-discord].
+
+
+--------------------------
+
+Below you can find a couple of plots of flights showing 
+the ACARS trajectory in [**red**]{fg="white" bg="red"} and the ADS-B
+one in [**blue**]{fg="white" bg="blue"}.
+
+::: {#fig-flights layout-nrow=2}
+
+![well coverage](media/flight_02.jpeg){#fig-flight-01}
+
+![less complete coverage](media/flight_01.jpeg){#fig-flight-01}
+
+Flight trajectories in the challenge dataset.
+:::
+
+
+This is a data challenge that uses real data with all the inconsistencies,
+noise, holes of the real world: it is a *challenge* because it is tough 
+in its goal and in the available data, and not a mere tutorial or syntetic
+exercise.
+
+
+## Thanks
+
+The organization of this challenge would have not been possible without the
+creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and
+the help of the *Friend of OSN*, Allan, Quinten, Martin, Rainer, Xavier and
+Kamil among them.
+
+
+[prc-discord]: <https://discord.com/channels/1252625490930307142/1304403918515605504> "Discord channel for PRC Data Challenge"

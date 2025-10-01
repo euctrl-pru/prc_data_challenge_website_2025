@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.0"
+   width="380pt"
+   height="380pt"
+   viewBox="0 0 380 380"
+   preserveAspectRatio="xMidYMid"
+   id="svg1"
+   sodipodi:docname="airport.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     inkscape:zoom="0.066055046"
+     inkscape:cx="257.36111"
+     inkscape:cy="249.79167"
+     inkscape:window-width="1104"
+     inkscape:window-height="668"
+     inkscape:window-x="597"
+     inkscape:window-y="159"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <metadata
+     id="metadata1">
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+</metadata>
+  <g
+     transform="matrix(0.1,0,0,-0.1,-173,464)"
+     fill="#000000"
+     stroke="none"
+     id="g1">
+    <path
+       d="m 3550,4440 v -199 l -32,-5 c -145,-20 -242,-41 -325,-67 -524,-168 -914,-610 -1013,-1149 -11,-58 -22,-126 -25,-152 l -6,-48 h -210 -209 v -90 -90 h 209 c 208,0 209,0 215,-22 3,-13 6,-36 6,-51 0,-16 9,-73 20,-126 111,-543 492,-973 1013,-1140 83,-26 180,-47 325,-67 l 32,-5 V 1035 840 h 90 90 v 195 194 l 33,5 c 144,20 241,41 324,67 521,167 902,597 1013,1140 11,53 20,110 20,126 0,15 3,38 6,51 6,22 7,22 205,22 h 199 v 90 90 h -199 -200 l -6,48 c -3,26 -14,94 -25,152 -99,539 -489,981 -1013,1149 -83,26 -180,47 -324,67 l -33,5 v 199 200 h -90 -90 z m 335,-405 c 760,-158 1223,-917 1014,-1663 -133,-473 -527,-838 -1013,-937 -111,-22 -402,-23 -511,0 -760,157 -1223,917 -1014,1663 141,502 576,879 1095,951 97,14 334,6 429,-14 z"
+       id="path1" />
+  </g>
+</svg>

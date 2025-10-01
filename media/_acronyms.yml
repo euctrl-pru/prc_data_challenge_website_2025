@@ -13,6 +13,8 @@ acronyms:
       longname: Actual Off-Block Time
     - shortname: ARVT
       longname: ARriVal Time
+    - shortname: ATM
+      longname: Air Traffic Management
     - shortname: ATOW
       longname: Actual TakeOff Weight
     - shortname: DD
