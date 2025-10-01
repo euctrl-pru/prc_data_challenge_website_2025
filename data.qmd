@@ -50,6 +50,8 @@ The temporal extent of the datasets covers the period Apr - Oct 2025.
 We collected fuel information (via Open-Source Intelligence (OSINT)) for
 flights between April and September 2025.
 
+Dataset: `fuel_train.parquet`
+
 The columns of the fuel flown/burnt dataset are (`d_` stands for delta): 
 
 * `idx`: row id
@@ -60,6 +62,9 @@ The columns of the fuel flown/burnt dataset are (`d_` stands for delta):
 
 
 ## Flight list
+
+Dataset: `flightlist_train.parquet`
+
 
 The following is the list of columns in the flight list dataset:
 
@@ -78,6 +83,8 @@ The following is the list of columns in the flight list dataset:
 
 
 ## Trajectories
+
+Dataset: `flights_train/<flight_id>.parquet`
 
 We have trajectory files for each flight with fuel flow segments.
 These are (mainly) \acr{ADS-B} position reports for the flights in
@@ -104,7 +111,11 @@ Each trajectory is described by (units in square brackets)
 * `CAS`: **C**alibrated **A**ir**S**peed (from `source` = `acars`) [kt]
 * `source`: the origin of the information; it can be `adsb` or `acars`
 
+
+
 ## Airports
+
+Dataset: `apt.parquet`
 
 The airports dataset provides complementary positions as follows:
 

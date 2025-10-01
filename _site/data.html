@@ -235,6 +235,7 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 <section id="fuel-burntflown" class="level2">
 <h2 class="anchored" data-anchor-id="fuel-burntflown">Fuel Burnt/Flown</h2>
 <p>We collected fuel information (via Open-Source Intelligence (OSINT)) for flights between April and September 2025.</p>
+<p>Dataset: <code>fuel_train.parquet</code></p>
 <p>The columns of the fuel flown/burnt dataset are (<code>d_</code> stands for delta):</p>
 <ul>
 <li><code>idx</code>: row id</li>
@@ -246,6 +247,7 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 </section>
 <section id="flight-list" class="level2">
 <h2 class="anchored" data-anchor-id="flight-list">Flight list</h2>
+<p>Dataset: <code>flightlist_train.parquet</code></p>
 <p>The following is the list of columns in the flight list dataset:</p>
 <ul>
 <li><code>flight_id</code>: a unique identifier for the flight</li>
@@ -261,6 +263,7 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 </section>
 <section id="trajectories" class="level2">
 <h2 class="anchored" data-anchor-id="trajectories">Trajectories</h2>
+<p>Dataset: <code>flights_train/&lt;flight_id&gt;.parquet</code></p>
 <p>We have trajectory files for each flight with fuel flow segments. These are (mainly) <a href="#acronyms_ADS_B">Automatic Dependent Surveillance–Broadcast (ADS-B)</a> position reports for the flights in the flight list as available in OpenSky Network historical database. These flight trajectories are possibly incomplete, i.e.&nbsp;they can lack portions. We have augmented these trajectories with positional information coming from ACARS; the <code>source</code> column would categorize the origin of the data, either <code>adsb</code> or <code>acars</code>.</p>
 <p>Each trajectory is described by (units in square brackets)</p>
 <ul>
@@ -281,6 +284,7 @@ Figure&nbsp;2.1: Entity-Relationship diagram for PRC Data Challenge.
 </section>
 <section id="airports" class="level2">
 <h2 class="anchored" data-anchor-id="airports">Airports</h2>
+<p>Dataset: <code>apt.parquet</code></p>
 <p>The airports dataset provides complementary positions as follows:</p>
 <ul>
 <li><code>icao</code>: the <a href="#acronyms_ICAO">ICAO</a> code of the airport</li>

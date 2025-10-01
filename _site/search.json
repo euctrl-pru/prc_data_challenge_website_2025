@@ -14,7 +14,7 @@
     "href": "data.html",
     "title": "2  Data",
     "section": "",
-    "text": "Fuel Burnt/Flown\nWe provide the following (logical) data sets:\nIn an ER diagram\nThe temporal extent of the datasets covers the period Apr - Oct 2025.\nWe collected fuel information (via Open-Source Intelligence (OSINT)) for flights between April and September 2025.\nThe columns of the fuel flown/burnt dataset are (d_ stands for delta):",
+    "text": "Fuel Burnt/Flown\nWe provide the following (logical) data sets:\nIn an ER diagram\nThe temporal extent of the datasets covers the period Apr - Oct 2025.\nWe collected fuel information (via Open-Source Intelligence (OSINT)) for flights between April and September 2025.\nDataset: fuel_train.parquet\nThe columns of the fuel flown/burnt dataset are (d_ stands for delta):",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
     ]
@@ -34,7 +34,7 @@
     "href": "data.html#flight-list",
     "title": "2  Data",
     "section": "Flight list",
-    "text": "Flight list\nThe following is the list of columns in the flight list dataset:\n\nflight_id: a unique identifier for the flight\nflight_date: the date of the flight\ntakeoff: the UTC timestamp of the take-off time\norigin_icao: the International Civil Aviation Organization (ICAO) code of the Aerodrome of DEParture (ADEP), the origin of the flight\norigin_name: the name of ADEP\nlanded: the UTC timestamp of the landing time\ndestination_icao: the ICAO code of the Aerodrome of DEStination (ADES), the destination of the flight\ndestination_name: the name of ADEP\naircraft_type: the ICAO aircraft type code of the aircraft carrying out the flight",
+    "text": "Flight list\nDataset: flightlist_train.parquet\nThe following is the list of columns in the flight list dataset:\n\nflight_id: a unique identifier for the flight\nflight_date: the date of the flight\ntakeoff: the UTC timestamp of the take-off time\norigin_icao: the International Civil Aviation Organization (ICAO) code of the Aerodrome of DEParture (ADEP), the origin of the flight\norigin_name: the name of ADEP\nlanded: the UTC timestamp of the landing time\ndestination_icao: the ICAO code of the Aerodrome of DEStination (ADES), the destination of the flight\ndestination_name: the name of ADEP\naircraft_type: the ICAO aircraft type code of the aircraft carrying out the flight",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
     ]
@@ -44,7 +44,7 @@
     "href": "data.html#trajectories",
     "title": "2  Data",
     "section": "Trajectories",
-    "text": "Trajectories\nWe have trajectory files for each flight with fuel flow segments. These are (mainly) Automatic Dependent Surveillance–Broadcast (ADS-B) position reports for the flights in the flight list as available in OpenSky Network historical database. These flight trajectories are possibly incomplete, i.e. they can lack portions. We have augmented these trajectories with positional information coming from ACARS; the source column would categorize the origin of the data, either adsb or acars.\nEach trajectory is described by (units in square brackets)\n\nflight_id: an identifier for the flight (details in the flight list dataset), i.e. prc770822360\ntimestamp: timestamp for the position report [UTC]\nlongitude: longitude in Decimal degrees (DD) in [-180, 180] range\nlatitude: latitude in DD in [-90, 90] range\naltitude: altitude [ft]\ngroundspeed: ground speed [knots, kt]\ntrack: track angle in DD\nvertical_rate: vertical rate of climb/descent [ft/min]\nmach: the Mach number (from source = acars)\ntypecode: the ICAO aircraft type, i.e. A21N for the Airbus A321neo\nTAS: True AirSpeed (from source = acars) [kt]\nCAS: Calibrated AirSpeed (from source = acars) [kt]\nsource: the origin of the information; it can be adsb or acars",
+    "text": "Trajectories\nDataset: flights_train/&lt;flight_id&gt;.parquet\nWe have trajectory files for each flight with fuel flow segments. These are (mainly) Automatic Dependent Surveillance–Broadcast (ADS-B) position reports for the flights in the flight list as available in OpenSky Network historical database. These flight trajectories are possibly incomplete, i.e. they can lack portions. We have augmented these trajectories with positional information coming from ACARS; the source column would categorize the origin of the data, either adsb or acars.\nEach trajectory is described by (units in square brackets)\n\nflight_id: an identifier for the flight (details in the flight list dataset), i.e. prc770822360\ntimestamp: timestamp for the position report [UTC]\nlongitude: longitude in Decimal degrees (DD) in [-180, 180] range\nlatitude: latitude in DD in [-90, 90] range\naltitude: altitude [ft]\ngroundspeed: ground speed [knots, kt]\ntrack: track angle in DD\nvertical_rate: vertical rate of climb/descent [ft/min]\nmach: the Mach number (from source = acars)\ntypecode: the ICAO aircraft type, i.e. A21N for the Airbus A321neo\nTAS: True AirSpeed (from source = acars) [kt]\nCAS: Calibrated AirSpeed (from source = acars) [kt]\nsource: the origin of the information; it can be adsb or acars",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
     ]
@@ -54,7 +54,7 @@
     "href": "data.html#airports",
     "title": "2  Data",
     "section": "Airports",
-    "text": "Airports\nThe airports dataset provides complementary positions as follows:\n\nicao: the ICAO code of the airport\nlongitude: the airport longitude in DD in [-180, 180] range\nlatitude: the airport latitude in DD in [-90, 90] range\nelevation: the airport elevation [ft]",
+    "text": "Airports\nDataset: apt.parquet\nThe airports dataset provides complementary positions as follows:\n\nicao: the ICAO code of the airport\nlongitude: the airport longitude in DD in [-180, 180] range\nlatitude: the airport latitude in DD in [-90, 90] range\nelevation: the airport elevation [ft]",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
     ]
