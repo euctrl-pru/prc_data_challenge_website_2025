@@ -31,8 +31,8 @@ access the datasets and be able to submit your predictions.
 
 
 Remember to follow up the data challenge on OSN's Discord
-{{< fa brands discord >}} channel [`#prc-data-competition`][prc-discord].
-
+{{< fa brands discord >}} channel [`#prc-data-competition`][prc-discord].  
+(if not already done, you need to access [OSN Discord server](https://discord.gg/RPh89jpVVz) first)
 
 --------------------------
 
