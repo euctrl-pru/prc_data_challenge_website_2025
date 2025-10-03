@@ -26,9 +26,12 @@ and then fill the following team creation request form!\
 [(The participation is open to all but for teams from Russia and Belarus.)]{.small }
 :::
 
-Your request will be processed and you will then receive the relevant info to
-access the datasets and be able to submit your predictions.
 
+::: {.callout-warning title="Attention"}
+Your request will be assessed and eventually approved.   
+You will receive a **verification email** and, upon verification, the relevant
+access keys to the datasets/buckets.
+:::
 
 Remember to follow up the data challenge on OSN's Discord
 {{< fa brands discord >}} channel [`#prc-data-competition`][prc-discord].  
