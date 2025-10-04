@@ -1,7 +1,6 @@
 library(conflicted)
 library(tidyverse)
 library(here)
-library(purrrlyr)
 library(fs)
 
 conflicts_prefer(dplyr::filter)
@@ -26,17 +25,3 @@ teams_limbo <- teams_raw |> get_teams_limbo()
 teams_valid <- teams_raw |> get_teams_valid()
 
 members <- teams_raw |> get_teams_members()
-
-
-#########################
-# GENERATE Teams' pages #
-#########################
-teams_valid |>
-  # filter(row_number() < 10) |>
-  by_row(generate_team_page)
-
-"teams" |>
-  dir_ls() |>
-  as_tibble() |>
-  str_glue_data("{{{{< include {value}  >}}}}") |>
-  write_lines("_teams.qmd")

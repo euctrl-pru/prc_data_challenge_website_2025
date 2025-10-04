@@ -1,3 +1,11 @@
 # PRC Data Challenge website edition 2025
 
-Generate the Teams' pages via the code in `R/manage_teams.R`.
+## Regenerate Teams pages
+
+Run the following command
+
+```shell
+$ just regenerate-teams-pages
+```
+
+## Manage Teams
