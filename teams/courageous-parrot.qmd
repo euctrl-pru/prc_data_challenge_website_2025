@@ -5,6 +5,7 @@ working on real datasets with ML libraries on GPUs
 
 ### Details
 
+* Number of team members: 2
 * Type: Academia
 * Affiliation: ENI-Carthage
 * Country: Tunisia

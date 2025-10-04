@@ -7,7 +7,7 @@ library(janitor)
 
 
 # generate QMD page for one team
-generate_team_page <- function(team, members = c()) {
+generate_team_page <- function(team, members = NULL) {
   page <- "
   ## {name}
 
@@ -16,6 +16,7 @@ generate_team_page <- function(team, members = c()) {
 
   ### Details
   
+  * Number of team members: {num}
   * Type: {type}
   * Affiliation: {affiliation}
   * Country: {country}
@@ -28,7 +29,8 @@ generate_team_page <- function(team, members = c()) {
     description = team["team_description"],
     affiliation = team["team_affiliation"],
     type = team["team_type"],
-    country = team["team_country"]
+    country = team["team_country"],
+    num = team["extra_members"] |> as.integer() |> magrittr::add(1L)
   ) |>
     write_lines(here("teams", paste0(team["team_name"], ".qmd")))
 }

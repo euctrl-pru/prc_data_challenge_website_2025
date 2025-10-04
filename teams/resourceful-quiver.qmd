@@ -5,6 +5,7 @@ We are PhD students from TU Delft, and the challenge aligns with our research.
 
 ### Details
 
+* Number of team members: 4
 * Type: Academia
 * Affiliation: TU Delft
 * Country: Netherlands

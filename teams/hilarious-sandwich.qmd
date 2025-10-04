@@ -5,6 +5,7 @@ Ionut Pop Gis Soft Dev
 
 ### Details
 
+* Number of team members: 1
 * Type: Independent
 * Affiliation: Ionut Pop Gis Soft Dev
 * Country: Romania

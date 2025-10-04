@@ -5,6 +5,7 @@ We are a team of software engineers and machine learning enthusiasts passionate 
 
 ### Details
 
+* Number of team members: 3
 * Type: Independent
 * Affiliation: Independent
 * Country: United Arab Emirates

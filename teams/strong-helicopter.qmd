@@ -5,6 +5,7 @@ Data scientist with a strong interest in analysis of flight networks
 
 ### Details
 
+* Number of team members: 1
 * Type: Academia, Industry
 * Affiliation: Vrije Universiteit Brussel
 * Country: Belgium

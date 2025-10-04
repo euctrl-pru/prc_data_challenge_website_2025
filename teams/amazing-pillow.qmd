@@ -5,6 +5,7 @@ Richard Alligier received his Ph.D. (2014) degree in Computer Science from the â
 
 ### Details
 
+* Number of team members: 2
 * Type: Academia
 * Affiliation: ENAC
 * Country: France

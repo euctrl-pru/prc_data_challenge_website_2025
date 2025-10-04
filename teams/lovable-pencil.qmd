@@ -5,6 +5,7 @@ For fun
 
 ### Details
 
+* Number of team members: 1
 * Type: Industry
 * Affiliation: Hex
 * Country: United States

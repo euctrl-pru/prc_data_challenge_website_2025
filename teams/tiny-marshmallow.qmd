@@ -5,6 +5,7 @@ Working at the aviation industry ourself, We find the problem in this Challenge 
 
 ### Details
 
+* Number of team members: 3
 * Type: Industry
 * Affiliation: ACV - Airports Corporation of VietNam
 * Country: Vietnam

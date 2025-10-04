@@ -5,6 +5,7 @@ Air Transport and logistics student at TU Dresden, Aviation enthusiast.
 
 ### Details
 
+* Number of team members: 1
 * Type: Academia
 * Affiliation: Technische Universität Dresden
 * Country: Germany

@@ -5,6 +5,7 @@ Research Group Studying Aviation and Mobility
 
 ### Details
 
+* Number of team members: 2
 * Type: Academia
 * Affiliation: ETH Zurich
 * Country: Switzerland

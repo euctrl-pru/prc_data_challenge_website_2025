@@ -5,6 +5,7 @@ A way to keep up in data science and aviation field.
 
 ### Details
 
+* Number of team members: 1
 * Type: Independent
 * Affiliation: Independent
 * Country: Spain

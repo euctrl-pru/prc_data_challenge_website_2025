@@ -11,10 +11,12 @@ teams_raw <- get_teams_raw()
 
 teams_valid <- teams_raw |> get_teams_valid()
 
-# members <- teams_raw |> get_teams_members()
+members <- teams_raw |> get_teams_members()
+
+fff <- purrr::partial(generate_team_page, members = members)
 
 #########################
 # GENERATE Teams' pages #
 #########################
 teams_valid |>
-  purrrlyr::by_row(generate_team_page)
+  purrrlyr::by_row(fff)

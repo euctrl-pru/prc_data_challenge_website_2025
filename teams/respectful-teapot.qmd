@@ -8,6 +8,7 @@ I am not experienced as a data scientist (Machine Learning), so I do not guarant
 
 ### Details
 
+* Number of team members: 1
 * Type: Independent
 * Affiliation: Independent
 * Country: France
