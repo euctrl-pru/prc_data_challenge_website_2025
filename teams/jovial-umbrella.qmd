@@ -1,0 +1,11 @@
+## Team jovial-umbrella
+
+### Description and Rationale
+A way to keep up in data science and aviation field.
+
+### Details
+
+* Type: Independent
+* Affiliation: Independent
+* Country: Spain
+

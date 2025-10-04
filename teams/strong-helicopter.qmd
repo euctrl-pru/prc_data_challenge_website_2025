@@ -1,0 +1,11 @@
+## Team strong-helicopter
+
+### Description and Rationale
+Data scientist with a strong interest in analysis of flight networks
+
+### Details
+
+* Type: Academia, Industry
+* Affiliation: Vrije Universiteit Brussel
+* Country: Belgium
+

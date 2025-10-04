@@ -1,0 +1,21 @@
+## Team honorable-yogurt
+
+### Description and Rationale
+I am an air traffic management specialist and data scientist at ASECNA, an air navigation service provider in Africa. I decided to participate in the PRC Challenge to put into practice my expertise in handling and analyzing air traffic data, with a particular focus on surveillance technologies (ADS-B/Mode-S), safety and quality performance, and data-driven decision support.
+
+My motivation is threefold:
+
+Professional contribution – bringing the operational perspective of an ANSP to an international, data-driven challenge.
+
+Environmental engagement – supporting efforts to estimate fuel burn and CO₂ emissions, and contributing to solutions that can help reduce aviation’s environmental footprint.
+
+Personal development – strengthening my skills in data science and aviation performance analysis, while gaining visibility and contributing to collaborative innovation.
+
+Through this challenge, I hope to bridge operational knowledge with data innovation, and support the development of smarter, safer, and greener air navigation services.
+
+### Details
+
+* Type: Independent
+* Affiliation: ASECNA (Agency for Aerial Navigation Safety in Africa and Madagascar)
+* Country: Benin
+

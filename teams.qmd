@@ -2,11 +2,14 @@
 title: "Teams"
 format:
   html:
-    toc: false
+    toc: true
+    toc-depth: 2
 acronyms:
   insert_loa: false
 ---
 
+::: {.callout-note title="Beware"}
+This will evolve with more or better structured teams details.
+:::
 
-This will contain registered teams details as per application form.
-This page is automatically generated from the details in the registration.
+{{< include _teams.qmd >}}

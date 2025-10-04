@@ -1,0 +1,11 @@
+## Team courageous-parrot
+
+### Description and Rationale
+working on real datasets with ML libraries on GPUs
+
+### Details
+
+* Type: Academia
+* Affiliation: ENI-Carthage
+* Country: Tunisia
+
