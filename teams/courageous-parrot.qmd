@@ -1,4 +1,4 @@
-## Team courageous-parrot
+## courageous-parrot
 
 ### Description and Rationale
 working on real datasets with ML libraries on GPUs

@@ -1,4 +1,4 @@
-## Team resourceful-quiver
+## resourceful-quiver
 
 ### Description and Rationale
 We are PhD students from TU Delft, and the challenge aligns with our research.

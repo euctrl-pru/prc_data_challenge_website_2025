@@ -1,4 +1,4 @@
-## Team respectful-teapot
+## respectful-teapot
 
 ### Description and Rationale
 I am a french engineer, experienced in system engineering applied to aeronautical systems (about 10 years in subsystem testing). Last year, I attended and passed a bootcamp training program in Data Engineering, field of skills I expect to implement in R&D activities to improve technical solutions design, but also in personal projects to analyze, understand and improve global behaviors in various subjects, such as the project you propose.

@@ -17,4 +17,4 @@ teams_valid <- teams_raw |> get_teams_valid()
 # GENERATE Teams' pages #
 #########################
 teams_valid |>
-  by_row(generate_team_page)
+  purrrlyr::by_row(generate_team_page)

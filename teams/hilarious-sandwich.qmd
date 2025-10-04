@@ -1,4 +1,4 @@
-## Team hilarious-sandwich
+## hilarious-sandwich
 
 ### Description and Rationale
 Ionut Pop Gis Soft Dev

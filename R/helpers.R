@@ -9,7 +9,7 @@ library(janitor)
 # generate QMD page for one team
 generate_team_page <- function(team, members = c()) {
   page <- "
-  ## Team {name}
+  ## {name}
 
   ### Description and Rationale
   {description}

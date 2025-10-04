@@ -1,4 +1,4 @@
-## Team honorable-yogurt
+## honorable-yogurt
 
 ### Description and Rationale
 I am an air traffic management specialist and data scientist at ASECNA, an air navigation service provider in Africa. I decided to participate in the PRC Challenge to put into practice my expertise in handling and analyzing air traffic data, with a particular focus on surveillance technologies (ADS-B/Mode-S), safety and quality performance, and data-driven decision support.

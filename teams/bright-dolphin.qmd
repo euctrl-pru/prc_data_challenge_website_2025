@@ -1,4 +1,4 @@
-## Team bright-dolphin
+## bright-dolphin
 
 ### Description and Rationale
 We are a team of software engineers and machine learning enthusiasts passionate about tackling innovative challenges in the data space, with a particular interest in the aviation domain.

@@ -1,4 +1,4 @@
-## Team jovial-umbrella
+## jovial-umbrella
 
 ### Description and Rationale
 A way to keep up in data science and aviation field.

@@ -1,4 +1,4 @@
-## Team lovable-pencil
+## lovable-pencil
 
 ### Description and Rationale
 For fun
