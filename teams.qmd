@@ -52,7 +52,7 @@ cumulative_counts_in_time <- counts_in_time |>
 ```
 
 
-```{r cum-plot, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+```{r cumulative-plot, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
