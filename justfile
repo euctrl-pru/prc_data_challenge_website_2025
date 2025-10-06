@@ -24,7 +24,7 @@ teams_file := justfile_directory() + "/media/teams_private.json"
 # list valid teams
 @teams-valid:
   #!/usr/bin/env sh
-  Rscript ./R/teams_limbo.R
+  Rscript ./R/teams_valid.R
 
 # list teams' members
 @members:

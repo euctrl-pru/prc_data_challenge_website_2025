@@ -30,13 +30,6 @@ teams_valid <- teams_raw |> get_teams_valid()
 members <- teams_raw |> get_teams_members()
 
 ttt <- teams_valid |>
-  left_join(members) |>
-  mutate(
-    forename = if_else(consent == "No", "xyzzy", forename),
-    surname = if_else(consent == "No", "XYZZY", surname),
-    affiliation = if_else(is.na(affiliation), "Unknow", affiliation),
-    NULL
-  ) |> 
   mutate(registration_date = as_date(timestamp)) |> 
   complete(registration_date = seq(ymd("2025-09-30"),
                                    ymd("2025-12-01"),
