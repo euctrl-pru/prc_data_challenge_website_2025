@@ -1,0 +1,12 @@
+## kindly-kiwi
+
+### Description and Rationale
+Our team has built systems for air navigation, weather data processing, AI assisted routing, and controller training, drawing on deep aviation domain knowledge and AI expertise. We joined the PRC Challenge to face fresh challenges and compete.
+
+### Details
+
+* Number of team members: 2
+* Type: Industry
+* Affiliation: Monad
+* Country: Finland
+

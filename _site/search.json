@@ -270,11 +270,31 @@
     ]
   },
   {
+    "objectID": "teams.html#jubilant-guitar",
+    "href": "teams.html#jubilant-guitar",
+    "title": "5  Teams",
+    "section": "jubilant-guitar",
+    "text": "jubilant-guitar\n\nDescription and Rationale\nGroup of ai and aviation enthusiasts\n\n\nDetails\n\nNumber of team members: 6\nType: Independent\nAffiliation: TAV Voltran\nCountry: Turkey",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#kindhearted-waterfall",
     "href": "teams.html#kindhearted-waterfall",
     "title": "5  Teams",
     "section": "kindhearted-waterfall",
     "text": "kindhearted-waterfall\n\nDescription and Rationale\nAkari is a consultancy in AI, I’m an engineer. Very interested in aviation and space technology.\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: Akari\nCountry: United Kingdom",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#kindly-kiwi",
+    "href": "teams.html#kindly-kiwi",
+    "title": "5  Teams",
+    "section": "kindly-kiwi",
+    "text": "kindly-kiwi\n\nDescription and Rationale\nOur team has built systems for air navigation, weather data processing, AI assisted routing, and controller training, drawing on deep aviation domain knowledge and AI expertise. We joined the PRC Challenge to face fresh challenges and compete.\n\n\nDetails\n\nNumber of team members: 2\nType: Industry\nAffiliation: Monad\nCountry: Finland",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
@@ -375,6 +395,16 @@
     "title": "5  Teams",
     "section": "respectful-teapot",
     "text": "respectful-teapot\n\nDescription and Rationale\nI am a french engineer, experienced in system engineering applied to aeronautical systems (about 10 years in subsystem testing). Last year, I attended and passed a bootcamp training program in Data Engineering, field of skills I expect to implement in R&D activities to improve technical solutions design, but also in personal projects to analyze, understand and improve global behaviors in various subjects, such as the project you propose. Passionate about aeronautics, I passed my PPL license several years ago, among other licenses (ultralight, gliding, paragliding, …). Even if I do not fly currently (familial reasons), I think my pilot experiences will help me address this project.\nI am not experienced as a data scientist (Machine Learning), so I do not guarantee any performant solution : I take this participation as an opportunity to improve my knowledge in both data science and aeronautic operations. If possible I would implicate some acquaintances of mine, more experienced in machine learning.\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: Independent\nCountry: France",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#sincere-turtle",
+    "href": "teams.html#sincere-turtle",
+    "title": "5  Teams",
+    "section": "sincere-turtle",
+    "text": "sincere-turtle\n\nDescription and Rationale\nI’m Wojciech, a data scientist from Poland and a huge aviation geek. If something can stay in the air, I’m interested in it. During my university days, I realized I could mix my work with my hobby — that’s how my diploma thesis came to life: “Analysis of Air Traffic in Germany During the COVID-19 Pandemic Based on the Seasonal ARIMA Model.”\nSince then, I like to tinker with publicly available datasets and flight ticket search engines. Joining this aviation ML contest feels like the perfect way to combine my passion for data and aviation.\n\n\nDetails\n\nNumber of team members: 2\nType: Independent\nAffiliation: Independent\nCountry: Poland",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
