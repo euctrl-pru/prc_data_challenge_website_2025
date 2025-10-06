@@ -8,6 +8,7 @@
 {{< include teams/graceful-yogurt.qmd >}}
 {{< include teams/gracious-jacket.qmd >}}
 {{< include teams/helpful-deer.qmd >}}
+{{< include teams/helpful-dragon.qmd >}}
 {{< include teams/hilarious-sandwich.qmd >}}
 {{< include teams/honest-rose.qmd >}}
 {{< include teams/honorable-yogurt.qmd >}}
