@@ -30,6 +30,7 @@
 {{< include teams/sincere-turtle.qmd >}}
 {{< include teams/strong-helicopter.qmd >}}
 {{< include teams/tiny-marshmallow.qmd >}}
+{{< include teams/trustworthy-ukulele.qmd >}}
 {{< include teams/understated-zucchini.qmd >}}
 {{< include teams/unique-quicksand.qmd >}}
 {{< include teams/zany-waterfall.qmd >}}
