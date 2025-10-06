@@ -1,0 +1,12 @@
+## lovable-boat
+
+### Description and Rationale
+I've just finished my MSc Dissertation/Thesis on a Quantum Approach to ATFM and I'm looking for my next challenge! I'd like to see how I can take a quantum approach to this one too...
+
+### Details
+
+* Number of team members: 1
+* Type: Independent
+* Affiliation: Independent - doing a MSc in Comp Sci and AI at the University of York, and work at ACI EUROPE, but these are unrelated and I am working entirely independently of it.
+* Country: Belgium
+

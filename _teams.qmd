@@ -17,6 +17,7 @@
 {{< include teams/kindhearted-waterfall.qmd >}}
 {{< include teams/lighthearted-barn.qmd >}}
 {{< include teams/likable-ant.qmd >}}
+{{< include teams/lovable-boat.qmd >}}
 {{< include teams/lovable-pencil.qmd >}}
 {{< include teams/motivated-koala.qmd >}}
 {{< include teams/neat-noodle.qmd >}}
