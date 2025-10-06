@@ -24,6 +24,7 @@
 {{< include teams/motivated-koala.qmd >}}
 {{< include teams/neat-noodle.qmd >}}
 {{< include teams/nurturing-utensil.qmd >}}
+{{< include teams/outgoing-kangaroo.qmd >}}
 {{< include teams/polite-radio.qmd >}}
 {{< include teams/resourceful-quiver.qmd >}}
 {{< include teams/respectful-teapot.qmd >}}

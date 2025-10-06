@@ -38,11 +38,12 @@ erDiagram
 ```
 
 
-The temporal extent of the datasets covers the period Apr - Oct 2025.
+The temporal extent of the datasets covers the period Apr - Oct 2025,
+split as follows:
 
-* Apr - Aug 2025: training dataset (3.1GiB)
-* Sep 2025: phase 1 submission / ranking
-* Oct 2025: phase 2 submission / final ranking
+* flights for Apr - Aug 2025: training dataset (3.1GiB)
+* flights for Sep 2025: phase 1 submission / ranking
+* flights for Oct 2025: phase 2 submission / final ranking
 
 
 

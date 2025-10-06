@@ -54,7 +54,7 @@ tribble(
 Ranking will be based on the best RMSE of a team's submissions.
 
 
-There will be two phases of submissions:
+There will be two phases for submissions:
 
 1. phase 1: till **2025-11-09T23:59:59Z** \
    Ranking will be based on `submission.csv`
