@@ -5,7 +5,7 @@ project:
 bibliography: media/references.bib
 
 book:
-  title: "PRC Data Challenge"
+  title: "PRC Data Challenge 2025"
   chapters:
     - index.qmd
     - data.qmd

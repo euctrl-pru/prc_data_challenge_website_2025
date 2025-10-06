@@ -13,10 +13,18 @@ teams_valid <- teams_raw |> get_teams_valid()
 
 members <- teams_raw |> get_teams_members()
 
-fff <- purrr::partial(generate_team_page, members = members)
+ttt <- teams_valid |>
+  left_join(members) |>
+  mutate(
+    forename = if_else(consent == "No", "xyzzy", forename),
+    surname = if_else(consent == "No", "XYZZY", surname),
+    affiliation = if_else(is.na(affiliation), "Unknow", affiliation),
+    NULL
+  )
 
 #########################
 # GENERATE Teams' pages #
 #########################
-teams_valid |>
-  purrrlyr::by_row(fff)
+ttt |>
+  group_by(team_name) |>
+  purrrlyr::by_row(generate_team_page)

@@ -12,4 +12,73 @@ acronyms:
 This will evolve with more or better structured teams details.
 :::
 
+
+```{r setup, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+library(conflicted)
+library(dplyr)
+library(here)
+library(purrrlyr)
+
+conflicts_prefer(dplyr::filter)
+
+here("R", "helpers.R") |> source()
+
+teams_raw <- get_teams_raw()
+
+teams_valid <- teams_raw |> get_teams_valid()
+
+members <- teams_raw |> get_teams_members()
+
+ttt <- teams_valid |>
+  left_join(members) |>
+  mutate(
+    forename = if_else(consent == "No", "xyzzy", forename),
+    surname = if_else(consent == "No", "XYZZY", surname),
+    affiliation = if_else(is.na(affiliation), "Unknow", affiliation),
+    NULL
+  ) |> 
+  mutate(registration_date = as_date(timestamp)) |> 
+  complete(registration_date = seq(ymd("2025-09-30"),
+                                   ymd("2025-12-01"),
+                                   by = "day"))
+
+counts_in_time <- ttt |> 
+  select(team_name, registration_date) |> 
+  mutate(n = if_else(is.na(team_name), 0L, 1L)) |> 
+  arrange(registration_date) |> 
+  group_by(registration_date) |>
+  summarise(across(n, ~ sum(.x, na.rm = TRUE))) |> 
+  mutate(future = registration_date > today())
+
+number_of_teams <- counts_in_time |> 
+  summarise(across("n", ~ sum(.x, na.rm = TRUE))) |> 
+  pull(n)
+
+cumulative_counts_in_time <- counts_in_time |> 
+  mutate(n = cumsum(n))
+```
+
+
+```{r cum-plot, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+cumulative_counts_in_time |> 
+  ggplot() +
+  geom_step(aes(x = registration_date,
+                y = n,
+                linetype = future),
+            stat = "identity") +
+  geom_text(
+    data = cumulative_counts_in_time |>
+      slice(which.max(registration_date)),
+    aes(x = registration_date, y = n, label = n), size = 4, vjust = -0.5) +
+  theme_minimal() +
+    theme(
+      axis.title.x = element_blank(),
+      axis.title.y = element_blank(),
+      # axis.text.x = element_blank(),
+      # axis.ticks.x = element_blank(),
+      legend.position = "none",
+      NULL)
+```
+
+
 {{< include _teams.qmd >}}

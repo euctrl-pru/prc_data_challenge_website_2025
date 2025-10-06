@@ -1,0 +1,12 @@
+## zestful-volcano
+
+### Description and Rationale
+Just for fun, putting some theoretical knowledge into actual use
+
+### Details
+
+* Number of team members: 1
+* Type: Independent
+* Affiliation: UI International University, Germany
+* Country: Germany
+

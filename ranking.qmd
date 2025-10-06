@@ -20,7 +20,7 @@ We will post URGENT/IMPORTANT news here but better to follow things up on \
 The following table shows the best result per team's submission at the deadline.
 
 
-```{r}
+```{r leaderboard}
 #| echo: false
 #| warning: false
 library(tidyverse)

@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "PRC Data Challenge",
+    "title": "PRC Data Challenge 2025",
     "section": "",
     "text": "Thanks\nThe Performance Review Commission (PRC) aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nThe competition runs (in two phases) from 1st Oct till 30th Nov 2025.\nThe total amount for the first 3 teams is 5000 EUR.\nCheck the conditions for eligibility for prize and then fill the following team creation request form!\nRemember to follow up the data challenge on OSN’s Discord  channel #prc-data-competition.\n(if not already done, you need to access OSN Discord server first)\nBelow you can find a couple of plots of flights showing the ACARS trajectory in red and the ADS-B one in blue.\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or synthetic exercise.\nThe organization of this challenge would have not been possible without the creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and the help of the Friend of OSN, Allan, Quinten, Martin, Rainer, Xavier and Kamil among them.",
     "crumbs": [
@@ -120,6 +120,16 @@
     ]
   },
   {
+    "objectID": "teams.html#ambitious-tornado",
+    "href": "teams.html#ambitious-tornado",
+    "title": "5  Teams",
+    "section": "ambitious-tornado",
+    "text": "ambitious-tornado\n\nDescription and Rationale\nMy name is Omar Hayat, I am an MMath student in Computational Mathematics at the University of Waterloo in Canada. I’m researching transformers in use for contrail avoidance applications. I think this would be a fun challenge to participate in and challenge myself!\n\n\nDetails\n\nNumber of team members: 1\nType: Academia\nAffiliation: University of Waterloo\nCountry: Canada",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#bright-dolphin",
     "href": "teams.html#bright-dolphin",
     "title": "5  Teams",
@@ -230,6 +240,16 @@
     ]
   },
   {
+    "objectID": "teams.html#lighthearted-barn",
+    "href": "teams.html#lighthearted-barn",
+    "title": "5  Teams",
+    "section": "lighthearted-barn",
+    "text": "lighthearted-barn\n\nDescription and Rationale\nI am a Smart Systems Engineering student passionate about data, innovation, and aviation. I joined the PRC Data Challenge to learn and explore how open data can be used to improve aviation performance and sustainability. I want to use smart technologies to find useful solutions for real aviation problems.\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: Individual\nCountry: Spain",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#likable-ant",
     "href": "teams.html#likable-ant",
     "title": "5  Teams",
@@ -245,6 +265,16 @@
     "title": "5  Teams",
     "section": "lovable-pencil",
     "text": "lovable-pencil\n\nDescription and Rationale\nFor fun\n\n\nDetails\n\nNumber of team members: 1\nType: Industry\nAffiliation: Hex\nCountry: United States",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#motivated-koala",
+    "href": "teams.html#motivated-koala",
+    "title": "5  Teams",
+    "section": "motivated-koala",
+    "text": "motivated-koala\n\nDescription and Rationale\nI have masters in energy engineering with focus on sustainability. I am a novice when it comes to Machine learning but I do have little experience in Optimization, Deterministic fuel consumption for vehicles.\nI came across OpenSky for my paper where we investigated how shifting policies shift air traffic. This challenge could enhance my knowledge.\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: école polytechnique (just Graduated)\nCountry: France",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
@@ -320,11 +350,31 @@
     ]
   },
   {
+    "objectID": "teams.html#zany-waterfall",
+    "href": "teams.html#zany-waterfall",
+    "title": "5  Teams",
+    "section": "zany-waterfall",
+    "text": "zany-waterfall\n\nDescription and Rationale\nI’m a data scientist who loves Kaggle and data competitions. I enjoy solving real-world problems with data and learning from the community. I also have a passion for aviation, it started when I joined a Kaggle competition about contrail detection. I’m excited to keep learning, improving my models, and taking on new challenges!\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: Independant\nCountry: France",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#zestful-volcano",
+    "href": "teams.html#zestful-volcano",
+    "title": "5  Teams",
+    "section": "zestful-volcano",
+    "text": "zestful-volcano\n\nDescription and Rationale\nJust for fun, putting some theoretical knowledge into actual use\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: UI International University, Germany\nCountry: Germany",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "6  About",
     "section": "",
-    "text": "This website describes the PRC Data Challenge, an initiative by the PRC.\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European ATM performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of\nReference and Rules of\nProcedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.",
+    "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European Air Traffic Management (ATM) performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of\nReference and Rules of\nProcedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nATM: Air Traffic Management\nPRC: Performance Review Commission",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>About</span>"
     ]

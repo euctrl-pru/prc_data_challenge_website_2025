@@ -1,0 +1,12 @@
+## zany-waterfall
+
+### Description and Rationale
+I’m a data scientist who loves Kaggle and data competitions. I enjoy solving real-world problems with data and learning from the community. I also have a passion for aviation, it started when I joined a Kaggle competition about contrail detection. I’m excited to keep learning, improving my models, and taking on new challenges!
+
+### Details
+
+* Number of team members: 1
+* Type: Independent
+* Affiliation: Independant
+* Country: France
+
