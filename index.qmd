@@ -23,7 +23,7 @@ and then fill the following team creation request form!\
 
 :::{.container .text-center}
 [Request Team Creation!](https://forms.gle/r4EJQf8mh7BT7jUx6){.btn .btn-primary .btn-lg role="button" data-toggle="tooltip" title="Request Team Creation" target="_blank"}  
-[(The participation is open to all but for teams from Russia and Belarus.)]{.small }
+[(The participation is open to all but teams from Russia and Belarus are excluded.)]{.small }
 :::
 
 
