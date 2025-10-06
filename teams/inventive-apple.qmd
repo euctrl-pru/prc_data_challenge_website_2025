@@ -1,0 +1,12 @@
+## inventive-apple
+
+### Description and Rationale
+Our team came together through a shared interest in extracting insights from data, particularly in the field of aviation. With backgrounds in aviation dispatch, air traffic control, and machine learning, we bring a multidisciplinary perspective to solving data challenges.
+
+### Details
+
+* Number of team members: 3
+* Type: Industry
+* Affiliation: PABLO AIR and KIAST
+* Country: Korea South
+

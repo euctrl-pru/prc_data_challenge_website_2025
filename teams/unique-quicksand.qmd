@@ -1,0 +1,12 @@
+## unique-quicksand
+
+### Description and Rationale
+A team of Flight Physic data analytics enthusiasts linked to a major aircraft manufacturer. We are seeking the challenge while wanting to learn on the problem presented.
+
+### Details
+
+* Number of team members: 1
+* Type: Industry
+* Affiliation: Airbus
+* Country: Germany
+
