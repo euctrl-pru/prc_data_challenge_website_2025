@@ -1,0 +1,12 @@
+## kindly-garden
+
+### Description and Rationale
+We are passionate researchers, professionals, and scientists — Darko Čulibrk and Rade Kačar — driven by curiosity and innovation in the field of aviation data analytics. Having participated in the previous PRC Challenge, we were extremely pleased with the experience, collaboration, and the opportunity to apply advanced machine learning techniques to real-world problems. Motivated by the insights gained and inspired to go further, we decided to join this year’s challenge to continue pushing the boundaries of data-driven aviation research.
+
+### Details
+
+* Number of team members: 2
+* Type: Academia
+* Affiliation: University of Belgrade, Faculty of Transport and Traffic Engineering
+* Country: Bosnia Herzegovina
+

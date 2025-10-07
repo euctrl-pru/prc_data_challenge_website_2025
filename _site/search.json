@@ -320,11 +320,31 @@
     ]
   },
   {
+    "objectID": "teams.html#kindly-garden",
+    "href": "teams.html#kindly-garden",
+    "title": "5  Teams",
+    "section": "kindly-garden",
+    "text": "kindly-garden\n\nDescription and Rationale\nWe are passionate researchers, professionals, and scientists — Darko Čulibrk and Rade Kačar — driven by curiosity and innovation in the field of aviation data analytics. Having participated in the previous PRC Challenge, we were extremely pleased with the experience, collaboration, and the opportunity to apply advanced machine learning techniques to real-world problems. Motivated by the insights gained and inspired to go further, we decided to join this year’s challenge to continue pushing the boundaries of data-driven aviation research.\n\n\nDetails\n\nNumber of team members: 2\nType: Academia\nAffiliation: University of Belgrade, Faculty of Transport and Traffic Engineering\nCountry: Bosnia Herzegovina",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#kindly-kiwi",
     "href": "teams.html#kindly-kiwi",
     "title": "5  Teams",
     "section": "kindly-kiwi",
     "text": "kindly-kiwi\n\nDescription and Rationale\nOur team has built systems for air navigation, weather data processing, AI assisted routing, and controller training, drawing on deep aviation domain knowledge and AI expertise. We joined the PRC Challenge to face fresh challenges and compete.\n\n\nDetails\n\nNumber of team members: 2\nType: Industry\nAffiliation: Monad\nCountry: Finland",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#knowledgeable-tulip",
+    "href": "teams.html#knowledgeable-tulip",
+    "title": "5  Teams",
+    "section": "knowledgeable-tulip",
+    "text": "knowledgeable-tulip\n\nDescription and Rationale\nWe would like to test how well the PS model agrees with your data. We hope that you have test data for many aircraft types and that we can publish the mean statistics of the comparisons, if successful.\n\n\nDetails\n\nNumber of team members: 2\nType: Academia\nAffiliation: DLR\nCountry: Germany",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]

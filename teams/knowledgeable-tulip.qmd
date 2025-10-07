@@ -1,0 +1,12 @@
+## knowledgeable-tulip
+
+### Description and Rationale
+We would like to test how well the PS model agrees with your data. We hope that you have test data for many aircraft types and that we can publish the mean statistics of the comparisons, if successful.
+
+### Details
+
+* Number of team members: 2
+* Type: Academia
+* Affiliation: DLR
+* Country: Germany
+
