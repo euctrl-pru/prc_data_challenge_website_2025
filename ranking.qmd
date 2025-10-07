@@ -61,6 +61,10 @@ There will be two phases for submissions:
 1. phase 2: from **2025-11-10T00:00:00Z** till **2025-11-30T23:59:59Z** \
    ranking will be based on `submission-final.csv` 
 
+::: {.callout-note title="Beware"}
+The submission files are NOT yet available for download in the buckets.  
+We are working on them (and you can still play with the training data ;-)
+:::
 
 
 
