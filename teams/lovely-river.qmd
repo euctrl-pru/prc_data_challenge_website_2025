@@ -1,0 +1,12 @@
+## lovely-river
+
+### Description and Rationale
+A student who is interested in the outcome of this challenge.
+
+### Details
+
+* Number of team members: 1
+* Type: Academia
+* Affiliation: TU Delft
+* Country: Netherlands
+
