@@ -1,0 +1,12 @@
+## motivated-beetle
+
+### Description and Rationale
+We are a team of software engineers, enthusiastic about sustainable aviation and AI.
+
+### Details
+
+* Number of team members: 2
+* Type: Industry
+* Affiliation: Thales
+* Country: France
+

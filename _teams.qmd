@@ -28,6 +28,7 @@
 {{< include teams/lovable-pencil.qmd >}}
 {{< include teams/lovely-river.qmd >}}
 {{< include teams/mindful-turtle.qmd >}}
+{{< include teams/motivated-beetle.qmd >}}
 {{< include teams/motivated-koala.qmd >}}
 {{< include teams/neat-noodle.qmd >}}
 {{< include teams/nurturing-utensil.qmd >}}
