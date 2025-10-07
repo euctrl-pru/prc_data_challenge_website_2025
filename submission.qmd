@@ -8,42 +8,46 @@ acronyms:
 ---
 
 We provide a submission file for each phase of the Challenge,
-`submission.csv` for phase 1 and `submission-final.csv` for phase 2.
-These have companion trajectories and flight list.
+`fuel_rank_submission.parquet` for phase 1 and
+`fuel_final_submission.parquet` for phase 2.
+
+For phase 1 there are companion trajectories and flight list.
 
 Each team will have to submit its predictions in its own bucket, with a
-file name template as follows (for each phase respectively)
+file name template as follows
 
-> `submission_v<incremental integer>.csv`
-> `submission-final_v<incremental integers>.csv`
+> `submission_v<incremental integer>.parquet`  
+> `submission-final_v<incremental integers>.parquet`
 
-The `submission.csv` (`submission-final.csv`) file looks something like
+The `fuel_rank_submission.parquet` (`fuel_final_submission.parquet`) payload
+looks something like
 
 ```
-idx,   flight_id,                start,                 end,  fuel_kg
-  0, prc770822360, 2025-04-13 04:31:04, 2025-04-13 05:01:04,         
-  1, prc770822360, 2025-04-13 05:01:04, 2025-04-13 05:16:04,         
-  2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,         
-  3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,         
+idx     flight_id                start                  end  fuel_kg
+  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04      0.0
+  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04      0.0
+  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04      0.0
+  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04      0.0
 ...
 ```
 
 ### Submission format
 
-You should submit a CSV file with exactly all entries in the CSV submission file
-with a numerical value for the fuel flown/burnt `fuel_kg` for a each interval,
-like:
+You should submit a **parquet** file with your predictions with exactly all
+entries as in in `fuel_rank_submission.parquet`
+(`fuel_final_submission.parquet`), i.e. something with a payload like:
 
 ```
-idx,    flight_id,               start,                end,  fuel_kg
-  0, prc770822360, 2025-04-13 04:31:04, 2025-04-13 05:01:04,    250.3 
-  1, prc770822360, 2025-04-13 05:01:04, 2025-04-13 05:16:04,    120.8
-  2, prc770822360, 2025-04-13 05:16:04, 2025-04-13 05:46:04,   2500 
-  3, prc770822360, 2025-04-13 05:46:04, 2025-04-13 06:01:04,   1300.9 
+idx     flight_id                start                  end  fuel_kg
+  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 
+  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04    120.8
+  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04   2500 
+  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 
 ...
 ```
 
 In fact only `idx` and `fuel_kg` will be considered by the ranking script when
 calculating the RMSE.
 
-Missing rows will be given a value of `0` (zero).
+Missing rows will be given a value of `0` (zero)[^down] for the corresponding
+`fuel_kg`.

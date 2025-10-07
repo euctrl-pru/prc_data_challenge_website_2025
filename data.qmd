@@ -43,7 +43,11 @@ split as follows:
 
 * flights for Apr - Aug 2025: training dataset (3.1GiB)
 * flights for Sep 2025: phase 1 submission / ranking
-* flights for Oct 2025: phase 2 submission / final ranking
+* flights for (maybe Sep and) Oct 2025: phase 2 submission / final ranking
+
+The dataset for final ranking will be completely hidden to participating teams;
+we will only provide `fuel_final_submission.parquet` to be filled with
+the prediction of the relevant model.
 
 
 
@@ -52,7 +56,13 @@ split as follows:
 We collected fuel information (via Open-Source Intelligence (OSINT)) for
 flights between April and September 2025.
 
-Dataset: `fuel_train.parquet`
+Dataset: 
+
+1. `fuel_train.parquet`: for training
+2. `fuel_rank_submission.parquet`: for submission (`fuel_kg` values set to
+   `0` [zero])
+3. `fuel_final_submission.parquet`: for final ranking (`fuel_kg` values set to
+   `0` [zero])
 
 The columns of the fuel flown/burnt dataset are (`d_` stands for delta): 
 
@@ -65,7 +75,10 @@ The columns of the fuel flown/burnt dataset are (`d_` stands for delta):
 
 ## Flight list
 
-Dataset: `flightlist_train.parquet`
+Dataset: 
+
+1. `flightlist_train.parquet`: for training
+1. `flightlist_rank.parquet`: for ranking
 
 
 The following is the list of columns in the flight list dataset:
@@ -86,7 +99,10 @@ The following is the list of columns in the flight list dataset:
 
 ## Trajectories
 
-Dataset: `flights_train/<flight_id>.parquet`
+Dataset:
+
+1. `flights_train/<flight_id>.parquet`: for training
+1. `flights_rank/<flight_id>.parquet`: for rankining
 
 We have trajectory files for each flight with fuel flow segments.
 These are (mainly) \acr{ADS-B} position reports for the flights in
