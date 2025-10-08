@@ -63,8 +63,15 @@ exercise.
 
 The organization of this challenge would have not been possible without the
 creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and
-the help of the *Friend of OSN*, Allan, Quinten, Martin, Rainer, Xavier and
+the help of the *Friends of OSN*, Allan, Quinten, Martin, Rainer, Xavier and
 Kamil among them.
 
+
+## Disclaimer
+
+Please note that this challenge is a challenge in its own preparation, so 
+**everything is experimental and subject to change at any moment
+at the organizers' discretion**.  
+We anyway do our best to prepare for an interesting and quality experience.
 
 [prc-discord]: <https://discord.com/channels/1252625490930307142/1304403918515605504> "Discord channel for PRC Data Challenge"
