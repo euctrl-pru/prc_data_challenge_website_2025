@@ -1,0 +1,12 @@
+## bouncy-waterfall
+
+### Description and Rationale
+I am a data scientist with experience building models and analytics using movement data, including aircraft trajectories. I have been interested in aviation and flight data for some time, and am excited to leverage some of my past work to compete in this challenge.
+
+### Details
+
+* Number of team members: 1
+* Type: Independent
+* Affiliation: Independent
+* Country: United States
+

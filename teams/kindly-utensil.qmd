@@ -1,0 +1,12 @@
+## kindly-utensil
+
+### Description and Rationale
+I am a MSc Data Analytics Student at the NCI. I wanted to be in the part of this challenge because it is in my domain ( data analytics) and I believe I will learn something from this challenge that will be useful in my career
+
+### Details
+
+* Number of team members: 1
+* Type: Academia, Independent
+* Affiliation: National College of Ireland
+* Country: Ireland {Republic}
+

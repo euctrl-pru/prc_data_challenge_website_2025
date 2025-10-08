@@ -1,0 +1,12 @@
+## sociable-lobster
+
+### Description and Rationale
+I work in the ATM field and have a masters in AI so would like to put these together to tackle the challenge.
+
+### Details
+
+* Number of team members: 3
+* Type: Independent
+* Affiliation: AirNav Ireland
+* Country: Ireland {Republic}
+
