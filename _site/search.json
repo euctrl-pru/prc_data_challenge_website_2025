@@ -10,6 +10,16 @@
     ]
   },
   {
+    "objectID": "index.html#disclaimer",
+    "href": "index.html#disclaimer",
+    "title": "PRC Data Challenge 2025",
+    "section": "Disclaimer",
+    "text": "Disclaimer\nPlease note that this challenge is a challenge in its own preparation, so everything is experimental and subject to change at any moment at the organizers’ discretion.\nWe anyway do our best to prepare for an interesting and quality experience.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>PRC Data Challenge 2025</span>"
+    ]
+  },
+  {
     "objectID": "data.html",
     "href": "data.html",
     "title": "2  Data",
@@ -717,16 +727,6 @@
     "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European Air Traffic Management (ATM) performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of\nReference and Rules of\nProcedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nATM: Air Traffic Management\nPRC: Performance Review Commission",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>About</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#disclaimer",
-    "href": "index.html#disclaimer",
-    "title": "PRC Data Challenge 2025",
-    "section": "Disclaimer",
-    "text": "Disclaimer\nPlease note that this challenge is a challenge in its own preparation, so everything is experimental and subject to change at any moment at the organizers’ discretion.\nWe anyway do our best to prepare for an interesting and quality experience.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>PRC Data Challenge 2025</span>"
     ]
   }
 ]
