@@ -35,7 +35,7 @@ You will need to specify your *account* in the team creation form...
 ::: {.callout-warning title="Attention"}
 Your request will be assessed and eventually approved.   
 You will receive an email with the relevant
-access keys to the datasets/buckets and automatically generate team name.
+access keys to the datasets/buckets and the automatically generated team name.
 :::
 
 Remember to follow up the data challenge on OSN's Discord
