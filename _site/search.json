@@ -70,6 +70,16 @@
     ]
   },
   {
+    "objectID": "data.html#additional-andor-external-data",
+    "href": "data.html#additional-andor-external-data",
+    "title": "2  Data",
+    "section": "Additional and/or External data",
+    "text": "Additional and/or External data\nThe use of additional and/or external dataset is permitted if open data and documented.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
     "objectID": "submission.html",
     "href": "submission.html",
     "title": "3  Submission",
@@ -104,7 +114,7 @@
     "href": "ranking.html#criteria-for-ranking-submissions",
     "title": "4  Ranking",
     "section": "Criteria for Ranking Submissions",
-    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases for submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on fuel_rank_submission.parquet\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nSubmission in this period will be based on a hidden dataset1.\n\n\n\n\n\n\n\nAttention\n\n\n\nThe ranking datasets are now available for download in the buckets.\n\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made available to be published under the GNU GPLv3 license on the Challenge github account.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nWe reserved a total of 5000 EUR for the first 3 ranking teams.\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
+    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases for submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on fuel_rank_submission.parquet\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nSubmission in this period will be based on a hidden dataset1.\n\n\n\n\n\n\n\nAttention\n\n\n\nThe ranking datasets are now available for download in the buckets.\n\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made openly available to be published under the GNU GPLv3 license on the Challenge github account.\nuse of external dataset is permitted if open data and documented.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nWe reserved a total of 5000 EUR for the first 3 ranking teams.\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ranking</span>"
     ]
@@ -675,6 +685,16 @@
     "title": "5  Teams",
     "section": "vibrant-pencil",
     "text": "vibrant-pencil\n\nDescription and Rationale\nHi I happy to join this contest Tankyou :)\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: Inha University\nCountry: Korea South",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#vivacious-emu",
+    "href": "teams.html#vivacious-emu",
+    "title": "5  Teams",
+    "section": "vivacious-emu",
+    "text": "vivacious-emu\n\nDescription and Rationale\nI’m an engineer with Boeing and like working with data.\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: Boeing\nCountry: Spain",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]

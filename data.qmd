@@ -141,3 +141,9 @@ The airports dataset provides complementary positions as follows:
 * `longitude`: the airport longitude in \acr{DD} in [-180, 180] range
 * `latitude`: the airport latitude in \acr{DD} in [-90, 90] range
 * `elevation`: the airport elevation [ft]
+
+
+## Additional and/or External data
+
+The use of additional and/or external dataset is permitted if open data
+and documented.

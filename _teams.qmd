@@ -53,6 +53,7 @@
 {{< include teams/unique-guitar.qmd >}}
 {{< include teams/unique-quicksand.qmd >}}
 {{< include teams/vibrant-pencil.qmd >}}
+{{< include teams/vivacious-emu.qmd >}}
 {{< include teams/witty-vase.qmd >}}
 {{< include teams/zany-waterfall.qmd >}}
 {{< include teams/zestful-mushroom.qmd >}}

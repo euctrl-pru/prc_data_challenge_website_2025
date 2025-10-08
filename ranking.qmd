@@ -74,8 +74,10 @@ The ranking datasets are now available for download in the buckets.
 
 The winning submissions/solutions will only be eligible for the awards if
 
-* all source code and additional data sets used will be made available to be
-  published under the **GNU GPLv3 license** on the Challenge github account.
+* all source code and additional data sets used will be made openly available
+  to be published under the **GNU GPLv3 license** on the Challenge github
+  account.
+* use of external dataset is permitted if open data and documented.
 * sufficient documentation is provided to understand and reproduce the results.
 * the solution is _original_: teams must use their own original solutions.
   Re-using any existing implementation is only allowed if the original authors 
