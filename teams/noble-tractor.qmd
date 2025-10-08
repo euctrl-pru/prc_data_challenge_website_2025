@@ -1,0 +1,12 @@
+## noble-tractor
+
+### Description and Rationale
+Our team, with a good knowledge of aviation and AIML, felt excited to solve the real world problems.
+
+### Details
+
+* Number of team members: 2
+* Type: Academia, Industry, Independent
+* Affiliation: Airports Authority of India
+* Country: India
+
