@@ -1,0 +1,12 @@
+## unique-zeppelin
+
+### Description and Rationale
+I’m a beginner in data science.  I participated in this data challenge just for my skill up.
+
+### Details
+
+* Number of team members: 1
+* Type: Industry
+* Affiliation: Mitsubishi Electric Corporation
+* Country: Japan
+

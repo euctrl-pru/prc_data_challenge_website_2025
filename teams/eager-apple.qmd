@@ -1,0 +1,12 @@
+## eager-apple
+
+### Description and Rationale
+I'm a data scientist working in aviation wanting to challenge myself.
+
+### Details
+
+* Number of team members: 1
+* Type: Industry, Independent
+* Affiliation: PANSA
+* Country: Poland
+
