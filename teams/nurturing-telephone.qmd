@@ -1,0 +1,12 @@
+## nurturing-telephone
+
+### Description and Rationale
+We are an aviation-focused deep-tech startup from India, passionate about applying AI and data science to solve real-world challenges in air traffic and sustainability. Our ongoing work in aviation efficiency and our belief that data-driven insights can significantly reduce fuel consumption and environmental impact is an important motivation to participate in the PRC Data Challenge, as it also offers us a platform to test our capabilities, learn from global peers, and contribute innovative, practical solutions to make aviation smarter and greener.
+
+### Details
+
+* Number of team members: 2
+* Type: Industry
+* Affiliation: Sydorg Technologies Private Limited
+* Country: India
+
