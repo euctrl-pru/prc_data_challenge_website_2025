@@ -51,4 +51,5 @@
 {{< include teams/unique-quicksand.qmd >}}
 {{< include teams/witty-vase.qmd >}}
 {{< include teams/zany-waterfall.qmd >}}
+{{< include teams/zestful-mushroom.qmd >}}
 {{< include teams/zestful-volcano.qmd >}}
