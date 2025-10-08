@@ -1,0 +1,12 @@
+## jubilant-vase
+
+### Description and Rationale
+Data scientist students who love aviation
+
+### Details
+
+* Number of team members: 2
+* Type: Independent
+* Affiliation: Sapienza University
+* Country: France
+
