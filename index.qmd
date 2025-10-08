@@ -20,6 +20,11 @@ The total amount for the first 3 teams is 5000 EUR.
 Check the conditions for [eligibility for prize](ranking.qmd#eligibility)
 and then fill the following team creation request form!\
 
+::: {.callout-warning title="NOTE"}
+Make sure to have a **valid/verified OpenSky Network account**, i.e.
+try to [log in](https://opensky-network.org/login).  
+You will need to specify your *account* in the team creation form...
+:::
 
 :::{.container .text-center}
 [Request Team Creation!](https://forms.gle/r4EJQf8mh7BT7jUx6){.btn .btn-primary .btn-lg role="button" data-toggle="tooltip" title="Request Team Creation" target="_blank"}  
@@ -29,8 +34,8 @@ and then fill the following team creation request form!\
 
 ::: {.callout-warning title="Attention"}
 Your request will be assessed and eventually approved.   
-You will receive a **verification email** and, upon verification, the relevant
-access keys to the datasets/buckets.
+You will receive an email with the relevant
+access keys to the datasets/buckets and automatically generate team name.
 :::
 
 Remember to follow up the data challenge on OSN's Discord
