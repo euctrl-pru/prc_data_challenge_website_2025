@@ -1,0 +1,12 @@
+## faithful-zipper
+
+### Description and Rationale
+My major is deep learning and my research focus is on flight trajectory prediction. I am very interested in this competition.
+
+### Details
+
+* Number of team members: 3
+* Type: Academia
+* Affiliation: Northeastern University
+* Country: China
+

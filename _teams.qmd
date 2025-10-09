@@ -9,6 +9,7 @@
 {{< include teams/eager-apple.qmd >}}
 {{< include teams/eager-ladder.qmd >}}
 {{< include teams/exuberant-emu.qmd >}}
+{{< include teams/faithful-zipper.qmd >}}
 {{< include teams/genuine-zucchini.qmd >}}
 {{< include teams/graceful-yogurt.qmd >}}
 {{< include teams/gracious-jacket.qmd >}}
