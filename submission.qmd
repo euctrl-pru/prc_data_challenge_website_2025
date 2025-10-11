@@ -49,5 +49,5 @@ idx     flight_id                start                  end  fuel_kg
 In fact only `idx` and `fuel_kg` will be considered by the ranking script when
 calculating the RMSE.
 
-Missing rows will be given a value of `0` (zero)[^down] for the corresponding
+Missing rows will be given a value of `0` (zero) for the corresponding
 `fuel_kg`.

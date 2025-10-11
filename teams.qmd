@@ -68,6 +68,8 @@ cumulative_counts_in_time |>
       legend.position = "none",
       NULL)
 ```
+![Teams per country](media/team_per_country.png)
 
+![Teams per country, again](media/teams_per_country_bar.png)
 
 {{< include _teams.qmd >}}
