@@ -433,8 +433,7 @@ ul.task-list li input[type="checkbox"] {
 <p>For phase 1 there are companion trajectories and flight list.</p>
 <p>Each team will have to submit its predictions in its own bucket, with a file name template as follows</p>
 <blockquote class="blockquote">
-<p><code>submission_v&lt;incremental integer&gt;.parquet</code><br>
-<code>submission-final_v&lt;incremental integers&gt;.parquet</code></p>
+<p><code>&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet</code></p>
 </blockquote>
 <p>The <code>fuel_rank_submission.parquet</code> (<code>fuel_final_submission.parquet</code>) payload looks something like</p>
 <pre><code>idx     flight_id                start                  end  fuel_kg
@@ -445,7 +444,7 @@ ul.task-list li input[type="checkbox"] {
 ...</code></pre>
 <section id="submission-format" class="level3">
 <h3 class="anchored" data-anchor-id="submission-format">Submission format</h3>
-<p>You should submit a <strong>parquet</strong> file with your predictions with exactly all entries as in in <code>fuel_rank_submission.parquet</code> (<code>fuel_final_submission.parquet</code>), i.e.&nbsp;something with a payload like:</p>
+<p>You should submit a <strong>parquet</strong> file, named <code>&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet</code>, with your predictions with exactly all entries as in in <code>fuel_rank_submission.parquet</code> (<code>fuel_final_submission.parquet</code>), i.e.&nbsp;something with a payload like:</p>
 <pre><code>idx     flight_id                start                  end  fuel_kg
   0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 
   1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04    120.8

@@ -8,10 +8,6 @@ acronyms:
   insert_loa: false
 ---
 
-::: {.callout-note title="Beware"}
-This will evolve with more or better structured teams details.
-:::
-
 
 ```{r setup, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 library(conflicted)

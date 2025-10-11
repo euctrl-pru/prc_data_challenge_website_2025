@@ -16,8 +16,7 @@ For phase 1 there are companion trajectories and flight list.
 Each team will have to submit its predictions in its own bucket, with a
 file name template as follows
 
-> `submission_v<incremental integer>.parquet`  
-> `submission-final_v<incremental integers>.parquet`
+> `<team-name>_v<incremental integer>.parquet`  
 
 The `fuel_rank_submission.parquet` (`fuel_final_submission.parquet`) payload
 looks something like
@@ -33,8 +32,9 @@ idx     flight_id                start                  end  fuel_kg
 
 ### Submission format
 
-You should submit a **parquet** file with your predictions with exactly all
-entries as in in `fuel_rank_submission.parquet`
+You should submit a **parquet** file, named
+`<team-name>_v<incremental integer>.parquet`, with your predictions
+with exactly all entries as in in `fuel_rank_submission.parquet`
 (`fuel_final_submission.parquet`), i.e. something with a payload like:
 
 ```
