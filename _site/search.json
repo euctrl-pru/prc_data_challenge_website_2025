@@ -80,6 +80,16 @@
     ]
   },
   {
+    "objectID": "data.html#how-to-access-the-datasets",
+    "href": "data.html#how-to-access-the-datasets",
+    "title": "2  Data",
+    "section": "How to access the datasets",
+    "text": "How to access the datasets\nLast year’s challenge website has some instructions about how to use Minio to access OpenSky buckets at\nhttps://ansperformance.eu/study/data-challenge/dc2024/data.html#using-minio-client",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data</span>"
+    ]
+  },
+  {
     "objectID": "submission.html",
     "href": "submission.html",
     "title": "3  Submission",

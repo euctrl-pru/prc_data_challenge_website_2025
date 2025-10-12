@@ -147,3 +147,11 @@ The airports dataset provides complementary positions as follows:
 
 The use of additional and/or external dataset is permitted if open data
 and documented.
+
+
+## How to access the datasets
+
+Last year's challenge website has some instructions about how to 
+use Minio to access OpenSky buckets at
+
+<https://ansperformance.eu/study/data-challenge/dc2024/data.html#using-minio-client>
