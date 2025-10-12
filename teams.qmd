@@ -53,6 +53,8 @@ counts_in_time <- ttt |>
   summarise(across(n, ~ sum(.x, na.rm = TRUE))) |> 
   mutate(future = registration_date > today())
 
+ojs_define(teams_in_time = counts_in_time)
+
 number_of_teams <- counts_in_time |> 
   summarise(across("n", ~ sum(.x, na.rm = TRUE))) |> 
   pull(n)
@@ -83,6 +85,11 @@ cumulative_counts_in_time |>
       NULL)
 ```
 
+
+```{ojs}
+a = transpose(teams_in_time)
+a
+```
 
 
 ```{ojs}
