@@ -33,7 +33,7 @@ idx     flight_id                start                  end  fuel_kg
 ### Submission format
 
 You should submit a **parquet** file, named
-`<team-name>_v<incremental integer>.parquet`, with your predictions
+`<team-name>-v<incremental integer>.parquet`, with your predictions
 with exactly all entries as in in `fuel_rank_submission.parquet`
 (`fuel_final_submission.parquet`), i.e. something with a payload like:
 
