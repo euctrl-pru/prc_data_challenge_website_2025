@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,6 +104,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="media/styles.css">
@@ -510,17 +547,141 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-figure quarto-figure-center">
+<div class="cell">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="90" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 89;"><span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>d3 <span class="op">=</span> require<span class="op">.</span><span class="fu">alias</span>({</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>  <span class="dt">d3</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo'</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-array'</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo-projection'</span><span class="op">:</span> <span class="st">'d3-geo-projection@4.0.0/dist/d3-geo-projection.min.js'</span><span class="op">,</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo-polygon'</span><span class="op">:</span> <span class="st">'d3-geo-polygon@1.12.1/dist/d3-geo-polygon.min.js'</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>})(<span class="st">'d3'</span><span class="op">,</span> <span class="st">'d3-geo-projection'</span><span class="op">,</span> <span class="st">'d3-geo-polygon'</span>)</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>world <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">'data/world.topo.json'</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>land <span class="op">=</span> topojson<span class="op">.</span><span class="fu">feature</span>(world<span class="op">,</span> world<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> topojson<span class="op">.</span><span class="fu">feature</span>(world<span class="op">,</span> world<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">countries</span>)</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>teams_country <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">'data/teams_country.csv'</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>origin <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(teams_country<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> [d<span class="op">.</span><span class="at">iso3c</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">n</span>]))</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>countries_without_antarctica <span class="op">=</span> {</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> l <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(<span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>(countries))<span class="op">;</span> <span class="co">// clone (useless here but a good idea in general)</span></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>  <span class="co">// remove antartica, i.e. code "010"</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>  l<span class="op">.</span><span class="at">features</span> <span class="op">=</span> l<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="fu">filter</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">id</span> <span class="op">!=</span> <span class="st">'010'</span>)<span class="op">;</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> l<span class="op">;</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>projection <span class="op">=</span> d3[<span class="st">'geoBertin1953'</span>]()<span class="op">.</span><span class="fu">rotate</span>([<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="op">-</span><span class="dv">43</span>])<span class="op">.</span><span class="fu">precision</span>(<span class="fl">0.1</span>)</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">1000</span><span class="op">,</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">560</span><span class="op">,</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>  <span class="dt">margin</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>  <span class="dt">projection</span><span class="op">:</span> projection<span class="op">,</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">'quantize'</span><span class="op">,</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>    <span class="dt">n</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>    <span class="co">// unknown: '#ced4da',</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">11</span>]<span class="op">,</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">'reds'</span><span class="op">,</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">'Number of teams'</span><span class="op">,</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">sphere</span>({</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>      <span class="co">// fill: d3.rgb(241, 246, 251).formatHex(),</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">'#00FFFF'</span><span class="op">,</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>      <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.3</span><span class="op">,</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">'currentColor'</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(countries_without_antarctica<span class="op">,</span> { <span class="dt">fill</span><span class="op">:</span> <span class="st">'#FFFFFF'</span><span class="op">,</span> <span class="dt">opacity</span><span class="op">:</span> <span class="dv">1</span> })<span class="op">,</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>      countries_without_antarctica<span class="op">,</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">centroid</span>({</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> origin<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">a3</span>)<span class="op">,</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>        <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>        <span class="dt">channels</span><span class="op">:</span> {</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>          <span class="dt">Country</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">name</span></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>      })</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>    )<span class="op">,</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(countries_without_antarctica<span class="op">,</span> { <span class="dt">stroke</span><span class="op">:</span> <span class="st">'black'</span> })</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-9" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="media/team_per_country.png" class="img-fluid figure-img"></p>
-<figcaption>Teams per country</figcaption>
+<p><img src="teams_files/figure-html/teams-bar-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="media/teams_per_country_bar.png" class="img-fluid figure-img"></p>
-<figcaption>Teams per country, again</figcaption>
-</figure>
+</div>
 </div>
 <section id="amazing-pillow" class="level2">
 <h2 class="anchored" data-anchor-id="amazing-pillow">amazing-pillow</h2>
@@ -1574,6 +1735,17 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImQzID0gcmVxdWlyZS5hbGlhcyh7XG4gIGQzOiAnZDNANy43LjAvZGlzdC9kMy5taW4uanMnLFxuICAnZDMtZ2VvJzogJ2QzQDcuNy4wL2Rpc3QvZDMubWluLmpzJyxcbiAgJ2QzLWFycmF5JzogJ2QzQDcuNy4wL2Rpc3QvZDMubWluLmpzJyxcbiAgJ2QzLWdlby1wcm9qZWN0aW9uJzogJ2QzLWdlby1wcm9qZWN0aW9uQDQuMC4wL2Rpc3QvZDMtZ2VvLXByb2plY3Rpb24ubWluLmpzJyxcbiAgJ2QzLWdlby1wb2x5Z29uJzogJ2QzLWdlby1wb2x5Z29uQDEuMTIuMS9kaXN0L2QzLWdlby1wb2x5Z29uLm1pbi5qcydcbn0pKCdkMycsICdkMy1nZW8tcHJvamVjdGlvbicsICdkMy1nZW8tcG9seWdvbicpXG5cbndvcmxkID0gRmlsZUF0dGFjaG1lbnQoJ2RhdGEvd29ybGQudG9wby5qc29uJykuanNvbigpXG5cbmxhbmQgPSB0b3BvanNvbi5mZWF0dXJlKHdvcmxkLCB3b3JsZC5vYmplY3RzLmxhbmQpXG5cbmNvdW50cmllcyA9IHRvcG9qc29uLmZlYXR1cmUod29ybGQsIHdvcmxkLm9iamVjdHMuY291bnRyaWVzKVxuXG50ZWFtc19jb3VudHJ5ID0gRmlsZUF0dGFjaG1lbnQoJ2RhdGEvdGVhbXNfY291bnRyeS5jc3YnKS5jc3YoeyB0eXBlZDogdHJ1ZSB9KVxuXG5vcmlnaW4gPSBuZXcgTWFwKHRlYW1zX2NvdW50cnkubWFwKChkKSA9PiBbZC5pc28zYywgK2Qubl0pKVxuXG5jb3VudHJpZXNfd2l0aG91dF9hbnRhcmN0aWNhID0ge1xuICB2YXIgbCA9IEpTT04ucGFyc2UoSlNPTi5zdHJpbmdpZnkoY291bnRyaWVzKSk7IC8vIGNsb25lICh1c2VsZXNzIGhlcmUgYnV0IGEgZ29vZCBpZGVhIGluIGdlbmVyYWwpXG4gIC8vIHJlbW92ZSBhbnRhcnRpY2EsIGkuZS4gY29kZSBcIjAxMFwiXG4gIGwuZmVhdHVyZXMgPSBsLmZlYXR1cmVzLmZpbHRlcigoZCkgPT4gZC5pZCAhPSAnMDEwJyk7XG4gIHJldHVybiBsO1xufVxuXG5wcm9qZWN0aW9uID0gZDNbJ2dlb0JlcnRpbjE5NTMnXSgpLnJvdGF0ZShbLTQsIC00M10pLnByZWNpc2lvbigwLjEpXG5cblBsb3QucGxvdCh7XG4gIHdpZHRoOiAxMDAwLFxuICBoZWlnaHQ6IDU2MCxcbiAgbWFyZ2luOiA1LFxuICBwcm9qZWN0aW9uOiBwcm9qZWN0aW9uLFxuICBjb2xvcjoge1xuICAgIHR5cGU6ICdxdWFudGl6ZScsXG4gICAgbjogMTEsXG4gICAgLy8gdW5rbm93bjogJyNjZWQ0ZGEnLFxuICAgIGRvbWFpbjogWzEsIDExXSxcbiAgICBzY2hlbWU6ICdyZWRzJyxcbiAgICBsYWJlbDogJ051bWJlciBvZiB0ZWFtcycsXG4gICAgbGVnZW5kOiB0cnVlXG4gIH0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5zcGhlcmUoe1xuICAgICAgLy8gZmlsbDogZDMucmdiKDI0MSwgMjQ2LCAyNTEpLmZvcm1hdEhleCgpLFxuICAgICAgZmlsbDogJyMwMEZGRkYnLFxuICAgICAgb3BhY2l0eTogMC4zLFxuICAgICAgc3Ryb2tlOiAnY3VycmVudENvbG9yJ1xuICAgIH0pLFxuICAgIFBsb3QuZ2VvKGNvdW50cmllc193aXRob3V0X2FudGFyY3RpY2EsIHsgZmlsbDogJyNGRkZGRkYnLCBvcGFjaXR5OiAxIH0pLFxuICAgIFBsb3QuZ2VvKFxuICAgICAgY291bnRyaWVzX3dpdGhvdXRfYW50YXJjdGljYSxcbiAgICAgIFBsb3QuY2VudHJvaWQoe1xuICAgICAgICBmaWxsOiAoZCkgPT4gb3JpZ2luLmdldChkLnByb3BlcnRpZXMuYTMpLFxuICAgICAgICB0aXA6IHRydWUsXG4gICAgICAgIGNoYW5uZWxzOiB7XG4gICAgICAgICAgQ291bnRyeTogKGQpID0+IGQucHJvcGVydGllcy5uYW1lXG4gICAgICAgIH1cbiAgICAgIH0pXG4gICAgKSxcbiAgICBQbG90Lmdlbyhjb3VudHJpZXNfd2l0aG91dF9hbnRhcmN0aWNhLCB7IHN0cm9rZTogJ2JsYWNrJyB9KVxuICBdXG59KVxuIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

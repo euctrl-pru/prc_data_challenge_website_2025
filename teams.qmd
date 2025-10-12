@@ -14,6 +14,7 @@ library(conflicted)
 library(dplyr)
 library(here)
 library(purrrlyr)
+library(countrycode)
 
 conflicts_prefer(dplyr::filter)
 
@@ -30,6 +31,19 @@ ttt <- teams_valid |>
   complete(registration_date = seq(ymd("2025-09-30"),
                                    ymd("2025-12-01"),
                                    by = "day"))
+
+ccc <- teams_valid |> 
+  count(team_country) |> 
+  mutate(
+    team_country = if_else(
+      team_country == "Ireland {Republic}",
+      "Ireland",
+      team_country),
+    NULL
+  ) |>
+  mutate(
+    iso3c = countrycode(team_country, 'country.name', 'iso3c'))
+
 
 counts_in_time <- ttt |> 
   select(team_name, registration_date) |> 
@@ -68,8 +82,105 @@ cumulative_counts_in_time |>
       legend.position = "none",
       NULL)
 ```
-![Teams per country](media/team_per_country.png)
 
-![Teams per country, again](media/teams_per_country_bar.png)
+
+
+```{ojs}
+//| echo: false
+d3 = require.alias({
+  d3: 'd3@7.7.0/dist/d3.min.js',
+  'd3-geo': 'd3@7.7.0/dist/d3.min.js',
+  'd3-array': 'd3@7.7.0/dist/d3.min.js',
+  'd3-geo-projection': 'd3-geo-projection@4.0.0/dist/d3-geo-projection.min.js',
+  'd3-geo-polygon': 'd3-geo-polygon@1.12.1/dist/d3-geo-polygon.min.js'
+})('d3', 'd3-geo-projection', 'd3-geo-polygon')
+
+world = FileAttachment('data/world.topo.json').json()
+
+land = topojson.feature(world, world.objects.land)
+
+countries = topojson.feature(world, world.objects.countries)
+
+teams_country = FileAttachment('data/teams_country.csv').csv({ typed: true })
+
+origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
+
+countries_without_antarctica = {
+  var l = JSON.parse(JSON.stringify(countries)); // clone (useless here but a good idea in general)
+  // remove antartica, i.e. code "010"
+  l.features = l.features.filter((d) => d.id != '010');
+  return l;
+}
+
+projection = d3['geoBertin1953']().rotate([-4, -43]).precision(0.1)
+
+Plot.plot({
+  width: 1000,
+  height: 560,
+  margin: 5,
+  projection: projection,
+  color: {
+    type: 'quantize',
+    n: 11,
+    // unknown: '#ced4da',
+    domain: [1, 11],
+    scheme: 'reds',
+    label: 'Number of teams',
+    legend: true
+  },
+  marks: [
+    Plot.sphere({
+      // fill: d3.rgb(241, 246, 251).formatHex(),
+      fill: '#00FFFF',
+      opacity: 0.3,
+      stroke: 'currentColor'
+    }),
+    Plot.geo(countries_without_antarctica, { fill: '#FFFFFF', opacity: 1 }),
+    Plot.geo(
+      countries_without_antarctica,
+      Plot.centroid({
+        fill: (d) => origin.get(d.properties.a3),
+        tip: true,
+        channels: {
+          Country: (d) => d.properties.name
+        }
+      })
+    ),
+    Plot.geo(countries_without_antarctica, { stroke: 'black' })
+  ]
+})
+```
+
+
+```{r teams-bar, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+library(countrycode)
+library(scales)
+
+teams_valid |> 
+  count(team_country) |> 
+  mutate(
+    team_country = if_else(team_country == "Ireland {Republic}",
+                           "Ireland",
+                           team_country),
+    team_country = fct_reorder(team_country, n)) |> 
+  ggplot() +
+  geom_bar(aes(x = team_country, y = n) , stat="identity") +
+  scale_y_continuous(
+    breaks = pretty_breaks(),
+    sec.axis = dup_axis(),
+    expand = c(0,0)) +
+  coord_flip() +
+  labs(y = "Number of teams") +
+  theme_minimal() +
+  theme(axis.title.y = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        prism.ticks.length.y = unit(20, "pt"),
+        # axis.ticks.length = unit(1, "cm"),
+        NULL)
+```
+
+
+
 
 {{< include _teams.qmd >}}
