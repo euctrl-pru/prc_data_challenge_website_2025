@@ -1,0 +1,14 @@
+## dependable-xylophone
+
+### Description and Rationale
+We are a team of young professionals, with an innate motivation to contribute to making human lives better, whatever this means. This can be possible by applying our knowledge and familliar tools to solving everyday problems and optimizing processes. 
+
+In this case, predicting fuel burn intervals adequately, can result to better fuel handling, which could potentially reduce fuel needs significantly, making flights a less harmful means of transport.
+
+### Details
+
+* Number of team members: 3
+* Type: Independent
+* Affiliation: DTU
+* Country: Denmark
+

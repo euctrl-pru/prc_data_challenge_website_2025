@@ -1,0 +1,13 @@
+## resilient-yeti
+
+### Description and Rationale
+Senior/Staff Data Scientist at Estuaire. We have the exact same problem at home.
+Not sure if I'll have the time to complet, though I'd be interested to try.
+
+### Details
+
+* Number of team members: 1
+* Type: Industry, Independent
+* Affiliation: Estuaire
+* Country: France
+

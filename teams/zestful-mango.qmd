@@ -1,0 +1,12 @@
+## zestful-mango
+
+### Description and Rationale
+We are a duo of data scientists motivated by the challenge of applying our analytical techniques to real-world problems in the aeronautics industry.
+
+### Details
+
+* Number of team members: 2
+* Type: Industry
+* Affiliation: WhiteBox
+* Country: Spain
+

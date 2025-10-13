@@ -1,0 +1,12 @@
+## confident-insect
+
+### Description and Rationale
+We are researchers from Chinese universities, working on intelligent transportation systems. We are keen on developing data science and machine learning solutions for real-world engineering challenges.
+
+### Details
+
+* Number of team members: 3
+* Type: Academia
+* Affiliation: Civil Aviation University of China
+* Country: China
+

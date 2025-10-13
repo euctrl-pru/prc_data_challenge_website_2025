@@ -1,0 +1,12 @@
+## calm-utensil
+
+### Description and Rationale
+I am a software engineer and have been flying gliders since I was in middle school. I love aviation and building solutions using my CS knowledge so this challange is perfectly positioned at the intersection of these two fields.
+
+### Details
+
+* Number of team members: 1
+* Type: Independent
+* Affiliation: independent
+* Country: United States
+

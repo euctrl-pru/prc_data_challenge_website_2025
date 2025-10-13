@@ -1,0 +1,12 @@
+## gentle-eel
+
+### Description and Rationale
+A team of data enthusiasts driven by curiosity and the joy of solving data challenges.
+
+### Details
+
+* Number of team members: 2
+* Type: Academia
+* Affiliation: Technical University of Denmark
+* Country: Denmark
+

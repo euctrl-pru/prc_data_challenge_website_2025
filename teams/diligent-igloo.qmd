@@ -1,0 +1,12 @@
+## diligent-igloo
+
+### Description and Rationale
+I’m a Master student in Data Science at the University of Barcelona, and this Data Science contest sounds like the perfect opportunity to put my skills to the test and learn from real data, and explore how data science can make an impact in aviation. I’m excited to experiment, and see what I can uncover.
+
+### Details
+
+* Number of team members: 1
+* Type: Independent
+* Affiliation: Universitat de Barcelona
+* Country: Spain
+
