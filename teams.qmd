@@ -64,7 +64,7 @@ cumulative_counts_in_time <- counts_in_time |>
 ```
 
 
-```{r table-countries}
+```{r table-countries, eval=FALSE}
 #| echo: false
 #| warning: false
 library(tidyverse)
@@ -87,7 +87,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-again, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-more, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -176,7 +176,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=FALSE}
+```{r teams-bar-more, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 
