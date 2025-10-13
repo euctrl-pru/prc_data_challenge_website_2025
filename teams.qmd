@@ -87,7 +87,7 @@ ccc |>
 
 
 
-```{r cumulative-plot, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+```{r cumulative-plot-again, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
