@@ -558,6 +558,584 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div class="cell">
 <div class="cell-output-display">
+<div id="uxkrbenhyt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#uxkrbenhyt table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#uxkrbenhyt thead, #uxkrbenhyt tbody, #uxkrbenhyt tfoot, #uxkrbenhyt tr, #uxkrbenhyt td, #uxkrbenhyt th {
+  border-style: none;
+}
+
+#uxkrbenhyt p {
+  margin: 0;
+  padding: 0;
+}
+
+#uxkrbenhyt .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#uxkrbenhyt .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#uxkrbenhyt .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#uxkrbenhyt .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#uxkrbenhyt .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#uxkrbenhyt .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#uxkrbenhyt .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#uxkrbenhyt .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#uxkrbenhyt .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#uxkrbenhyt .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#uxkrbenhyt .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#uxkrbenhyt .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#uxkrbenhyt .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#uxkrbenhyt .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#uxkrbenhyt .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxkrbenhyt .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#uxkrbenhyt .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#uxkrbenhyt .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#uxkrbenhyt .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxkrbenhyt .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#uxkrbenhyt .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxkrbenhyt .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#uxkrbenhyt .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxkrbenhyt .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uxkrbenhyt .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxkrbenhyt .gt_left {
+  text-align: left;
+}
+
+#uxkrbenhyt .gt_center {
+  text-align: center;
+}
+
+#uxkrbenhyt .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#uxkrbenhyt .gt_font_normal {
+  font-weight: normal;
+}
+
+#uxkrbenhyt .gt_font_bold {
+  font-weight: bold;
+}
+
+#uxkrbenhyt .gt_font_italic {
+  font-style: italic;
+}
+
+#uxkrbenhyt .gt_super {
+  font-size: 65%;
+}
+
+#uxkrbenhyt .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#uxkrbenhyt .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#uxkrbenhyt .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#uxkrbenhyt .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#uxkrbenhyt .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#uxkrbenhyt .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#uxkrbenhyt .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#uxkrbenhyt .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#uxkrbenhyt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="team_country" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Country</strong></th>
+<th id="n" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col"><strong># of teams</strong></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">United States</td>
+<td class="gt_row gt_right" headers="n">13</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Germany</td>
+<td class="gt_row gt_right" headers="n">9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">France</td>
+<td class="gt_row gt_right" headers="n">8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Spain</td>
+<td class="gt_row gt_right" headers="n">7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">India</td>
+<td class="gt_row gt_right" headers="n">4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Netherlands</td>
+<td class="gt_row gt_right" headers="n">4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">China</td>
+<td class="gt_row gt_right" headers="n">3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Denmark</td>
+<td class="gt_row gt_right" headers="n">3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">Belgium</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Canada</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">Ireland</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Japan</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">Korea South</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Poland</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">Switzerland</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Turkey</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">United Kingdom</td>
+<td class="gt_row gt_right" headers="n">2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Benin</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">Bosnia Herzegovina</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Finland</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">Kenya</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Morocco</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">Norway</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Romania</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">Sweden</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Tunisia</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="team_country">United Arab Emirates</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="team_country">Vietnam</td>
+<td class="gt_row gt_right" headers="n">1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
 <div>
 <figure class="figure">
 <p><img src="teams_files/figure-html/cumulative-plot-1.png" class="img-fluid figure-img" width="672"></p>
@@ -566,68 +1144,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="91" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 90;"><span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>d3 <span class="op">=</span> require<span class="op">.</span><span class="fu">alias</span>({</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>  <span class="dt">d3</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo'</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-array'</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo-projection'</span><span class="op">:</span> <span class="st">'d3-geo-projection@4.0.0/dist/d3-geo-projection.min.js'</span><span class="op">,</span></span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo-polygon'</span><span class="op">:</span> <span class="st">'d3-geo-polygon@1.12.1/dist/d3-geo-polygon.min.js'</span></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>})(<span class="st">'d3'</span><span class="op">,</span> <span class="st">'d3-geo-projection'</span><span class="op">,</span> <span class="st">'d3-geo-polygon'</span>)</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>world <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">'data/world.topo.json'</span>)<span class="op">.</span><span class="fu">json</span>()</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>land <span class="op">=</span> topojson<span class="op">.</span><span class="fu">feature</span>(world<span class="op">,</span> world<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)</span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> topojson<span class="op">.</span><span class="fu">feature</span>(world<span class="op">,</span> world<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">countries</span>)</span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>teams_country <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">'data/teams_country.csv'</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>origin <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(teams_country<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> [d<span class="op">.</span><span class="at">iso3c</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">n</span>]))</span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>countries_without_antarctica <span class="op">=</span> {</span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> l <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(<span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>(countries))<span class="op">;</span> <span class="co">// clone (useless here but a good idea in general)</span></span>
-<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>  <span class="co">// remove antartica, i.e. code "010"</span></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>  l<span class="op">.</span><span class="at">features</span> <span class="op">=</span> l<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="fu">filter</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">id</span> <span class="op">!=</span> <span class="st">'010'</span>)<span class="op">;</span></span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> l<span class="op">;</span></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>projection <span class="op">=</span> d3[<span class="st">'geoBertin1953'</span>]()<span class="op">.</span><span class="fu">rotate</span>([<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="op">-</span><span class="dv">43</span>])<span class="op">.</span><span class="fu">precision</span>(<span class="fl">0.1</span>)</span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">1000</span><span class="op">,</span></span>
-<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">560</span><span class="op">,</span></span>
-<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>  <span class="dt">margin</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span></span>
-<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>  <span class="dt">projection</span><span class="op">:</span> projection<span class="op">,</span></span>
-<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
-<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">'quantize'</span><span class="op">,</span></span>
-<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>    <span class="dt">n</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span></span>
-<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>    <span class="co">// unknown: '#ced4da',</span></span>
-<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">11</span>]<span class="op">,</span></span>
-<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">'reds'</span><span class="op">,</span></span>
-<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">'Number of teams'</span><span class="op">,</span></span>
-<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
-<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">sphere</span>({</span>
-<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>      <span class="co">// fill: d3.rgb(241, 246, 251).formatHex(),</span></span>
-<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">'#00FFFF'</span><span class="op">,</span></span>
-<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>      <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.3</span><span class="op">,</span></span>
-<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">'currentColor'</span></span>
-<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
-<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(countries_without_antarctica<span class="op">,</span> { <span class="dt">fill</span><span class="op">:</span> <span class="st">'#FFFFFF'</span><span class="op">,</span> <span class="dt">opacity</span><span class="op">:</span> <span class="dv">1</span> })<span class="op">,</span></span>
-<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(</span>
-<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>      countries_without_antarctica<span class="op">,</span></span>
-<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">centroid</span>({</span>
-<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> origin<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">a3</span>)<span class="op">,</span></span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>        <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>        <span class="dt">channels</span><span class="op">:</span> {</span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>          <span class="dt">Country</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">name</span></span>
-<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>      })</span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    )<span class="op">,</span></span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(countries_without_antarctica<span class="op">,</span> { <span class="dt">stroke</span><span class="op">:</span> <span class="st">'black'</span> })</span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="114" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 113;"><span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>d3 <span class="op">=</span> require<span class="op">.</span><span class="fu">alias</span>({</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>  <span class="dt">d3</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo'</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-array'</span><span class="op">:</span> <span class="st">'d3@7.7.0/dist/d3.min.js'</span><span class="op">,</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo-projection'</span><span class="op">:</span> <span class="st">'d3-geo-projection@4.0.0/dist/d3-geo-projection.min.js'</span><span class="op">,</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>  <span class="st">'d3-geo-polygon'</span><span class="op">:</span> <span class="st">'d3-geo-polygon@1.12.1/dist/d3-geo-polygon.min.js'</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>})(<span class="st">'d3'</span><span class="op">,</span> <span class="st">'d3-geo-projection'</span><span class="op">,</span> <span class="st">'d3-geo-polygon'</span>)</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>world <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">'data/world.topo.json'</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>land <span class="op">=</span> topojson<span class="op">.</span><span class="fu">feature</span>(world<span class="op">,</span> world<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">land</span>)</span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>countries <span class="op">=</span> topojson<span class="op">.</span><span class="fu">feature</span>(world<span class="op">,</span> world<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">countries</span>)</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>teams_country <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">'data/teams_country.csv'</span>)<span class="op">.</span><span class="fu">csv</span>({ <span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span> })</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>origin <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(teams_country<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> [d<span class="op">.</span><span class="at">iso3c</span><span class="op">,</span> <span class="op">+</span>d<span class="op">.</span><span class="at">n</span>]))</span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>countries_without_antarctica <span class="op">=</span> {</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> l <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">parse</span>(<span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>(countries))<span class="op">;</span> <span class="co">// clone (useless here but a good idea in general)</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>  <span class="co">// remove antartica, i.e. code "010"</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>  l<span class="op">.</span><span class="at">features</span> <span class="op">=</span> l<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="fu">filter</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">id</span> <span class="op">!=</span> <span class="st">'010'</span>)<span class="op">;</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> l<span class="op">;</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>projection <span class="op">=</span> d3[<span class="st">'geoBertin1953'</span>]()<span class="op">.</span><span class="fu">rotate</span>([<span class="op">-</span><span class="dv">4</span><span class="op">,</span> <span class="op">-</span><span class="dv">43</span>])<span class="op">.</span><span class="fu">precision</span>(<span class="fl">0.1</span>)</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="dv">1000</span><span class="op">,</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">560</span><span class="op">,</span></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>  <span class="dt">margin</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>  <span class="dt">projection</span><span class="op">:</span> projection<span class="op">,</span></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">'quantize'</span><span class="op">,</span></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>    <span class="dt">n</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    <span class="co">// unknown: '#ced4da',</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">11</span>]<span class="op">,</span></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">'reds'</span><span class="op">,</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">'Number of teams'</span><span class="op">,</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>    <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">sphere</span>({</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>      <span class="co">// fill: d3.rgb(241, 246, 251).formatHex(),</span></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">'#00FFFF'</span><span class="op">,</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>      <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.3</span><span class="op">,</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">'currentColor'</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(countries_without_antarctica<span class="op">,</span> { <span class="dt">fill</span><span class="op">:</span> <span class="st">'#FFFFFF'</span><span class="op">,</span> <span class="dt">opacity</span><span class="op">:</span> <span class="dv">1</span> })<span class="op">,</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>      countries_without_antarctica<span class="op">,</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>      Plot<span class="op">.</span><span class="fu">centroid</span>({</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>        <span class="dt">fill</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> origin<span class="op">.</span><span class="fu">get</span>(d<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">a3</span>)<span class="op">,</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>        <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>        <span class="dt">channels</span><span class="op">:</span> {</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>          <span class="dt">Country</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">name</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>      })</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>    )<span class="op">,</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(countries_without_antarctica<span class="op">,</span> { <span class="dt">stroke</span><span class="op">:</span> <span class="st">'black'</span> })</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -689,15 +1267,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="ojs-cell-1-9" data-nodetype="expression">
 
 </div>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="teams_files/figure-html/teams-bar-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
 </div>
 </div>
 </div>

@@ -64,6 +64,29 @@ cumulative_counts_in_time <- counts_in_time |>
 ```
 
 
+```{r table-countries}
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(ggplot2)
+library(jsonlite)
+library(here)
+library(gt)
+
+ccc |> 
+  dplyr::select(-iso3c) |> 
+  dplyr::arrange(desc(n), team_country) |> 
+  gt() |>
+  cols_label(
+    team_country = md("**Country**"),
+    n = md("**# of teams**")
+  )
+```
+
+
+
+
+
 ```{r cumulative-plot, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
@@ -153,7 +176,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
+```{r teams-bar, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=FALSE}
 library(countrycode)
 library(scales)
 
