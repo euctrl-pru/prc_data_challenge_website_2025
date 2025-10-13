@@ -1,0 +1,12 @@
+## easygoing-yogurt
+
+### Description and Rationale
+We are a group of research scientists based in Hamburg. We are associated with maintenance, but would like to expand our expertise in flight trajectory management.
+
+### Details
+
+* Number of team members: 2
+* Type: Government
+* Affiliation: DLR
+* Country: Germany
+
