@@ -1,0 +1,12 @@
+## honorable-zipper
+
+### Description and Rationale
+We are SkyNova, an independent team passionate about aviation data and analytics. We joined the PRC Data Challenge to explore innovative ways to enhance air traffic efficiency through data-driven insights. Our motivation is driven by curiosity, teamwork, and the ambition to turn complex data into meaningful results.
+
+### Details
+
+* Number of team members: 4
+* Type: Independent
+* Affiliation: SkyNova
+* Country: Egypt
+

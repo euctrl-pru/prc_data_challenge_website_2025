@@ -1,0 +1,12 @@
+## trustworthy-hedgehog
+
+### Description and Rationale
+We are a group of friends who love to do a bit of coding on the side. This challenge brought us a good opportunity to practice thinking about aerospace outside of work, and we will love to see if our unique prespective can solve this challenge posed!
+
+### Details
+
+* Number of team members: 3
+* Type: Industry
+* Affiliation: Rolls-Royce plc
+* Country: United Kingdom
+
