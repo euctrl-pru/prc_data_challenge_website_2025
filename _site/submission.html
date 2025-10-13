@@ -451,8 +451,7 @@ ul.task-list li input[type="checkbox"] {
   2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04   2500 
   3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 
 ...</code></pre>
-<p>In fact only <code>idx</code> and <code>fuel_kg</code> will be considered by the ranking script when calculating the RMSE.</p>
-<p>Missing rows will be given a value of <code>0</code> (zero) for the corresponding <code>fuel_kg</code>.</p>
+<p>We require each row to match <code>idx</code>, <code>flight_id</code>, <code>start</code> and <code>end</code> before <code>fuel_kg</code> will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.</p>
 
 
 </section>
