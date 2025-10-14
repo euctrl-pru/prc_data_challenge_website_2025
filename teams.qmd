@@ -42,7 +42,9 @@ ccc <- teams_valid |>
     NULL
   ) |>
   mutate(
-    iso3c = countrycode(team_country, 'country.name', 'iso3c'))
+    iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
+  write_csv("data/teams_country.csv")
+
 
 
 counts_in_time <- ttt |> 
@@ -147,7 +149,7 @@ Plot.plot({
     type: 'quantize',
     n: 11,
     // unknown: '#ced4da',
-    domain: [1, 11],
+    domain: [1, 15],
     scheme: 'reds',
     label: 'Number of teams',
     legend: true
