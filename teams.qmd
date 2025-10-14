@@ -163,7 +163,9 @@ Plot.plot({
     }),
     Plot.geo(countries_without_antarctica, { fill: '#FFFFFF', opacity: 1 }),
     Plot.geo(
-      countries_without_antarctica,
+      countries_without_antarctica.features.filter(
+        (d) => !["GUF"].includes(d.properties.name)
+      ),
       Plot.centroid({
         fill: (d) => origin.get(d.properties.a3),
         tip: true,
