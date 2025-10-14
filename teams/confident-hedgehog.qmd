@@ -1,0 +1,12 @@
+## confident-hedgehog
+
+### Description and Rationale
+We are a team of researchers from the Aerospace Systems Design Laboratory (ASDL)'s Civil Aviation Research Division. Our mission is to conduct research on aviation impacts on communities, global climate, economics, operations, and R&D investments while educating the next generation of engineers.
+
+### Details
+
+* Number of team members: 3
+* Type: Academia
+* Affiliation: Georgia Institute of Technology
+* Country: United States
+

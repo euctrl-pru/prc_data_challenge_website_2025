@@ -87,7 +87,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-lessly, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-l, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -176,7 +176,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-lessly, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-l, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 

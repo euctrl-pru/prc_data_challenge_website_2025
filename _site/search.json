@@ -240,6 +240,16 @@
     ]
   },
   {
+    "objectID": "teams.html#confident-hedgehog",
+    "href": "teams.html#confident-hedgehog",
+    "title": "5  Teams",
+    "section": "confident-hedgehog",
+    "text": "confident-hedgehog\n\nDescription and Rationale\nWe are a team of researchers from the Aerospace Systems Design Laboratory (ASDL)’s Civil Aviation Research Division. Our mission is to conduct research on aviation impacts on communities, global climate, economics, operations, and R&D investments while educating the next generation of engineers.\n\n\nDetails\n\nNumber of team members: 3\nType: Academia\nAffiliation: Georgia Institute of Technology\nCountry: United States",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#confident-insect",
     "href": "teams.html#confident-insect",
     "title": "5  Teams",
@@ -335,6 +345,26 @@
     "title": "5  Teams",
     "section": "gentle-eel",
     "text": "gentle-eel\n\nDescription and Rationale\nA team of data enthusiasts driven by curiosity and the joy of solving data challenges.\n\n\nDetails\n\nNumber of team members: 2\nType: Academia\nAffiliation: Technical University of Denmark\nCountry: Denmark",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#gentle-koala",
+    "href": "teams.html#gentle-koala",
+    "title": "5  Teams",
+    "section": "gentle-koala",
+    "text": "gentle-koala\n\nDescription and Rationale\nWe are a final-year Computer Engineering team specializing in Big Data and AI. Our experience in data pipelines, predictive modeling, and machine learning aligns perfectly with the PRC Data Challenge. We’re excited to apply our skills to real-world aviation analytics, contribute to sustainability efforts, and learn from the open-data community while helping improve aviation transparency through data-driven solutions.\n\n\nDetails\n\nNumber of team members: 6\nType: Academia, Independent\nAffiliation: Polytechnique\nCountry: Morocco",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#gentle-orange",
+    "href": "teams.html#gentle-orange",
+    "title": "5  Teams",
+    "section": "gentle-orange",
+    "text": "gentle-orange\n\nDescription and Rationale\nOur team consists of three teammates from multiple disciplines who love using data to solve real-world problems. We come from machine learning, systems engineering, applied mathematics, and environmental modeling, and although we are outside the field of aviation, we share a common interest, curiosity and a reason to apply our collective skills to an exciting problem.\nOur team joined the PRC Data Challenge 2025 because it is exactly the kind of project that we find interesting: it is complex, grounded in reality and uses data and models to push the boundaries of science. The prospect of working with real flight and fuel datasets, dealing with all the complexities of noisy and incomplete datasets, and providing solutions that will be used to potentially inform environmental and operational improvements in aviation is important to our team.\nThis challenge will be we view this challenge as an opportunity for learning and collaboration, but as an opportunity to contribute to the larger cause of more sustainable and efficient air travel.\n\n\nDetails\n\nNumber of team members: 3\nType: Independent\nAffiliation: PharaDev\nCountry: Egypt",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
@@ -650,6 +680,16 @@
     ]
   },
   {
+    "objectID": "teams.html#motivated-quartz",
+    "href": "teams.html#motivated-quartz",
+    "title": "5  Teams",
+    "section": "motivated-quartz",
+    "text": "motivated-quartz\n\nDescription and Rationale\nI am a final-year Computer Engineering students, future civil aviation professionals. I decided to participate in the China Data Challenge because it aligns perfectly with our interests in data science, aviation analytics, and sustainability. Through my studies, i have worked on projects involving time-series forecasting models, predictive modeling, and machine learning, which have equipped us with strong analytical and teamwork skills. We see this challenge as an opportunity to apply our knowledge to real-world aviation problems, learn from the open data community, and contribute to enhancing the transparency and efficiency of the aviation industry through data-driven insights.\n\n\nDetails\n\nNumber of team members: 2\nType: Independent\nAffiliation: beihang nuiversity\nCountry: China",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#neat-noodle",
     "href": "teams.html#neat-noodle",
     "title": "5  Teams",
@@ -910,11 +950,31 @@
     ]
   },
   {
+    "objectID": "teams.html#vibrant-cabbage",
+    "href": "teams.html#vibrant-cabbage",
+    "title": "5  Teams",
+    "section": "vibrant-cabbage",
+    "text": "vibrant-cabbage\n\nDescription and Rationale\nWe are a group of undergraduate students majoring in Data Science from Embry-Riddle Aeronautical University, Prescott, AZ. We both share passion for aviation and performance analysis. We have the desire to push the boundaries of safety, efficiency, and innovation. Emanuele Bossi’s research interests lie in complex network science and inference, specifically in the development of sparse regression models and optimization-based methods to understand and influence interactions within high-dimensional networks. Afonso Azevedo’s research interests focus on data-driven optimization, time-series modeling, and predictive analytics applied to environmental systems and datasets.\n\n\nDetails\n\nNumber of team members: 2\nType: Academia\nAffiliation: Embry-Riddle Aeronautical University\nCountry: United States",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#vibrant-pencil",
     "href": "teams.html#vibrant-pencil",
     "title": "5  Teams",
     "section": "vibrant-pencil",
     "text": "vibrant-pencil\n\nDescription and Rationale\nHi I happy to join this contest Tankyou :)\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: Inha University\nCountry: Korea South",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#vibrant-umbrella",
+    "href": "teams.html#vibrant-umbrella",
+    "title": "5  Teams",
+    "section": "vibrant-umbrella",
+    "text": "vibrant-umbrella\n\nDescription and Rationale\nAviation Fan\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: University of Wisconsin-Madison\nCountry: United States",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
