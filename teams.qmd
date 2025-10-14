@@ -43,7 +43,7 @@ ccc <- teams_valid |>
   ) |>
   mutate(
     iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
-  write_csv("data/teams_country.csv")
+  write_csv("data/teams_country@1.csv")
 
 
 
@@ -111,7 +111,7 @@ cumulative_counts_in_time |>
 ```
 
 
-```{ojs}
+```{ojs bert}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -127,7 +127,7 @@ land = topojson.feature(world, world.objects.land)
 
 countries = topojson.feature(world, world.objects.countries)
 
-teams_country = FileAttachment('data/teams_country.csv').csv({ typed: true })
+teams_country = FileAttachment('data/teams_country@1.csv').csv({ typed: true })
 
 origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
 
