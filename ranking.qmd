@@ -17,7 +17,7 @@ We will post URGENT/IMPORTANT news here but better to follow things up on \
 :::
 
 
-The following table shows the best result per team's submission at the deadline.
+The following table shows the best (fake for now) result per team's submission at the deadline.
 
 
 ```{r leaderboard}
@@ -47,6 +47,9 @@ tribble(
 ```
 
 
+Here is the link to reach the leaderboard (the table above will be fed
+with the real data soon):  
+<https://datacomp.opensky-network.org/api/competitions/71c49292-6139-425f-803a-52ee8730ba58/leaderboard?limit=100>
 
 
 ## Criteria for Ranking Submissions

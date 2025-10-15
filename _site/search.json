@@ -104,7 +104,7 @@
     "href": "ranking.html",
     "title": "4  Ranking",
     "section": "",
-    "text": "Leaderboard\nThe following table shows the best result per team’s submission at the deadline.\nTeam\nRank\nRMSE\nVersion\nDate\n\n\n\n\ncucu\n1\n11\n13\n2025-09-11 00:00:00\n\n\nbubu\n2\n23\n21\n2025-09-13 00:00:00",
+    "text": "Leaderboard\nThe following table shows the best (fake for now) result per team’s submission at the deadline.\nTeam\nRank\nRMSE\nVersion\nDate\n\n\n\n\ncucu\n1\n11\n13\n2025-09-11 00:00:00\n\n\nbubu\n2\n23\n21\n2025-09-13 00:00:00\nHere is the link to reach the leaderboard (the table above will be fed with the real data soon):\nhttps://datacomp.opensky-network.org/api/competitions/71c49292-6139-425f-803a-52ee8730ba58/leaderboard?limit=100",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ranking</span>"
     ]
