@@ -3,6 +3,7 @@
 {{< include teams/bold-yogurt.qmd >}}
 {{< include teams/bouncy-waterfall.qmd >}}
 {{< include teams/bright-dolphin.qmd >}}
+{{< include teams/bright-lobster.qmd >}}
 {{< include teams/brilliant-crane.qmd >}}
 {{< include teams/calm-utensil.qmd >}}
 {{< include teams/charismatic-monkey.qmd >}}

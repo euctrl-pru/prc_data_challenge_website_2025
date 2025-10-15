@@ -89,7 +89,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-m, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-u, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -111,7 +111,7 @@ cumulative_counts_in_time |>
 ```
 
 
-```{ojs bert}
+```{ojs berti}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -180,7 +180,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-m, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-u, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 
