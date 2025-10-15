@@ -1,0 +1,13 @@
+## brilliant-zebra
+
+### Description and Rationale
+My name is Rania AKOURROU, a 5th-year computer engineering student. 
+I am participating in the PRC Data Challenge 2025 to apply my skills in data science and machine learning, and to contribute to improving energy efficiency and operational performance in aviation.
+
+### Details
+
+* Number of team members: 1
+* Type: Independent
+* Affiliation: Independent
+* Country: Morocco
+

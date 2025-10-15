@@ -1,0 +1,12 @@
+## reliable-jigsaw
+
+### Description and Rationale
+I am a solo data science professional with a strong background in predictive modeling. I registered for the PRC Data Challenge because it offers a fascinating, real-world application of Machine Learning: predicting fuel burn from complex flight data. I am motivated to tackle this tough, operational challenge and deliver an accurate, high-quality solution that improves flight efficiency.
+
+### Details
+
+* Number of team members: 1
+* Type: Independent
+* Affiliation: Wells Fargo
+* Country: India
+
