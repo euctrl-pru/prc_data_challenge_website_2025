@@ -17,39 +17,15 @@ We will post URGENT/IMPORTANT news here but better to follow things up on \
 :::
 
 
-The following table shows the best (fake for now) result per team's submission at the deadline.
-
-
-```{r leaderboard}
-#| echo: false
-#| warning: false
-library(tidyverse)
-library(ggplot2)
-library(jsonlite)
-library(here)
-library(gt)
-
-tribble(
-  ~team, ~rank, ~rmse, ~date, ~version,
-  "cucu", 1, 11, "2025-09-11", 13,
-  "bubu", 2, 23, "2025-09-13", 21
-) |> 
-  gt() |>
-  cols_label(
-    rmse = md("**RMSE**"),
-    rank = md("**Rank**"),
-    team = md("**Team**"),
-    date = md("**Date**"),
-    version = md("**Version**")
-  ) |>
-  fmt_datetime(columns = date) |>
-  cols_move_to_end(date)
+```{=html}
+<iframe width="100%" height="350" frameborder="0"
+  src="https://observablehq.com/embed/@espinielli/dc25-leaderboard@376?cells=leaderboard"></iframe>
 ```
 
 
-Here is the link to reach the leaderboard (the table above will be fed
-with the real data soon):  
-<https://datacomp.opensky-network.org/api/competitions/71c49292-6139-425f-803a-52ee8730ba58/leaderboard?limit=100>
+All submissions rankings can be had at the [full leaderboard JSON][leaderboard].
+
+[leaderboard]: <https://datacomp.opensky-network.org/api/competitions/71c49292-6139-425f-803a-52ee8730ba58/leaderboard?limit=100>
 
 
 ## Criteria for Ranking Submissions

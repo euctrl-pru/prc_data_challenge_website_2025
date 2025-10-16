@@ -1,0 +1,12 @@
+## brilliant-umbrella
+
+### Description and Rationale
+We are a team wishing to test our machine learning capabilities and also looking forward to better understand the airspace challenges.
+
+### Details
+
+* Number of team members: 3
+* Type: Industry
+* Affiliation: Airbus
+* Country: France
+

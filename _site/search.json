@@ -104,7 +104,7 @@
     "href": "ranking.html",
     "title": "4  Ranking",
     "section": "",
-    "text": "Leaderboard\nThe following table shows the best (fake for now) result per team’s submission at the deadline.\nTeam\nRank\nRMSE\nVersion\nDate\n\n\n\n\ncucu\n1\n11\n13\n2025-09-11 00:00:00\n\n\nbubu\n2\n23\n21\n2025-09-13 00:00:00\nHere is the link to reach the leaderboard (the table above will be fed with the real data soon):\nhttps://datacomp.opensky-network.org/api/competitions/71c49292-6139-425f-803a-52ee8730ba58/leaderboard?limit=100",
+    "text": "Leaderboard\nAll submissions rankings can be had at the full leaderboard JSON.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Ranking</span>"
     ]
@@ -215,6 +215,16 @@
     "title": "5  Teams",
     "section": "brilliant-crane",
     "text": "brilliant-crane\n\nDescription and Rationale\nInterested in aircrafts, flight traffic, and DL - this seems like a nice challenge\n\n\nDetails\n\nNumber of team members: 1\nType: Independent\nAffiliation: Solo :-)\nCountry: Denmark",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#brilliant-umbrella",
+    "href": "teams.html#brilliant-umbrella",
+    "title": "5  Teams",
+    "section": "brilliant-umbrella",
+    "text": "brilliant-umbrella\n\nDescription and Rationale\nWe are a team wishing to test our machine learning capabilities and also looking forward to better understand the airspace challenges.\n\n\nDetails\n\nNumber of team members: 3\nType: Industry\nAffiliation: Airbus\nCountry: France",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
@@ -735,6 +745,16 @@
     "title": "5  Teams",
     "section": "noble-tractor",
     "text": "noble-tractor\n\nDescription and Rationale\nOur team, with a good knowledge of aviation and AIML, felt excited to solve the real world problems.\n\n\nDetails\n\nNumber of team members: 2\nType: Academia, Industry, Independent\nAffiliation: Airports Authority of India\nCountry: India",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#nurturing-jar",
+    "href": "teams.html#nurturing-jar",
+    "title": "5  Teams",
+    "section": "nurturing-jar",
+    "text": "nurturing-jar\n\nDescription and Rationale\nAs students researching in this field, we aim to conduct further exploration in it\n\n\nDetails\n\nNumber of team members: 1\nType: Academia\nAffiliation: Beijing University of Posts and Telecommunications\nCountry: China",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
