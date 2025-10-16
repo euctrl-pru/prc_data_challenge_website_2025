@@ -74,6 +74,7 @@
 {{< include teams/sincere-turtle.qmd >}}
 {{< include teams/sociable-lobster.qmd >}}
 {{< include teams/strong-helicopter.qmd >}}
+{{< include teams/terrific-kiwi.qmd >}}
 {{< include teams/tiny-marshmallow.qmd >}}
 {{< include teams/trustworthy-hedgehog.qmd >}}
 {{< include teams/trustworthy-ukulele.qmd >}}
