@@ -1,0 +1,12 @@
+## tiny-village
+
+### Description and Rationale
+I want to enhence my research ability
+
+### Details
+
+* Number of team members: 1
+* Type: Academia
+* Affiliation: Beijing University of Posts and Telecommunications School of Economics and Management
+* Country: China
+

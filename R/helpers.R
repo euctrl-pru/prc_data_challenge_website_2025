@@ -77,6 +77,7 @@ get_teams_new <- function(teams_raw) {
 get_teams_valid <- function(teams_raw) {
   teams_raw |>
     dplyr::filter(status == "approved", !is.na(team_name)) |>
+    dplyr::mutate(team_consent = consent_1) |>
     dplyr::select(-matches("_\\d+$"))
 }
 

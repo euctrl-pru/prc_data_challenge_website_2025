@@ -76,6 +76,7 @@
 {{< include teams/strong-helicopter.qmd >}}
 {{< include teams/terrific-kiwi.qmd >}}
 {{< include teams/tiny-marshmallow.qmd >}}
+{{< include teams/tiny-village.qmd >}}
 {{< include teams/trustworthy-hedgehog.qmd >}}
 {{< include teams/trustworthy-ukulele.qmd >}}
 {{< include teams/understated-zucchini.qmd >}}
