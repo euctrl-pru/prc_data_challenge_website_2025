@@ -1,12 +1,24 @@
+
 ## trustworthy-ukulele
+creation date: 2025-10-06
+
 
 ### Description and Rationale
+
 The team consists of me and my friend Suhail. We both have aeronautical engineering background where Suhail deals with aviation BI and I deal with algorithms and trajectories.
 
 ### Details
 
-* Number of team members: 2
 * Type: Independent
-* Affiliation: None
 * Country: Germany
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,   ~forename,    ~surname,  ~affiliation,
+   1L, "Sauravlal", "Srivastwa", "Independent",
+   2L,    "Suhail",  "Parakkal",      "Friend"
+  )
+)
+```

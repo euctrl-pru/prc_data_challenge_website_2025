@@ -1,12 +1,23 @@
+
 ## understated-zucchini
+creation date: 2025-10-04
+
 
 ### Description and Rationale
+
 Improve Machine Learning skills and use trajectory predictions if applicable
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: Home
 * Country: France
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,  "Robert", "PASTOR", "independent"
+  )
+)
+```

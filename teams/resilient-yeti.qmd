@@ -1,13 +1,24 @@
+
 ## resilient-yeti
+creation date: 2025-10-03
+
 
 ### Description and Rationale
+
 Senior/Staff Data Scientist at Estuaire. We have the exact same problem at home.
 Not sure if I'll have the time to complet, though I'd be interested to try.
 
 ### Details
 
-* Number of team members: 1
 * Type: Industry, Independent
-* Affiliation: Estuaire
 * Country: France
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,  ~surname, ~affiliation,
+   1L, "Raphaël", "Pfister",   "Estuaire"
+  )
+)
+```

@@ -1,12 +1,23 @@
+
 ## ambitious-tornado
+creation date: 2025-10-06
+
 
 ### Description and Rationale
+
 My name is Omar Hayat, I am an MMath student in Computational Mathematics at the University of Waterloo in Canada. I'm researching transformers in use for contrail avoidance applications. I think this would be a fun challenge to participate in and challenge myself!
 
 ### Details
 
-* Number of team members: 1
 * Type: Academia
-* Affiliation: University of Waterloo
 * Country: Canada
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,             ~affiliation,
+   1L,    "Omar",  "Hayat", "University of Waterloo"
+  )
+)
+```

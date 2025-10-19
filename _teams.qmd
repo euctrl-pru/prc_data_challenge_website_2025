@@ -1,6 +1,5 @@
 {{< include teams/amazing-pillow.qmd >}}
 {{< include teams/ambitious-tornado.qmd >}}
-{{< include teams/bold-yogurt.qmd >}}
 {{< include teams/bouncy-waterfall.qmd >}}
 {{< include teams/bright-dolphin.qmd >}}
 {{< include teams/bright-lobster.qmd >}}

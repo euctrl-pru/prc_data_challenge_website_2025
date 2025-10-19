@@ -1,12 +1,23 @@
+
 ## unique-dinosaur
+creation date: 2025-10-08
+
 
 ### Description and Rationale
+
 I am so overwhelmed with solving aviation challenges by applying ML tools and enable the communities thrive on most efficient form of transportation.
 
 ### Details
 
-* Number of team members: 1
 * Type: Industry
-* Affiliation: Divergent Systems & Solutions
 * Country: India
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename,     ~surname,                    ~affiliation,
+   1L, "Murali K", "Surampalli", "Divergent Systems & Solutions"
+  )
+)
+```

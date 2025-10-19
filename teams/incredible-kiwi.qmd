@@ -1,12 +1,27 @@
+
 ## incredible-kiwi
+creation date: 2025-10-03
+
 
 ### Description and Rationale
+
 We are a group of mainly predoctoral researchers from the Mathematical Sciences Institute working on AI, adversarial machine learning, reinforcement learning, and adaptive methods. We joined the PRC Challenge to apply our expertise, explore new ideas, and collaborate with the wider research community.
 
 ### Details
 
-* Number of team members: 5
 * Type: Academia
-* Affiliation: Mathematical Sciences Institute - Spain
 * Country: Spain
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,   ~surname,                              ~affiliation,
+   1L,  "Daniel", "Corrales",         "Mathematical Sciences Institute",
+   2L,     "Roi",  "Naveiro",                        "CUNEF University",
+   3L,  "Miguel",   "Santos", "Mathematical Sciences Institute - Spain",
+   4L,   "Mario",   "Chacón", "Mathematical Sciences Institute - Spain",
+   5L,   "Pablo",  "G. Arce", "Mathematical Sciences Institute - Spain"
+  )
+)
+```

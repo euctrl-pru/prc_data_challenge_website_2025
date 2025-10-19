@@ -1,12 +1,24 @@
+
 ## honest-rose
+creation date: 2025-10-02
+
 
 ### Description and Rationale
+
 We are two brothers from different backgrounds (economics and chemistry), united by the eternal quest to turn data into answers. We like aviation. We like data. And we like a good challenge.
 
 ### Details
 
-* Number of team members: 2
 * Type: Academia, Government, Industry, Independent
-* Affiliation: International Organization / Pharma Industry
 * Country: Germany
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,   ~surname, ~affiliation,
+   1L,   "Anton", "Bogachev",     "Unknow",
+   2L,  "Andrey",   "Belkin",     "Unknow"
+  )
+)
+```

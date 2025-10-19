@@ -1,12 +1,25 @@
+
 ## bright-dolphin
+creation date: 2025-10-03
+
 
 ### Description and Rationale
+
 We are a team of software engineers and machine learning enthusiasts passionate about tackling innovative challenges in the data space, with a particular interest in the aviation domain.
 
 ### Details
 
-* Number of team members: 3
 * Type: Independent
-* Affiliation: Independent
 * Country: United Arab Emirates
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename,  ~surname,  ~affiliation,
+   1L, "Mohammed", "Mahgoub", "Independent",
+   2L,    "Malaz",  "Waleed", "Independent",
+   3L,   "Musaab", "Mahjoub", "Independent"
+  )
+)
+```

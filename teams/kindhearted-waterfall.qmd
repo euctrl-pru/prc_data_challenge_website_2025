@@ -1,12 +1,23 @@
+
 ## kindhearted-waterfall
+creation date: 2025-10-06
+
 
 ### Description and Rationale
+
 Akari is a consultancy in AI, I'm an engineer. Very interested in aviation and space technology.
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: Akari
 * Country: United Kingdom
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname, ~affiliation,
+   1L,   "Faith",  "Selby",      "Akari"
+  )
+)
+```

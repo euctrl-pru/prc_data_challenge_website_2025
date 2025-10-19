@@ -1,12 +1,25 @@
+
 ## charismatic-monkey
+creation date: 2025-10-07
+
 
 ### Description and Rationale
+
 We are a team of three final-year Computer Engineering students specializing in Big Data and Artificial Intelligence. We decided to join the PRC Data Challenge because it perfectly matches our interests in data science, aviation analytics, and sustainability. Through our studies, we’ve built projects involving real-time data pipelines, predictive modeling, and machine learning, which gave us strong analytical and teamwork skills. We see this challenge as an opportunity to apply our knowledge to a real-world aviation problem, learn from the open-data community, and contribute to improving transparency and efficiency in aviation through data-driven insights
 
 ### Details
 
-* Number of team members: 3
 * Type: Academia
-* Affiliation: Ecole Polytechnique d'Agadir - Universiapolis
 * Country: Morocco
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,    ~forename,     ~surname, ~affiliation,
+   1L, "Badreddine",  "El Hilali",     "Unknow",
+   2L, "abdelhamid", "boulaajoul",     "Unknow",
+   3L,      "Hamza",     "CHRAIM",     "Unknow"
+  )
+)
+```

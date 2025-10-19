@@ -6,6 +6,55 @@ library(dplyr)
 library(janitor)
 
 
+# prepare teams data frame
+prepare_teams_df <- function() {
+  teams_raw <- get_teams_raw()
+
+  teams_valid <- teams_raw |>
+    get_teams_valid() |>
+    mutate(
+      team_country = if_else(
+        team_country == "Ireland {Republic}",
+        "Ireland",
+        team_country
+      ),
+      team_affiliation = if_else(
+        team_consent == "No",
+        "Undisclosed",
+        team_affiliation
+      ),
+      team_members_count = extra_members + 1,
+      NULL
+    ) |>
+    select(
+      -c(
+        status,
+        team_consent,
+        team_uuid,
+        agreement,
+        extra_members,
+        account,
+        how_learnt
+      )
+    )
+
+  team_members <- teams_raw |>
+    get_teams_members() |>
+    mutate(
+      forename = if_else(consent == "No", "Xyzzy", forename),
+      surname = if_else(consent == "No", "XYZZY", surname),
+      affiliation = if_else(consent == "No", "Undisclosed", affiliation),
+      affiliation = if_else(is.na(affiliation), "Unknow", affiliation),
+      NULL
+    ) |>
+    select(-c(email, consent, address))
+
+  teams_valid |>
+    left_join(team_members) |>
+    nest(team_members = team_members |> select(-team_name) |> colnames())
+}
+
+
 # generate QMD page for one team
 generate_team_page <- function(team) {
   t <- team |> filter(row_number() == 1)
@@ -107,4 +156,63 @@ get_teams_raw <- function() {
       dplyr::everything(),
       matches("_\\d+$")
     )
+}
+
+
+# from https://github.com/jhelvy/jph/blob/master/R/quarto_render_move.R
+#' `quarto::quarto_render()`, but output file is moved to `output_dir`
+#'
+#' The default `quarto::quarto_render()` function can only render outputs
+#' to the current working directory. This is a wrapper that moves the rendered
+#' output to `output_dir`.
+#' @param input Path to the input qmd file.
+#' @param output_file The name of the output file. If using `NULL` then the
+#' output filename will be based on filename for the input file.
+#' @param output_dir Path to the output directory.
+#' @param ... Other args passed to `quarto::quarto_render()`
+#' @export
+quarto_render_move <- function(
+  input,
+  output_file = NULL,
+  output_dir = NULL,
+  ...
+) {
+  # Get all the input / output file names and paths
+  x <- quarto::quarto_inspect(input)
+  output_format <- names(x$formats)
+  output <- x$formats[[output_format]]$pandoc$`output-file`
+  if (is.null(output_file)) {
+    output_file <- output
+  }
+  input_dir <- dirname(input)
+  if (is.null(output_dir)) {
+    output_dir <- input_dir
+  }
+  output_path_from <- file.path(input_dir, output)
+  output_path_to <- file.path(output_dir, output_file)
+
+  # Render qmd file to input_dir
+  quarto::quarto_render(input = input, ... = ...)
+
+  # If output_dir is different from input_dir, copy the rendered output
+  # there and delete the original file
+  if (input_dir != output_dir) {
+    # Try to make the folder if it doesn't yet exist
+    if (!dir.exists(output_dir)) {
+      dir.create(output_dir)
+    }
+
+    # Now move the output to the output_dir and remove the original output
+    file.copy(
+      from = output_path_from,
+      to = output_path_to,
+      overwrite = TRUE
+    )
+    file.remove(output_path_from)
+
+    # If the output_dir is the same as input_dir, but the output_file
+    # has a different name from the input file, then just rename it
+  } else if (output_file != output) {
+    file.rename(from = output_path_from, to = output_path_to)
+  }
 }

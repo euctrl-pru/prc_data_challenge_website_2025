@@ -1,6 +1,10 @@
+
 ## gentle-orange
+creation date: 2025-10-14
+
 
 ### Description and Rationale
+
 Our team consists of three teammates from multiple disciplines who love using data to solve real-world problems. We come from machine learning, systems engineering, applied mathematics, and environmental modeling, and although we are outside the field of aviation, we share a common interest, curiosity and a reason to apply our collective skills to an exciting problem.
 
 Our team joined the PRC Data Challenge 2025 because it is exactly the kind of project that we find interesting: it is complex, grounded in reality and uses data and models to push the boundaries of science. The prospect of working with real flight and fuel datasets, dealing with all the complexities of noisy and incomplete datasets, and providing solutions that will be used to potentially inform environmental and operational improvements in aviation is important to our team.
@@ -9,8 +13,17 @@ This challenge will be we view this challenge as an opportunity for learning and
 
 ### Details
 
-* Number of team members: 3
 * Type: Independent
-* Affiliation: PharaDev
 * Country: Egypt
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,              ~forename, ~surname, ~affiliation,
+   1L,  "Ahmed Abdalla Ahmed", "Esmail",     "Unknow",
+   2L, "Mohamed Mohamed Omar", "Moussa",     "Unknow",
+   3L,  "Ehab Mohammed Ezzat", "Hassan",     "Unknow"
+  )
+)
+```

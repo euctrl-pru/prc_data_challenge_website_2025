@@ -1,12 +1,28 @@
+
 ## bright-lobster
+creation date: 2025-10-15
+
 
 ### Description and Rationale
+
 Our team consists of two researchers from the KIOS Research and Innovation Center of Excellence at the University of Cyprus, specializing in UAVs, alongside a civil aviation expert. We registered for this challenge to apply our expertise in predictive modeling to aircraft fuel consumption estimation.
 
 ### Details
 
-* Number of team members: 3
 * Type: Academia
-* Affiliation: University of Cyprus
 * Country: Cyprus
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,    ~forename,       ~surname,                                        ~affiliation,
+   1L,    "Yiannis",    "Grigoriou", "KIOS Research and Innovation Center of Excellence",
+   2L,    "Giorgos", "Pettemeridis", "KIOS Research and Innovation Center of Excellence",
+   3L,  "Eftychios",    "Eftychiou",                      "Department of Civil Aviation",
+   4L,    "Nicolas",        "Souli", "KIOS Research and Innovation Center of Excellence",
+   5L,  "Christian",       "Vitale", "KIOS Research and Innovation Center of Excellence",
+   6L, "Panayiotis",       "Kolios", "KIOS Research and Innovation Center of Excellence"
+  )
+)
+```

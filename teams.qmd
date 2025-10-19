@@ -1,9 +1,26 @@
 ---
 title: "Teams"
+# subtitle: |
+#   These are the fantastic people that have decided to participate
+#   to the PRC Data Challenge 2025.
+# listing:
+#   id: teams-listings
+#   contents: "*.qmd"
+#   # fields: [title, categories, date]
+#   # sort: "date desc"
+#   # type: table
+#   # categories: unnumbered
+#   # sort-ui: false
+#   filter-ui: [image, title, categories, date]
+#   # image-align: left
+#   # image-height: 1.75in
+# title-block-banner: false
+
 format:
   html:
     toc: true
     toc-depth: 2
+
 acronyms:
   insert_loa: false
 ---
@@ -209,6 +226,6 @@ teams_valid |>
 ```
 
 
-
-
+	
 {{< include _teams.qmd >}}
+

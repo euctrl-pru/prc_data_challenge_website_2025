@@ -1,12 +1,28 @@
+
 ## gentle-koala
+creation date: 2025-10-13
+
 
 ### Description and Rationale
+
 We are a final-year Computer Engineering team specializing in Big Data and AI. Our experience in data pipelines, predictive modeling, and machine learning aligns perfectly with the PRC Data Challenge. We're excited to apply our skills to real-world aviation analytics, contribute to sustainability efforts, and learn from the open-data community while helping improve aviation transparency through data-driven solutions.
 
 ### Details
 
-* Number of team members: 6
 * Type: Academia, Independent
-* Affiliation: Polytechnique
 * Country: Morocco
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename,    ~surname,              ~affiliation,
+   1L,    "ilyas",    "kibbou", "Charismatic monkey team",
+   2L,   "khalid",    "Ahrour",                  "Unknow",
+   3L,  "Mohamed",    "Argane",                  "Unknow",
+   4L,  "zakaria", "benraddad",                  "Unknow",
+   5L, "abdallah", "ahandouch",                  "Unknow",
+   6L, "safouane",    "lasmar",                  "Unknow"
+  )
+)
+```

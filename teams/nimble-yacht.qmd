@@ -1,12 +1,23 @@
+
 ## nimble-yacht
+creation date: 2025-10-10
+
 
 ### Description and Rationale
+
 As MBA students studying business analytics, this is an opportunity to put what we are learning to use while having at it.
 
 ### Details
 
-* Number of team members: 1
 * Type: Academia
-* Affiliation: University of New Brunswick
 * Country: Canada
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,  ~surname,                  ~affiliation,
+   1L, "Patrick", "Akowuah", "University of New Brunswick"
+  )
+)
+```

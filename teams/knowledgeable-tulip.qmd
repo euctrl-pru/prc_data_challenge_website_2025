@@ -1,12 +1,24 @@
+
 ## knowledgeable-tulip
+creation date: 2025-10-07
+
 
 ### Description and Rationale
+
 We would like to test how well the PS model agrees with your data. We hope that you have test data for many aircraft types and that we can publish the mean statistics of the comparisons, if successful.
 
 ### Details
 
-* Number of team members: 2
 * Type: Academia
-* Affiliation: DLR
 * Country: Germany
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,   ~surname,                                      ~affiliation,
+   1L,  "Ulrich", "Schumann", "Deutsches Zentrum für Luft- und Raumfahrt (DLR)",
+   2L,   "Xyzzy",    "XYZZY",                                     "Undisclosed"
+  )
+)
+```

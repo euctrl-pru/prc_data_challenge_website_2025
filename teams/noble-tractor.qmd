@@ -1,12 +1,24 @@
+
 ## noble-tractor
+creation date: 2025-10-08
+
 
 ### Description and Rationale
+
 Our team, with a good knowledge of aviation and AIML, felt excited to solve the real world problems.
 
 ### Details
 
-* Number of team members: 2
 * Type: Academia, Industry, Independent
-* Affiliation: Airports Authority of India
 * Country: India
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,           ~forename,  ~surname,                  ~affiliation,
+   1L,    "Prabha Thanuja", "Koppula", "Airports Authority of India",
+   2L, "Viyyuri P Praveen",   "Kumar", "Airports Authority of India"
+  )
+)
+```

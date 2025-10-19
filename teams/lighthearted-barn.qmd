@@ -1,14 +1,25 @@
+
 ## lighthearted-barn
+creation date: 2025-10-06
+
 
 ### Description and Rationale
+
 I am a Smart Systems Engineering student passionate about data, innovation, and aviation.
 I joined the PRC Data Challenge to learn and explore how open data can be used to improve aviation performance and sustainability.
 I want to use smart technologies to find useful solutions for real aviation problems.
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: Individual
 * Country: Spain
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename,       ~surname, ~affiliation,
+   1L, "Santiago", "Souto Ortega",     "Unknow"
+  )
+)
+```

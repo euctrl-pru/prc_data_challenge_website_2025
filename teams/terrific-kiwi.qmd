@@ -1,12 +1,25 @@
+
 ## terrific-kiwi
+creation date: 2025-10-16
+
 
 ### Description and Rationale
+
 We are three young aviation consultants with an interest in data looking to practice some skills.
 
 ### Details
 
-* Number of team members: 3
 * Type: Industry
-* Affiliation: Think research ltd
 * Country: United Kingdom
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,    ~surname,         ~affiliation,
+   1L,    "Zack",    "Parker", "Think research ltd",
+   2L, "Michael",       "Fok",          "Colleague",
+   3L,   "Tanya", "Blanchard",          "Colleague"
+  )
+)
+```

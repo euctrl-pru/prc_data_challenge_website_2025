@@ -1,12 +1,24 @@
+
 ## amazing-pillow
+creation date: 2025-10-01
+
 
 ### Description and Rationale
+
 Richard Alligier received his Ph.D. (2014) degree in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT), his engineer’s degree (IEEAC, 2010) from the french university of civil aviation (ENAC) and his M.Sc. (2010) in computer science from the University of Toulouse. He is currently assistant professor at the ENAC in Toulouse, France. David Gianazza received his two engineer degrees (1986, 1996) from the ‘École Nationale de l’Aviation Civile’ (ENAC) and his M.Sc. (1996) and Ph.D. (2004) in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT). He has obtained his HDR (a french post-doctoral degree similar to tenure) in 2016 from the INPT. He has held various positions in the french civil aviation administration, successively as an engineer in ATC operations, technical manager, and researcher. He is currently associate professor at the ENAC, Toulouse
 
 ### Details
 
-* Number of team members: 2
 * Type: Academia
-* Affiliation: ENAC
 * Country: France
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,   ~surname, ~affiliation,
+   1L, "Richard", "Alligier",       "ENAC",
+   2L,   "David", "Gianazza",       "ENAC"
+  )
+)
+```

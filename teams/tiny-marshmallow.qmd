@@ -1,12 +1,25 @@
+
 ## tiny-marshmallow
+creation date: 2025-10-03
+
 
 ### Description and Rationale
+
 Working at the aviation industry ourself, We find the problem in this Challenge very interesting, hoping for an opportunity to contribute solving the problem, gaining new experiences and maybe applying the results to my own country in the future
 
 ### Details
 
-* Number of team members: 3
 * Type: Industry
-* Affiliation: ACV - Airports Corporation of VietNam
 * Country: Vietnam
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,         ~forename, ~surname,                             ~affiliation,
+   1L, "HOANG ANH THONG",     "LE",  "ACV - Airports Corporation of VietNam",
+   2L,      "Canh Trieu",   "Tran",  "ACV - Airports Corporation of VietNam",
+   3L,         "Duc Phu", "Nguyen", "ACV - Airports Corporation of Viet Nam"
+  )
+)
+```

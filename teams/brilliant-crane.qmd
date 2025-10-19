@@ -1,12 +1,23 @@
+
 ## brilliant-crane
+creation date: 2025-10-01
+
 
 ### Description and Rationale
+
 Interested in aircrafts, flight traffic, and DL - this seems like a nice challenge
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: Solo :-)
 * Country: Denmark
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,   ~forename, ~surname, ~affiliation,
+   1L, "Christian",   "Otte",     "Unknow"
+  )
+)
+```

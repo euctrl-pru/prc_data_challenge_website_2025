@@ -1,14 +1,25 @@
+
 ## zesty-hedgehog
+creation date: 2025-10-13
+
 
 ### Description and Rationale
+
 I am a student researcher at DLR Braunschweig with a Machine Learning (ML) background. I currently work on our Digital Controller for Air Traffic Control.
 
 The PRC Data Challenge 2025 is a great opportunity for me to try out ML methods on new aviation datasets. Especially the comparison with other teams performances makes it very interesting.
 
 ### Details
 
-* Number of team members: 1
 * Type: Academia
-* Affiliation: German Aerospace Center (DLR)
 * Country: Germany
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,     ~surname,              ~affiliation,
+   1L,    "Dagh", "Zeppenfeld", "German Aerospace Center"
+  )
+)
+```

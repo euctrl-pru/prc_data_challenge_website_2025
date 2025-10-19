@@ -1,12 +1,24 @@
+
 ## gentle-eel
+creation date: 2025-10-11
+
 
 ### Description and Rationale
+
 A team of data enthusiasts driven by curiosity and the joy of solving data challenges.
 
 ### Details
 
-* Number of team members: 2
 * Type: Academia
-* Affiliation: Technical University of Denmark
 * Country: Denmark
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,   ~forename,     ~surname,  ~affiliation,
+   1L,     "Xhino", "Mullaymeri", "independent",
+   2L, "Margarita",  "Chatzouli",      "Friend"
+  )
+)
+```

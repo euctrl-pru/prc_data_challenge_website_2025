@@ -1,12 +1,23 @@
+
 ## likable-forest
+creation date: 2025-10-08
+
 
 ### Description and Rationale
+
 I developed a strong passion for aviation last year, and I’m eager to apply the data science skills I’ve gained through my education and professional experience to try to make a meaningful contribution to the aviation industry.
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: Independent
 * Country: Japan
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Augey", "Yohann", "Independent"
+  )
+)
+```

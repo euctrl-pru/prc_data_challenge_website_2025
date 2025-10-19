@@ -1,12 +1,25 @@
+
 ## faithful-zipper
+creation date: 2025-10-09
+
 
 ### Description and Rationale
+
 My major is deep learning and my research focus is on flight trajectory prediction. I am very interested in this competition.
 
 ### Details
 
-* Number of team members: 3
 * Type: Academia
-* Affiliation: Northeastern University
 * Country: China
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,   ~forename, ~surname,              ~affiliation,
+   1L,    "Junguo",   "Song", "Northeastern University",
+   2L, "Guangtian",    "Cao",                 "student",
+   3L,   "Zhengye",    "Xue",                 "student"
+  )
+)
+```

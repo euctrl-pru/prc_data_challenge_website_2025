@@ -1,12 +1,25 @@
+
 ## confident-insect
+creation date: 2025-10-12
+
 
 ### Description and Rationale
+
 We are researchers from Chinese universities, working on intelligent transportation systems. We are keen on developing data science and machine learning solutions for real-world engineering challenges.
 
 ### Details
 
-* Number of team members: 3
 * Type: Academia
-* Affiliation: Civil Aviation University of China
 * Country: China
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,                         ~affiliation,
+   1L,     "Wei",    "Dai", "Civil Aviation University of China",
+   2L,      "Yu",    "Han",    "Beijing Institute of Technology",
+   3L,  "Jingda",     "Wu",    "Beijing Institute of Technology"
+  )
+)
+```

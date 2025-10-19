@@ -1,12 +1,25 @@
+
 ## brilliant-umbrella
+creation date: 2025-10-16
+
 
 ### Description and Rationale
+
 We are a team wishing to test our machine learning capabilities and also looking forward to better understand the airspace challenges.
 
 ### Details
 
-* Number of team members: 3
 * Type: Industry
-* Affiliation: Airbus
 * Country: France
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Xyzzy",  "XYZZY", "Undisclosed",
+   2L,   "Xyzzy",  "XYZZY", "Undisclosed",
+   3L,   "Xyzzy",  "XYZZY", "Undisclosed"
+  )
+)
+```

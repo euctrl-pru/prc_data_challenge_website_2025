@@ -1,6 +1,10 @@
+
 ## honorable-yogurt
+creation date: 2025-10-02
+
 
 ### Description and Rationale
+
 I am an air traffic management specialist and data scientist at ASECNA, an air navigation service provider in Africa. I decided to participate in the PRC Challenge to put into practice my expertise in handling and analyzing air traffic data, with a particular focus on surveillance technologies (ADS-B/Mode-S), safety and quality performance, and data-driven decision support.
 
 My motivation is threefold:
@@ -15,8 +19,15 @@ Through this challenge, I hope to bridge operational knowledge with data innovat
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: ASECNA (Agency for Aerial Navigation Safety in Africa and Madagascar)
 * Country: Benin
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,       ~forename,    ~surname,  ~affiliation,
+   1L, "Amadou Roufaï", "MOUSTAPHA", "independent"
+  )
+)
+```

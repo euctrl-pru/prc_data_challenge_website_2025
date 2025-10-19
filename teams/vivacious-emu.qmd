@@ -1,12 +1,23 @@
+
 ## vivacious-emu
+creation date: 2025-10-08
+
 
 ### Description and Rationale
+
 I'm an engineer with Boeing and like working with data.
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: Boeing
 * Country: Spain
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Xyzzy",  "XYZZY", "Undisclosed"
+  )
+)
+```

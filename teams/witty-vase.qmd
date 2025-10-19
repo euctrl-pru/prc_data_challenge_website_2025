@@ -1,12 +1,23 @@
+
 ## witty-vase
+creation date: 2025-10-07
+
 
 ### Description and Rationale
+
 I'm an open-sky enthusiast.
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: Periscoped LLC
 * Country: United States
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename,    ~surname,  ~affiliation,
+   1L, "Terrance", "MacGregor", "Independent"
+  )
+)
+```

@@ -1,12 +1,23 @@
+
 ## eager-apple
+creation date: 2025-10-08
+
 
 ### Description and Rationale
+
 I'm a data scientist working in aviation wanting to challenge myself.
 
 ### Details
 
-* Number of team members: 1
 * Type: Industry, Independent
-* Affiliation: PANSA
 * Country: Poland
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,   ~surname, ~affiliation,
+   1L,     "Jan", "Nowiński",      "PANSA"
+  )
+)
+```

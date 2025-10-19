@@ -1,12 +1,23 @@
+
 ## strong-helicopter
+creation date: 2025-10-01
+
 
 ### Description and Rationale
+
 Data scientist with a strong interest in analysis of flight networks
 
 ### Details
 
-* Number of team members: 1
 * Type: Academia, Industry
-* Affiliation: Vrije Universiteit Brussel
 * Country: Belgium
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,    "Juul", "Vossen", "Independent"
+  )
+)
+```

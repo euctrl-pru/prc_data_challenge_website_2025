@@ -1,12 +1,28 @@
+
 ## jubilant-guitar
+creation date: 2025-10-06
+
 
 ### Description and Rationale
+
 Group of ai and aviation enthusiasts
 
 ### Details
 
-* Number of team members: 6
 * Type: Independent
-* Affiliation: TAV Voltran
 * Country: Turkey
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,    ~forename,   ~surname, ~affiliation,
+   1L,      "Burak", "Kadıoğlu",     "Unknow",
+   2L,      "Gamze",   "Öztürk",     "Unknow",
+   3L,      "Gözde",    "Sayın",     "Unknow",
+   4L,     "Seçkin",    "Ünver",     "Unknow",
+   5L,      "Seçil",    "Heper",     "Unknow",
+   6L, "İsmail Alp",  "Aydemir",     "Unknow"
+  )
+)
+```

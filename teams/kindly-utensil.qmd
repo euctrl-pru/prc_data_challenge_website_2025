@@ -1,12 +1,23 @@
+
 ## kindly-utensil
+creation date: 2025-10-07
+
 
 ### Description and Rationale
+
 I am a MSc Data Analytics Student at the NCI. I wanted to be in the part of this challenge because it is in my domain ( data analytics) and I believe I will learn something from this challenge that will be useful in my career
 
 ### Details
 
-* Number of team members: 1
 * Type: Academia, Independent
-* Affiliation: National College of Ireland
-* Country: Ireland {Republic}
+* Country: Ireland
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,       ~forename,       ~surname,                  ~affiliation,
+   1L, "Sameer Ahamed", "Sahul Hameed", "National College of Ireland"
+  )
+)
+```

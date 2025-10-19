@@ -1,12 +1,25 @@
+
 ## helpful-dragon
+creation date: 2025-10-06
+
 
 ### Description and Rationale
+
 to contribute to a more environmentally sustainable aviation industry
 
 ### Details
 
-* Number of team members: 3
 * Type: Academia
-* Affiliation: University
 * Country: United Kingdom
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,    ~surname,           ~affiliation,
+   1L,     "Jay",    "Renton", "University of Exeter",
+   2L,     "Ian",     "Leung",            "Classmate",
+   3L,    "Emil", "Rovshenov",            "Classmate"
+  )
+)
+```

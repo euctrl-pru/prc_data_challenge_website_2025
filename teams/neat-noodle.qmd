@@ -1,12 +1,24 @@
+
 ## neat-noodle
+creation date: 2025-10-05
+
 
 ### Description and Rationale
+
 Flight safety and airworthiness
 
 ### Details
 
-* Number of team members: 2
 * Type: Academia, Independent
-* Affiliation: University of Memphis
 * Country: United States
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,       ~surname,            ~affiliation,
+   1L,  "Deepak", "Chandramouli",       "Federal Express",
+   2L,    "Anna",       "Tamuly", "University of Memphis"
+  )
+)
+```

@@ -1,12 +1,23 @@
+
 ## gracious-jacket
+creation date: 2025-10-01
+
 
 ### Description and Rationale
+
 28 years old cybersecurity researcher, I am an avid flight simulator user and very interested in anything related to modern aviation. I work on different projects involving AI and cybersecurity, and would love to apply AI in aviation as well.
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: None
 * Country: Germany
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname, ~affiliation,
+   1L,    "Imad", "Yamani",     "Unknow"
+  )
+)
+```

@@ -1,12 +1,23 @@
+
 ## hilarious-vulture
+creation date: 2025-10-06
+
 
 ### Description and Rationale
+
 Just a guy trying to make the world a better place.
 
 ### Details
 
-* Number of team members: 1
 * Type: Academia
-* Affiliation: MIT
 * Country: United States
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Xyzzy",  "XYZZY", "Undisclosed"
+  )
+)
+```

@@ -1,12 +1,25 @@
+
 ## trustworthy-hedgehog
+creation date: 2025-10-13
+
 
 ### Description and Rationale
+
 We are a group of friends who love to do a bit of coding on the side. This challenge brought us a good opportunity to practice thinking about aerospace outside of work, and we will love to see if our unique prespective can solve this challenge posed!
 
 ### Details
 
-* Number of team members: 3
 * Type: Industry
-* Affiliation: Rolls-Royce plc
 * Country: United Kingdom
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,        ~forename, ~surname, ~affiliation,
+   1L, "Jerr (Jong-Yu)",  "Chang",     "Unknow",
+   2L,         "Li Wei",     "Lu",     "Unknow",
+   3L,         "Er Hai",   "fang",     "Unknow"
+  )
+)
+```

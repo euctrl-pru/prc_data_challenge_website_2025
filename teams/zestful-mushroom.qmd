@@ -1,12 +1,23 @@
+
 ## zestful-mushroom
+creation date: 2025-10-08
+
 
 ### Description and Rationale
+
 TBC
 
 ### Details
 
-* Number of team members: 1
 * Type: Independent
-* Affiliation: Independent
 * Country: Sweden
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Xyzzy",  "XYZZY", "Undisclosed"
+  )
+)
+```

@@ -1,12 +1,23 @@
+
 ## likable-ant
+creation date: 2025-10-02
+
 
 ### Description and Rationale
+
 Air Transport and logistics student at TU Dresden, Aviation enthusiast.
 
 ### Details
 
-* Number of team members: 1
 * Type: Academia
-* Affiliation: Technische Universität Dresden
 * Country: Germany
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,    ~surname,                     ~affiliation,
+   1L, "Somnath", "Panigrahi", "Technische Universität Dresden"
+  )
+)
+```

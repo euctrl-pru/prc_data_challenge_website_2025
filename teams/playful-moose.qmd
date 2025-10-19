@@ -1,14 +1,26 @@
+
 ## playful-moose
+creation date: 2025-10-13
+
 
 ### Description and Rationale
+
 We are a team of two recent computer engineering graduates with a strong passion for artificial intelligence and machine learning. We both work at leading research organizations in our country, focusing on innovative technologies and applied research — including areas such as air traffic management.
 
 We have been collaborating since our university years and have consistently enjoyed challenging ourselves. This competition represents an exciting opportunity for us to grow as engineers and researchers.
 
 ### Details
 
-* Number of team members: 2
 * Type: Independent
-* Affiliation: Independent
 * Country: Turkey
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,     ~forename,    ~surname,  ~affiliation,
+   1L,      "Melike", "Seyitoğlu", "Independent",
+   2L, "Bilal Gökçe",     "Gökçe", "Independent"
+  )
+)
+```

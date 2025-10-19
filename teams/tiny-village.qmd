@@ -1,12 +1,23 @@
+
 ## tiny-village
+creation date: 2025-10-16
+
 
 ### Description and Rationale
+
 I want to enhence my research ability
 
 ### Details
 
-* Number of team members: 1
 * Type: Academia
-* Affiliation: Beijing University of Posts and Telecommunications School of Economics and Management
 * Country: China
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,                                                                            ~affiliation,
+   1L, "Zhanshu",    "Sun", "Beijing University of Posts and Telecommunications School of Economics and Management"
+  )
+)
+```

@@ -1,12 +1,27 @@
+
 ## resourceful-quiver
+creation date: 2025-10-02
+
 
 ### Description and Rationale
+
 We are PhD students from TU Delft, and the challenge aligns with our research.
 
 ### Details
 
-* Number of team members: 5
 * Type: Academia
-* Affiliation: TU Delft
 * Country: Netherlands
 
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,         ~forename,     ~surname, ~affiliation,
+   1L, "Muhammad Fazlur",     "Rahman",   "TU Delft",
+   2L,        "Mohammed",     "El Dor",   "TU Delft",
+   3L,        "Zhanpeng",       "Yang",   "TU Delft",
+   4L,             "Bob", "van Dillen",   "TU Delft",
+   5L,          "Aidana",   "Tassanbi",   "TU Delft"
+  )
+)
+```
