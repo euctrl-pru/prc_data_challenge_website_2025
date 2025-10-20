@@ -290,6 +290,16 @@
     ]
   },
   {
+    "objectID": "teams.html#delightful-marshmallow",
+    "href": "teams.html#delightful-marshmallow",
+    "title": "5  Teams",
+    "section": "delightful-marshmallow",
+    "text": "delightful-marshmallow\ncreation date: 2025-10-16\n\nDescription and Rationale\n4 data scientists from Ryanair Labs. We registered because it’s free and we work for a low-cost airline.\n\n\nDetails\n\nType: Industry\nCountry: Poland\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nKrzysztof\nSikociński\nRyanair\n\n\n2\nGrzegorz\nMiebs\nRyanair Labs\n\n\n3\nOmar\nIbrahime\nRyanair Labs\n\n\n4\nAdam\nŁyskawa\nRyanair Labs",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#dependable-xylophone",
     "href": "teams.html#dependable-xylophone",
     "title": "5  Teams",
@@ -1010,6 +1020,16 @@
     ]
   },
   {
+    "objectID": "teams.html#understanding-kangaroo",
+    "href": "teams.html#understanding-kangaroo",
+    "title": "5  Teams",
+    "section": "understanding-kangaroo",
+    "text": "understanding-kangaroo\ncreation date: 2025-10-20\n\nDescription and Rationale\nTo learn and push myself more on ai and data science challenge.\n\n\nDetails\n\nType: Independent\nCountry: Indonesia\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nPetra\nLeka\nIndependent",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#understated-zucchini",
     "href": "teams.html#understated-zucchini",
     "title": "5  Teams",
@@ -1185,6 +1205,16 @@
     "title": "5  Teams",
     "section": "zesty-hedgehog",
     "text": "zesty-hedgehog\ncreation date: 2025-10-13\n\nDescription and Rationale\nI am a student researcher at DLR Braunschweig with a Machine Learning (ML) background. I currently work on our Digital Controller for Air Traffic Control.\nThe PRC Data Challenge 2025 is a great opportunity for me to try out ML methods on new aviation datasets. Especially the comparison with other teams performances makes it very interesting.\n\n\nDetails\n\nType: Academia\nCountry: Germany\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nDagh\nZeppenfeld\nGerman Aerospace Center",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#zesty-island",
+    "href": "teams.html#zesty-island",
+    "title": "5  Teams",
+    "section": "zesty-island",
+    "text": "zesty-island\ncreation date: 2025-10-20\n\nDescription and Rationale\nAfter participating in last year’s PRC Data Challenge, we are excited to join the competition once again. At the DLR Institute of Air Transport, our group focuses on aircraft performance modelling and the calculation and optimization of flight trajectories. We look forward to testing our approaches in this context and gaining new insights along the way.\n\n\nDetails\n\nType: Academia\nCountry: Germany\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nKuno\nBuchtal\nGerman Aerospace Center (DLR), Institut of Air Transport",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]

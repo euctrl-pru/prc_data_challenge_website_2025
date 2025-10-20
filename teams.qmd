@@ -60,7 +60,7 @@ ccc <- teams_valid |>
   ) |>
   mutate(
     iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
-  write_csv("data/teams_country@5.csv")
+  write_csv("data/teams_country@6.csv")
 
 
 
@@ -106,7 +106,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-fff, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-ggg, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -128,7 +128,7 @@ cumulative_counts_in_time |>
 ```
 
 
-```{ojs fff}
+```{ojs ggg}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -144,7 +144,7 @@ land = topojson.feature(world, world.objects.land)
 
 countries = topojson.feature(world, world.objects.countries)
 
-teams_country = FileAttachment('data/teams_country@5.csv').csv({ typed: true })
+teams_country = FileAttachment('data/teams_country@6.csv').csv({ typed: true })
 
 origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
 
@@ -197,7 +197,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-fff, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-ggg, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 

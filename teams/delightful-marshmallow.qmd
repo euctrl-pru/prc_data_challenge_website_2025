@@ -1,0 +1,26 @@
+
+## delightful-marshmallow
+creation date: 2025-10-16
+
+
+### Description and Rationale
+
+4 data scientists from Ryanair Labs. We registered because it's free and we work for a low-cost airline.
+
+### Details
+
+* Type: Industry
+* Country: Poland
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,   ~forename,     ~surname,   ~affiliation,
+   1L, "Krzysztof", "Sikociński",      "Ryanair",
+   2L,  "Grzegorz",      "Miebs", "Ryanair Labs",
+   3L,      "Omar",   "Ibrahime", "Ryanair Labs",
+   4L,      "Adam",    "Łyskawa", "Ryanair Labs"
+  )
+)
+```

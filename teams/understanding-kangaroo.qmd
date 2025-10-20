@@ -1,0 +1,23 @@
+
+## understanding-kangaroo
+creation date: 2025-10-20
+
+
+### Description and Rationale
+
+To learn and push myself more on ai and data science challenge.
+
+### Details
+
+* Type: Independent
+* Country: Indonesia
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Petra",   "Leka", "Independent"
+  )
+)
+```
