@@ -106,7 +106,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-eee, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-fff, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -128,7 +128,7 @@ cumulative_counts_in_time |>
 ```
 
 
-```{ojs eee}
+```{ojs fff}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -166,7 +166,7 @@ Plot.plot({
     type: 'quantize',
     n: 11,
     // unknown: '#ced4da',
-    domain: [1, 15],
+    domain: [1, 18],
     scheme: 'reds',
     label: 'Number of teams',
     legend: true
@@ -197,7 +197,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-eee, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-fff, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 
@@ -211,16 +211,16 @@ teams_valid |>
   ggplot() +
   geom_bar(aes(x = team_country, y = n) , stat="identity") +
   scale_y_continuous(
-    breaks = pretty_breaks(),
+    breaks = breaks_pretty(),
     sec.axis = dup_axis(),
-    expand = c(0,0)) +
+    expand = expansion(0)) +
   coord_flip() +
   labs(y = "Number of teams") +
   theme_minimal() +
   theme(axis.title.y = element_blank(),
         panel.grid.minor.x = element_blank(),
         panel.grid.major.y = element_blank(),
-        prism.ticks.length.y = unit(20, "pt"),
+        # prism.ticks.length.y = unit(20, "pt"),
         # axis.ticks.length = unit(1, "cm"),
         NULL)
 ```

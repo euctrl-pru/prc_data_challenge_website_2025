@@ -18,7 +18,7 @@ We will post URGENT/IMPORTANT news here but better to follow things up on \
 
 
 ```{=html}
-<iframe width="100%" height="350" frameborder="0"
+<iframe width="100%" height="600" frameborder="0"
   src="https://observablehq.com/embed/@espinielli/dc25-leaderboard@381?cells=leaderboard"></iframe>
 ```
 
