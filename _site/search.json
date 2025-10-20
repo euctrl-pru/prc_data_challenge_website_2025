@@ -330,6 +330,16 @@
     ]
   },
   {
+    "objectID": "teams.html#easygoing-pillow",
+    "href": "teams.html#easygoing-pillow",
+    "title": "5  Teams",
+    "section": "easygoing-pillow",
+    "text": "easygoing-pillow\ncreation date: 2025-10-17\n\nDescription and Rationale\nWe’re a team of aviation and machine-learning researchers from Argonne National Lab. Propulsion, controls, data science, optimization—if it flies or fits a gradient, we’re on it. Let’s see how far we can go before we hit the ceiling.\n\n\nDetails\n\nType: Academia, Government\nCountry: United States\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nFrancesco\nSalucci\nArgonne National Laboratory\n\n\n2\nNirmit\nPrabhakar\nArgonne National Laboratory\n\n\n3\nAyman\nMoawad\nArgonne National Laboratory\n\n\n4\nKatherine\nAsztalos\nArgonne National Laboratory\n\n\n5\nJingyan (Jane)\nJiang\nArgonne National Laboratory",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#easygoing-yogurt",
     "href": "teams.html#easygoing-yogurt",
     "title": "5  Teams",
@@ -545,6 +555,16 @@
     "title": "5  Teams",
     "section": "jubilant-vase",
     "text": "jubilant-vase\ncreation date: 2025-10-08\n\nDescription and Rationale\nData scientist students who love aviation\n\n\nDetails\n\nType: Independent\nCountry: France\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nXyzzy\nXYZZY\nUndisclosed\n\n\n2\nXyzzy\nXYZZY\nUndisclosed",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#keen-feather",
+    "href": "teams.html#keen-feather",
+    "title": "5  Teams",
+    "section": "keen-feather",
+    "text": "keen-feather\ncreation date: 2025-10-17\n\nDescription and Rationale\nI’m a student with a strong ambition to build a career in the aeronautical sector. This challenge represents a unique opportunity for me to apply my skills in ML to a complex and impactful problem, to gain hands-on experience in the aviation domain and to contribute to innovative and data-driven solutions that can improve efficiency and enviromental impact.\n\n\nDetails\n\nType: Independent\nCountry: Italy\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nMartina\nLatina\nPolitecnico di Torino",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
@@ -830,6 +850,26 @@
     ]
   },
   {
+    "objectID": "teams.html#positive-nugget",
+    "href": "teams.html#positive-nugget",
+    "title": "5  Teams",
+    "section": "positive-nugget",
+    "text": "positive-nugget\ncreation date: 2025-10-16\n\nDescription and Rationale\nInterested in applications of hybrid modeling with real world data\n\n\nDetails\n\nType: Independent\nCountry: France\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nXyzzy\nXYZZY\nUndisclosed",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#reliable-jacket",
+    "href": "teams.html#reliable-jacket",
+    "title": "5  Teams",
+    "section": "reliable-jacket",
+    "text": "reliable-jacket\ncreation date: 2025-10-16\n\nDescription and Rationale\nI am working in Polish ANSP AI team and I want to do something interesting after work\n\n\nDetails\n\nType: Industry, Independent\nCountry: Poland\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nKajetan\nRozej\nPANSA",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#reliable-jigsaw",
     "href": "teams.html#reliable-jigsaw",
     "title": "5  Teams",
@@ -900,11 +940,31 @@
     ]
   },
   {
+    "objectID": "teams.html#talented-violin",
+    "href": "teams.html#talented-violin",
+    "title": "5  Teams",
+    "section": "talented-violin",
+    "text": "talented-violin\ncreation date: 2025-10-17\n\nDescription and Rationale\nWe are both students and co-founders of Flight Guard AI, an aviation safety startup recognized Top 4 AI Innovations in the U.S. by Texas A&M University. We are passionate about applying machine learning and deep learning to real-world aviation and aerospace problems and have hands-on experience developing predictive models for flight safety and performance.\nWe decided to join the 2025 PRC Data Challenge to contribute our expertise to a meaningful aviation data problem, predicting fuel burn, while learning from the community and working with real, complex flight data. This challenge perfectly aligns with our mission to make aviation more efficient, sustainable, and data-driven.\n\n\nDetails\n\nType: Academia\nCountry: United States\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nLen Johns\nShaji\nUniversity of Houston\n\n\n2\nLee Johns\nShaji\nBrother (U: leejs337)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#terrific-kiwi",
     "href": "teams.html#terrific-kiwi",
     "title": "5  Teams",
     "section": "terrific-kiwi",
     "text": "terrific-kiwi\ncreation date: 2025-10-16\n\nDescription and Rationale\nWe are three young aviation consultants with an interest in data looking to practice some skills.\n\n\nDetails\n\nType: Industry\nCountry: United Kingdom\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nZack\nParker\nThink research ltd\n\n\n2\nMichael\nFok\nColleague\n\n\n3\nTanya\nBlanchard\nColleague",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#thoughtful-goblin",
+    "href": "teams.html#thoughtful-goblin",
+    "title": "5  Teams",
+    "section": "thoughtful-goblin",
+    "text": "thoughtful-goblin\ncreation date: 2025-10-18\n\nDescription and Rationale\nAerospace undergraduate student\n\n\nDetails\n\nType: Academia\nCountry: Iran\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nXyzzy\nXYZZY\nUndisclosed",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
@@ -1045,6 +1105,16 @@
     "title": "5  Teams",
     "section": "vivacious-emu",
     "text": "vivacious-emu\ncreation date: 2025-10-08\n\nDescription and Rationale\nI’m an engineer with Boeing and like working with data.\n\n\nDetails\n\nType: Independent\nCountry: Spain\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nXyzzy\nXYZZY\nUndisclosed",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#wise-dinosaur",
+    "href": "teams.html#wise-dinosaur",
+    "title": "5  Teams",
+    "section": "wise-dinosaur",
+    "text": "wise-dinosaur\ncreation date: 2025-10-19\n\nDescription and Rationale\nWe are both academia and independent research engineer who are motivated solving complex aerospace engineering problems using the recent machine learning technique(s).\n\n\nDetails\n\nType: Academia, Independent\nCountry: Indonesia\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nBintang\nAlam Semesta Wisran AM\nSpace Generation Advisory Council\n\n\n2\nGeorge\nPavlov\nself-employed/independent\n\n\n3\nDmitry\nGribanov\nself-employed/independent",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]

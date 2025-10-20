@@ -1,0 +1,26 @@
+
+## talented-violin
+creation date: 2025-10-17
+
+
+### Description and Rationale
+
+We are both students and co-founders of Flight Guard AI, an aviation safety startup recognized Top 4 AI Innovations in the U.S. by Texas A&M University. We are passionate about applying machine learning and deep learning to real-world aviation and aerospace problems and have hands-on experience developing predictive models for flight safety and performance.
+
+We decided to join the 2025 PRC Data Challenge to contribute our expertise to a meaningful aviation data problem, predicting fuel burn, while learning from the community and working with real, complex flight data. This challenge perfectly aligns with our mission to make aviation more efficient, sustainable, and data-driven.
+
+### Details
+
+* Type: Academia
+* Country: United States
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,   ~forename, ~surname,            ~affiliation,
+   1L, "Len Johns",  "Shaji", "University of Houston",
+   2L, "Lee Johns",  "Shaji", "Brother (U: leejs337)"
+  )
+)
+```

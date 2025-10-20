@@ -1,0 +1,25 @@
+
+## wise-dinosaur
+creation date: 2025-10-19
+
+
+### Description and Rationale
+
+We are both academia and independent research engineer who are motivated solving complex aerospace engineering problems using the recent machine learning technique(s).
+
+### Details
+
+* Type: Academia, Independent
+* Country: Indonesia
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,                 ~surname,                        ~affiliation,
+   1L, "Bintang", "Alam Semesta Wisran AM", "Space Generation Advisory Council",
+   2L,  "George",                 "Pavlov",         "self-employed/independent",
+   3L,  "Dmitry",               "Gribanov",         "self-employed/independent"
+  )
+)
+```

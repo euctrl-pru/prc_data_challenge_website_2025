@@ -1,0 +1,23 @@
+
+## keen-feather
+creation date: 2025-10-17
+
+
+### Description and Rationale
+
+I'm a student with a strong ambition to build a career in the aeronautical sector. This challenge represents a unique opportunity for me to apply my skills in ML to a complex and impactful problem,  to gain hands-on experience in the aviation domain and to contribute to innovative and data-driven solutions that can improve efficiency and enviromental impact.
+
+### Details
+
+* Type: Independent
+* Country: Italy
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,            ~affiliation,
+   1L, "Martina", "Latina", "Politecnico di Torino"
+  )
+)
+```
