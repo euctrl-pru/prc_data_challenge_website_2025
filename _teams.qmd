@@ -41,6 +41,7 @@
 {{< include teams/jubilant-guitar.qmd >}}
 {{< include teams/jubilant-vase.qmd >}}
 {{< include teams/keen-feather.qmd >}}
+{{< include teams/kindhearted-muffin.qmd >}}
 {{< include teams/kindhearted-waterfall.qmd >}}
 {{< include teams/kindly-garden.qmd >}}
 {{< include teams/kindly-kiwi.qmd >}}
