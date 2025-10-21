@@ -60,7 +60,7 @@ ccc <- teams_valid |>
   ) |>
   mutate(
     iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
-  write_csv("data/teams_country@7.csv")
+  write_csv("data/teams_country@8.csv")
 
 
 
@@ -106,7 +106,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-hhh, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-iii, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -128,7 +128,7 @@ cumulative_counts_in_time |>
 ```
 
 
-```{ojs hhh}
+```{ojs iii}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -144,13 +144,13 @@ land = topojson.feature(world, world.objects.land)
 
 countries = topojson.feature(world, world.objects.countries)
 
-teams_country = FileAttachment('data/teams_country@7.csv').csv({ typed: true })
+teams_country = FileAttachment('data/teams_country@8.csv').csv({ typed: true })
 
 origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
 
 countries_without_antarctica = {
   var l = JSON.parse(JSON.stringify(countries)); // clone (useless here but a good idea in general)
-  // remove antartica, i.e. code "010"
+  // remove antarctica, i.e. code "010"
   l.features = l.features.filter((d) => d.id != '010');
   return l;
 }
@@ -197,7 +197,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-hhh, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-iii, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 

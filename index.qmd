@@ -2,7 +2,8 @@
 title: "PRC Data Challenge 2025"
 ---
 
-The \acr{PRC} aims at engaging with data scientists, even without
+The \acr{PRC} with the support of [OpenSky Network](https://opensky-network.org/)
+aims at engaging with data scientists, even without
 Aviation background, to team up and compete to solve a (big-ish) Data Challenge
 of interest to the wider Aviation community using open data and openly sharing
 final solutions.
@@ -71,6 +72,8 @@ creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and
 the help of the *Friends of OSN*, Allan, Quinten, Martin, Rainer, Xavier and
 Kamil among them.
 
+![](media/osky-logo-banner.png){height=30px} OpenSky Network is of course the valuable organization without which we wouldn't
+be able to assemble this challenge at all.
 
 ## Disclaimer
 

@@ -1,0 +1,23 @@
+
+## sincere-jacket
+creation date: 2025-10-21
+
+
+### Description and Rationale
+
+Im a student of Data science master degree. My motivation is olny knowledge and experience
+
+### Details
+
+* Type: Academia
+* Country: Germany
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,                          ~affiliation,
+   1L,  "Andrey",  "Klein", "Kiel University of Applied Sciences"
+  )
+)
+```

@@ -570,6 +570,16 @@
     ]
   },
   {
+    "objectID": "teams.html#jubilant-zucchini",
+    "href": "teams.html#jubilant-zucchini",
+    "title": "5  Teams",
+    "section": "jubilant-zucchini",
+    "text": "jubilant-zucchini\ncreation date: 2025-10-20\n\nDescription and Rationale\ni am student of ML\n\n\nDetails\n\nType: NA\nCountry: Brazil\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nhao qiang\nzheng\nUnknow",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
     "objectID": "teams.html#keen-feather",
     "href": "teams.html#keen-feather",
     "title": "5  Teams",
@@ -925,6 +935,16 @@
     "title": "5  Teams",
     "section": "respectful-teapot",
     "text": "respectful-teapot\ncreation date: 2025-10-02\n\nDescription and Rationale\nI am a french engineer, experienced in system engineering applied to aeronautical systems (about 10 years in subsystem testing). Last year, I attended and passed a bootcamp training program in Data Engineering, field of skills I expect to implement in R&D activities to improve technical solutions design, but also in personal projects to analyze, understand and improve global behaviors in various subjects, such as the project you propose. Passionate about aeronautics, I passed my PPL license several years ago, among other licenses (ultralight, gliding, paragliding, …). Even if I do not fly currently (familial reasons), I think my pilot experiences will help me address this project.\nI am not experienced as a data scientist (Machine Learning), so I do not guarantee any performant solution : I take this participation as an opportunity to improve my knowledge in both data science and aeronautic operations. If possible I would implicate some acquaintances of mine, more experienced in machine learning.\n\n\nDetails\n\nType: Independent\nCountry: France\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nStéphane\nBONAPFEL\nindependent",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
+    ]
+  },
+  {
+    "objectID": "teams.html#sincere-jacket",
+    "href": "teams.html#sincere-jacket",
+    "title": "5  Teams",
+    "section": "sincere-jacket",
+    "text": "sincere-jacket\ncreation date: 2025-10-21\n\nDescription and Rationale\nIm a student of Data science master degree. My motivation is olny knowledge and experience\n\n\nDetails\n\nType: Academia\nCountry: Germany\n\n\n\n\n\n\n\n\n\nid\nforename\nsurname\naffiliation\n\n\n\n\n1\nAndrey\nKlein\nKiel University of Applied Sciences",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Teams</span>"
     ]
