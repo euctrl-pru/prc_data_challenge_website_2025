@@ -1,0 +1,30 @@
+
+## outspoken-tornado
+creation date: 2025-10-21
+
+
+### Description and Rationale
+
+We participated to the challenge last year and found it very interesting to work on a Eurocontrol real use case. It was also very challenging to compete against domain experts that were very strong at it. We want to take the challenge once again.
+
+### Details
+
+* Type: Industry
+* Country: Belgium
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename,     ~surname, ~affiliation,
+   1L,   "Brieuc",   "Ryelandt",   "Euranova",
+   2L,  "Lorenzo",   "Frigerio",   "Euranova",
+   3L,   "Thomas",    "Jungers",   "Euranova",
+   4L, "Thibault",   "Lootvoet",   "Euranova",
+   5L,   "Rayane",    "Hachemi",   "Euranova",
+   6L,   "Pierre",    "Hockers",   "Euranova",
+   7L,  "Nicolas",    "Posocco",   "euranova",
+   8L, "Mathilde", "Brousmiche",   "Euranova"
+  )
+)
+```
