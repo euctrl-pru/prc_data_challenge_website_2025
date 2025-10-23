@@ -2,6 +2,7 @@
 ---
 title: nurturing-utensil
 date: 2025-10-01
+categories: [Switzerland]
 acronyms:
   insert_loa: false
 ---
@@ -23,5 +24,5 @@ gt(tibble::tribble(
    1L,  "Adrian", "Sarbach",  "ETH Zurich",
    2L,   "Xyzzy",   "XYZZY", "Undisclosed"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

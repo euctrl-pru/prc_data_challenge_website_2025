@@ -2,6 +2,7 @@
 ---
 title: empathetic-utensil
 date: 2025-10-20
+categories: [Morocco]
 acronyms:
   insert_loa: false
 ---
@@ -23,5 +24,5 @@ gt(tibble::tribble(
    1L,           "Rania",     "Akourrou",                   "Independent",
    2L, "Fatima ezzahrae", "el barbouchi",  "ecole polytechnique d'agadir"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

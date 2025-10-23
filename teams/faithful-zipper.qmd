@@ -2,6 +2,7 @@
 ---
 title: faithful-zipper
 date: 2025-10-09
+categories: [China]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L, "Guangtian",    "Cao",                 "student",
    3L,   "Zhengye",    "Xue",                 "student"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

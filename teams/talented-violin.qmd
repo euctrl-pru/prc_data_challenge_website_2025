@@ -2,6 +2,7 @@
 ---
 title: talented-violin
 date: 2025-10-17
+categories: [United States]
 acronyms:
   insert_loa: false
 ---
@@ -25,5 +26,5 @@ gt(tibble::tribble(
    1L, "Len Johns",  "Shaji", "University of Houston",
    2L, "Lee Johns",  "Shaji", "Brother (U: leejs337)"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

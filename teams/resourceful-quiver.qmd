@@ -2,6 +2,7 @@
 ---
 title: resourceful-quiver
 date: 2025-10-02
+categories: [Netherlands]
 acronyms:
   insert_loa: false
 ---
@@ -26,5 +27,5 @@ gt(tibble::tribble(
    4L,             "Bob", "van Dillen",   "TU Delft",
    5L,          "Aidana",   "Tassanbi",   "TU Delft"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

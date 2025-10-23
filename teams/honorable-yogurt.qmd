@@ -2,6 +2,7 @@
 ---
 title: honorable-yogurt
 date: 2025-10-02
+categories: [Benin]
 acronyms:
   insert_loa: false
 ---
@@ -32,5 +33,5 @@ gt(tibble::tribble(
   ~id,       ~forename,    ~surname,  ~affiliation,
    1L, "Amadou Roufaï", "MOUSTAPHA", "independent"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

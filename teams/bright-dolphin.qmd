@@ -2,6 +2,7 @@
 ---
 title: bright-dolphin
 date: 2025-10-03
+categories: [United Arab Emirates]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L,    "Malaz",  "Waleed", "Independent",
    3L,   "Musaab", "Mahjoub", "Independent"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

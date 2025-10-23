@@ -210,7 +210,7 @@ website:
         - ranking.qmd
         - section: "Teams"
           contents: 
-          - text: "Meta"
+          - text: "Stats"
             file: teams/index.qmd
           - text: "Team details"
             contents: 

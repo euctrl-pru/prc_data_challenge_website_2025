@@ -2,6 +2,7 @@
 ---
 title: kindly-garden
 date: 2025-10-07
+categories: [Bosnia Herzegovina]
 acronyms:
   insert_loa: false
 ---
@@ -23,5 +24,5 @@ gt(tibble::tribble(
    1L,    "Rade",   "Kačar", "University of Belgrade, Faculty of Transport and Traffic Engineering",
    2L,   "Darko", "Ćulibrk",                                                                 "mtel"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

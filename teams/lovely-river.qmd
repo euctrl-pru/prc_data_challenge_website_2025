@@ -2,6 +2,7 @@
 ---
 title: lovely-river
 date: 2025-10-07
+categories: [Netherlands]
 acronyms:
   insert_loa: false
 ---
@@ -22,5 +23,5 @@ gt(tibble::tribble(
   ~id, ~forename,   ~surname, ~affiliation,
    1L,  "Aidana", "Tassanbi",   "TU Delft"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

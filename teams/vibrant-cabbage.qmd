@@ -2,6 +2,7 @@
 ---
 title: vibrant-cabbage
 date: 2025-10-14
+categories: [United States]
 acronyms:
   insert_loa: false
 ---
@@ -26,5 +27,5 @@ gt(tibble::tribble(
    1L, "Emanuele",   "Bossi", "Embry-Riddle Aeronautical University",
    2L,   "Afonso", "Azevedo", "Embry-Riddle Aeronautical University"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

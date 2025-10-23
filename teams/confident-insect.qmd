@@ -2,6 +2,7 @@
 ---
 title: confident-insect
 date: 2025-10-12
+categories: [China]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L,      "Yu",    "Han",    "Beijing Institute of Technology",
    3L,  "Jingda",     "Wu",    "Beijing Institute of Technology"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

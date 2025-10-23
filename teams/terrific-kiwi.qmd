@@ -2,6 +2,7 @@
 ---
 title: terrific-kiwi
 date: 2025-10-16
+categories: [United Kingdom]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L, "Michael",       "Fok",          "Colleague",
    3L,   "Tanya", "Blanchard",          "Colleague"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

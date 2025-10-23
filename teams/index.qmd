@@ -1,14 +1,18 @@
 ---
-title: "Teams"
+title: "Teams stats"
 # subtitle: |
 #   These are the fantastic people that have decided to participate
 #   to the PRC Data Challenge 2025.
 listing:
   id: teams-listings
   contents: "*.qmd"
-  fields: [title, categories, date]
+  field-display-names:
+    title: "Team"
+    date: "Request date"
+  fields: [title, date]
 #   # sort: "date desc"
   type: table
+  date-format: "iso"
 #   # categories: unnumbered
 #   # sort-ui: false
 #   filter-ui: [image, title, categories, date]
@@ -60,7 +64,7 @@ ccc <- teams_valid |>
   ) |>
   mutate(
     iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
-  write_csv(here::here("data", "teams_country@13.csv"))
+  write_csv(here::here("data", "teams_country@14.csv"))
 
 
 
@@ -106,7 +110,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-nnn, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-ooo, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -128,7 +132,7 @@ cumulative_counts_in_time |>
 ```
 
 
-```{ojs nnn}
+```{ojs ooo}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -144,7 +148,7 @@ land = topojson.feature(world, world.objects.land)
 
 countries = topojson.feature(world, world.objects.countries)
 
-teams_country = FileAttachment('../data/teams_country@13.csv').csv({ typed: true })
+teams_country = FileAttachment('../data/teams_country@14.csv').csv({ typed: true })
 
 origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
 
@@ -197,7 +201,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-nnn, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-ooo, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 

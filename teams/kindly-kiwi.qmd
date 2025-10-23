@@ -2,6 +2,7 @@
 ---
 title: kindly-kiwi
 date: 2025-10-06
+categories: [Finland]
 acronyms:
   insert_loa: false
 ---
@@ -23,5 +24,5 @@ gt(tibble::tribble(
    1L,    "Tomi",     "Äijö",   "Monad Oy",
    2L,  "Aleksi", "Viljanen",      "Monad"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

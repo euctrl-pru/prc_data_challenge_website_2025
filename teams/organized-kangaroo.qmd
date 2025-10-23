@@ -2,6 +2,7 @@
 ---
 title: organized-kangaroo
 date: 2025-10-12
+categories: [Switzerland]
 acronyms:
   insert_loa: false
 ---
@@ -26,5 +27,5 @@ gt(tibble::tribble(
    4L,     "Jing",      "Li", "University of Geneva",
    5L,      "Ivo", "Naranjo",          "Independent"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

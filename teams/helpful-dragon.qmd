@@ -2,6 +2,7 @@
 ---
 title: helpful-dragon
 date: 2025-10-06
+categories: [United Kingdom]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L,     "Ian",     "Leung",            "Classmate",
    3L,    "Emil", "Rovshenov",            "Classmate"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -2,6 +2,7 @@
 ---
 title: keen-feather
 date: 2025-10-17
+categories: [Italy]
 acronyms:
   insert_loa: false
 ---
@@ -22,5 +23,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,            ~affiliation,
    1L, "Martina", "Latina", "Politecnico di Torino"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

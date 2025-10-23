@@ -2,6 +2,7 @@
 ---
 title: bright-lobster
 date: 2025-10-15
+categories: [Cyprus]
 acronyms:
   insert_loa: false
 ---
@@ -27,5 +28,5 @@ gt(tibble::tribble(
    5L,  "Christian",       "Vitale", "KIOS Research and Innovation Center of Excellence",
    6L, "Panayiotis",       "Kolios", "KIOS Research and Innovation Center of Excellence"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

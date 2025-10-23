@@ -2,6 +2,7 @@
 ---
 title: dependable-xylophone
 date: 2025-10-10
+categories: [Denmark]
 acronyms:
   insert_loa: false
 ---
@@ -26,5 +27,5 @@ gt(tibble::tribble(
    2L, "Michalis", "Dikaiopoulos",                            "Engineer",
    3L,   "George",    "Choulakis",                            "Engineer"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

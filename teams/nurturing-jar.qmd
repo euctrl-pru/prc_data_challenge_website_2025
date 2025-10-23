@@ -2,6 +2,7 @@
 ---
 title: nurturing-jar
 date: 2025-10-16
+categories: [China]
 acronyms:
   insert_loa: false
 ---
@@ -22,5 +23,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,                                         ~affiliation,
    1L,     "杨程萌",    "苏照昕", "Beijing University of Posts and Telecommunications"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -2,6 +2,7 @@
 ---
 title: lighthearted-barn
 date: 2025-10-06
+categories: [Spain]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
   ~id,  ~forename,       ~surname, ~affiliation,
    1L, "Santiago", "Souto Ortega",     "Unknow"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -57,6 +57,7 @@ teams_test <- teams |>
 ---
 title: %s
 date: %s
+categories: [%s]
 acronyms:
   insert_loa: false
 ---
@@ -73,11 +74,12 @@ acronyms:
 ```{r echo=FALSE}
 library(gt)
 
-gt(%s) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+gt(%s) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```
 ',
         team_name,
         timestamp |> format("%Y-%m-%d"),
+        team_country,
         team_description,
         team_type,
         team_country,

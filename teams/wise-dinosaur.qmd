@@ -2,6 +2,7 @@
 ---
 title: wise-dinosaur
 date: 2025-10-19
+categories: [Indonesia]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L,  "George",                 "Pavlov",         "self-employed/independent",
    3L,  "Dmitry",               "Gribanov",         "self-employed/independent"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

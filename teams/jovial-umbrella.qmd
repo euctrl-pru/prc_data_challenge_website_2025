@@ -2,6 +2,7 @@
 ---
 title: jovial-umbrella
 date: 2025-10-03
+categories: [Spain]
 acronyms:
   insert_loa: false
 ---
@@ -22,5 +23,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,  "Carlos", "Morote", "independent"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

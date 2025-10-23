@@ -1,0 +1,28 @@
+
+---
+title: cheerful-waterfall
+date: 2025-10-23
+categories: [Bangladesh]
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We are university students in love with data science and we loved the topic of this competition. Hence here we are.
+
+## Details
+
+* Type: Academia
+* Country: Bangladesh
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,    ~forename, ~surname,                                      ~affiliation,
+   1L,      "Steve", "Austin", "University of Science and Technology Chittagong",
+   2L, "Shah Nawaz", "Haider",                                            "USTC"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

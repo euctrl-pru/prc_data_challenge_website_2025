@@ -2,6 +2,7 @@
 ---
 title: motivated-quartz
 date: 2025-10-14
+categories: [China]
 acronyms:
   insert_loa: false
 ---
@@ -22,5 +23,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,                                                    ~affiliation,
    1L,      "墨诗",      "王", "北京航空航天大学 (Beijing University of Aeronautics and Astronautics)"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

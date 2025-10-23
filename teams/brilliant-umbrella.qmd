@@ -2,6 +2,7 @@
 ---
 title: brilliant-umbrella
 date: 2025-10-16
+categories: [France]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L,   "Xyzzy",  "XYZZY", "Undisclosed",
    3L,   "Xyzzy",  "XYZZY", "Undisclosed"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -2,6 +2,7 @@
 ---
 title: brilliant-zebra
 date: 2025-10-15
+categories: [Morocco]
 acronyms:
   insert_loa: false
 ---
@@ -23,5 +24,5 @@ gt(tibble::tribble(
   ~id, ~forename,   ~surname,  ~affiliation,
    1L,   "Rania", "AKOURROU", "Independent"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

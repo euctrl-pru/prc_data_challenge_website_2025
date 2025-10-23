@@ -2,6 +2,7 @@
 ---
 title: delightful-marshmallow
 date: 2025-10-16
+categories: [Poland]
 acronyms:
   insert_loa: false
 ---
@@ -25,5 +26,5 @@ gt(tibble::tribble(
    3L,      "Omar",   "Ibrahime", "Ryanair Labs",
    4L,      "Adam",    "Łyskawa", "Ryanair Labs"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

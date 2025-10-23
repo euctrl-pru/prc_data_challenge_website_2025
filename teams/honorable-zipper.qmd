@@ -2,6 +2,7 @@
 ---
 title: honorable-zipper
 date: 2025-10-13
+categories: [Egypt]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L, "Youssif", "Shaaban",          ".",
    3L, "Mohamed",   "Ahmed",          "."
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -2,6 +2,7 @@
 ---
 title: inventive-apple
 date: 2025-10-03
+categories: [Korea South]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L,    "Park", "Hyungjun",      "KIAST",
    3L,     "Lee",    "Subin",      "KIAST"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

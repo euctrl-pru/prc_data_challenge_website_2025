@@ -2,6 +2,7 @@
 ---
 title: exuberant-emu
 date: 2025-10-04
+categories: [United States]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L,    "Taeyun",               "Yoo",                                 "ERAU",
    3L, "Christian",     "Yeara Herrero",                                 "ERAU"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

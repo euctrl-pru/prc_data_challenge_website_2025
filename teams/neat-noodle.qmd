@@ -2,6 +2,7 @@
 ---
 title: neat-noodle
 date: 2025-10-05
+categories: [United States]
 acronyms:
   insert_loa: false
 ---
@@ -23,5 +24,5 @@ gt(tibble::tribble(
    1L,  "Deepak", "Chandramouli",       "Federal Express",
    2L,    "Anna",       "Tamuly", "University of Memphis"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

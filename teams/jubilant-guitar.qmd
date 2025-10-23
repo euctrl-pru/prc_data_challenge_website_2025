@@ -2,6 +2,7 @@
 ---
 title: jubilant-guitar
 date: 2025-10-06
+categories: [Turkey]
 acronyms:
   insert_loa: false
 ---
@@ -27,5 +28,5 @@ gt(tibble::tribble(
    5L,      "Seçil",    "Heper",     "Unknow",
    6L, "İsmail Alp",  "Aydemir",     "Unknow"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

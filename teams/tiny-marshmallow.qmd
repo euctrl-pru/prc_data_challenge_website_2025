@@ -2,6 +2,7 @@
 ---
 title: tiny-marshmallow
 date: 2025-10-03
+categories: [Vietnam]
 acronyms:
   insert_loa: false
 ---
@@ -24,5 +25,5 @@ gt(tibble::tribble(
    2L,      "Canh Trieu",   "Tran",  "ACV - Airports Corporation of VietNam",
    3L,         "Duc Phu", "Nguyen", "ACV - Airports Corporation of Viet Nam"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

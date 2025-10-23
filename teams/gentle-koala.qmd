@@ -2,6 +2,7 @@
 ---
 title: gentle-koala
 date: 2025-10-13
+categories: [Morocco]
 acronyms:
   insert_loa: false
 ---
@@ -27,5 +28,5 @@ gt(tibble::tribble(
    5L, "abdallah", "ahandouch",                  "Unknow",
    6L, "safouane",    "lasmar",                  "Unknow"
   )
-) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```
