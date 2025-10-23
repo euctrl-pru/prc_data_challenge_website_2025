@@ -29,6 +29,7 @@
 {{< include teams/gentle-eel.qmd >}}
 {{< include teams/gentle-koala.qmd >}}
 {{< include teams/gentle-orange.qmd >}}
+{{< include teams/gentle-piano.qmd >}}
 {{< include teams/genuine-zucchini.qmd >}}
 {{< include teams/graceful-yogurt.qmd >}}
 {{< include teams/gracious-jacket.qmd >}}
