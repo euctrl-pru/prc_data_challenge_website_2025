@@ -3,12 +3,12 @@ title: "Teams"
 # subtitle: |
 #   These are the fantastic people that have decided to participate
 #   to the PRC Data Challenge 2025.
-# listing:
-#   id: teams-listings
-#   contents: "*.qmd"
-#   # fields: [title, categories, date]
+listing:
+  id: teams-listings
+  contents: "*.qmd"
+  fields: [title, categories, date]
 #   # sort: "date desc"
-#   # type: table
+  type: table
 #   # categories: unnumbered
 #   # sort-ui: false
 #   filter-ui: [image, title, categories, date]
@@ -60,7 +60,7 @@ ccc <- teams_valid |>
   ) |>
   mutate(
     iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
-  write_csv("data/teams_country@12.csv")
+  write_csv(here::here("data", "teams_country@12.csv"))
 
 
 
@@ -138,13 +138,13 @@ d3 = require.alias({
   'd3-geo-polygon': 'd3-geo-polygon@1.12.1/dist/d3-geo-polygon.min.js'
 })('d3', 'd3-geo-projection', 'd3-geo-polygon')
 
-world = FileAttachment('data/world.topo.json').json()
+world = FileAttachment('/data/world.topo.json').json()
 
 land = topojson.feature(world, world.objects.land)
 
 countries = topojson.feature(world, world.objects.countries)
 
-teams_country = FileAttachment('data/teams_country@12.csv').csv({ typed: true })
+teams_country = FileAttachment('/data/teams_country@12.csv').csv({ typed: true })
 
 origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
 
@@ -226,6 +226,6 @@ teams_valid |>
 ```
 
 
-	
-{{< include _teams.qmd >}}
 
+::: {#teams-listings}
+:::

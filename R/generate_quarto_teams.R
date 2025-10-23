@@ -54,7 +54,13 @@ teams_test <- teams |>
     cat(
       sprintf(
         '
-## %s
+---
+title: %s
+date: %s
+acronyms:
+  insert_loa: false
+---
+
 creation date: %s
 
 
@@ -70,10 +76,11 @@ creation date: %s
 ```{r echo=FALSE}
 library(gt)
 
-gt(%s)
+gt(%s) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```
 ',
         team_name,
+        timestamp |> format("%Y-%m-%d"),
         timestamp |> format("%Y-%m-%d"),
         team_description,
         team_type,
