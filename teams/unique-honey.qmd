@@ -1,13 +1,16 @@
 
-## unique-honey
-creation date: 2025-10-13
+---
+title: unique-honey
+date: 2025-10-13
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are working as researchers at a University and are actively working on AI regarding aviation systems. One of our projects is about sustainable AI in aviation and this challenge seems like a good fit. It will be a good opportunity to challenge ourselves and learn more.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: Germany
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,   "Recep", "Ayyildiz", "University of Stuttgart",
    2L, "Yassine",   "Akhiat", "University of Stuttgart"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

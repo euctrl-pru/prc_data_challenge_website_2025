@@ -1,13 +1,16 @@
 
-## brilliant-crane
-creation date: 2025-10-01
+---
+title: brilliant-crane
+date: 2025-10-01
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Interested in aircrafts, flight traffic, and DL - this seems like a nice challenge
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Denmark
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id,   ~forename, ~surname, ~affiliation,
    1L, "Christian",   "Otte",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

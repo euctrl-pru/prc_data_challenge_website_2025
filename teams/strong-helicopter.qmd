@@ -1,13 +1,16 @@
 
-## strong-helicopter
-creation date: 2025-10-01
+---
+title: strong-helicopter
+date: 2025-10-01
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Data scientist with a strong interest in analysis of flight networks
 
-### Details
+## Details
 
 * Type: Academia, Industry
 * Country: Belgium
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,    "Juul", "Vossen", "Independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

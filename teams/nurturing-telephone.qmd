@@ -1,13 +1,16 @@
 
-## nurturing-telephone
-creation date: 2025-10-08
+---
+title: nurturing-telephone
+date: 2025-10-08
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are an aviation-focused deep-tech startup from India, passionate about applying AI and data science to solve real-world challenges in air traffic and sustainability. Our ongoing work in aviation efficiency and our belief that data-driven insights can significantly reduce fuel consumption and environmental impact is an important motivation to participate in the PRC Data Challenge, as it also offers us a platform to test our capabilities, learn from global peers, and contribute innovative, practical solutions to make aviation smarter and greener.
 
-### Details
+## Details
 
 * Type: Industry
 * Country: India
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L, "Siddharth", "Srivastava", "Sydorg Technologies Private Limited",
    2L,    "Ankita",      "Gupta",                          "Co-Founder"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

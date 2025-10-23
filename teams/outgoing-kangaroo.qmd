@@ -1,13 +1,16 @@
 
-## outgoing-kangaroo
-creation date: 2025-10-06
+---
+title: outgoing-kangaroo
+date: 2025-10-06
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I am a Systems Engineering PhD student working in Center for Air Transportation Systems Research Lab where I study about flight operations and emissions using open-source data for US airspace. This would be a lovely opportunity to take on a challenge which is very much related to my domain and I am interested to see the end results.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: United States
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,              ~affiliation,
    1L,   "Ashim",  "Thapa", "George Mason University"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -1,13 +1,16 @@
 
-## resourceful-quiver
-creation date: 2025-10-02
+---
+title: resourceful-quiver
+date: 2025-10-02
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are PhD students from TU Delft, and the challenge aligns with our research.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: Netherlands
@@ -23,5 +26,5 @@ gt(tibble::tribble(
    4L,             "Bob", "van Dillen",   "TU Delft",
    5L,          "Aidana",   "Tassanbi",   "TU Delft"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -1,13 +1,16 @@
 
-## pleasant-sandwich
-creation date: 2025-10-10
+---
+title: pleasant-sandwich
+date: 2025-10-10
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are aspiring data scientists looking to work on cool projects to apply our skills
 
-### Details
+## Details
 
 * Type: Independent
 * Country: United States
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L, "Samarth", "Srinivasa", "Independent",
    2L,   "Eliot",       "Lee", "Independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

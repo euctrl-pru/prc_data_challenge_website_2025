@@ -1,13 +1,16 @@
 
-## kindhearted-waterfall
-creation date: 2025-10-06
+---
+title: kindhearted-waterfall
+date: 2025-10-06
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Akari is a consultancy in AI, I'm an engineer. Very interested in aviation and space technology.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: United Kingdom
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname, ~affiliation,
    1L,   "Faith",  "Selby",      "Akari"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

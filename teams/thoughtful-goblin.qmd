@@ -1,13 +1,16 @@
 
-## thoughtful-goblin
-creation date: 2025-10-18
+---
+title: thoughtful-goblin
+date: 2025-10-18
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Aerospace undergraduate student
 
-### Details
+## Details
 
 * Type: Academia
 * Country: Iran
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,   "Xyzzy",  "XYZZY", "Undisclosed"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

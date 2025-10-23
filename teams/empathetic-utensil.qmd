@@ -1,0 +1,27 @@
+
+---
+title: empathetic-utensil
+date: 2025-10-20
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We're a team of two passionate girls willing to dive into the world of data
+
+## Details
+
+* Type: Independent
+* Country: Morocco
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,         ~forename,       ~surname,                    ~affiliation,
+   1L,           "Rania",     "Akourrou",                   "Independent",
+   2L, "Fatima ezzahrae", "el barbouchi",  "ecole polytechnique d'agadir"
+  )
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

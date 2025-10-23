@@ -1,13 +1,16 @@
 
-## cheerful-quiche
-creation date: 2025-10-08
+---
+title: cheerful-quiche
+date: 2025-10-08
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We're from Ryanair Labs MAD data team and we like a good Engineering challenge!
 
-### Details
+## Details
 
 * Type: Industry
 * Country: Spain
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,    "Igor", "Pereira Gomes",    "Ryanair",
    2L,   "Diogo",         "Souza",    "Ryanair"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

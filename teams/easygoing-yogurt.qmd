@@ -1,13 +1,16 @@
 
-## easygoing-yogurt
-creation date: 2025-10-13
+---
+title: easygoing-yogurt
+date: 2025-10-13
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are a group of research scientists based in Hamburg. We are associated with maintenance, but would like to expand our expertise in flight trajectory management.
 
-### Details
+## Details
 
 * Type: Government
 * Country: Germany
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,  "Tanmay",    "Daga",        "DLR",
    2L, "Philipp", "Lehmann",        "DLR"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

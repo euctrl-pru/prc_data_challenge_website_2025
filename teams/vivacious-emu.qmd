@@ -1,13 +1,16 @@
 
-## vivacious-emu
-creation date: 2025-10-08
+---
+title: vivacious-emu
+date: 2025-10-08
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I'm an engineer with Boeing and like working with data.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Spain
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,   "Xyzzy",  "XYZZY", "Undisclosed"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

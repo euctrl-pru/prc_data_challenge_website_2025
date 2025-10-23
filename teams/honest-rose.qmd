@@ -1,13 +1,16 @@
 
-## honest-rose
-creation date: 2025-10-02
+---
+title: honest-rose
+date: 2025-10-02
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are two brothers from different backgrounds (economics and chemistry), united by the eternal quest to turn data into answers. We like aviation. We like data. And we like a good challenge.
 
-### Details
+## Details
 
 * Type: Academia, Government, Industry, Independent
 * Country: Germany
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,   "Anton", "Bogachev",     "Unknow",
    2L,  "Andrey",   "Belkin",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

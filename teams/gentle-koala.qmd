@@ -1,13 +1,16 @@
 
-## gentle-koala
-creation date: 2025-10-13
+---
+title: gentle-koala
+date: 2025-10-13
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are a final-year Computer Engineering team specializing in Big Data and AI. Our experience in data pipelines, predictive modeling, and machine learning aligns perfectly with the PRC Data Challenge. We're excited to apply our skills to real-world aviation analytics, contribute to sustainability efforts, and learn from the open-data community while helping improve aviation transparency through data-driven solutions.
 
-### Details
+## Details
 
 * Type: Academia, Independent
 * Country: Morocco
@@ -24,5 +27,5 @@ gt(tibble::tribble(
    5L, "abdallah", "ahandouch",                  "Unknow",
    6L, "safouane",    "lasmar",                  "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

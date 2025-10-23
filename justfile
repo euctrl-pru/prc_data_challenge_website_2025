@@ -8,7 +8,6 @@ teams_file := justfile_directory() + "/media/teams_private.json"
 @regenerate-teams-pages:
   #!/usr/bin/env sh
   Rscript ./R/generate_quarto_teams.R
-  ls teams | sort | sed 's/$/ >}}/;s/^/{{{{< include teams\//' > _teams.qmd
   quarto render
 
 # which new teams to assess?

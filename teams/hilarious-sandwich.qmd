@@ -1,13 +1,16 @@
 
-## hilarious-sandwich
-creation date: 2025-10-02
+---
+title: hilarious-sandwich
+date: 2025-10-02
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Ionut Pop Gis Soft Dev
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Romania
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename,       ~surname, ~affiliation,
    1L,  "Attila", "Paur Norbert",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

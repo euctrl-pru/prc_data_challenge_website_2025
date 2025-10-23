@@ -1,13 +1,16 @@
 
-## understated-zucchini
-creation date: 2025-10-04
+---
+title: understated-zucchini
+date: 2025-10-04
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Improve Machine Learning skills and use trajectory predictions if applicable
 
-### Details
+## Details
 
 * Type: Independent
 * Country: France
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,  "Robert", "PASTOR", "independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

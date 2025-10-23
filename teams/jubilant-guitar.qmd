@@ -1,13 +1,16 @@
 
-## jubilant-guitar
-creation date: 2025-10-06
+---
+title: jubilant-guitar
+date: 2025-10-06
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Group of ai and aviation enthusiasts
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Turkey
@@ -24,5 +27,5 @@ gt(tibble::tribble(
    5L,      "Seçil",    "Heper",     "Unknow",
    6L, "İsmail Alp",  "Aydemir",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

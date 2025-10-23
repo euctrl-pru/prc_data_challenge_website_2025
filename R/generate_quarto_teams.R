@@ -61,14 +61,11 @@ acronyms:
   insert_loa: false
 ---
 
-creation date: %s
-
-
-### Description and Rationale
+## Description and Rationale
 
 %s
 
-### Details
+## Details
 
 * Type: %s
 * Country: %s
@@ -80,7 +77,6 @@ gt(%s) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname
 ```
 ',
         team_name,
-        timestamp |> format("%Y-%m-%d"),
         timestamp |> format("%Y-%m-%d"),
         team_description,
         team_type,

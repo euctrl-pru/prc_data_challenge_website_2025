@@ -1,13 +1,16 @@
 
-## likable-forest
-creation date: 2025-10-08
+---
+title: likable-forest
+date: 2025-10-08
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I developed a strong passion for aviation last year, and I’m eager to apply the data science skills I’ve gained through my education and professional experience to try to make a meaningful contribution to the aviation industry.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Japan
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,   "Augey", "Yohann", "Independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

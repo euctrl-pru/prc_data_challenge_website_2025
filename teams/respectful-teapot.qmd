@@ -1,16 +1,19 @@
 
-## respectful-teapot
-creation date: 2025-10-02
+---
+title: respectful-teapot
+date: 2025-10-02
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I am a french engineer, experienced in system engineering applied to aeronautical systems (about 10 years in subsystem testing). Last year, I attended and passed a bootcamp training program in Data Engineering, field of skills I expect to implement in R&D activities to improve technical solutions design, but also in personal projects to analyze, understand and improve global behaviors in various subjects, such as the project you propose.
 Passionate about aeronautics, I passed my PPL license several years ago, among other licenses (ultralight, gliding, paragliding, ...). Even if I do not fly currently (familial reasons), I think my pilot experiences will help me address this project.
 
 I am not experienced as a data scientist (Machine Learning), so I do not guarantee any performant solution : I take this participation as an opportunity to improve my knowledge in both data science and aeronautic operations. If possible I would implicate some acquaintances of mine, more experienced in machine learning.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: France
@@ -22,5 +25,5 @@ gt(tibble::tribble(
   ~id,  ~forename,   ~surname,  ~affiliation,
    1L, "Stéphane", "BONAPFEL", "independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

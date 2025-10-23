@@ -1,13 +1,16 @@
 
-## zestful-volcano
-creation date: 2025-10-06
+---
+title: zestful-volcano
+date: 2025-10-06
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Just for fun, putting some theoretical knowledge into actual use
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Germany
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,   "Dawid", "Ciepiela", "IU International University, Germany",
    2L,    "Slim",  "Mejdoub", "IU International University, Germany"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

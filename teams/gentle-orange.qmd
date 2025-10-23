@@ -1,9 +1,12 @@
 
-## gentle-orange
-creation date: 2025-10-14
+---
+title: gentle-orange
+date: 2025-10-14
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Our team consists of three teammates from multiple disciplines who love using data to solve real-world problems. We come from machine learning, systems engineering, applied mathematics, and environmental modeling, and although we are outside the field of aviation, we share a common interest, curiosity and a reason to apply our collective skills to an exciting problem.
 
@@ -11,7 +14,7 @@ Our team joined the PRC Data Challenge 2025 because it is exactly the kind of pr
 
 This challenge will be we view this challenge as an opportunity for learning and collaboration, but as an opportunity to contribute to the larger cause of more sustainable and efficient air travel.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Egypt
@@ -25,5 +28,5 @@ gt(tibble::tribble(
    2L, "Mohamed Mohamed Omar", "Moussa",     "Unknow",
    3L,  "Ehab Mohammed Ezzat", "Hassan",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

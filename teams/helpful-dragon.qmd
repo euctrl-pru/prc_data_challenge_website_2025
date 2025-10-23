@@ -1,13 +1,16 @@
 
-## helpful-dragon
-creation date: 2025-10-06
+---
+title: helpful-dragon
+date: 2025-10-06
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 to contribute to a more environmentally sustainable aviation industry
 
-### Details
+## Details
 
 * Type: Academia
 * Country: United Kingdom
@@ -21,5 +24,5 @@ gt(tibble::tribble(
    2L,     "Ian",     "Leung",            "Classmate",
    3L,    "Emil", "Rovshenov",            "Classmate"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

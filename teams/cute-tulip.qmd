@@ -1,0 +1,26 @@
+
+---
+title: cute-tulip
+date: 2025-10-23
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I'm an undergrad Student and data science enthusiasts passionate about solving real-world problems using AI. I joined this challenge to apply my skills, learn from practical competition settings, and benchmark my solutions against the best in the field.
+
+## Details
+
+* Type: Independent
+* Country: India
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,                            ~affiliation,
+   1L,  "Tushar", "Sharma", "Indian Institute of Technology Madras"
+  )
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

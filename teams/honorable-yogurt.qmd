@@ -1,9 +1,12 @@
 
-## honorable-yogurt
-creation date: 2025-10-02
+---
+title: honorable-yogurt
+date: 2025-10-02
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I am an air traffic management specialist and data scientist at ASECNA, an air navigation service provider in Africa. I decided to participate in the PRC Challenge to put into practice my expertise in handling and analyzing air traffic data, with a particular focus on surveillance technologies (ADS-B/Mode-S), safety and quality performance, and data-driven decision support.
 
@@ -17,7 +20,7 @@ Personal development – strengthening my skills in data science and aviation pe
 
 Through this challenge, I hope to bridge operational knowledge with data innovation, and support the development of smarter, safer, and greener air navigation services.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Benin
@@ -29,5 +32,5 @@ gt(tibble::tribble(
   ~id,       ~forename,    ~surname,  ~affiliation,
    1L, "Amadou Roufaï", "MOUSTAPHA", "independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

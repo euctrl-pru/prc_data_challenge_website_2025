@@ -1,13 +1,16 @@
 
-## jubilant-vase
-creation date: 2025-10-08
+---
+title: jubilant-vase
+date: 2025-10-08
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Data scientist students who love aviation
 
-### Details
+## Details
 
 * Type: Independent
 * Country: France
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,   "Xyzzy",  "XYZZY", "Undisclosed",
    2L,   "Xyzzy",  "XYZZY", "Undisclosed"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

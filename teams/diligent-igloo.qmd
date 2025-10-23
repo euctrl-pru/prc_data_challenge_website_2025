@@ -1,13 +1,16 @@
 
-## diligent-igloo
-creation date: 2025-10-10
+---
+title: diligent-igloo
+date: 2025-10-10
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I’m a Master student in Data Science at the University of Barcelona, and this Data Science contest sounds like the perfect opportunity to put my skills to the test and learn from real data, and explore how data science can make an impact in aviation. I’m excited to experiment, and see what I can uncover.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Spain
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,               ~affiliation,
    1L,  "Ferran", "Dalmau", "Universitat de Barcelona"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

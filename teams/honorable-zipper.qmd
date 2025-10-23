@@ -1,13 +1,16 @@
 
-## honorable-zipper
-creation date: 2025-10-13
+---
+title: honorable-zipper
+date: 2025-10-13
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are SkyNova, an independent team passionate about aviation data and analytics. We joined the PRC Data Challenge to explore innovative ways to enhance air traffic efficiency through data-driven insights. Our motivation is driven by curiosity, teamwork, and the ambition to turn complex data into meaningful results.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Egypt
@@ -21,5 +24,5 @@ gt(tibble::tribble(
    2L, "Youssif", "Shaaban",          ".",
    3L, "Mohamed",   "Ahmed",          "."
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

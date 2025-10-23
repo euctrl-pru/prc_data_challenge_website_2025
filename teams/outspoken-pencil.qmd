@@ -1,13 +1,16 @@
 
-## outspoken-pencil
-creation date: 2025-10-23
+---
+title: outspoken-pencil
+date: 2025-10-23
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 As a data scientist, this seems interesting.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Singapore
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,   "Xyzzy",  "XYZZY", "Undisclosed"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

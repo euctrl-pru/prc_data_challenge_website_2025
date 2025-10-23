@@ -1,13 +1,16 @@
 
-## cheery-vase
-creation date: 2025-10-23
+---
+title: cheery-vase
+date: 2025-10-23
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Doing this as a final project as a part of the ML with Graphs course (CS224W) at Stanford.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: United States
@@ -21,5 +24,5 @@ gt(tibble::tribble(
    2L,   "Silky",       "Singh", "Stanford University",
    3L, "Mahmood",  "Alhusseini", "Stanford University"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -1,13 +1,16 @@
 
-## kindly-kiwi
-creation date: 2025-10-06
+---
+title: kindly-kiwi
+date: 2025-10-06
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Our team has built systems for air navigation, weather data processing, AI assisted routing, and controller training, drawing on deep aviation domain knowledge and AI expertise. We joined the PRC Challenge to face fresh challenges and compete.
 
-### Details
+## Details
 
 * Type: Industry
 * Country: Finland
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,    "Tomi",     "Äijö",   "Monad Oy",
    2L,  "Aleksi", "Viljanen",      "Monad"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

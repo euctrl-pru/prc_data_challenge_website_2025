@@ -1,13 +1,16 @@
 
-## sociable-lobster
-creation date: 2025-10-07
+---
+title: sociable-lobster
+date: 2025-10-07
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I work in the ATM field and have a masters in AI so would like to put these together to tackle the challenge.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Ireland
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename,  ~surname, ~affiliation,
    1L,  "Callum", "Winship",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

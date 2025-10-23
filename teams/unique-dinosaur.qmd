@@ -1,13 +1,16 @@
 
-## unique-dinosaur
-creation date: 2025-10-08
+---
+title: unique-dinosaur
+date: 2025-10-08
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I am so overwhelmed with solving aviation challenges by applying ML tools and enable the communities thrive on most efficient form of transportation.
 
-### Details
+## Details
 
 * Type: Industry
 * Country: India
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id,  ~forename,     ~surname,                    ~affiliation,
    1L, "Murali K", "Surampalli", "Divergent Systems & Solutions"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

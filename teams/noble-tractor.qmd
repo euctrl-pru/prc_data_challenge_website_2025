@@ -1,13 +1,16 @@
 
-## noble-tractor
-creation date: 2025-10-08
+---
+title: noble-tractor
+date: 2025-10-08
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Our team, with a good knowledge of aviation and AIML, felt excited to solve the real world problems.
 
-### Details
+## Details
 
 * Type: Academia, Industry, Independent
 * Country: India
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,    "Prabha Thanuja", "Koppula", "Airports Authority of India",
    2L, "Viyyuri P Praveen",   "Kumar", "Airports Authority of India"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

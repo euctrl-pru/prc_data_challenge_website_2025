@@ -1,13 +1,16 @@
 
-## tiny-village
-creation date: 2025-10-16
+---
+title: tiny-village
+date: 2025-10-16
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I want to enhence my research ability
 
-### Details
+## Details
 
 * Type: Academia
 * Country: China
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,                                                                            ~affiliation,
    1L, "Zhanshu",    "Sun", "Beijing University of Posts and Telecommunications School of Economics and Management"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

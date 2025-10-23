@@ -1,13 +1,16 @@
 
-## charismatic-monkey
-creation date: 2025-10-07
+---
+title: charismatic-monkey
+date: 2025-10-07
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are a team of three final-year Computer Engineering students specializing in Big Data and Artificial Intelligence. We decided to join the PRC Data Challenge because it perfectly matches our interests in data science, aviation analytics, and sustainability. Through our studies, we’ve built projects involving real-time data pipelines, predictive modeling, and machine learning, which gave us strong analytical and teamwork skills. We see this challenge as an opportunity to apply our knowledge to a real-world aviation problem, learn from the open-data community, and contribute to improving transparency and efficiency in aviation through data-driven insights
 
-### Details
+## Details
 
 * Type: Academia
 * Country: Morocco
@@ -21,5 +24,5 @@ gt(tibble::tribble(
    2L, "abdelhamid", "boulaajoul",     "Unknow",
    3L,      "Hamza",     "CHRAIM",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

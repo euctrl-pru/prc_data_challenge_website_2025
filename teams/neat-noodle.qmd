@@ -1,13 +1,16 @@
 
-## neat-noodle
-creation date: 2025-10-05
+---
+title: neat-noodle
+date: 2025-10-05
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Flight safety and airworthiness
 
-### Details
+## Details
 
 * Type: Academia, Independent
 * Country: United States
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,  "Deepak", "Chandramouli",       "Federal Express",
    2L,    "Anna",       "Tamuly", "University of Memphis"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

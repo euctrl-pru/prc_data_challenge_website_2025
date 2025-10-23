@@ -1,15 +1,18 @@
 
-## motivated-koala
-creation date: 2025-10-06
+---
+title: motivated-koala
+date: 2025-10-06
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I have masters in energy engineering with focus on sustainability. I am a novice when it comes to Machine learning but I do have little experience in Optimization, Deterministic fuel consumption for vehicles.
 
 I came across OpenSky for my paper where we investigated how shifting policies shift air traffic. This challenge could enhance my knowledge.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: France
@@ -21,5 +24,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,   "Xyzzy",  "XYZZY", "Undisclosed"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

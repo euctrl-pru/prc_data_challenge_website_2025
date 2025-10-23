@@ -1,16 +1,19 @@
 
-## vibrant-cabbage
-creation date: 2025-10-14
+---
+title: vibrant-cabbage
+date: 2025-10-14
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are a group of undergraduate students majoring in Data Science from Embry-Riddle Aeronautical University, Prescott, AZ.
 We both share passion for aviation and performance analysis. We have the desire to push the boundaries of safety, efficiency, and innovation.
 Emanuele Bossi's research interests lie in complex network science and inference, specifically in the development of sparse regression models and optimization-based methods to understand and influence interactions within high-dimensional networks.
 Afonso Azevedo's research interests focus on data-driven optimization, time-series modeling, and predictive analytics applied to environmental systems and datasets.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: United States
@@ -23,5 +26,5 @@ gt(tibble::tribble(
    1L, "Emanuele",   "Bossi", "Embry-Riddle Aeronautical University",
    2L,   "Afonso", "Azevedo", "Embry-Riddle Aeronautical University"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -1,13 +1,16 @@
 
-## trustworthy-ukulele
-creation date: 2025-10-06
+---
+title: trustworthy-ukulele
+date: 2025-10-06
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 The team consists of me and my friend Suhail. We both have aeronautical engineering background where Suhail deals with aviation BI and I deal with algorithms and trajectories.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Germany
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L, "Sauravlal", "Srivastwa", "Independent",
    2L,    "Suhail",  "Parakkal",      "Friend"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

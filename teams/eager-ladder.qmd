@@ -1,13 +1,16 @@
 
-## eager-ladder
-creation date: 2025-10-07
+---
+title: eager-ladder
+date: 2025-10-07
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I am data science enthusiast, who is into machine learning and aviation. Eager to apply my knowledge in aviation industry and expand my research experience
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Germany
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,    "Vlas",   "Choi", "Independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

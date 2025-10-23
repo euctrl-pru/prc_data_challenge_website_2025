@@ -1,13 +1,16 @@
 
-## nurturing-utensil
-creation date: 2025-10-01
+---
+title: nurturing-utensil
+date: 2025-10-01
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Research Group Studying Aviation and Mobility
 
-### Details
+## Details
 
 * Type: Academia
 * Country: Switzerland
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,  "Adrian", "Sarbach",  "ETH Zurich",
    2L,   "Xyzzy",   "XYZZY", "Undisclosed"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

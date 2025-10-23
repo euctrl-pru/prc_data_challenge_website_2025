@@ -1,13 +1,16 @@
 
-## zestful-mango
-creation date: 2025-10-10
+---
+title: zestful-mango
+date: 2025-10-10
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are a duo of data scientists motivated by the challenge of applying our analytical techniques to real-world problems in the aeronautics industry.
 
-### Details
+## Details
 
 * Type: Industry
 * Country: Spain
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,   "Xyzzy",  "XYZZY", "Undisclosed",
    2L,   "Xyzzy",  "XYZZY", "Undisclosed"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

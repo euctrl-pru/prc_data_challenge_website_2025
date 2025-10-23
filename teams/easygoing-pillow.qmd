@@ -1,13 +1,16 @@
 
-## easygoing-pillow
-creation date: 2025-10-17
+---
+title: easygoing-pillow
+date: 2025-10-17
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We’re a team of aviation and machine-learning researchers from Argonne National Lab. Propulsion, controls, data science, optimization—if it flies or fits a gradient, we’re on it. Let’s see how far we can go before we hit the ceiling.
 
-### Details
+## Details
 
 * Type: Academia, Government
 * Country: United States
@@ -23,5 +26,5 @@ gt(tibble::tribble(
    4L,      "Katherine",  "Asztalos", "Argonne National Laboratory",
    5L, "Jingyan (Jane)",     "Jiang", "Argonne National Laboratory"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

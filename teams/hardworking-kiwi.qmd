@@ -1,15 +1,18 @@
 
-## hardworking-kiwi
-creation date: 2025-10-22
+---
+title: hardworking-kiwi
+date: 2025-10-22
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I am a solo data scientist, working as a freelancer in various projects.
 I like solving problems in science and industry, aviation is one of my favorite industries.
 I took upon this to help in being part of a solution but also to get hands on on the real data in the industry.
 
-### Details
+## Details
 
 * Type: Industry
 * Country: Tanzania
@@ -21,5 +24,5 @@ gt(tibble::tribble(
   ~id, ~forename,  ~surname, ~affiliation,
    1L,  "Gideon", "Ndabuye",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

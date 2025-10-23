@@ -1,13 +1,16 @@
 
-## gentle-eel
-creation date: 2025-10-11
+---
+title: gentle-eel
+date: 2025-10-11
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 A team of data enthusiasts driven by curiosity and the joy of solving data challenges.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: Denmark
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,     "Xhino", "Mullaymeri", "independent",
    2L, "Margarita",  "Chatzouli",      "Friend"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

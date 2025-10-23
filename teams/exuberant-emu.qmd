@@ -1,13 +1,16 @@
 
-## exuberant-emu
-creation date: 2025-10-04
+---
+title: exuberant-emu
+date: 2025-10-04
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 A group of Embry-Riddle students and researchers interested in flight data research. Participating in the challenge will enable students and researchers at Embry-Riddle Aeronautical University to explore the application of machine learning methods to ADS-B data, support sustainability initiatives in aviation, and develop the capabilities necessary for success in their data analytics professions. Dr Joao S D Garcia, faculty at the ERAU School of Graduate Studies, mentors the team.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: United States
@@ -21,5 +24,5 @@ gt(tibble::tribble(
    2L,    "Taeyun",               "Yoo",                                 "ERAU",
    3L, "Christian",     "Yeara Herrero",                                 "ERAU"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

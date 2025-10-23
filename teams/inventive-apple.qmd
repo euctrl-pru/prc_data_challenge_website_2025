@@ -1,13 +1,16 @@
 
-## inventive-apple
-creation date: 2025-10-03
+---
+title: inventive-apple
+date: 2025-10-03
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Our team came together through a shared interest in extracting insights from data, particularly in the field of aviation. With backgrounds in aviation dispatch, air traffic control, and machine learning, we bring a multidisciplinary perspective to solving data challenges.
 
-### Details
+## Details
 
 * Type: Industry
 * Country: Korea South
@@ -21,5 +24,5 @@ gt(tibble::tribble(
    2L,    "Park", "Hyungjun",      "KIAST",
    3L,     "Lee",    "Subin",      "KIAST"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -1,13 +1,16 @@
 
-## reliable-jigsaw
-creation date: 2025-10-15
+---
+title: reliable-jigsaw
+date: 2025-10-15
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 I am a solo data science professional with a strong background in predictive modeling. I registered for the PRC Data Challenge because it offers a fascinating, real-world application of Machine Learning: predicting fuel burn from complex flight data. I am motivated to tackle this tough, operational challenge and deliver an accurate, high-quality solution that improves flight efficiency.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: India
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id,          ~forename,    ~surname,  ~affiliation,
    1L, "Pardheev Krishna", "Tammineni", "Wells Fargo"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

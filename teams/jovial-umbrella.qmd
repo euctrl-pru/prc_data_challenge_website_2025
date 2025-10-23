@@ -1,13 +1,16 @@
 
-## jovial-umbrella
-creation date: 2025-10-03
+---
+title: jovial-umbrella
+date: 2025-10-03
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 A way to keep up in data science and aviation field.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Spain
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,  "Carlos", "Morote", "independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

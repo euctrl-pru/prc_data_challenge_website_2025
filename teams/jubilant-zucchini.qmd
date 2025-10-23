@@ -1,13 +1,16 @@
 
-## jubilant-zucchini
-creation date: 2025-10-20
+---
+title: jubilant-zucchini
+date: 2025-10-20
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 i am student of ML
 
-### Details
+## Details
 
 * Type: NA
 * Country: Brazil
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id,   ~forename, ~surname, ~affiliation,
    1L, "hao qiang",  "zheng",     "Unknow"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

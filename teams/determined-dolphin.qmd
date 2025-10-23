@@ -1,15 +1,18 @@
 
-## determined-dolphin
-creation date: 2025-10-22
+---
+title: determined-dolphin
+date: 2025-10-22
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Our team is composed of data scientists from EUROCONTROL’s Aviation Sustainability Unit. We are participating as an independent, non-competing group — not eligible for the prize — while fully adhering to the competition’s open-source and open-data principles.
  
 This challenge is perfectly aligned with our expertise and daily work on data-driven environmental analysis, modeling, and sustainability in aviation. We are glad to join the competition for the fun of it, to exchange ideas, and to contribute to the community’s collective progress.
 
-### Details
+## Details
 
 * Type: Independent
 * Country: France
@@ -23,5 +26,5 @@ gt(tibble::tribble(
    2L,     "Ramon", "Dalmau", "Independent",
    3L, "Ana-Maria",  "Pelin", "Independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

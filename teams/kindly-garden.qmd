@@ -1,13 +1,16 @@
 
-## kindly-garden
-creation date: 2025-10-07
+---
+title: kindly-garden
+date: 2025-10-07
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are passionate researchers, professionals, and scientists — Darko Čulibrk and Rade Kačar — driven by curiosity and innovation in the field of aviation data analytics. Having participated in the previous PRC Challenge, we were extremely pleased with the experience, collaboration, and the opportunity to apply advanced machine learning techniques to real-world problems. Motivated by the insights gained and inspired to go further, we decided to join this year’s challenge to continue pushing the boundaries of data-driven aviation research.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: Bosnia Herzegovina
@@ -20,5 +23,5 @@ gt(tibble::tribble(
    1L,    "Rade",   "Kačar", "University of Belgrade, Faculty of Transport and Traffic Engineering",
    2L,   "Darko", "Ćulibrk",                                                                 "mtel"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

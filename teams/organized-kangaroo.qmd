@@ -1,13 +1,16 @@
 
-## organized-kangaroo
-creation date: 2025-10-12
+---
+title: organized-kangaroo
+date: 2025-10-12
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Independent Aviation Enthusiasts
 
-### Details
+## Details
 
 * Type: Independent
 * Country: Switzerland
@@ -23,5 +26,5 @@ gt(tibble::tribble(
    4L,     "Jing",      "Li", "University of Geneva",
    5L,      "Ivo", "Naranjo",          "Independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

@@ -1,13 +1,16 @@
 
-## wise-dinosaur
-creation date: 2025-10-19
+---
+title: wise-dinosaur
+date: 2025-10-19
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 We are both academia and independent research engineer who are motivated solving complex aerospace engineering problems using the recent machine learning technique(s).
 
-### Details
+## Details
 
 * Type: Academia, Independent
 * Country: Indonesia
@@ -21,5 +24,5 @@ gt(tibble::tribble(
    2L,  "George",                 "Pavlov",         "self-employed/independent",
    3L,  "Dmitry",               "Gribanov",         "self-employed/independent"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

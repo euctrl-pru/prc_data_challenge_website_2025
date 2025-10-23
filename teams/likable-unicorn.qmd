@@ -1,13 +1,16 @@
 
-## likable-unicorn
-creation date: 2025-10-10
+---
+title: likable-unicorn
+date: 2025-10-10
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 Doctoral Candidate (Spatial Informatics) with Avionics Software Quality Assurance Work Experience
 
-### Details
+## Details
 
 * Type: Academia
 * Country: India
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename, ~surname,  ~affiliation,
    1L,   "Xyzzy",  "XYZZY", "Undisclosed"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```

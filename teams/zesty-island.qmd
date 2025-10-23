@@ -1,13 +1,16 @@
 
-## zesty-island
-creation date: 2025-10-20
+---
+title: zesty-island
+date: 2025-10-20
+acronyms:
+  insert_loa: false
+---
 
-
-### Description and Rationale
+## Description and Rationale
 
 After participating in last year’s PRC Data Challenge, we are excited to join the competition once again. At the DLR Institute of Air Transport, our group focuses on aircraft performance modelling and the calculation and optimization of flight trajectories. We look forward to testing our approaches in this context and gaining new insights along the way.
 
-### Details
+## Details
 
 * Type: Academia
 * Country: Germany
@@ -19,5 +22,5 @@ gt(tibble::tribble(
   ~id, ~forename,  ~surname,                                               ~affiliation,
    1L,    "Kuno", "Buchtal", "German Aerospace Center (DLR), Institut of Air Transport"
   )
-)
+) |>   cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```
