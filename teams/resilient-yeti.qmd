@@ -2,7 +2,7 @@
 ---
 title: resilient-yeti
 date: 2025-10-03
-categories: [France]
+subtitle: France
 acronyms:
   insert_loa: false
 ---

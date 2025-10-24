@@ -2,7 +2,7 @@
 ---
 title: zesty-island
 date: 2025-10-20
-categories: [Germany]
+subtitle: Germany
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: cute-tulip
 date: 2025-10-23
-categories: [India]
+subtitle: India
 acronyms:
   insert_loa: false
 ---

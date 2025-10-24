@@ -2,7 +2,7 @@
 ---
 title: gentle-eel
 date: 2025-10-11
-categories: [Denmark]
+subtitle: Denmark
 acronyms:
   insert_loa: false
 ---

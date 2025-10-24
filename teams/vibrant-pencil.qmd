@@ -2,7 +2,7 @@
 ---
 title: vibrant-pencil
 date: 2025-10-08
-categories: [Korea South]
+subtitle: Korea South
 acronyms:
   insert_loa: false
 ---

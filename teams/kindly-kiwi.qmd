@@ -2,7 +2,7 @@
 ---
 title: kindly-kiwi
 date: 2025-10-06
-categories: [Finland]
+subtitle: Finland
 acronyms:
   insert_loa: false
 ---

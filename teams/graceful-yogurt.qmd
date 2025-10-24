@@ -2,7 +2,7 @@
 ---
 title: graceful-yogurt
 date: 2025-10-06
-categories: [Kenya]
+subtitle: Kenya
 acronyms:
   insert_loa: false
 ---

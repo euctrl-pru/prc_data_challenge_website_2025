@@ -2,7 +2,7 @@
 ---
 title: tiny-village
 date: 2025-10-16
-categories: [China]
+subtitle: China
 acronyms:
   insert_loa: false
 ---

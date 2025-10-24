@@ -2,7 +2,7 @@
 ---
 title: upbeat-eel
 date: 2025-10-22
-categories: [Spain]
+subtitle: Spain
 acronyms:
   insert_loa: false
 ---

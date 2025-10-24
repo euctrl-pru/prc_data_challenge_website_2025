@@ -2,7 +2,7 @@
 ---
 title: nimble-yacht
 date: 2025-10-10
-categories: [Canada]
+subtitle: Canada
 acronyms:
   insert_loa: false
 ---

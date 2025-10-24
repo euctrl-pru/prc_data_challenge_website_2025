@@ -2,7 +2,7 @@
 ---
 title: jubilant-vase
 date: 2025-10-08
-categories: [France]
+subtitle: France
 acronyms:
   insert_loa: false
 ---

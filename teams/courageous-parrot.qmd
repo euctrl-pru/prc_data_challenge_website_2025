@@ -2,7 +2,7 @@
 ---
 title: courageous-parrot
 date: 2025-10-02
-categories: [Tunisia]
+subtitle: Tunisia
 acronyms:
   insert_loa: false
 ---

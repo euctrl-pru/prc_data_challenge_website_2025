@@ -2,7 +2,7 @@
 ---
 title: gentle-piano
 date: 2025-10-23
-categories: [Slovenia]
+subtitle: Slovenia
 acronyms:
   insert_loa: false
 ---

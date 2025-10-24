@@ -2,7 +2,7 @@
 ---
 title: outspoken-tornado
 date: 2025-10-21
-categories: [Belgium]
+subtitle: Belgium
 acronyms:
   insert_loa: false
 ---

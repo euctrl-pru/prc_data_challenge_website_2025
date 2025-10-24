@@ -2,7 +2,7 @@
 ---
 title: honorable-yogurt
 date: 2025-10-02
-categories: [Benin]
+subtitle: Benin
 acronyms:
   insert_loa: false
 ---

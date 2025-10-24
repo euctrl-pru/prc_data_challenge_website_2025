@@ -2,7 +2,7 @@
 ---
 title: playful-moose
 date: 2025-10-13
-categories: [Turkey]
+subtitle: Turkey
 acronyms:
   insert_loa: false
 ---

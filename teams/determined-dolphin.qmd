@@ -2,7 +2,7 @@
 ---
 title: determined-dolphin
 date: 2025-10-22
-categories: [France]
+subtitle: France
 acronyms:
   insert_loa: false
 ---

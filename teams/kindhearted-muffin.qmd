@@ -2,7 +2,7 @@
 ---
 title: kindhearted-muffin
 date: 2025-10-21
-categories: [India]
+subtitle: India
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: jubilant-zucchini
 date: 2025-10-20
-categories: [Brazil]
+subtitle: Brazil
 acronyms:
   insert_loa: false
 ---

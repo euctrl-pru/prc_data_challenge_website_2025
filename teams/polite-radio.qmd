@@ -2,7 +2,7 @@
 ---
 title: polite-radio
 date: 2025-10-06
-categories: [Norway]
+subtitle: Norway
 acronyms:
   insert_loa: false
 ---

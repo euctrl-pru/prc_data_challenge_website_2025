@@ -2,7 +2,7 @@
 ---
 title: unique-zeppelin
 date: 2025-10-08
-categories: [Japan]
+subtitle: Japan
 acronyms:
   insert_loa: false
 ---

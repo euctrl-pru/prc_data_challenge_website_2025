@@ -2,7 +2,7 @@
 ---
 title: reliable-jacket
 date: 2025-10-16
-categories: [Poland]
+subtitle: Poland
 acronyms:
   insert_loa: false
 ---

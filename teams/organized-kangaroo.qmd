@@ -2,7 +2,7 @@
 ---
 title: organized-kangaroo
 date: 2025-10-12
-categories: [Switzerland]
+subtitle: Switzerland
 acronyms:
   insert_loa: false
 ---

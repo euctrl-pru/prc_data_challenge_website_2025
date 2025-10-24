@@ -2,7 +2,7 @@
 ---
 title: gentle-orange
 date: 2025-10-14
-categories: [Egypt]
+subtitle: Egypt
 acronyms:
   insert_loa: false
 ---

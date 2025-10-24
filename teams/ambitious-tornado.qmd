@@ -2,7 +2,7 @@
 ---
 title: ambitious-tornado
 date: 2025-10-06
-categories: [Canada]
+subtitle: Canada
 acronyms:
   insert_loa: false
 ---

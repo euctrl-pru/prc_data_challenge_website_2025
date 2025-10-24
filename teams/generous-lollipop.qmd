@@ -2,7 +2,7 @@
 ---
 title: generous-lollipop
 date: 2025-10-22
-categories: [Indonesia]
+subtitle: Indonesia
 acronyms:
   insert_loa: false
 ---

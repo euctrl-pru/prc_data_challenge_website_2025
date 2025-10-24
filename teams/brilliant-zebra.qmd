@@ -2,7 +2,7 @@
 ---
 title: brilliant-zebra
 date: 2025-10-15
-categories: [Morocco]
+subtitle: Morocco
 acronyms:
   insert_loa: false
 ---

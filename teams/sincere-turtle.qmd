@@ -2,7 +2,7 @@
 ---
 title: sincere-turtle
 date: 2025-10-06
-categories: [Poland]
+subtitle: Poland
 acronyms:
   insert_loa: false
 ---

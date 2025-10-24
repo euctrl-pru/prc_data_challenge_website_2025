@@ -2,7 +2,7 @@
 ---
 title: zesty-hedgehog
 date: 2025-10-13
-categories: [Germany]
+subtitle: Germany
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: confident-insect
 date: 2025-10-12
-categories: [China]
+subtitle: China
 acronyms:
   insert_loa: false
 ---

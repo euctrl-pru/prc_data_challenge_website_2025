@@ -2,7 +2,7 @@
 ---
 title: positive-nugget
 date: 2025-10-16
-categories: [France]
+subtitle: France
 acronyms:
   insert_loa: false
 ---

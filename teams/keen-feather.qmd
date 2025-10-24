@@ -2,7 +2,7 @@
 ---
 title: keen-feather
 date: 2025-10-17
-categories: [Italy]
+subtitle: Italy
 acronyms:
   insert_loa: false
 ---

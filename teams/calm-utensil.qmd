@@ -2,7 +2,7 @@
 ---
 title: calm-utensil
 date: 2025-10-11
-categories: [United States]
+subtitle: United States
 acronyms:
   insert_loa: false
 ---

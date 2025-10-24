@@ -2,7 +2,7 @@
 ---
 title: kindly-garden
 date: 2025-10-07
-categories: [Bosnia Herzegovina]
+subtitle: Bosnia Herzegovina
 acronyms:
   insert_loa: false
 ---

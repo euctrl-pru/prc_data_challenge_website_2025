@@ -2,7 +2,7 @@
 ---
 title: hilarious-sandwich
 date: 2025-10-02
-categories: [Romania]
+subtitle: Romania
 acronyms:
   insert_loa: false
 ---

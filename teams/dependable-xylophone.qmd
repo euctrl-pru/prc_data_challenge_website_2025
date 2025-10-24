@@ -2,7 +2,7 @@
 ---
 title: dependable-xylophone
 date: 2025-10-10
-categories: [Denmark]
+subtitle: Denmark
 acronyms:
   insert_loa: false
 ---

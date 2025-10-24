@@ -2,7 +2,7 @@
 ---
 title: strong-helicopter
 date: 2025-10-01
-categories: [Belgium]
+subtitle: Belgium
 acronyms:
   insert_loa: false
 ---

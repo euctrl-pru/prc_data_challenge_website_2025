@@ -2,7 +2,7 @@
 ---
 title: faithful-zipper
 date: 2025-10-09
-categories: [China]
+subtitle: China
 acronyms:
   insert_loa: false
 ---

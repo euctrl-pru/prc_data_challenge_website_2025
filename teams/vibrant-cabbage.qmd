@@ -2,7 +2,7 @@
 ---
 title: vibrant-cabbage
 date: 2025-10-14
-categories: [United States]
+subtitle: United States
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: kindly-utensil
 date: 2025-10-07
-categories: [Ireland]
+subtitle: Ireland
 acronyms:
   insert_loa: false
 ---

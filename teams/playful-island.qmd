@@ -2,7 +2,7 @@
 ---
 title: playful-island
 date: 2025-10-06
-categories: [United States]
+subtitle: United States
 acronyms:
   insert_loa: false
 ---

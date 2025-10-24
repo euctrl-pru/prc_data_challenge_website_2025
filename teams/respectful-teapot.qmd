@@ -2,7 +2,7 @@
 ---
 title: respectful-teapot
 date: 2025-10-02
-categories: [France]
+subtitle: France
 acronyms:
   insert_loa: false
 ---

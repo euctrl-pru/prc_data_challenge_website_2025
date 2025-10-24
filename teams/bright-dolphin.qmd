@@ -2,7 +2,7 @@
 ---
 title: bright-dolphin
 date: 2025-10-03
-categories: [United Arab Emirates]
+subtitle: United Arab Emirates
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: brilliant-crane
 date: 2025-10-01
-categories: [Denmark]
+subtitle: Denmark
 acronyms:
   insert_loa: false
 ---

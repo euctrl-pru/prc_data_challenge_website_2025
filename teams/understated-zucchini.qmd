@@ -2,7 +2,7 @@
 ---
 title: understated-zucchini
 date: 2025-10-04
-categories: [France]
+subtitle: France
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: eager-ladder
 date: 2025-10-07
-categories: [Germany]
+subtitle: Germany
 acronyms:
   insert_loa: false
 ---

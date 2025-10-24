@@ -2,7 +2,7 @@
 ---
 title: gracious-jacket
 date: 2025-10-01
-categories: [Germany]
+subtitle: Germany
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: unique-quicksand
 date: 2025-10-02
-categories: [Germany]
+subtitle: Germany
 acronyms:
   insert_loa: false
 ---

@@ -1,0 +1,28 @@
+
+---
+title: wise-watermelon
+date: 2025-10-24
+subtitle: Ghana
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am an Aerospace Engineering graduate with over 3 years of experience working as a machine learning engineer. I believe this competition is uniquely suited for me and will allow me to make the best use of my acquired skills to make a huge impact in how aircraft fuel consumption is predicted.
+I know that accurately predicting fuel consumption will not only help optimize flight planning and increasing business profits but also go a long way in keeping the carbon footprint of the aviation industry in check and ultimately protecting the environment and making aviation sustainable.
+
+## Details
+
+* Type: Industry, Independent
+* Country: Ghana
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,         ~forename,   ~surname,  ~affiliation,
+   1L, "Isaac Oluwafemi", "Ogunniyi", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

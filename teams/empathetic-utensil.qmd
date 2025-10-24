@@ -2,7 +2,7 @@
 ---
 title: empathetic-utensil
 date: 2025-10-20
-categories: [Morocco]
+subtitle: Morocco
 acronyms:
   insert_loa: false
 ---

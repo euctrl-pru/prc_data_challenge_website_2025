@@ -2,7 +2,7 @@
 ---
 title: exuberant-emu
 date: 2025-10-04
-categories: [United States]
+subtitle: United States
 acronyms:
   insert_loa: false
 ---

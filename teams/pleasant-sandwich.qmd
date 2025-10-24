@@ -2,7 +2,7 @@
 ---
 title: pleasant-sandwich
 date: 2025-10-10
-categories: [United States]
+subtitle: United States
 acronyms:
   insert_loa: false
 ---

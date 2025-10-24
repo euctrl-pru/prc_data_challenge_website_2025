@@ -2,7 +2,7 @@
 ---
 title: lovely-river
 date: 2025-10-07
-categories: [Netherlands]
+subtitle: Netherlands
 acronyms:
   insert_loa: false
 ---

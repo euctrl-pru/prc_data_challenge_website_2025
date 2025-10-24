@@ -2,7 +2,7 @@
 ---
 title: bright-lobster
 date: 2025-10-15
-categories: [Cyprus]
+subtitle: Cyprus
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: bouncy-waterfall
 date: 2025-10-08
-categories: [United States]
+subtitle: United States
 acronyms:
   insert_loa: false
 ---

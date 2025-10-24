@@ -2,7 +2,7 @@
 ---
 title: jubilant-guitar
 date: 2025-10-06
-categories: [Turkey]
+subtitle: Turkey
 acronyms:
   insert_loa: false
 ---

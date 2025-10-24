@@ -2,7 +2,7 @@
 ---
 title: charismatic-monkey
 date: 2025-10-07
-categories: [Morocco]
+subtitle: Morocco
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: motivated-beetle
 date: 2025-10-07
-categories: [France]
+subtitle: France
 acronyms:
   insert_loa: false
 ---

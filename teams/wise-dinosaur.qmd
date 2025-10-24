@@ -2,7 +2,7 @@
 ---
 title: wise-dinosaur
 date: 2025-10-19
-categories: [Indonesia]
+subtitle: Indonesia
 acronyms:
   insert_loa: false
 ---

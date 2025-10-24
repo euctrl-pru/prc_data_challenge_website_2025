@@ -2,7 +2,7 @@
 ---
 title: sincere-jacket
 date: 2025-10-21
-categories: [Germany]
+subtitle: Germany
 acronyms:
   insert_loa: false
 ---

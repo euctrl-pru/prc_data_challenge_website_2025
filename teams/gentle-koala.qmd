@@ -2,7 +2,7 @@
 ---
 title: gentle-koala
 date: 2025-10-13
-categories: [Morocco]
+subtitle: Morocco
 acronyms:
   insert_loa: false
 ---

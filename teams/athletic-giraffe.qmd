@@ -2,7 +2,7 @@
 ---
 title: athletic-giraffe
 date: 2025-10-22
-categories: [India]
+subtitle: India
 acronyms:
   insert_loa: false
 ---

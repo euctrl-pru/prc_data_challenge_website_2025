@@ -2,7 +2,7 @@
 ---
 title: cheerful-waterfall
 date: 2025-10-23
-categories: [Bangladesh]
+subtitle: Bangladesh
 acronyms:
   insert_loa: false
 ---

@@ -2,7 +2,7 @@
 ---
 title: honorable-zipper
 date: 2025-10-13
-categories: [Egypt]
+subtitle: Egypt
 acronyms:
   insert_loa: false
 ---

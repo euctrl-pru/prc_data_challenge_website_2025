@@ -2,7 +2,7 @@
 ---
 title: incredible-kiwi
 date: 2025-10-03
-categories: [Spain]
+subtitle: Spain
 acronyms:
   insert_loa: false
 ---

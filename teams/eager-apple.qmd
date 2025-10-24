@@ -2,7 +2,7 @@
 ---
 title: eager-apple
 date: 2025-10-08
-categories: [Poland]
+subtitle: Poland
 acronyms:
   insert_loa: false
 ---

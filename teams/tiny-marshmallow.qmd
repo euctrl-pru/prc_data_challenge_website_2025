@@ -2,7 +2,7 @@
 ---
 title: tiny-marshmallow
 date: 2025-10-03
-categories: [Vietnam]
+subtitle: Vietnam
 acronyms:
   insert_loa: false
 ---

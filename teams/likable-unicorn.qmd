@@ -2,7 +2,7 @@
 ---
 title: likable-unicorn
 date: 2025-10-10
-categories: [India]
+subtitle: India
 acronyms:
   insert_loa: false
 ---

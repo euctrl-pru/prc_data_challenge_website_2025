@@ -2,7 +2,7 @@
 ---
 title: motivated-koala
 date: 2025-10-06
-categories: [France]
+subtitle: France
 acronyms:
   insert_loa: false
 ---

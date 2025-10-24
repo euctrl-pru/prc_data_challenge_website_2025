@@ -2,7 +2,7 @@
 ---
 title: understanding-kangaroo
 date: 2025-10-20
-categories: [Indonesia]
+subtitle: Indonesia
 acronyms:
   insert_loa: false
 ---

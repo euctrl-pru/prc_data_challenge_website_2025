@@ -2,7 +2,7 @@
 ---
 title: friendly-raccoon
 date: 2025-10-21
-categories: [United States]
+subtitle: United States
 acronyms:
   insert_loa: false
 ---

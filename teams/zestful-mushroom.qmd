@@ -2,7 +2,7 @@
 ---
 title: zestful-mushroom
 date: 2025-10-08
-categories: [Sweden]
+subtitle: Sweden
 acronyms:
   insert_loa: false
 ---

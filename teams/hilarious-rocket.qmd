@@ -2,7 +2,7 @@
 ---
 title: hilarious-rocket
 date: 2025-10-12
-categories: [Netherlands]
+subtitle: Netherlands
 acronyms:
   insert_loa: false
 ---

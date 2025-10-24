@@ -2,7 +2,7 @@
 ---
 title: cheerful-quiche
 date: 2025-10-08
-categories: [Spain]
+subtitle: Spain
 acronyms:
   insert_loa: false
 ---

@@ -57,7 +57,7 @@ teams_test <- teams |>
 ---
 title: %s
 date: %s
-categories: [%s]
+subtitle: %s
 acronyms:
   insert_loa: false
 ---

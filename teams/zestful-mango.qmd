@@ -2,7 +2,7 @@
 ---
 title: zestful-mango
 date: 2025-10-10
-categories: [Spain]
+subtitle: Spain
 acronyms:
   insert_loa: false
 ---

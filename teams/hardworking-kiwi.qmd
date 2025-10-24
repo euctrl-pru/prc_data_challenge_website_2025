@@ -2,7 +2,7 @@
 ---
 title: hardworking-kiwi
 date: 2025-10-22
-categories: [Tanzania]
+subtitle: Tanzania
 acronyms:
   insert_loa: false
 ---

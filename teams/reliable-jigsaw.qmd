@@ -2,7 +2,7 @@
 ---
 title: reliable-jigsaw
 date: 2025-10-15
-categories: [India]
+subtitle: India
 acronyms:
   insert_loa: false
 ---

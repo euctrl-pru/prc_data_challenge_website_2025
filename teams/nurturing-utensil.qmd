@@ -2,7 +2,7 @@
 ---
 title: nurturing-utensil
 date: 2025-10-01
-categories: [Switzerland]
+subtitle: Switzerland
 acronyms:
   insert_loa: false
 ---
