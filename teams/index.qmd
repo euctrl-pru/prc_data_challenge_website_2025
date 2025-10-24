@@ -65,7 +65,7 @@ ccc <- teams_valid |>
   ) |>
   mutate(
     iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
-  write_csv(here::here("data", "teams_country@15.csv"))
+  write_csv(here::here("data", "teams_country@16.csv"))
 
 
 
@@ -77,14 +77,15 @@ counts_in_time <- ttt |>
   summarise(across(n, ~ sum(.x, na.rm = TRUE))) |> 
   mutate(future = registration_date > today())
 
-ojs_define(teams_in_time = counts_in_time)
+# ojs_define(teams_in_time = counts_in_time)
 
 number_of_teams <- counts_in_time |> 
   summarise(across("n", ~ sum(.x, na.rm = TRUE))) |> 
   pull(n)
 
 cumulative_counts_in_time <- counts_in_time |> 
-  mutate(n = cumsum(n))
+  mutate(n = cumsum(n)) |> 
+  write_csv(here::here("data", "cumulative_registration_dc2025.csv"))
 ```
 
 
@@ -111,7 +112,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-ppp, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-qqq, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -149,7 +150,7 @@ land = topojson.feature(world, world.objects.land)
 
 countries = topojson.feature(world, world.objects.countries)
 
-teams_country = FileAttachment('../data/teams_country@15.csv').csv({ typed: true })
+teams_country = FileAttachment('../data/teams_country@16.csv').csv({ typed: true })
 
 origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
 
@@ -202,7 +203,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-ppp, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-qqq, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 
@@ -231,6 +232,7 @@ teams_valid |>
 ```
 
 
+## Teams
 
 ::: {#teams-listings}
 :::
