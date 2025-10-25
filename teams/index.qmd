@@ -65,7 +65,7 @@ ccc <- teams_valid |>
   ) |>
   mutate(
     iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
-  write_csv(here::here("data", "teams_country@16.csv"))
+  write_csv(here::here("data", "teams_country@17.csv"))
 
 
 
@@ -112,7 +112,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-qqq, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-rrr, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 cumulative_counts_in_time |> 
   ggplot() +
   geom_step(aes(x = registration_date,
@@ -134,7 +134,7 @@ cumulative_counts_in_time |>
 ```
 
 
-```{ojs ppp}
+```{ojs rrr}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -150,7 +150,7 @@ land = topojson.feature(world, world.objects.land)
 
 countries = topojson.feature(world, world.objects.countries)
 
-teams_country = FileAttachment('../data/teams_country@16.csv').csv({ typed: true })
+teams_country = FileAttachment('../data/teams_country@17.csv').csv({ typed: true })
 
 origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
 
@@ -203,7 +203,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-qqq, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-rrr, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 library(countrycode)
 library(scales)
 
