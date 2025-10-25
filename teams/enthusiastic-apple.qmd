@@ -1,0 +1,29 @@
+
+---
+title: enthusiastic-apple
+date: 2025-10-24
+subtitle: Egypt
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+Our team is composed of professionals currently working in leading firms, all with a shared background in Artificial Intelligence. We first met while pursuing our master’s degrees in AI at the University of Ottawa, where we collaborated on several research and applied projects. Participating in the PRC Challenge is an exciting opportunity for us to combine our academic foundation and industry experience to tackle real-world problems, exchange ideas with other innovators, and continue learning together as a team.
+
+## Details
+
+* Type: Independent
+* Country: Egypt
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,  ~surname, ~affiliation,
+   1L,   "Ahmed",   "Omari",   "AustinAI",
+   2L, "Mostafa",   "Nofal",     "Datain",
+   3L,     "Ali", "Shinawy",     "IScore"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

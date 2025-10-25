@@ -1,0 +1,27 @@
+
+---
+title: trustworthy-giraffe
+date: 2025-10-25
+subtitle: Turkey
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am a senior Industrial Engineering students at Işık University with a strong interest in data science and aviation. I joined the PRC Data Challenge to apply machine learning techniques to real aviation data and contribute to improving fuel efficiency and sustainability in air transport.
+
+## Details
+
+* Type: Academia
+* Country: Turkey
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,      ~affiliation,
+   1L,   "Yusuf",  "Kılıç", "Işık University"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
