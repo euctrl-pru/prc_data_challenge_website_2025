@@ -108,29 +108,93 @@ ccc |>
   )
 ```
 
+```{r colorize, echo=FALSE}
+# colorize text: use inline as `r colorize(text, color)` to print `text` in a given `color`
+# can also be used to color a color name, as in r colorize("red")`
+colorize <- function(text, color) {
+  if (missing(color)) color <- text
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, text)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, text)
+  } else text
+}
+```
 
 
 
 
-```{r cumulative-plot-sss, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
-cumulative_counts_in_time |> 
-  ggplot() +
-  geom_step(aes(x = registration_date,
-                y = n,
-                linetype = future),
-            stat = "identity") +
+```{r cumulative-plot-sss1, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+#| fig-cap: !expr paste("Cumulative count of team creation, 2025 in", colorize('black'), "some are", colorize('blue'), ", 2024 in", colorize("grey"))
+
+phase1_start_25 <- as_datetime("2025-10-01T00:00:00Z")
+phase1_end_25 <- as_datetime("2025-11-09T23:59:59Z")
+phase2_start_25 <- as_datetime("2025-11-10T00:00:00Z")
+phase2_end_25 <- as_datetime("2025-12-01T23:59:59Z")
+
+phase1_start_24 <- as_datetime("2024-08-01T00:00:00Z")
+phase1_end_24 <- as_datetime("2024-10-17T00:00:00Z")
+phase2_start_24 <- as_datetime("2024-10-17T18:16:00Z")
+phase2_end_24 <- as_datetime("2024-10-28T00:00:00Z")
+
+
+cum_24 <- here::here("data", "cumulative_registration_dc2024.csv") |>
+  read_csv() |>
+  mutate(
+    registration_date = if_else(
+      registration_date == ymd("2024-07-28"),
+      ymd("2024-07-31"),
+      registration_date
+    ),
+    registration_date_orig = registration_date,
+    registration_date = registration_date + (phase1_start_25 - phase1_start_24),
+    future = FALSE,
+    NULL
+  )
+
+cum_25 <- here::here("data", "cumulative_registration_dc2025.csv") |>
+  read_csv() |>
+  mutate(dc = 2025) |>
+  select(dc, registration_date, n, future)
+
+ggplot() +
+  # 2025
+  geom_step(
+    data = cum_25,
+    aes(x = registration_date, y = n, linetype = future),
+    stat = "identity"
+  ) +
   geom_text(
-    data = cumulative_counts_in_time |>
+    data = cum_25 |>
       slice(which.max(registration_date)),
-    aes(x = registration_date, y = n, label = n), size = 4, vjust = -0.5) +
+    aes(x = registration_date, y = n, label = n),
+    size = 4,
+    vjust = -0.5
+  ) +
+  # 2024
+  geom_step(
+    data = cum_24,
+    aes(x = registration_date, y = n, linetype = future),
+    colour = "grey",
+    stat = "identity"
+  ) +
+  geom_text(
+    data = cum_24 |>
+      slice(which.max(registration_date)),
+    aes(x = registration_date, y = n, label = n),
+    size = 4,
+    vjust = -0.5,
+    colour = "grey"
+  ) +
   theme_minimal() +
-    theme(
-      axis.title.x = element_blank(),
-      axis.title.y = element_blank(),
-      # axis.text.x = element_blank(),
-      # axis.ticks.x = element_blank(),
-      legend.position = "none",
-      NULL)
+  theme(
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    # axis.text.x = element_blank(),
+    # axis.ticks.x = element_blank(),
+    legend.position = "none",
+    NULL
+  )
 ```
 
 
