@@ -37,15 +37,31 @@ max_24 <- cum_24 |>
   slice(which.max(registration_date))
 
 ggplot() +
+  # 2024
+  geom_step(
+    data = cum_24,
+    aes(x = registration_date, y = n, linetype = future),
+    colour = "#008000",
+    stat = "identity"
+  ) +
+  geom_text(
+    data = max_24,
+    aes(x = registration_date, y = n, label = n),
+    size = 4,
+    vjust = -0.5,
+    colour = "#008000"
+  ) +
   # 2025
   geom_step(
     data = cum_25,
     aes(x = registration_date, y = n, linetype = future),
+    colour = "blue",
     stat = "identity"
   ) +
   geom_text(
     data = max_25,
     aes(x = registration_date, y = n, label = n),
+    colour = "blue",
     size = 4,
     vjust = -0.5
   ) +
@@ -59,55 +75,14 @@ ggplot() +
   ) +
   annotate(
     geom = "text",
-    x = as_date(phase2_start_25),
+    x = as_date(phase2_start_25) - ddays(8),
     y = 25,
-    label = paste0("Start final phase\n(", as_date(phase2_start_25), ")"),
-    hjust = "left"
-  ) +
-  # 2024
-  geom_step(
-    data = cum_24,
-    aes(x = registration_date, y = n, linetype = future),
-    colour = "grey",
-    stat = "identity"
-  ) +
-  geom_text(
-    data = max_24,
-    aes(x = registration_date, y = n, label = n),
-    size = 4,
-    vjust = -0.5,
-    colour = "grey"
-  ) +
-  theme_minimal() +
-  theme(
-    axis.title.x = element_blank(),
-    axis.title.y = element_blank(),
-    # axis.text.x = element_blank(),
-    # axis.ticks.x = element_blank(),
-    legend.position = "none",
-    NULL
-  )
-
-
-# test with group
-data <- cum_24 |> bind_rows(cum_25)
-ggplot(data) +
-  # 2025
-  geom_step(
-    aes(
-      x = registration_date,
-      y = n,
-      # linetype = future,
-      group = dc
+    label = paste0(
+      "Start of final phase\n   (",
+      as_date(phase2_start_25),
+      ")"
     ),
-    stat = "identity"
-  ) +
-  geom_text(
-    data = data |>
-      slice(which.max(registration_date)),
-    aes(x = registration_date, y = n, label = n),
-    size = 4,
-    vjust = -0.5
+    hjust = "left"
   ) +
   theme_minimal() +
   theme(

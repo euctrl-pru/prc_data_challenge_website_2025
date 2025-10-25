@@ -124,7 +124,7 @@ colorize <- function(text, color) {
 
 
 
-```{r cumulative-plot-sss3, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-sss4, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 #| fig-cap: !expr paste0("Cumulative count of team creation, 2025 in **", colorize('blue'), "**, 2024 in **", colorize("green"), "**.")
 
 phase1_start_25 <- as_datetime("2025-10-01T00:00:00Z")
@@ -200,10 +200,16 @@ ggplot() +
     arrow = arrow(length = unit(2, "mm"))
   ) +
   annotate(
-    geom = "text", 
-    x = as_date(phase2_start_25),
+    geom = "text",
+    x = as_date(phase2_start_25) - ddays(8),
     y = 25,
-    label = paste0("Start final phase\n(",as_date(phase2_start_25),")"), hjust = "left") +
+    label = paste0(
+      "Start of final phase\n   (",
+      as_date(phase2_start_25),
+      ")"
+    ),
+    hjust = "left"
+  ) +
   theme_minimal() +
   theme(
     axis.title.x = element_blank(),
