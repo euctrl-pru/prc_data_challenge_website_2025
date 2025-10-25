@@ -124,8 +124,8 @@ colorize <- function(text, color) {
 
 
 
-```{r cumulative-plot-sss1, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
-#| fig-cap: !expr paste("Cumulative count of team creation, 2025 in", colorize('black'), "some are", colorize('blue'), ", 2024 in", colorize("grey"))
+```{r cumulative-plot-sss2, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+#| fig-cap: !expr paste("Cumulative count of team creation, 2025 in", colorize('black'), ", 2024 in", colorize("grey"))
 
 phase1_start_25 <- as_datetime("2025-10-01T00:00:00Z")
 phase1_end_25 <- as_datetime("2025-11-09T23:59:59Z")
