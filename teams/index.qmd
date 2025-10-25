@@ -124,8 +124,8 @@ colorize <- function(text, color) {
 
 
 
-```{r cumulative-plot-sss2, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
-#| fig-cap: !expr paste("Cumulative count of team creation, 2025 in", colorize('black'), ", 2024 in", colorize("grey"))
+```{r cumulative-plot-sss3, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+#| fig-cap: !expr paste0("Cumulative count of team creation, 2025 in **", colorize('blue'), "**, 2024 in **", colorize("green"), "**.")
 
 phase1_start_25 <- as_datetime("2025-10-01T00:00:00Z")
 phase1_end_25 <- as_datetime("2025-11-09T23:59:59Z")
@@ -157,35 +157,53 @@ cum_25 <- here::here("data", "cumulative_registration_dc2025.csv") |>
   mutate(dc = 2025) |>
   select(dc, registration_date, n, future)
 
+max_25 <- cum_25 |>
+  slice(which.max(registration_date))
+max_24 <- cum_24 |>
+  slice(which.max(registration_date))
+
 ggplot() +
-  # 2025
-  geom_step(
-    data = cum_25,
-    aes(x = registration_date, y = n, linetype = future),
-    stat = "identity"
-  ) +
-  geom_text(
-    data = cum_25 |>
-      slice(which.max(registration_date)),
-    aes(x = registration_date, y = n, label = n),
-    size = 4,
-    vjust = -0.5
-  ) +
   # 2024
   geom_step(
     data = cum_24,
     aes(x = registration_date, y = n, linetype = future),
-    colour = "grey",
+    colour = "#008000",
     stat = "identity"
   ) +
   geom_text(
-    data = cum_24 |>
-      slice(which.max(registration_date)),
+    data = max_24,
     aes(x = registration_date, y = n, label = n),
     size = 4,
     vjust = -0.5,
-    colour = "grey"
+    colour = "#008000"
   ) +
+  # 2025
+  geom_step(
+    data = cum_25,
+    aes(x = registration_date, y = n, linetype = future),
+    colour = "blue",
+    stat = "identity"
+  ) +
+  geom_text(
+    data = max_25,
+    aes(x = registration_date, y = n, label = n),
+    colour = "blue",
+    size = 4,
+    vjust = -0.5
+  ) +
+  annotate(
+    geom = "segment",
+    x = as_date(phase2_start_25),
+    y = 35,
+    xend = as_date(phase2_start_25),
+    yend = max_25 |> pull(n),
+    arrow = arrow(length = unit(2, "mm"))
+  ) +
+  annotate(
+    geom = "text", 
+    x = as_date(phase2_start_25),
+    y = 25,
+    label = paste0("Start final phase\n(",as_date(phase2_start_25),")"), hjust = "left") +
   theme_minimal() +
   theme(
     axis.title.x = element_blank(),
