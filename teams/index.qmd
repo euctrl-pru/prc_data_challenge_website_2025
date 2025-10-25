@@ -108,24 +108,10 @@ ccc |>
   )
 ```
 
-```{r colorize, echo=FALSE}
-# colorize text: use inline as `r colorize(text, color)` to print `text` in a given `color`
-# can also be used to color a color name, as in r colorize("red")`
-colorize <- function(text, color) {
-  if (missing(color)) color <- text
-  if (knitr::is_latex_output()) {
-    sprintf("\\textcolor{%s}{%s}", color, text)
-  } else if (knitr::is_html_output()) {
-    sprintf("<span style='color: %s;'>%s</span>", color, text)
-  } else text
-}
-```
 
 
-
-
-```{r cumulative-plot-sss4, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
-#| fig-cap: !expr paste0("Cumulative count of team creation, 2025 in **", colorize('blue'), "**, 2024 in **", colorize("green"), "**.")
+```{r cumulative-plot-sss5, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+#| fig-cap: 'Cumulative count of team creation, 2025 in **[blue]{fg="#0000FF"}**, 2024 in **[green]{fg="#008000"}**.'
 
 phase1_start_25 <- as_datetime("2025-10-01T00:00:00Z")
 phase1_end_25 <- as_datetime("2025-11-09T23:59:59Z")
@@ -291,7 +277,8 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-sss, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-sss1, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+#| fig-cap: 'Teams per country'
 library(countrycode)
 library(scales)
 
