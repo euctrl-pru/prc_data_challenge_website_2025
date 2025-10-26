@@ -1,0 +1,27 @@
+
+---
+title: cute-vase
+date: 2025-10-26
+subtitle: Sri Lanka
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+To try a ensemble solution , to learn from participating in the competition no matter win or loose
+
+## Details
+
+* Type: Independent
+* Country: Sri Lanka
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,     ~surname,  ~affiliation,
+   1L,  "Ronith", "Rashmikara", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
