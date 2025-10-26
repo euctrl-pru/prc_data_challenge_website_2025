@@ -110,7 +110,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-uuu, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-uuu1, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 #| fig-cap: 'Cumulative count of team creation, 2025 in **[blue]{fg="#0000FF"}**, 2024 in **[green]{fg="#008000"}**.'
 
 phase1_start_25 <- as_datetime("2025-10-01T00:00:00Z")
@@ -192,6 +192,25 @@ ggplot() +
     label = paste0(
       "Start of final phase\n   (",
       as_date(phase2_start_25),
+      ")"
+    ),
+    hjust = "left"
+  ) +
+  annotate(
+    geom = "segment",
+    x = as_date(phase2_end_25),
+    y = 60,
+    xend = as_datetime(phase2_end_25),
+    yend = max_25 |> pull(n),
+    arrow = arrow(length = unit(2, "mm"))
+  ) +
+  annotate(
+    geom = "text",
+    x = as_date(phase2_end_25) - ddays(8),
+    y = 50,
+    label = paste0(
+      "End of submissions\n(",
+      phase2_end_25,
       ")"
     ),
     hjust = "left"
