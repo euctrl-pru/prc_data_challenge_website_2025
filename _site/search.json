@@ -1480,7 +1480,7 @@
     "href": "teams/index.html",
     "title": "Teams stats",
     "section": "",
-    "text": "Cumulative count of team creation, 2025 in blue, 2024 in green.\nd3 = require.alias({\n  d3: 'd3@7.7.0/dist/d3.min.js',\n  'd3-geo': 'd3@7.7.0/dist/d3.min.js',\n  'd3-array': 'd3@7.7.0/dist/d3.min.js',\n  'd3-geo-projection': 'd3-geo-projection@4.0.0/dist/d3-geo-projection.min.js',\n  'd3-geo-polygon': 'd3-geo-polygon@1.12.1/dist/d3-geo-polygon.min.js'\n})('d3', 'd3-geo-projection', 'd3-geo-polygon')\n\nworld = FileAttachment('../data/world.topo.json').json()\n\nland = topojson.feature(world, world.objects.land)\n\ncountries = topojson.feature(world, world.objects.countries)\n\nteams_country = FileAttachment('../data/teams_country@24.csv').csv({ typed: true })\n\norigin = new Map(teams_country.map((d) =&gt; [d.iso3c, +d.n]))\n\ncountries_without_antarctica = {\n  var l = JSON.parse(JSON.stringify(countries)); // clone (useless here but a good idea in general)\n  // remove antarctica, i.e. code \"010\"\n  l.features = l.features.filter((d) =&gt; d.id != '010');\n  return l;\n}\n\nprojection = d3['geoBertin1953']().rotate([-4, -43]).precision(0.1)\n\nPlot.plot({\n  width: 1000,\n  height: 560,\n  margin: 5,\n  projection: projection,\n  color: {\n    type: 'quantize',\n    n: 11,\n    // unknown: '#ced4da',\n    domain: [1, 18],\n    scheme: 'reds',\n    label: 'Number of teams',\n    legend: true\n  },\n  marks: [\n    Plot.sphere({\n      // fill: d3.rgb(241, 246, 251).formatHex(),\n      fill: '#00FFFF',\n      opacity: 0.3,\n      stroke: 'currentColor'\n    }),\n    Plot.geo(countries_without_antarctica, { fill: '#FFFFFF', opacity: 1 }),\n    Plot.geo(\n      countries_without_antarctica.features.filter(\n        (d) =&gt; ![\"GUF\"].includes(d.properties.name)\n      ),\n      Plot.centroid({\n        fill: (d) =&gt; origin.get(d.properties.a3),\n        tip: true,\n        channels: {\n          Country: (d) =&gt; d.properties.name\n        }\n      })\n    ),\n    Plot.geo(countries_without_antarctica, { stroke: 'black' })\n  ]\n})\nTeams per country",
+    "text": "Cumulative count of team creation, 2025 in blue, 2024 in green.\nd3 = require.alias({\n  d3: 'd3@7.7.0/dist/d3.min.js',\n  'd3-geo': 'd3@7.7.0/dist/d3.min.js',\n  'd3-array': 'd3@7.7.0/dist/d3.min.js',\n  'd3-geo-projection': 'd3-geo-projection@4.0.0/dist/d3-geo-projection.min.js',\n  'd3-geo-polygon': 'd3-geo-polygon@1.12.1/dist/d3-geo-polygon.min.js'\n})('d3', 'd3-geo-projection', 'd3-geo-polygon')\n\nworld = FileAttachment('../data/world.topo.json').json()\n\nland = topojson.feature(world, world.objects.land)\n\ncountries = topojson.feature(world, world.objects.countries)\n\nteams_country = FileAttachment('../data/teams_country@25.csv').csv({ typed: true })\n\norigin = new Map(teams_country.map((d) =&gt; [d.iso3c, +d.n]))\n\ncountries_without_antarctica = {\n  var l = JSON.parse(JSON.stringify(countries)); // clone (useless here but a good idea in general)\n  // remove antarctica, i.e. code \"010\"\n  l.features = l.features.filter((d) =&gt; d.id != '010');\n  return l;\n}\n\nprojection = d3['geoBertin1953']().rotate([-4, -43]).precision(0.1)\n\nPlot.plot({\n  width: 1000,\n  height: 560,\n  margin: 5,\n  projection: projection,\n  color: {\n    type: 'quantize',\n    n: 11,\n    // unknown: '#ced4da',\n    domain: [1, 18],\n    scheme: 'reds',\n    label: 'Number of teams',\n    legend: true\n  },\n  marks: [\n    Plot.sphere({\n      // fill: d3.rgb(241, 246, 251).formatHex(),\n      fill: '#00FFFF',\n      opacity: 0.3,\n      stroke: 'currentColor'\n    }),\n    Plot.geo(countries_without_antarctica, { fill: '#FFFFFF', opacity: 1 }),\n    Plot.geo(\n      countries_without_antarctica.features.filter(\n        (d) =&gt; ![\"GUF\"].includes(d.properties.name)\n      ),\n      Plot.centroid({\n        fill: (d) =&gt; origin.get(d.properties.a3),\n        tip: true,\n        channels: {\n          Country: (d) =&gt; d.properties.name\n        }\n      })\n    ),\n    Plot.geo(countries_without_antarctica, { stroke: 'black' })\n  ]\n})\nTeams per country",
     "crumbs": [
       "Teams",
       "Stats"
@@ -1491,7 +1491,7 @@
     "href": "teams/index.html#teams",
     "title": "Teams stats",
     "section": "Teams",
-    "text": "Teams\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Request date - Oldest\n      \n      \n        Request date - Newest\n      \n      \n        Team\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTeam\n\n\n\nCountry\n\n\n\nRequest date\n\n\n\n\n\n\n\n\nadventurous-lantern\n\n\nIndia\n\n\n2025-10-26\n\n\n\n\n\n\namazing-pillow\n\n\nFrance\n\n\n2025-10-01\n\n\n\n\n\n\nambitious-tornado\n\n\nCanada\n\n\n2025-10-06\n\n\n\n\n\n\nathletic-giraffe\n\n\nIndia\n\n\n2025-10-22\n\n\n\n\n\n\nbouncy-waterfall\n\n\nUnited States\n\n\n2025-10-08\n\n\n\n\n\n\nbreezy-hamburger\n\n\nFrance\n\n\n2025-10-24\n\n\n\n\n\n\nbright-dolphin\n\n\nUnited Arab Emirates\n\n\n2025-10-03\n\n\n\n\n\n\nbright-lobster\n\n\nCyprus\n\n\n2025-10-15\n\n\n\n\n\n\nbrilliant-crane\n\n\nDenmark\n\n\n2025-10-01\n\n\n\n\n\n\nbrilliant-umbrella\n\n\nFrance\n\n\n2025-10-16\n\n\n\n\n\n\nbrilliant-zebra\n\n\nMorocco\n\n\n2025-10-15\n\n\n\n\n\n\ncalm-utensil\n\n\nUnited States\n\n\n2025-10-11\n\n\n\n\n\n\ncharismatic-monkey\n\n\nMorocco\n\n\n2025-10-07\n\n\n\n\n\n\ncheerful-quiche\n\n\nSpain\n\n\n2025-10-08\n\n\n\n\n\n\ncheerful-waterfall\n\n\nBangladesh\n\n\n2025-10-23\n\n\n\n\n\n\ncheery-vase\n\n\nUnited States\n\n\n2025-10-23\n\n\n\n\n\n\nconfident-hedgehog\n\n\nUnited States\n\n\n2025-10-14\n\n\n\n\n\n\nconfident-insect\n\n\nChina\n\n\n2025-10-12\n\n\n\n\n\n\ncourageous-parrot\n\n\nTunisia\n\n\n2025-10-02\n\n\n\n\n\n\ncute-tulip\n\n\nIndia\n\n\n2025-10-23\n\n\n\n\n\n\ncute-vase\n\n\nSri Lanka\n\n\n2025-10-26\n\n\n\n\n\n\ndelightful-marshmallow\n\n\nPoland\n\n\n2025-10-16\n\n\n\n\n\n\ndependable-xylophone\n\n\nDenmark\n\n\n2025-10-10\n\n\n\n\n\n\ndetermined-dolphin\n\n\nFrance\n\n\n2025-10-22\n\n\n\n\n\n\ndiligent-igloo\n\n\nSpain\n\n\n2025-10-10\n\n\n\n\n\n\neager-apple\n\n\nPoland\n\n\n2025-10-08\n\n\n\n\n\n\neager-ladder\n\n\nGermany\n\n\n2025-10-07\n\n\n\n\n\n\neasygoing-pillow\n\n\nUnited States\n\n\n2025-10-17\n\n\n\n\n\n\neasygoing-yogurt\n\n\nGermany\n\n\n2025-10-13\n\n\n\n\n\n\nempathetic-utensil\n\n\nMorocco\n\n\n2025-10-20\n\n\n\n\n\n\nenthusiastic-apple\n\n\nEgypt\n\n\n2025-10-24\n\n\n\n\n\n\nenthusiastic-penguin\n\n\nIsrael\n\n\n2025-10-26\n\n\n\n\n\n\nexuberant-emu\n\n\nUnited States\n\n\n2025-10-04\n\n\n\n\n\n\nfaithful-zipper\n\n\nChina\n\n\n2025-10-09\n\n\n\n\n\n\nfriendly-raccoon\n\n\nUnited States\n\n\n2025-10-21\n\n\n\n\n\n\ngenerous-lollipop\n\n\nIndonesia\n\n\n2025-10-22\n\n\n\n\n\n\ngentle-eel\n\n\nDenmark\n\n\n2025-10-11\n\n\n\n\n\n\ngentle-koala\n\n\nMorocco\n\n\n2025-10-13\n\n\n\n\n\n\ngentle-orange\n\n\nEgypt\n\n\n2025-10-14\n\n\n\n\n\n\ngentle-piano\n\n\nSlovenia\n\n\n2025-10-23\n\n\n\n\n\n\ngenuine-zucchini\n\n\nNetherlands\n\n\n2025-10-02\n\n\n\n\n\n\ngraceful-yogurt\n\n\nKenya\n\n\n2025-10-06\n\n\n\n\n\n\ngracious-jacket\n\n\nGermany\n\n\n2025-10-01\n\n\n\n\n\n\nhappy-hamburger\n\n\nSpain\n\n\n2025-10-24\n\n\n\n\n\n\nhardworking-kiwi\n\n\nTanzania\n\n\n2025-10-22\n\n\n\n\n\n\nhelpful-deer\n\n\nUnited States\n\n\n2025-10-02\n\n\n\n\n\n\nhelpful-dragon\n\n\nUnited Kingdom\n\n\n2025-10-06\n\n\n\n\n\n\nhilarious-rocket\n\n\nNetherlands\n\n\n2025-10-12\n\n\n\n\n\n\nhilarious-sandwich\n\n\nRomania\n\n\n2025-10-02\n\n\n\n\n\n\nhilarious-vulture\n\n\nUnited States\n\n\n2025-10-06\n\n\n\n\n\n\nhonest-rose\n\n\nGermany\n\n\n2025-10-02\n\n\n\n\n\n\nhonorable-yogurt\n\n\nBenin\n\n\n2025-10-02\n\n\n\n\n\n\nhonorable-zipper\n\n\nEgypt\n\n\n2025-10-13\n\n\n\n\n\n\nincredible-kiwi\n\n\nSpain\n\n\n2025-10-03\n\n\n\n\n\n\ninventive-apple\n\n\nKorea South\n\n\n2025-10-03\n\n\n\n\n\n\njovial-umbrella\n\n\nSpain\n\n\n2025-10-03\n\n\n\n\n\n\njubilant-guitar\n\n\nTurkey\n\n\n2025-10-06\n\n\n\n\n\n\njubilant-vase\n\n\nFrance\n\n\n2025-10-08\n\n\n\n\n\n\njubilant-zucchini\n\n\nBrazil\n\n\n2025-10-20\n\n\n\n\n\n\nkeen-feather\n\n\nItaly\n\n\n2025-10-17\n\n\n\n\n\n\nkindhearted-muffin\n\n\nIndia\n\n\n2025-10-21\n\n\n\n\n\n\nkindhearted-waterfall\n\n\nUnited Kingdom\n\n\n2025-10-06\n\n\n\n\n\n\nkindly-garden\n\n\nBosnia Herzegovina\n\n\n2025-10-07\n\n\n\n\n\n\nkindly-kiwi\n\n\nFinland\n\n\n2025-10-06\n\n\n\n\n\n\nkindly-utensil\n\n\nIreland\n\n\n2025-10-07\n\n\n\n\n\n\nknowing-violin\n\n\nMalaysia\n\n\n2025-10-26\n\n\n\n\n\n\nlighthearted-barn\n\n\nSpain\n\n\n2025-10-06\n\n\n\n\n\n\nlikable-ant\n\n\nGermany\n\n\n2025-10-02\n\n\n\n\n\n\nlikable-forest\n\n\nJapan\n\n\n2025-10-08\n\n\n\n\n\n\nlikable-unicorn\n\n\nIndia\n\n\n2025-10-10\n\n\n\n\n\n\nlovable-boat\n\n\nBelgium\n\n\n2025-10-06\n\n\n\n\n\n\nlovable-pencil\n\n\nUnited States\n\n\n2025-10-03\n\n\n\n\n\n\nlovely-river\n\n\nNetherlands\n\n\n2025-10-07\n\n\n\n\n\n\nmindful-turtle\n\n\nUnited States\n\n\n2025-10-07\n\n\n\n\n\n\nmotivated-beetle\n\n\nFrance\n\n\n2025-10-07\n\n\n\n\n\n\nmotivated-koala\n\n\nFrance\n\n\n2025-10-06\n\n\n\n\n\n\nmotivated-quartz\n\n\nChina\n\n\n2025-10-14\n\n\n\n\n\n\nneat-noodle\n\n\nUnited States\n\n\n2025-10-05\n\n\n\n\n\n\nnimble-yacht\n\n\nCanada\n\n\n2025-10-10\n\n\n\n\n\n\nnoble-tractor\n\n\nIndia\n\n\n2025-10-08\n\n\n\n\n\n\nnurturing-jar\n\n\nChina\n\n\n2025-10-16\n\n\n\n\n\n\nnurturing-telephone\n\n\nIndia\n\n\n2025-10-08\n\n\n\n\n\n\nnurturing-utensil\n\n\nSwitzerland\n\n\n2025-10-01\n\n\n\n\n\n\norganized-kangaroo\n\n\nSwitzerland\n\n\n2025-10-12\n\n\n\n\n\n\noutgoing-kangaroo\n\n\nUnited States\n\n\n2025-10-06\n\n\n\n\n\n\noutspoken-pencil\n\n\nSingapore\n\n\n2025-10-23\n\n\n\n\n\n\noutspoken-tornado\n\n\nBelgium\n\n\n2025-10-21\n\n\n\n\n\n\nplayful-island\n\n\nUnited States\n\n\n2025-10-06\n\n\n\n\n\n\nplayful-moose\n\n\nTurkey\n\n\n2025-10-13\n\n\n\n\n\n\npleasant-sandwich\n\n\nUnited States\n\n\n2025-10-10\n\n\n\n\n\n\npolite-radio\n\n\nNorway\n\n\n2025-10-06\n\n\n\n\n\n\npositive-nugget\n\n\nFrance\n\n\n2025-10-16\n\n\n\n\n\n\nreliable-jacket\n\n\nPoland\n\n\n2025-10-16\n\n\n\n\n\n\nreliable-jigsaw\n\n\nIndia\n\n\n2025-10-15\n\n\n\n\n\n\nreliable-moose\n\n\nTurkey\n\n\n2025-10-24\n\n\n\n\n\n\nresilient-yeti\n\n\nFrance\n\n\n2025-10-03\n\n\n\n\n\n\nresourceful-quiver\n\n\nNetherlands\n\n\n2025-10-02\n\n\n\n\n\n\nrespectful-ocean\n\n\nIndia\n\n\n2025-10-23\n\n\n\n\n\n\nrespectful-teapot\n\n\nFrance\n\n\n2025-10-02\n\n\n\n\n\n\nsincere-jacket\n\n\nGermany\n\n\n2025-10-21\n\n\n\n\n\n\nsincere-turtle\n\n\nPoland\n\n\n2025-10-06\n\n\n\n\n\n\nsociable-lobster\n\n\nIreland\n\n\n2025-10-07\n\n\n\n\n\n\nstrong-helicopter\n\n\nBelgium\n\n\n2025-10-01\n\n\n\n\n\n\nstrong-zebra\n\n\nBelgium\n\n\n2025-10-27\n\n\n\n\n\n\ntalented-violin\n\n\nUnited States\n\n\n2025-10-17\n\n\n\n\n\n\nterrific-kiwi\n\n\nUnited Kingdom\n\n\n2025-10-16\n\n\n\n\n\n\nthoughtful-goblin\n\n\nIran\n\n\n2025-10-18\n\n\n\n\n\n\nthoughtful-unicorn\n\n\nSwitzerland\n\n\n2025-10-26\n\n\n\n\n\n\ntiny-marshmallow\n\n\nVietnam\n\n\n2025-10-03\n\n\n\n\n\n\ntiny-village\n\n\nChina\n\n\n2025-10-16\n\n\n\n\n\n\ntrustworthy-giraffe\n\n\nTurkey\n\n\n2025-10-25\n\n\n\n\n\n\ntrustworthy-hedgehog\n\n\nUnited Kingdom\n\n\n2025-10-13\n\n\n\n\n\n\ntrustworthy-ukulele\n\n\nGermany\n\n\n2025-10-06\n\n\n\n\n\n\nunderstanding-kangaroo\n\n\nIndonesia\n\n\n2025-10-20\n\n\n\n\n\n\nunderstated-zucchini\n\n\nFrance\n\n\n2025-10-04\n\n\n\n\n\n\nunique-dinosaur\n\n\nIndia\n\n\n2025-10-08\n\n\n\n\n\n\nunique-guitar\n\n\nChina\n\n\n2025-10-08\n\n\n\n\n\n\nunique-honey\n\n\nGermany\n\n\n2025-10-13\n\n\n\n\n\n\nunique-quicksand\n\n\nGermany\n\n\n2025-10-02\n\n\n\n\n\n\nunique-zeppelin\n\n\nJapan\n\n\n2025-10-08\n\n\n\n\n\n\nupbeat-eel\n\n\nSpain\n\n\n2025-10-22\n\n\n\n\n\n\nupstanding-barn\n\n\nBangladesh\n\n\n2025-10-27\n\n\n\n\n\n\nvibrant-cabbage\n\n\nUnited States\n\n\n2025-10-14\n\n\n\n\n\n\nvibrant-pencil\n\n\nKorea South\n\n\n2025-10-08\n\n\n\n\n\n\nvibrant-umbrella\n\n\nUnited States\n\n\n2025-10-14\n\n\n\n\n\n\nvivacious-emu\n\n\nSpain\n\n\n2025-10-08\n\n\n\n\n\n\nwise-dinosaur\n\n\nIndonesia\n\n\n2025-10-19\n\n\n\n\n\n\nwise-watermelon\n\n\nGhana\n\n\n2025-10-24\n\n\n\n\n\n\nwitty-vase\n\n\nUnited States\n\n\n2025-10-07\n\n\n\n\n\n\nzany-waterfall\n\n\nFrance\n\n\n2025-10-06\n\n\n\n\n\n\nzealous-dragon\n\n\nUnited States\n\n\n2025-10-11\n\n\n\n\n\n\nzestful-mango\n\n\nSpain\n\n\n2025-10-10\n\n\n\n\n\n\nzestful-mushroom\n\n\nSweden\n\n\n2025-10-08\n\n\n\n\n\n\nzestful-volcano\n\n\nGermany\n\n\n2025-10-06\n\n\n\n\n\n\nzesty-hedgehog\n\n\nGermany\n\n\n2025-10-13\n\n\n\n\n\n\nzesty-island\n\n\nGermany\n\n\n2025-10-20\n\n\n\n\n\n\nNo matching items",
+    "text": "Teams\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Request date - Oldest\n      \n      \n        Request date - Newest\n      \n      \n        Team\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTeam\n\n\n\nCountry\n\n\n\nRequest date\n\n\n\n\n\n\n\n\nadventurous-lantern\n\n\nIndia\n\n\n2025-10-26\n\n\n\n\n\n\namazing-pillow\n\n\nFrance\n\n\n2025-10-01\n\n\n\n\n\n\nambitious-tornado\n\n\nCanada\n\n\n2025-10-06\n\n\n\n\n\n\nathletic-giraffe\n\n\nIndia\n\n\n2025-10-22\n\n\n\n\n\n\nbouncy-waterfall\n\n\nUnited States\n\n\n2025-10-08\n\n\n\n\n\n\nbreezy-hamburger\n\n\nFrance\n\n\n2025-10-24\n\n\n\n\n\n\nbright-dolphin\n\n\nUnited Arab Emirates\n\n\n2025-10-03\n\n\n\n\n\n\nbright-lobster\n\n\nCyprus\n\n\n2025-10-15\n\n\n\n\n\n\nbrilliant-crane\n\n\nDenmark\n\n\n2025-10-01\n\n\n\n\n\n\nbrilliant-umbrella\n\n\nFrance\n\n\n2025-10-16\n\n\n\n\n\n\nbrilliant-zebra\n\n\nMorocco\n\n\n2025-10-15\n\n\n\n\n\n\ncalm-utensil\n\n\nUnited States\n\n\n2025-10-11\n\n\n\n\n\n\ncharismatic-monkey\n\n\nMorocco\n\n\n2025-10-07\n\n\n\n\n\n\ncheerful-quiche\n\n\nSpain\n\n\n2025-10-08\n\n\n\n\n\n\ncheerful-waterfall\n\n\nBangladesh\n\n\n2025-10-23\n\n\n\n\n\n\ncheery-vase\n\n\nUnited States\n\n\n2025-10-23\n\n\n\n\n\n\nconfident-hedgehog\n\n\nUnited States\n\n\n2025-10-14\n\n\n\n\n\n\nconfident-insect\n\n\nChina\n\n\n2025-10-12\n\n\n\n\n\n\ncourageous-parrot\n\n\nTunisia\n\n\n2025-10-02\n\n\n\n\n\n\ncute-tulip\n\n\nIndia\n\n\n2025-10-23\n\n\n\n\n\n\ncute-vase\n\n\nSri Lanka\n\n\n2025-10-26\n\n\n\n\n\n\ndelightful-boat\n\n\nGhana\n\n\n2025-10-27\n\n\n\n\n\n\ndelightful-marshmallow\n\n\nPoland\n\n\n2025-10-16\n\n\n\n\n\n\ndependable-xylophone\n\n\nDenmark\n\n\n2025-10-10\n\n\n\n\n\n\ndetermined-dolphin\n\n\nFrance\n\n\n2025-10-22\n\n\n\n\n\n\ndiligent-igloo\n\n\nSpain\n\n\n2025-10-10\n\n\n\n\n\n\neager-apple\n\n\nPoland\n\n\n2025-10-08\n\n\n\n\n\n\neager-ladder\n\n\nGermany\n\n\n2025-10-07\n\n\n\n\n\n\neasygoing-pillow\n\n\nUnited States\n\n\n2025-10-17\n\n\n\n\n\n\neasygoing-yogurt\n\n\nGermany\n\n\n2025-10-13\n\n\n\n\n\n\nempathetic-utensil\n\n\nMorocco\n\n\n2025-10-20\n\n\n\n\n\n\nenthusiastic-apple\n\n\nEgypt\n\n\n2025-10-24\n\n\n\n\n\n\nenthusiastic-penguin\n\n\nIsrael\n\n\n2025-10-26\n\n\n\n\n\n\nexuberant-emu\n\n\nUnited States\n\n\n2025-10-04\n\n\n\n\n\n\nfaithful-zipper\n\n\nChina\n\n\n2025-10-09\n\n\n\n\n\n\nfriendly-raccoon\n\n\nUnited States\n\n\n2025-10-21\n\n\n\n\n\n\ngenerous-lollipop\n\n\nIndonesia\n\n\n2025-10-22\n\n\n\n\n\n\ngentle-eel\n\n\nDenmark\n\n\n2025-10-11\n\n\n\n\n\n\ngentle-koala\n\n\nMorocco\n\n\n2025-10-13\n\n\n\n\n\n\ngentle-orange\n\n\nEgypt\n\n\n2025-10-14\n\n\n\n\n\n\ngentle-piano\n\n\nSlovenia\n\n\n2025-10-23\n\n\n\n\n\n\ngenuine-zucchini\n\n\nNetherlands\n\n\n2025-10-02\n\n\n\n\n\n\ngraceful-yogurt\n\n\nKenya\n\n\n2025-10-06\n\n\n\n\n\n\ngracious-jacket\n\n\nGermany\n\n\n2025-10-01\n\n\n\n\n\n\nhappy-hamburger\n\n\nSpain\n\n\n2025-10-24\n\n\n\n\n\n\nhardworking-kiwi\n\n\nTanzania\n\n\n2025-10-22\n\n\n\n\n\n\nhelpful-deer\n\n\nUnited States\n\n\n2025-10-02\n\n\n\n\n\n\nhelpful-dragon\n\n\nUnited Kingdom\n\n\n2025-10-06\n\n\n\n\n\n\nhilarious-rocket\n\n\nNetherlands\n\n\n2025-10-12\n\n\n\n\n\n\nhilarious-sandwich\n\n\nRomania\n\n\n2025-10-02\n\n\n\n\n\n\nhilarious-vulture\n\n\nUnited States\n\n\n2025-10-06\n\n\n\n\n\n\nhonest-rose\n\n\nGermany\n\n\n2025-10-02\n\n\n\n\n\n\nhonorable-yogurt\n\n\nBenin\n\n\n2025-10-02\n\n\n\n\n\n\nhonorable-zipper\n\n\nEgypt\n\n\n2025-10-13\n\n\n\n\n\n\nincredible-kiwi\n\n\nSpain\n\n\n2025-10-03\n\n\n\n\n\n\ninventive-apple\n\n\nKorea South\n\n\n2025-10-03\n\n\n\n\n\n\njovial-umbrella\n\n\nSpain\n\n\n2025-10-03\n\n\n\n\n\n\njubilant-guitar\n\n\nTurkey\n\n\n2025-10-06\n\n\n\n\n\n\njubilant-vase\n\n\nFrance\n\n\n2025-10-08\n\n\n\n\n\n\njubilant-zucchini\n\n\nBrazil\n\n\n2025-10-20\n\n\n\n\n\n\nkeen-feather\n\n\nItaly\n\n\n2025-10-17\n\n\n\n\n\n\nkindhearted-muffin\n\n\nIndia\n\n\n2025-10-21\n\n\n\n\n\n\nkindhearted-waterfall\n\n\nUnited Kingdom\n\n\n2025-10-06\n\n\n\n\n\n\nkindly-garden\n\n\nBosnia Herzegovina\n\n\n2025-10-07\n\n\n\n\n\n\nkindly-kiwi\n\n\nFinland\n\n\n2025-10-06\n\n\n\n\n\n\nkindly-utensil\n\n\nIreland\n\n\n2025-10-07\n\n\n\n\n\n\nknowing-violin\n\n\nMalaysia\n\n\n2025-10-26\n\n\n\n\n\n\nlighthearted-barn\n\n\nSpain\n\n\n2025-10-06\n\n\n\n\n\n\nlikable-ant\n\n\nGermany\n\n\n2025-10-02\n\n\n\n\n\n\nlikable-forest\n\n\nJapan\n\n\n2025-10-08\n\n\n\n\n\n\nlikable-unicorn\n\n\nIndia\n\n\n2025-10-10\n\n\n\n\n\n\nlovable-boat\n\n\nBelgium\n\n\n2025-10-06\n\n\n\n\n\n\nlovable-pencil\n\n\nUnited States\n\n\n2025-10-03\n\n\n\n\n\n\nlovely-river\n\n\nNetherlands\n\n\n2025-10-07\n\n\n\n\n\n\nmindful-turtle\n\n\nUnited States\n\n\n2025-10-07\n\n\n\n\n\n\nmotivated-beetle\n\n\nFrance\n\n\n2025-10-07\n\n\n\n\n\n\nmotivated-koala\n\n\nFrance\n\n\n2025-10-06\n\n\n\n\n\n\nmotivated-quartz\n\n\nChina\n\n\n2025-10-14\n\n\n\n\n\n\nneat-noodle\n\n\nUnited States\n\n\n2025-10-05\n\n\n\n\n\n\nnimble-yacht\n\n\nCanada\n\n\n2025-10-10\n\n\n\n\n\n\nnoble-tractor\n\n\nIndia\n\n\n2025-10-08\n\n\n\n\n\n\nnurturing-jar\n\n\nChina\n\n\n2025-10-16\n\n\n\n\n\n\nnurturing-telephone\n\n\nIndia\n\n\n2025-10-08\n\n\n\n\n\n\nnurturing-utensil\n\n\nSwitzerland\n\n\n2025-10-01\n\n\n\n\n\n\norganized-kangaroo\n\n\nSwitzerland\n\n\n2025-10-12\n\n\n\n\n\n\noutgoing-kangaroo\n\n\nUnited States\n\n\n2025-10-06\n\n\n\n\n\n\noutspoken-pencil\n\n\nSingapore\n\n\n2025-10-23\n\n\n\n\n\n\noutspoken-tornado\n\n\nBelgium\n\n\n2025-10-21\n\n\n\n\n\n\nplayful-island\n\n\nUnited States\n\n\n2025-10-06\n\n\n\n\n\n\nplayful-moose\n\n\nTurkey\n\n\n2025-10-13\n\n\n\n\n\n\npleasant-sandwich\n\n\nUnited States\n\n\n2025-10-10\n\n\n\n\n\n\npolite-radio\n\n\nNorway\n\n\n2025-10-06\n\n\n\n\n\n\npositive-nugget\n\n\nFrance\n\n\n2025-10-16\n\n\n\n\n\n\nreliable-jacket\n\n\nPoland\n\n\n2025-10-16\n\n\n\n\n\n\nreliable-jigsaw\n\n\nIndia\n\n\n2025-10-15\n\n\n\n\n\n\nreliable-moose\n\n\nTurkey\n\n\n2025-10-24\n\n\n\n\n\n\nresilient-yeti\n\n\nFrance\n\n\n2025-10-03\n\n\n\n\n\n\nresourceful-quiver\n\n\nNetherlands\n\n\n2025-10-02\n\n\n\n\n\n\nrespectful-ocean\n\n\nIndia\n\n\n2025-10-23\n\n\n\n\n\n\nrespectful-teapot\n\n\nFrance\n\n\n2025-10-02\n\n\n\n\n\n\nsincere-jacket\n\n\nGermany\n\n\n2025-10-21\n\n\n\n\n\n\nsincere-turtle\n\n\nPoland\n\n\n2025-10-06\n\n\n\n\n\n\nsociable-lobster\n\n\nIreland\n\n\n2025-10-07\n\n\n\n\n\n\nstrong-helicopter\n\n\nBelgium\n\n\n2025-10-01\n\n\n\n\n\n\nstrong-zebra\n\n\nBelgium\n\n\n2025-10-27\n\n\n\n\n\n\ntalented-violin\n\n\nUnited States\n\n\n2025-10-17\n\n\n\n\n\n\nterrific-kiwi\n\n\nUnited Kingdom\n\n\n2025-10-16\n\n\n\n\n\n\nthoughtful-goblin\n\n\nIran\n\n\n2025-10-18\n\n\n\n\n\n\nthoughtful-unicorn\n\n\nSwitzerland\n\n\n2025-10-26\n\n\n\n\n\n\ntiny-marshmallow\n\n\nVietnam\n\n\n2025-10-03\n\n\n\n\n\n\ntiny-village\n\n\nChina\n\n\n2025-10-16\n\n\n\n\n\n\ntrustworthy-giraffe\n\n\nTurkey\n\n\n2025-10-25\n\n\n\n\n\n\ntrustworthy-hedgehog\n\n\nUnited Kingdom\n\n\n2025-10-13\n\n\n\n\n\n\ntrustworthy-ukulele\n\n\nGermany\n\n\n2025-10-06\n\n\n\n\n\n\nunderstanding-kangaroo\n\n\nIndonesia\n\n\n2025-10-20\n\n\n\n\n\n\nunderstated-zucchini\n\n\nFrance\n\n\n2025-10-04\n\n\n\n\n\n\nunique-dinosaur\n\n\nIndia\n\n\n2025-10-08\n\n\n\n\n\n\nunique-guitar\n\n\nChina\n\n\n2025-10-08\n\n\n\n\n\n\nunique-honey\n\n\nGermany\n\n\n2025-10-13\n\n\n\n\n\n\nunique-quicksand\n\n\nGermany\n\n\n2025-10-02\n\n\n\n\n\n\nunique-zeppelin\n\n\nJapan\n\n\n2025-10-08\n\n\n\n\n\n\nupbeat-eel\n\n\nSpain\n\n\n2025-10-22\n\n\n\n\n\n\nupstanding-barn\n\n\nBangladesh\n\n\n2025-10-27\n\n\n\n\n\n\nvibrant-cabbage\n\n\nUnited States\n\n\n2025-10-14\n\n\n\n\n\n\nvibrant-pencil\n\n\nKorea South\n\n\n2025-10-08\n\n\n\n\n\n\nvibrant-umbrella\n\n\nUnited States\n\n\n2025-10-14\n\n\n\n\n\n\nvivacious-emu\n\n\nSpain\n\n\n2025-10-08\n\n\n\n\n\n\nwise-dinosaur\n\n\nIndonesia\n\n\n2025-10-19\n\n\n\n\n\n\nwise-watermelon\n\n\nGhana\n\n\n2025-10-24\n\n\n\n\n\n\nwitty-vase\n\n\nUnited States\n\n\n2025-10-07\n\n\n\n\n\n\nzany-waterfall\n\n\nFrance\n\n\n2025-10-06\n\n\n\n\n\n\nzealous-dragon\n\n\nUnited States\n\n\n2025-10-11\n\n\n\n\n\n\nzestful-mango\n\n\nSpain\n\n\n2025-10-10\n\n\n\n\n\n\nzestful-mushroom\n\n\nSweden\n\n\n2025-10-08\n\n\n\n\n\n\nzestful-volcano\n\n\nGermany\n\n\n2025-10-06\n\n\n\n\n\n\nzesty-hedgehog\n\n\nGermany\n\n\n2025-10-13\n\n\n\n\n\n\nzesty-island\n\n\nGermany\n\n\n2025-10-20\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Teams",
       "Stats"
@@ -2074,440 +2074,447 @@
     ]
   },
   {
-    "objectID": "teams/cute-vase.html",
-    "href": "teams/cute-vase.html",
-    "title": "cute-vase",
+    "objectID": "teams/delightful-boat.html",
+    "href": "teams/delightful-boat.html",
+    "title": "delightful-boat",
     "section": "",
-    "text": "To try a ensemble solution , to learn from participating in the competition no matter win or loose",
+    "text": "I am Ernest Owusu Agyemang , a professional Flight Dispatcher from Ghana with a deep interest in aviation data analysis and fuel efficiency optimization. My participation in the PRC Data Challenge is driven by a passion to apply real-world flight dispatch experience to data-driven problem-solving.\nAs someone directly involved in flight planning and operations, I understand the challenges of balancing safety, efficiency, and sustainability. This challenge presents an opportunity to use data science to uncover insights that can reduce fuel consumption and emissions, supporting a more efficient and environmentally responsible aviation industry.",
     "crumbs": [
       "Teams",
       "Team details",
-      "cute-vase"
+      "delightful-boat"
     ]
   },
   {
-    "objectID": "teams/cute-vase.html#description-and-rationale",
-    "href": "teams/cute-vase.html#description-and-rationale",
-    "title": "cute-vase",
+    "objectID": "teams/delightful-boat.html#description-and-rationale",
+    "href": "teams/delightful-boat.html#description-and-rationale",
+    "title": "delightful-boat",
     "section": "",
-    "text": "To try a ensemble solution , to learn from participating in the competition no matter win or loose",
+    "text": "I am Ernest Owusu Agyemang , a professional Flight Dispatcher from Ghana with a deep interest in aviation data analysis and fuel efficiency optimization. My participation in the PRC Data Challenge is driven by a passion to apply real-world flight dispatch experience to data-driven problem-solving.\nAs someone directly involved in flight planning and operations, I understand the challenges of balancing safety, efficiency, and sustainability. This challenge presents an opportunity to use data science to uncover insights that can reduce fuel consumption and emissions, supporting a more efficient and environmentally responsible aviation industry.",
     "crumbs": [
       "Teams",
       "Team details",
-      "cute-vase"
+      "delightful-boat"
     ]
   },
   {
-    "objectID": "teams/cute-vase.html#details",
-    "href": "teams/cute-vase.html#details",
-    "title": "cute-vase",
+    "objectID": "teams/delightful-boat.html#details",
+    "href": "teams/delightful-boat.html#details",
+    "title": "delightful-boat",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: Sri Lanka\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nRonith\nRashmikara\nindependent",
+    "text": "Details\n\nType: Academia, Independent\nCountry: Ghana\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nErnest\nAgyemang\nIndependent Aviation Data Researcher",
     "crumbs": [
       "Teams",
       "Team details",
-      "cute-vase"
+      "delightful-boat"
     ]
   },
   {
-    "objectID": "teams/courageous-parrot.html",
-    "href": "teams/courageous-parrot.html",
-    "title": "courageous-parrot",
+    "objectID": "teams/cute-tulip.html",
+    "href": "teams/cute-tulip.html",
+    "title": "cute-tulip",
     "section": "",
-    "text": "working on real datasets with ML libraries on GPUs",
+    "text": "I’m an undergrad Student and data science enthusiasts passionate about solving real-world problems using AI. I joined this challenge to apply my skills, learn from practical competition settings, and benchmark my solutions against the best in the field.",
     "crumbs": [
       "Teams",
       "Team details",
-      "courageous-parrot"
+      "cute-tulip"
     ]
   },
   {
-    "objectID": "teams/courageous-parrot.html#description-and-rationale",
-    "href": "teams/courageous-parrot.html#description-and-rationale",
-    "title": "courageous-parrot",
+    "objectID": "teams/cute-tulip.html#description-and-rationale",
+    "href": "teams/cute-tulip.html#description-and-rationale",
+    "title": "cute-tulip",
     "section": "",
-    "text": "working on real datasets with ML libraries on GPUs",
+    "text": "I’m an undergrad Student and data science enthusiasts passionate about solving real-world problems using AI. I joined this challenge to apply my skills, learn from practical competition settings, and benchmark my solutions against the best in the field.",
     "crumbs": [
       "Teams",
       "Team details",
-      "courageous-parrot"
+      "cute-tulip"
     ]
   },
   {
-    "objectID": "teams/courageous-parrot.html#details",
-    "href": "teams/courageous-parrot.html#details",
-    "title": "courageous-parrot",
+    "objectID": "teams/cute-tulip.html#details",
+    "href": "teams/cute-tulip.html#details",
+    "title": "cute-tulip",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: Tunisia\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nRim\nMoussa\nENI-Carthage: National Eng- School of Carthage",
+    "text": "Details\n\nType: Independent\nCountry: India\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nTushar\nSharma\nIndian Institute of Technology Madras",
     "crumbs": [
       "Teams",
       "Team details",
-      "courageous-parrot"
+      "cute-tulip"
     ]
   },
   {
-    "objectID": "teams/confident-hedgehog.html",
-    "href": "teams/confident-hedgehog.html",
-    "title": "confident-hedgehog",
+    "objectID": "teams/confident-insect.html",
+    "href": "teams/confident-insect.html",
+    "title": "confident-insect",
     "section": "",
-    "text": "We are a team of researchers from the Aerospace Systems Design Laboratory (ASDL)’s Civil Aviation Research Division. Our mission is to conduct research on aviation impacts on communities, global climate, economics, operations, and R&D investments while educating the next generation of engineers.",
+    "text": "We are researchers from Chinese universities, working on intelligent transportation systems. We are keen on developing data science and machine learning solutions for real-world engineering challenges.",
     "crumbs": [
       "Teams",
       "Team details",
-      "confident-hedgehog"
+      "confident-insect"
     ]
   },
   {
-    "objectID": "teams/confident-hedgehog.html#description-and-rationale",
-    "href": "teams/confident-hedgehog.html#description-and-rationale",
-    "title": "confident-hedgehog",
+    "objectID": "teams/confident-insect.html#description-and-rationale",
+    "href": "teams/confident-insect.html#description-and-rationale",
+    "title": "confident-insect",
     "section": "",
-    "text": "We are a team of researchers from the Aerospace Systems Design Laboratory (ASDL)’s Civil Aviation Research Division. Our mission is to conduct research on aviation impacts on communities, global climate, economics, operations, and R&D investments while educating the next generation of engineers.",
+    "text": "We are researchers from Chinese universities, working on intelligent transportation systems. We are keen on developing data science and machine learning solutions for real-world engineering challenges.",
     "crumbs": [
       "Teams",
       "Team details",
-      "confident-hedgehog"
+      "confident-insect"
     ]
   },
   {
-    "objectID": "teams/confident-hedgehog.html#details",
-    "href": "teams/confident-hedgehog.html#details",
-    "title": "confident-hedgehog",
+    "objectID": "teams/confident-insect.html#details",
+    "href": "teams/confident-insect.html#details",
+    "title": "confident-insect",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: United States\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nJirat\nBhanpato\nGeorgia Institute of Technology\n\n\n2\nNitya\nMaruthuvakudi Venkatram\nGeorgia Institute of Technology\n\n\n3\nAmeya\nBehere\nGeorgia Institute of Technology",
+    "text": "Details\n\nType: Academia\nCountry: China\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nWei\nDai\nCivil Aviation University of China\n\n\n2\nYu\nHan\nBeijing Institute of Technology\n\n\n3\nJingda\nWu\nBeijing Institute of Technology",
     "crumbs": [
       "Teams",
       "Team details",
-      "confident-hedgehog"
+      "confident-insect"
     ]
   },
   {
-    "objectID": "teams/cheerful-waterfall.html",
-    "href": "teams/cheerful-waterfall.html",
-    "title": "cheerful-waterfall",
+    "objectID": "teams/cheery-vase.html",
+    "href": "teams/cheery-vase.html",
+    "title": "cheery-vase",
     "section": "",
-    "text": "We are university students in love with data science and we loved the topic of this competition. Hence here we are.",
+    "text": "Doing this as a final project as a part of the ML with Graphs course (CS224W) at Stanford.",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheerful-waterfall"
+      "cheery-vase"
     ]
   },
   {
-    "objectID": "teams/cheerful-waterfall.html#description-and-rationale",
-    "href": "teams/cheerful-waterfall.html#description-and-rationale",
-    "title": "cheerful-waterfall",
+    "objectID": "teams/cheery-vase.html#description-and-rationale",
+    "href": "teams/cheery-vase.html#description-and-rationale",
+    "title": "cheery-vase",
     "section": "",
-    "text": "We are university students in love with data science and we loved the topic of this competition. Hence here we are.",
+    "text": "Doing this as a final project as a part of the ML with Graphs course (CS224W) at Stanford.",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheerful-waterfall"
+      "cheery-vase"
     ]
   },
   {
-    "objectID": "teams/cheerful-waterfall.html#details",
-    "href": "teams/cheerful-waterfall.html#details",
-    "title": "cheerful-waterfall",
+    "objectID": "teams/cheery-vase.html#details",
+    "href": "teams/cheery-vase.html#details",
+    "title": "cheery-vase",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: Bangladesh\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nSteve\nAustin\nUniversity of Science and Technology Chittagong\n\n\n2\nShah Nawaz\nHaider\nUSTC",
+    "text": "Details\n\nType: Academia\nCountry: United States\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nNeha\nBalamurugan\nStanford University\n\n\n2\nSilky\nSingh\nStanford University\n\n\n3\nMahmood\nAlhusseini\nStanford University",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheerful-waterfall"
+      "cheery-vase"
     ]
   },
   {
-    "objectID": "teams/charismatic-monkey.html",
-    "href": "teams/charismatic-monkey.html",
-    "title": "charismatic-monkey",
+    "objectID": "teams/cheerful-quiche.html",
+    "href": "teams/cheerful-quiche.html",
+    "title": "cheerful-quiche",
     "section": "",
-    "text": "We are a team of three final-year Computer Engineering students specializing in Big Data and Artificial Intelligence. We decided to join the PRC Data Challenge because it perfectly matches our interests in data science, aviation analytics, and sustainability. Through our studies, we’ve built projects involving real-time data pipelines, predictive modeling, and machine learning, which gave us strong analytical and teamwork skills. We see this challenge as an opportunity to apply our knowledge to a real-world aviation problem, learn from the open-data community, and contribute to improving transparency and efficiency in aviation through data-driven insights",
+    "text": "We’re from Ryanair Labs MAD data team and we like a good Engineering challenge!",
     "crumbs": [
       "Teams",
       "Team details",
-      "charismatic-monkey"
+      "cheerful-quiche"
     ]
   },
   {
-    "objectID": "teams/charismatic-monkey.html#description-and-rationale",
-    "href": "teams/charismatic-monkey.html#description-and-rationale",
-    "title": "charismatic-monkey",
+    "objectID": "teams/cheerful-quiche.html#description-and-rationale",
+    "href": "teams/cheerful-quiche.html#description-and-rationale",
+    "title": "cheerful-quiche",
     "section": "",
-    "text": "We are a team of three final-year Computer Engineering students specializing in Big Data and Artificial Intelligence. We decided to join the PRC Data Challenge because it perfectly matches our interests in data science, aviation analytics, and sustainability. Through our studies, we’ve built projects involving real-time data pipelines, predictive modeling, and machine learning, which gave us strong analytical and teamwork skills. We see this challenge as an opportunity to apply our knowledge to a real-world aviation problem, learn from the open-data community, and contribute to improving transparency and efficiency in aviation through data-driven insights",
+    "text": "We’re from Ryanair Labs MAD data team and we like a good Engineering challenge!",
     "crumbs": [
       "Teams",
       "Team details",
-      "charismatic-monkey"
+      "cheerful-quiche"
     ]
   },
   {
-    "objectID": "teams/charismatic-monkey.html#details",
-    "href": "teams/charismatic-monkey.html#details",
-    "title": "charismatic-monkey",
+    "objectID": "teams/cheerful-quiche.html#details",
+    "href": "teams/cheerful-quiche.html#details",
+    "title": "cheerful-quiche",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: Morocco\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nBadreddine\nEl Hilali\nUnknow\n\n\n2\nabdelhamid\nboulaajoul\nUnknow\n\n\n3\nHamza\nCHRAIM\nUnknow",
+    "text": "Details\n\nType: Industry\nCountry: Spain\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nIgor\nPereira Gomes\nRyanair\n\n\n2\nDiogo\nSouza\nRyanair",
     "crumbs": [
       "Teams",
       "Team details",
-      "charismatic-monkey"
+      "cheerful-quiche"
     ]
   },
   {
-    "objectID": "teams/brilliant-zebra.html",
-    "href": "teams/brilliant-zebra.html",
-    "title": "brilliant-zebra",
+    "objectID": "teams/calm-utensil.html",
+    "href": "teams/calm-utensil.html",
+    "title": "calm-utensil",
     "section": "",
-    "text": "My name is Rania AKOURROU, a 5th-year computer engineering student. I am participating in the PRC Data Challenge 2025 to apply my skills in data science and machine learning, and to contribute to improving energy efficiency and operational performance in aviation.",
+    "text": "I am a software engineer and have been flying gliders since I was in middle school. I love aviation and building solutions using my CS knowledge so this challange is perfectly positioned at the intersection of these two fields.",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-zebra"
+      "calm-utensil"
     ]
   },
   {
-    "objectID": "teams/brilliant-zebra.html#description-and-rationale",
-    "href": "teams/brilliant-zebra.html#description-and-rationale",
-    "title": "brilliant-zebra",
+    "objectID": "teams/calm-utensil.html#description-and-rationale",
+    "href": "teams/calm-utensil.html#description-and-rationale",
+    "title": "calm-utensil",
     "section": "",
-    "text": "My name is Rania AKOURROU, a 5th-year computer engineering student. I am participating in the PRC Data Challenge 2025 to apply my skills in data science and machine learning, and to contribute to improving energy efficiency and operational performance in aviation.",
+    "text": "I am a software engineer and have been flying gliders since I was in middle school. I love aviation and building solutions using my CS knowledge so this challange is perfectly positioned at the intersection of these two fields.",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-zebra"
+      "calm-utensil"
     ]
   },
   {
-    "objectID": "teams/brilliant-zebra.html#details",
-    "href": "teams/brilliant-zebra.html#details",
-    "title": "brilliant-zebra",
+    "objectID": "teams/calm-utensil.html#details",
+    "href": "teams/calm-utensil.html#details",
+    "title": "calm-utensil",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: Morocco\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nRania\nAKOURROU\nIndependent",
+    "text": "Details\n\nType: Independent\nCountry: United States\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nOndrej\nGonzor\nindependent",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-zebra"
+      "calm-utensil"
     ]
   },
   {
-    "objectID": "teams/brilliant-crane.html",
-    "href": "teams/brilliant-crane.html",
-    "title": "brilliant-crane",
+    "objectID": "teams/brilliant-umbrella.html",
+    "href": "teams/brilliant-umbrella.html",
+    "title": "brilliant-umbrella",
     "section": "",
-    "text": "Interested in aircrafts, flight traffic, and DL - this seems like a nice challenge",
+    "text": "We are a team wishing to test our machine learning capabilities and also looking forward to better understand the airspace challenges.",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-crane"
+      "brilliant-umbrella"
     ]
   },
   {
-    "objectID": "teams/brilliant-crane.html#description-and-rationale",
-    "href": "teams/brilliant-crane.html#description-and-rationale",
-    "title": "brilliant-crane",
+    "objectID": "teams/brilliant-umbrella.html#description-and-rationale",
+    "href": "teams/brilliant-umbrella.html#description-and-rationale",
+    "title": "brilliant-umbrella",
     "section": "",
-    "text": "Interested in aircrafts, flight traffic, and DL - this seems like a nice challenge",
+    "text": "We are a team wishing to test our machine learning capabilities and also looking forward to better understand the airspace challenges.",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-crane"
+      "brilliant-umbrella"
     ]
   },
   {
-    "objectID": "teams/brilliant-crane.html#details",
-    "href": "teams/brilliant-crane.html#details",
-    "title": "brilliant-crane",
+    "objectID": "teams/brilliant-umbrella.html#details",
+    "href": "teams/brilliant-umbrella.html#details",
+    "title": "brilliant-umbrella",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: Denmark\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nChristian\nOtte\nUnknow",
+    "text": "Details\n\nType: Industry\nCountry: France\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nXyzzy\nXYZZY\nUndisclosed\n\n\n2\nXyzzy\nXYZZY\nUndisclosed\n\n\n3\nXyzzy\nXYZZY\nUndisclosed",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-crane"
+      "brilliant-umbrella"
     ]
   },
   {
-    "objectID": "teams/bright-dolphin.html",
-    "href": "teams/bright-dolphin.html",
-    "title": "bright-dolphin",
+    "objectID": "teams/bright-lobster.html",
+    "href": "teams/bright-lobster.html",
+    "title": "bright-lobster",
     "section": "",
-    "text": "We are a team of software engineers and machine learning enthusiasts passionate about tackling innovative challenges in the data space, with a particular interest in the aviation domain.",
+    "text": "Our team consists of two researchers from the KIOS Research and Innovation Center of Excellence at the University of Cyprus, specializing in UAVs, alongside a civil aviation expert. We registered for this challenge to apply our expertise in predictive modeling to aircraft fuel consumption estimation.",
     "crumbs": [
       "Teams",
       "Team details",
-      "bright-dolphin"
+      "bright-lobster"
     ]
   },
   {
-    "objectID": "teams/bright-dolphin.html#description-and-rationale",
-    "href": "teams/bright-dolphin.html#description-and-rationale",
-    "title": "bright-dolphin",
+    "objectID": "teams/bright-lobster.html#description-and-rationale",
+    "href": "teams/bright-lobster.html#description-and-rationale",
+    "title": "bright-lobster",
     "section": "",
-    "text": "We are a team of software engineers and machine learning enthusiasts passionate about tackling innovative challenges in the data space, with a particular interest in the aviation domain.",
+    "text": "Our team consists of two researchers from the KIOS Research and Innovation Center of Excellence at the University of Cyprus, specializing in UAVs, alongside a civil aviation expert. We registered for this challenge to apply our expertise in predictive modeling to aircraft fuel consumption estimation.",
     "crumbs": [
       "Teams",
       "Team details",
-      "bright-dolphin"
+      "bright-lobster"
     ]
   },
   {
-    "objectID": "teams/bright-dolphin.html#details",
-    "href": "teams/bright-dolphin.html#details",
-    "title": "bright-dolphin",
+    "objectID": "teams/bright-lobster.html#details",
+    "href": "teams/bright-lobster.html#details",
+    "title": "bright-lobster",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: United Arab Emirates\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nMohammed\nMahgoub\nIndependent\n\n\n2\nMalaz\nWaleed\nIndependent\n\n\n3\nMusaab\nMahjoub\nIndependent",
+    "text": "Details\n\nType: Academia\nCountry: Cyprus\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nYiannis\nGrigoriou\nKIOS Research and Innovation Center of Excellence\n\n\n2\nGiorgos\nPettemeridis\nKIOS Research and Innovation Center of Excellence\n\n\n3\nEftychios\nEftychiou\nDepartment of Civil Aviation\n\n\n4\nNicolas\nSouli\nKIOS Research and Innovation Center of Excellence\n\n\n5\nChristian\nVitale\nKIOS Research and Innovation Center of Excellence\n\n\n6\nPanayiotis\nKolios\nKIOS Research and Innovation Center of Excellence",
     "crumbs": [
       "Teams",
       "Team details",
-      "bright-dolphin"
+      "bright-lobster"
     ]
   },
   {
-    "objectID": "teams/bouncy-waterfall.html",
-    "href": "teams/bouncy-waterfall.html",
-    "title": "bouncy-waterfall",
+    "objectID": "teams/breezy-hamburger.html",
+    "href": "teams/breezy-hamburger.html",
+    "title": "breezy-hamburger",
     "section": "",
-    "text": "I am a data scientist with experience building models and analytics using movement data, including aircraft trajectories. I have been interested in aviation and flight data for some time, and am excited to leverage some of my past work to compete in this challenge.",
+    "text": "R&T team working on improvment of flights operation climate emissions (including CO2, NOx, contrails) ; for which fuel flow estimation is a key input. This PRC challenge is a good opportunity for us to work on these estimations.",
     "crumbs": [
       "Teams",
       "Team details",
-      "bouncy-waterfall"
+      "breezy-hamburger"
     ]
   },
   {
-    "objectID": "teams/bouncy-waterfall.html#description-and-rationale",
-    "href": "teams/bouncy-waterfall.html#description-and-rationale",
-    "title": "bouncy-waterfall",
+    "objectID": "teams/breezy-hamburger.html#description-and-rationale",
+    "href": "teams/breezy-hamburger.html#description-and-rationale",
+    "title": "breezy-hamburger",
     "section": "",
-    "text": "I am a data scientist with experience building models and analytics using movement data, including aircraft trajectories. I have been interested in aviation and flight data for some time, and am excited to leverage some of my past work to compete in this challenge.",
+    "text": "R&T team working on improvment of flights operation climate emissions (including CO2, NOx, contrails) ; for which fuel flow estimation is a key input. This PRC challenge is a good opportunity for us to work on these estimations.",
     "crumbs": [
       "Teams",
       "Team details",
-      "bouncy-waterfall"
+      "breezy-hamburger"
     ]
   },
   {
-    "objectID": "teams/bouncy-waterfall.html#details",
-    "href": "teams/bouncy-waterfall.html#details",
-    "title": "bouncy-waterfall",
+    "objectID": "teams/breezy-hamburger.html#details",
+    "href": "teams/breezy-hamburger.html#details",
+    "title": "breezy-hamburger",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: United States\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nDan\nBaeder\nIndependent",
+    "text": "Details\n\nType: Industry\nCountry: France\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nJoel\nClément\nTHALES",
     "crumbs": [
       "Teams",
       "Team details",
-      "bouncy-waterfall"
+      "breezy-hamburger"
     ]
   },
   {
-    "objectID": "teams/ambitious-tornado.html",
-    "href": "teams/ambitious-tornado.html",
-    "title": "ambitious-tornado",
+    "objectID": "teams/athletic-giraffe.html",
+    "href": "teams/athletic-giraffe.html",
+    "title": "athletic-giraffe",
     "section": "",
-    "text": "My name is Omar Hayat, I am an MMath student in Computational Mathematics at the University of Waterloo in Canada. I’m researching transformers in use for contrail avoidance applications. I think this would be a fun challenge to participate in and challenge myself!",
+    "text": "I am an Aerospace student with an interest in data analysis and machine learning wanted to contribute to competition and test my skills",
     "crumbs": [
       "Teams",
       "Team details",
-      "ambitious-tornado"
+      "athletic-giraffe"
     ]
   },
   {
-    "objectID": "teams/ambitious-tornado.html#description-and-rationale",
-    "href": "teams/ambitious-tornado.html#description-and-rationale",
-    "title": "ambitious-tornado",
+    "objectID": "teams/athletic-giraffe.html#description-and-rationale",
+    "href": "teams/athletic-giraffe.html#description-and-rationale",
+    "title": "athletic-giraffe",
     "section": "",
-    "text": "My name is Omar Hayat, I am an MMath student in Computational Mathematics at the University of Waterloo in Canada. I’m researching transformers in use for contrail avoidance applications. I think this would be a fun challenge to participate in and challenge myself!",
+    "text": "I am an Aerospace student with an interest in data analysis and machine learning wanted to contribute to competition and test my skills",
     "crumbs": [
       "Teams",
       "Team details",
-      "ambitious-tornado"
+      "athletic-giraffe"
     ]
   },
   {
-    "objectID": "teams/ambitious-tornado.html#details",
-    "href": "teams/ambitious-tornado.html#details",
-    "title": "ambitious-tornado",
+    "objectID": "teams/athletic-giraffe.html#details",
+    "href": "teams/athletic-giraffe.html#details",
+    "title": "athletic-giraffe",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: Canada\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nOmar\nHayat\nUniversity of Waterloo",
+    "text": "Details\n\nType: Independent\nCountry: India\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nXyzzy\nXYZZY\nUndisclosed",
     "crumbs": [
       "Teams",
       "Team details",
-      "ambitious-tornado"
+      "athletic-giraffe"
     ]
   },
   {
-    "objectID": "teams/adventurous-lantern.html",
-    "href": "teams/adventurous-lantern.html",
-    "title": "adventurous-lantern",
+    "objectID": "teams/amazing-pillow.html",
+    "href": "teams/amazing-pillow.html",
+    "title": "amazing-pillow",
     "section": "",
-    "text": "Geo and ai for sustainable world",
+    "text": "Richard Alligier received his Ph.D. (2014) degree in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT), his engineer’s degree (IEEAC, 2010) from the french university of civil aviation (ENAC) and his M.Sc. (2010) in computer science from the University of Toulouse. He is currently assistant professor at the ENAC in Toulouse, France. David Gianazza received his two engineer degrees (1986, 1996) from the ‘École Nationale de l’Aviation Civile’ (ENAC) and his M.Sc. (1996) and Ph.D. (2004) in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT). He has obtained his HDR (a french post-doctoral degree similar to tenure) in 2016 from the INPT. He has held various positions in the french civil aviation administration, successively as an engineer in ATC operations, technical manager, and researcher. He is currently associate professor at the ENAC, Toulouse",
     "crumbs": [
       "Teams",
       "Team details",
-      "adventurous-lantern"
+      "amazing-pillow"
     ]
   },
   {
-    "objectID": "teams/adventurous-lantern.html#description-and-rationale",
-    "href": "teams/adventurous-lantern.html#description-and-rationale",
-    "title": "adventurous-lantern",
+    "objectID": "teams/amazing-pillow.html#description-and-rationale",
+    "href": "teams/amazing-pillow.html#description-and-rationale",
+    "title": "amazing-pillow",
     "section": "",
-    "text": "Geo and ai for sustainable world",
+    "text": "Richard Alligier received his Ph.D. (2014) degree in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT), his engineer’s degree (IEEAC, 2010) from the french university of civil aviation (ENAC) and his M.Sc. (2010) in computer science from the University of Toulouse. He is currently assistant professor at the ENAC in Toulouse, France. David Gianazza received his two engineer degrees (1986, 1996) from the ‘École Nationale de l’Aviation Civile’ (ENAC) and his M.Sc. (1996) and Ph.D. (2004) in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT). He has obtained his HDR (a french post-doctoral degree similar to tenure) in 2016 from the INPT. He has held various positions in the french civil aviation administration, successively as an engineer in ATC operations, technical manager, and researcher. He is currently associate professor at the ENAC, Toulouse",
     "crumbs": [
       "Teams",
       "Team details",
-      "adventurous-lantern"
+      "amazing-pillow"
     ]
   },
   {
-    "objectID": "teams/adventurous-lantern.html#details",
-    "href": "teams/adventurous-lantern.html#details",
-    "title": "adventurous-lantern",
+    "objectID": "teams/amazing-pillow.html#details",
+    "href": "teams/amazing-pillow.html#details",
+    "title": "amazing-pillow",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: India\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nKaushal\nKishore\nIIRS",
+    "text": "Details\n\nType: Academia\nCountry: France\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nRichard\nAlligier\nENAC\n\n\n2\nDavid\nGianazza\nENAC",
     "crumbs": [
       "Teams",
       "Team details",
-      "adventurous-lantern"
+      "amazing-pillow"
     ]
   },
   {
-    "objectID": "ranking.html",
-    "href": "ranking.html",
-    "title": "Ranking",
+    "objectID": "submission.html",
+    "href": "submission.html",
+    "title": "Submission",
     "section": "",
-    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll submissions rankings can be had at the full leaderboard JSON.",
+    "text": "We provide a submission file for each phase of the Challenge, fuel_rank_submission.parquet for phase 1 and fuel_final_submission.parquet for phase 2.\nFor phase 1 there are companion trajectories and flight list.\nEach team will have to submit its predictions in its own bucket, with a file name template as follows\n\n&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet\n\nThe fuel_rank_submission.parquet (fuel_final_submission.parquet) payload looks something like\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04      0.0\n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04      0.0\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04      0.0\n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04      0.0\n...\n\nSubmission format\nYou should submit a parquet file, named &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet, with your predictions with exactly all entries as in in fuel_rank_submission.parquet (fuel_final_submission.parquet), i.e. something with a payload like:\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 \n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04    120.8\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04   2500 \n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 \n...\nWe require each row to match idx, flight_id, start and end before fuel_kg will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.",
     "crumbs": [
-      "Ranking"
+      "Submission"
     ]
   },
   {
-    "objectID": "ranking.html#leaderboard",
-    "href": "ranking.html#leaderboard",
-    "title": "Ranking",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PRC Data Challenge 2025",
     "section": "",
-    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll submissions rankings can be had at the full leaderboard JSON.",
+    "text": "The Performance Review Commission (PRC) with the support of OpenSky Network aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nThe competition runs (in two phases) from 1st Oct till 30th Nov 2025.\nThe total amount for the first 3 teams is 5000 EUR.\nCheck the conditions for eligibility for prize and then fill the following team creation request form!\nRemember to follow up the data challenge on OSN’s Discord  channel #prc-data-competition.\n(if not already done, you need to access OSN Discord server first)\nBelow you can find a couple of plots of flights showing the ACARS trajectory in red and the ADS-B one in blue.\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or synthetic exercise.",
     "crumbs": [
-      "Ranking"
+      "PRC Data Challenge 2025"
     ]
   },
   {
-    "objectID": "ranking.html#criteria-for-ranking-submissions",
-    "href": "ranking.html#criteria-for-ranking-submissions",
-    "title": "Ranking",
-    "section": "Criteria for Ranking Submissions",
-    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases for submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on fuel_rank_submission.parquet\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nSubmission in this period will be based on a hidden dataset1.\n\n\n\n\n\n\n\nAttention\n\n\n\nThe ranking datasets are now available for download in the buckets.\n\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made openly available to be published under the GNU GPLv3 license on the Challenge github account.\nuse of external dataset is permitted if open data and documented.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nWe reserved a total of 5000 EUR for the first 3 ranking teams.\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
+    "objectID": "index.html#thanks",
+    "href": "index.html#thanks",
+    "title": "PRC Data Challenge 2025",
+    "section": "Thanks",
+    "text": "Thanks\nThe organization of this challenge would have not been possible without the creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and the help of the Friends of OSN, Allan, Quinten, Martin, Rainer, Xavier and Kamil among them.\n OpenSky Network is of course the valuable organization without which we wouldn’t be able to assemble this challenge at all.",
     "crumbs": [
-      "Ranking"
+      "PRC Data Challenge 2025"
     ]
   },
   {
-    "objectID": "ranking.html#footnotes",
-    "href": "ranking.html#footnotes",
-    "title": "Ranking",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThis is to avoid the possibility of leaning from the leaderboard results.↩︎",
+    "objectID": "index.html#disclaimer",
+    "href": "index.html#disclaimer",
+    "title": "PRC Data Challenge 2025",
+    "section": "Disclaimer",
+    "text": "Disclaimer\nPlease note that this challenge is a challenge in its own preparation, so everything is experimental and subject to change at any moment at the organizers’ discretion.\nWe anyway do our best to prepare for an interesting and quality experience.",
     "crumbs": [
-      "Ranking"
+      "PRC Data Challenge 2025"
     ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European Air Traffic Management (ATM) performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of Reference and Rules of Procedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nATM: Air Traffic Management\nPRC: Performance Review Commission"
   },
   {
     "objectID": "data.html",
@@ -2580,410 +2587,439 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "ranking.html",
+    "href": "ranking.html",
+    "title": "Ranking",
     "section": "",
-    "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European Air Traffic Management (ATM) performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of Reference and Rules of Procedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nATM: Air Traffic Management\nPRC: Performance Review Commission"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PRC Data Challenge 2025",
-    "section": "",
-    "text": "The Performance Review Commission (PRC) with the support of OpenSky Network aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nThe competition runs (in two phases) from 1st Oct till 30th Nov 2025.\nThe total amount for the first 3 teams is 5000 EUR.\nCheck the conditions for eligibility for prize and then fill the following team creation request form!\nRemember to follow up the data challenge on OSN’s Discord  channel #prc-data-competition.\n(if not already done, you need to access OSN Discord server first)\nBelow you can find a couple of plots of flights showing the ACARS trajectory in red and the ADS-B one in blue.\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or synthetic exercise.",
+    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll submissions rankings can be had at the full leaderboard JSON.",
     "crumbs": [
-      "PRC Data Challenge 2025"
+      "Ranking"
     ]
   },
   {
-    "objectID": "index.html#thanks",
-    "href": "index.html#thanks",
-    "title": "PRC Data Challenge 2025",
-    "section": "Thanks",
-    "text": "Thanks\nThe organization of this challenge would have not been possible without the creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and the help of the Friends of OSN, Allan, Quinten, Martin, Rainer, Xavier and Kamil among them.\n OpenSky Network is of course the valuable organization without which we wouldn’t be able to assemble this challenge at all.",
-    "crumbs": [
-      "PRC Data Challenge 2025"
-    ]
-  },
-  {
-    "objectID": "index.html#disclaimer",
-    "href": "index.html#disclaimer",
-    "title": "PRC Data Challenge 2025",
-    "section": "Disclaimer",
-    "text": "Disclaimer\nPlease note that this challenge is a challenge in its own preparation, so everything is experimental and subject to change at any moment at the organizers’ discretion.\nWe anyway do our best to prepare for an interesting and quality experience.",
-    "crumbs": [
-      "PRC Data Challenge 2025"
-    ]
-  },
-  {
-    "objectID": "submission.html",
-    "href": "submission.html",
-    "title": "Submission",
+    "objectID": "ranking.html#leaderboard",
+    "href": "ranking.html#leaderboard",
+    "title": "Ranking",
     "section": "",
-    "text": "We provide a submission file for each phase of the Challenge, fuel_rank_submission.parquet for phase 1 and fuel_final_submission.parquet for phase 2.\nFor phase 1 there are companion trajectories and flight list.\nEach team will have to submit its predictions in its own bucket, with a file name template as follows\n\n&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet\n\nThe fuel_rank_submission.parquet (fuel_final_submission.parquet) payload looks something like\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04      0.0\n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04      0.0\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04      0.0\n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04      0.0\n...\n\nSubmission format\nYou should submit a parquet file, named &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet, with your predictions with exactly all entries as in in fuel_rank_submission.parquet (fuel_final_submission.parquet), i.e. something with a payload like:\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 \n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04    120.8\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04   2500 \n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 \n...\nWe require each row to match idx, flight_id, start and end before fuel_kg will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.",
+    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll submissions rankings can be had at the full leaderboard JSON.",
     "crumbs": [
-      "Submission"
+      "Ranking"
     ]
   },
   {
-    "objectID": "teams/amazing-pillow.html",
-    "href": "teams/amazing-pillow.html",
-    "title": "amazing-pillow",
+    "objectID": "ranking.html#criteria-for-ranking-submissions",
+    "href": "ranking.html#criteria-for-ranking-submissions",
+    "title": "Ranking",
+    "section": "Criteria for Ranking Submissions",
+    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases for submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on fuel_rank_submission.parquet\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nSubmission in this period will be based on a hidden dataset1.\n\n\n\n\n\n\n\nAttention\n\n\n\nThe ranking datasets are now available for download in the buckets.\n\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made openly available to be published under the GNU GPLv3 license on the Challenge github account.\nuse of external dataset is permitted if open data and documented.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nWe reserved a total of 5000 EUR for the first 3 ranking teams.\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
+    "crumbs": [
+      "Ranking"
+    ]
+  },
+  {
+    "objectID": "ranking.html#footnotes",
+    "href": "ranking.html#footnotes",
+    "title": "Ranking",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is to avoid the possibility of leaning from the leaderboard results.↩︎",
+    "crumbs": [
+      "Ranking"
+    ]
+  },
+  {
+    "objectID": "teams/adventurous-lantern.html",
+    "href": "teams/adventurous-lantern.html",
+    "title": "adventurous-lantern",
     "section": "",
-    "text": "Richard Alligier received his Ph.D. (2014) degree in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT), his engineer’s degree (IEEAC, 2010) from the french university of civil aviation (ENAC) and his M.Sc. (2010) in computer science from the University of Toulouse. He is currently assistant professor at the ENAC in Toulouse, France. David Gianazza received his two engineer degrees (1986, 1996) from the ‘École Nationale de l’Aviation Civile’ (ENAC) and his M.Sc. (1996) and Ph.D. (2004) in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT). He has obtained his HDR (a french post-doctoral degree similar to tenure) in 2016 from the INPT. He has held various positions in the french civil aviation administration, successively as an engineer in ATC operations, technical manager, and researcher. He is currently associate professor at the ENAC, Toulouse",
+    "text": "Geo and ai for sustainable world",
     "crumbs": [
       "Teams",
       "Team details",
-      "amazing-pillow"
+      "adventurous-lantern"
     ]
   },
   {
-    "objectID": "teams/amazing-pillow.html#description-and-rationale",
-    "href": "teams/amazing-pillow.html#description-and-rationale",
-    "title": "amazing-pillow",
+    "objectID": "teams/adventurous-lantern.html#description-and-rationale",
+    "href": "teams/adventurous-lantern.html#description-and-rationale",
+    "title": "adventurous-lantern",
     "section": "",
-    "text": "Richard Alligier received his Ph.D. (2014) degree in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT), his engineer’s degree (IEEAC, 2010) from the french university of civil aviation (ENAC) and his M.Sc. (2010) in computer science from the University of Toulouse. He is currently assistant professor at the ENAC in Toulouse, France. David Gianazza received his two engineer degrees (1986, 1996) from the ‘École Nationale de l’Aviation Civile’ (ENAC) and his M.Sc. (1996) and Ph.D. (2004) in Computer Science from the ‘Institut National Polytechnique de Toulouse’ (INPT). He has obtained his HDR (a french post-doctoral degree similar to tenure) in 2016 from the INPT. He has held various positions in the french civil aviation administration, successively as an engineer in ATC operations, technical manager, and researcher. He is currently associate professor at the ENAC, Toulouse",
+    "text": "Geo and ai for sustainable world",
     "crumbs": [
       "Teams",
       "Team details",
-      "amazing-pillow"
+      "adventurous-lantern"
     ]
   },
   {
-    "objectID": "teams/amazing-pillow.html#details",
-    "href": "teams/amazing-pillow.html#details",
-    "title": "amazing-pillow",
+    "objectID": "teams/adventurous-lantern.html#details",
+    "href": "teams/adventurous-lantern.html#details",
+    "title": "adventurous-lantern",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: France\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nRichard\nAlligier\nENAC\n\n\n2\nDavid\nGianazza\nENAC",
+    "text": "Details\n\nType: Independent\nCountry: India\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nKaushal\nKishore\nIIRS",
     "crumbs": [
       "Teams",
       "Team details",
-      "amazing-pillow"
+      "adventurous-lantern"
     ]
   },
   {
-    "objectID": "teams/athletic-giraffe.html",
-    "href": "teams/athletic-giraffe.html",
-    "title": "athletic-giraffe",
+    "objectID": "teams/ambitious-tornado.html",
+    "href": "teams/ambitious-tornado.html",
+    "title": "ambitious-tornado",
     "section": "",
-    "text": "I am an Aerospace student with an interest in data analysis and machine learning wanted to contribute to competition and test my skills",
+    "text": "My name is Omar Hayat, I am an MMath student in Computational Mathematics at the University of Waterloo in Canada. I’m researching transformers in use for contrail avoidance applications. I think this would be a fun challenge to participate in and challenge myself!",
     "crumbs": [
       "Teams",
       "Team details",
-      "athletic-giraffe"
+      "ambitious-tornado"
     ]
   },
   {
-    "objectID": "teams/athletic-giraffe.html#description-and-rationale",
-    "href": "teams/athletic-giraffe.html#description-and-rationale",
-    "title": "athletic-giraffe",
+    "objectID": "teams/ambitious-tornado.html#description-and-rationale",
+    "href": "teams/ambitious-tornado.html#description-and-rationale",
+    "title": "ambitious-tornado",
     "section": "",
-    "text": "I am an Aerospace student with an interest in data analysis and machine learning wanted to contribute to competition and test my skills",
+    "text": "My name is Omar Hayat, I am an MMath student in Computational Mathematics at the University of Waterloo in Canada. I’m researching transformers in use for contrail avoidance applications. I think this would be a fun challenge to participate in and challenge myself!",
     "crumbs": [
       "Teams",
       "Team details",
-      "athletic-giraffe"
+      "ambitious-tornado"
     ]
   },
   {
-    "objectID": "teams/athletic-giraffe.html#details",
-    "href": "teams/athletic-giraffe.html#details",
-    "title": "athletic-giraffe",
+    "objectID": "teams/ambitious-tornado.html#details",
+    "href": "teams/ambitious-tornado.html#details",
+    "title": "ambitious-tornado",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: India\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nXyzzy\nXYZZY\nUndisclosed",
+    "text": "Details\n\nType: Academia\nCountry: Canada\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nOmar\nHayat\nUniversity of Waterloo",
     "crumbs": [
       "Teams",
       "Team details",
-      "athletic-giraffe"
+      "ambitious-tornado"
     ]
   },
   {
-    "objectID": "teams/breezy-hamburger.html",
-    "href": "teams/breezy-hamburger.html",
-    "title": "breezy-hamburger",
+    "objectID": "teams/bouncy-waterfall.html",
+    "href": "teams/bouncy-waterfall.html",
+    "title": "bouncy-waterfall",
     "section": "",
-    "text": "R&T team working on improvment of flights operation climate emissions (including CO2, NOx, contrails) ; for which fuel flow estimation is a key input. This PRC challenge is a good opportunity for us to work on these estimations.",
+    "text": "I am a data scientist with experience building models and analytics using movement data, including aircraft trajectories. I have been interested in aviation and flight data for some time, and am excited to leverage some of my past work to compete in this challenge.",
     "crumbs": [
       "Teams",
       "Team details",
-      "breezy-hamburger"
+      "bouncy-waterfall"
     ]
   },
   {
-    "objectID": "teams/breezy-hamburger.html#description-and-rationale",
-    "href": "teams/breezy-hamburger.html#description-and-rationale",
-    "title": "breezy-hamburger",
+    "objectID": "teams/bouncy-waterfall.html#description-and-rationale",
+    "href": "teams/bouncy-waterfall.html#description-and-rationale",
+    "title": "bouncy-waterfall",
     "section": "",
-    "text": "R&T team working on improvment of flights operation climate emissions (including CO2, NOx, contrails) ; for which fuel flow estimation is a key input. This PRC challenge is a good opportunity for us to work on these estimations.",
+    "text": "I am a data scientist with experience building models and analytics using movement data, including aircraft trajectories. I have been interested in aviation and flight data for some time, and am excited to leverage some of my past work to compete in this challenge.",
     "crumbs": [
       "Teams",
       "Team details",
-      "breezy-hamburger"
+      "bouncy-waterfall"
     ]
   },
   {
-    "objectID": "teams/breezy-hamburger.html#details",
-    "href": "teams/breezy-hamburger.html#details",
-    "title": "breezy-hamburger",
+    "objectID": "teams/bouncy-waterfall.html#details",
+    "href": "teams/bouncy-waterfall.html#details",
+    "title": "bouncy-waterfall",
     "section": "Details",
-    "text": "Details\n\nType: Industry\nCountry: France\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nJoel\nClément\nTHALES",
+    "text": "Details\n\nType: Independent\nCountry: United States\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nDan\nBaeder\nIndependent",
     "crumbs": [
       "Teams",
       "Team details",
-      "breezy-hamburger"
+      "bouncy-waterfall"
     ]
   },
   {
-    "objectID": "teams/bright-lobster.html",
-    "href": "teams/bright-lobster.html",
-    "title": "bright-lobster",
+    "objectID": "teams/bright-dolphin.html",
+    "href": "teams/bright-dolphin.html",
+    "title": "bright-dolphin",
     "section": "",
-    "text": "Our team consists of two researchers from the KIOS Research and Innovation Center of Excellence at the University of Cyprus, specializing in UAVs, alongside a civil aviation expert. We registered for this challenge to apply our expertise in predictive modeling to aircraft fuel consumption estimation.",
+    "text": "We are a team of software engineers and machine learning enthusiasts passionate about tackling innovative challenges in the data space, with a particular interest in the aviation domain.",
     "crumbs": [
       "Teams",
       "Team details",
-      "bright-lobster"
+      "bright-dolphin"
     ]
   },
   {
-    "objectID": "teams/bright-lobster.html#description-and-rationale",
-    "href": "teams/bright-lobster.html#description-and-rationale",
-    "title": "bright-lobster",
+    "objectID": "teams/bright-dolphin.html#description-and-rationale",
+    "href": "teams/bright-dolphin.html#description-and-rationale",
+    "title": "bright-dolphin",
     "section": "",
-    "text": "Our team consists of two researchers from the KIOS Research and Innovation Center of Excellence at the University of Cyprus, specializing in UAVs, alongside a civil aviation expert. We registered for this challenge to apply our expertise in predictive modeling to aircraft fuel consumption estimation.",
+    "text": "We are a team of software engineers and machine learning enthusiasts passionate about tackling innovative challenges in the data space, with a particular interest in the aviation domain.",
     "crumbs": [
       "Teams",
       "Team details",
-      "bright-lobster"
+      "bright-dolphin"
     ]
   },
   {
-    "objectID": "teams/bright-lobster.html#details",
-    "href": "teams/bright-lobster.html#details",
-    "title": "bright-lobster",
+    "objectID": "teams/bright-dolphin.html#details",
+    "href": "teams/bright-dolphin.html#details",
+    "title": "bright-dolphin",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: Cyprus\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nYiannis\nGrigoriou\nKIOS Research and Innovation Center of Excellence\n\n\n2\nGiorgos\nPettemeridis\nKIOS Research and Innovation Center of Excellence\n\n\n3\nEftychios\nEftychiou\nDepartment of Civil Aviation\n\n\n4\nNicolas\nSouli\nKIOS Research and Innovation Center of Excellence\n\n\n5\nChristian\nVitale\nKIOS Research and Innovation Center of Excellence\n\n\n6\nPanayiotis\nKolios\nKIOS Research and Innovation Center of Excellence",
+    "text": "Details\n\nType: Independent\nCountry: United Arab Emirates\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nMohammed\nMahgoub\nIndependent\n\n\n2\nMalaz\nWaleed\nIndependent\n\n\n3\nMusaab\nMahjoub\nIndependent",
     "crumbs": [
       "Teams",
       "Team details",
-      "bright-lobster"
+      "bright-dolphin"
     ]
   },
   {
-    "objectID": "teams/brilliant-umbrella.html",
-    "href": "teams/brilliant-umbrella.html",
-    "title": "brilliant-umbrella",
+    "objectID": "teams/brilliant-crane.html",
+    "href": "teams/brilliant-crane.html",
+    "title": "brilliant-crane",
     "section": "",
-    "text": "We are a team wishing to test our machine learning capabilities and also looking forward to better understand the airspace challenges.",
+    "text": "Interested in aircrafts, flight traffic, and DL - this seems like a nice challenge",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-umbrella"
+      "brilliant-crane"
     ]
   },
   {
-    "objectID": "teams/brilliant-umbrella.html#description-and-rationale",
-    "href": "teams/brilliant-umbrella.html#description-and-rationale",
-    "title": "brilliant-umbrella",
+    "objectID": "teams/brilliant-crane.html#description-and-rationale",
+    "href": "teams/brilliant-crane.html#description-and-rationale",
+    "title": "brilliant-crane",
     "section": "",
-    "text": "We are a team wishing to test our machine learning capabilities and also looking forward to better understand the airspace challenges.",
+    "text": "Interested in aircrafts, flight traffic, and DL - this seems like a nice challenge",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-umbrella"
+      "brilliant-crane"
     ]
   },
   {
-    "objectID": "teams/brilliant-umbrella.html#details",
-    "href": "teams/brilliant-umbrella.html#details",
-    "title": "brilliant-umbrella",
+    "objectID": "teams/brilliant-crane.html#details",
+    "href": "teams/brilliant-crane.html#details",
+    "title": "brilliant-crane",
     "section": "Details",
-    "text": "Details\n\nType: Industry\nCountry: France\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nXyzzy\nXYZZY\nUndisclosed\n\n\n2\nXyzzy\nXYZZY\nUndisclosed\n\n\n3\nXyzzy\nXYZZY\nUndisclosed",
+    "text": "Details\n\nType: Independent\nCountry: Denmark\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nChristian\nOtte\nUnknow",
     "crumbs": [
       "Teams",
       "Team details",
-      "brilliant-umbrella"
+      "brilliant-crane"
     ]
   },
   {
-    "objectID": "teams/calm-utensil.html",
-    "href": "teams/calm-utensil.html",
-    "title": "calm-utensil",
+    "objectID": "teams/brilliant-zebra.html",
+    "href": "teams/brilliant-zebra.html",
+    "title": "brilliant-zebra",
     "section": "",
-    "text": "I am a software engineer and have been flying gliders since I was in middle school. I love aviation and building solutions using my CS knowledge so this challange is perfectly positioned at the intersection of these two fields.",
+    "text": "My name is Rania AKOURROU, a 5th-year computer engineering student. I am participating in the PRC Data Challenge 2025 to apply my skills in data science and machine learning, and to contribute to improving energy efficiency and operational performance in aviation.",
     "crumbs": [
       "Teams",
       "Team details",
-      "calm-utensil"
+      "brilliant-zebra"
     ]
   },
   {
-    "objectID": "teams/calm-utensil.html#description-and-rationale",
-    "href": "teams/calm-utensil.html#description-and-rationale",
-    "title": "calm-utensil",
+    "objectID": "teams/brilliant-zebra.html#description-and-rationale",
+    "href": "teams/brilliant-zebra.html#description-and-rationale",
+    "title": "brilliant-zebra",
     "section": "",
-    "text": "I am a software engineer and have been flying gliders since I was in middle school. I love aviation and building solutions using my CS knowledge so this challange is perfectly positioned at the intersection of these two fields.",
+    "text": "My name is Rania AKOURROU, a 5th-year computer engineering student. I am participating in the PRC Data Challenge 2025 to apply my skills in data science and machine learning, and to contribute to improving energy efficiency and operational performance in aviation.",
     "crumbs": [
       "Teams",
       "Team details",
-      "calm-utensil"
+      "brilliant-zebra"
     ]
   },
   {
-    "objectID": "teams/calm-utensil.html#details",
-    "href": "teams/calm-utensil.html#details",
-    "title": "calm-utensil",
+    "objectID": "teams/brilliant-zebra.html#details",
+    "href": "teams/brilliant-zebra.html#details",
+    "title": "brilliant-zebra",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: United States\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nOndrej\nGonzor\nindependent",
+    "text": "Details\n\nType: Independent\nCountry: Morocco\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nRania\nAKOURROU\nIndependent",
     "crumbs": [
       "Teams",
       "Team details",
-      "calm-utensil"
+      "brilliant-zebra"
     ]
   },
   {
-    "objectID": "teams/cheerful-quiche.html",
-    "href": "teams/cheerful-quiche.html",
-    "title": "cheerful-quiche",
+    "objectID": "teams/charismatic-monkey.html",
+    "href": "teams/charismatic-monkey.html",
+    "title": "charismatic-monkey",
     "section": "",
-    "text": "We’re from Ryanair Labs MAD data team and we like a good Engineering challenge!",
+    "text": "We are a team of three final-year Computer Engineering students specializing in Big Data and Artificial Intelligence. We decided to join the PRC Data Challenge because it perfectly matches our interests in data science, aviation analytics, and sustainability. Through our studies, we’ve built projects involving real-time data pipelines, predictive modeling, and machine learning, which gave us strong analytical and teamwork skills. We see this challenge as an opportunity to apply our knowledge to a real-world aviation problem, learn from the open-data community, and contribute to improving transparency and efficiency in aviation through data-driven insights",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheerful-quiche"
+      "charismatic-monkey"
     ]
   },
   {
-    "objectID": "teams/cheerful-quiche.html#description-and-rationale",
-    "href": "teams/cheerful-quiche.html#description-and-rationale",
-    "title": "cheerful-quiche",
+    "objectID": "teams/charismatic-monkey.html#description-and-rationale",
+    "href": "teams/charismatic-monkey.html#description-and-rationale",
+    "title": "charismatic-monkey",
     "section": "",
-    "text": "We’re from Ryanair Labs MAD data team and we like a good Engineering challenge!",
+    "text": "We are a team of three final-year Computer Engineering students specializing in Big Data and Artificial Intelligence. We decided to join the PRC Data Challenge because it perfectly matches our interests in data science, aviation analytics, and sustainability. Through our studies, we’ve built projects involving real-time data pipelines, predictive modeling, and machine learning, which gave us strong analytical and teamwork skills. We see this challenge as an opportunity to apply our knowledge to a real-world aviation problem, learn from the open-data community, and contribute to improving transparency and efficiency in aviation through data-driven insights",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheerful-quiche"
+      "charismatic-monkey"
     ]
   },
   {
-    "objectID": "teams/cheerful-quiche.html#details",
-    "href": "teams/cheerful-quiche.html#details",
-    "title": "cheerful-quiche",
+    "objectID": "teams/charismatic-monkey.html#details",
+    "href": "teams/charismatic-monkey.html#details",
+    "title": "charismatic-monkey",
     "section": "Details",
-    "text": "Details\n\nType: Industry\nCountry: Spain\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nIgor\nPereira Gomes\nRyanair\n\n\n2\nDiogo\nSouza\nRyanair",
+    "text": "Details\n\nType: Academia\nCountry: Morocco\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nBadreddine\nEl Hilali\nUnknow\n\n\n2\nabdelhamid\nboulaajoul\nUnknow\n\n\n3\nHamza\nCHRAIM\nUnknow",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheerful-quiche"
+      "charismatic-monkey"
     ]
   },
   {
-    "objectID": "teams/cheery-vase.html",
-    "href": "teams/cheery-vase.html",
-    "title": "cheery-vase",
+    "objectID": "teams/cheerful-waterfall.html",
+    "href": "teams/cheerful-waterfall.html",
+    "title": "cheerful-waterfall",
     "section": "",
-    "text": "Doing this as a final project as a part of the ML with Graphs course (CS224W) at Stanford.",
+    "text": "We are university students in love with data science and we loved the topic of this competition. Hence here we are.",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheery-vase"
+      "cheerful-waterfall"
     ]
   },
   {
-    "objectID": "teams/cheery-vase.html#description-and-rationale",
-    "href": "teams/cheery-vase.html#description-and-rationale",
-    "title": "cheery-vase",
+    "objectID": "teams/cheerful-waterfall.html#description-and-rationale",
+    "href": "teams/cheerful-waterfall.html#description-and-rationale",
+    "title": "cheerful-waterfall",
     "section": "",
-    "text": "Doing this as a final project as a part of the ML with Graphs course (CS224W) at Stanford.",
+    "text": "We are university students in love with data science and we loved the topic of this competition. Hence here we are.",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheery-vase"
+      "cheerful-waterfall"
     ]
   },
   {
-    "objectID": "teams/cheery-vase.html#details",
-    "href": "teams/cheery-vase.html#details",
-    "title": "cheery-vase",
+    "objectID": "teams/cheerful-waterfall.html#details",
+    "href": "teams/cheerful-waterfall.html#details",
+    "title": "cheerful-waterfall",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: United States\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nNeha\nBalamurugan\nStanford University\n\n\n2\nSilky\nSingh\nStanford University\n\n\n3\nMahmood\nAlhusseini\nStanford University",
+    "text": "Details\n\nType: Academia\nCountry: Bangladesh\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nSteve\nAustin\nUniversity of Science and Technology Chittagong\n\n\n2\nShah Nawaz\nHaider\nUSTC",
     "crumbs": [
       "Teams",
       "Team details",
-      "cheery-vase"
+      "cheerful-waterfall"
     ]
   },
   {
-    "objectID": "teams/confident-insect.html",
-    "href": "teams/confident-insect.html",
-    "title": "confident-insect",
+    "objectID": "teams/confident-hedgehog.html",
+    "href": "teams/confident-hedgehog.html",
+    "title": "confident-hedgehog",
     "section": "",
-    "text": "We are researchers from Chinese universities, working on intelligent transportation systems. We are keen on developing data science and machine learning solutions for real-world engineering challenges.",
+    "text": "We are a team of researchers from the Aerospace Systems Design Laboratory (ASDL)’s Civil Aviation Research Division. Our mission is to conduct research on aviation impacts on communities, global climate, economics, operations, and R&D investments while educating the next generation of engineers.",
     "crumbs": [
       "Teams",
       "Team details",
-      "confident-insect"
+      "confident-hedgehog"
     ]
   },
   {
-    "objectID": "teams/confident-insect.html#description-and-rationale",
-    "href": "teams/confident-insect.html#description-and-rationale",
-    "title": "confident-insect",
+    "objectID": "teams/confident-hedgehog.html#description-and-rationale",
+    "href": "teams/confident-hedgehog.html#description-and-rationale",
+    "title": "confident-hedgehog",
     "section": "",
-    "text": "We are researchers from Chinese universities, working on intelligent transportation systems. We are keen on developing data science and machine learning solutions for real-world engineering challenges.",
+    "text": "We are a team of researchers from the Aerospace Systems Design Laboratory (ASDL)’s Civil Aviation Research Division. Our mission is to conduct research on aviation impacts on communities, global climate, economics, operations, and R&D investments while educating the next generation of engineers.",
     "crumbs": [
       "Teams",
       "Team details",
-      "confident-insect"
+      "confident-hedgehog"
     ]
   },
   {
-    "objectID": "teams/confident-insect.html#details",
-    "href": "teams/confident-insect.html#details",
-    "title": "confident-insect",
+    "objectID": "teams/confident-hedgehog.html#details",
+    "href": "teams/confident-hedgehog.html#details",
+    "title": "confident-hedgehog",
     "section": "Details",
-    "text": "Details\n\nType: Academia\nCountry: China\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nWei\nDai\nCivil Aviation University of China\n\n\n2\nYu\nHan\nBeijing Institute of Technology\n\n\n3\nJingda\nWu\nBeijing Institute of Technology",
+    "text": "Details\n\nType: Academia\nCountry: United States\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nJirat\nBhanpato\nGeorgia Institute of Technology\n\n\n2\nNitya\nMaruthuvakudi Venkatram\nGeorgia Institute of Technology\n\n\n3\nAmeya\nBehere\nGeorgia Institute of Technology",
     "crumbs": [
       "Teams",
       "Team details",
-      "confident-insect"
+      "confident-hedgehog"
     ]
   },
   {
-    "objectID": "teams/cute-tulip.html",
-    "href": "teams/cute-tulip.html",
-    "title": "cute-tulip",
+    "objectID": "teams/courageous-parrot.html",
+    "href": "teams/courageous-parrot.html",
+    "title": "courageous-parrot",
     "section": "",
-    "text": "I’m an undergrad Student and data science enthusiasts passionate about solving real-world problems using AI. I joined this challenge to apply my skills, learn from practical competition settings, and benchmark my solutions against the best in the field.",
+    "text": "working on real datasets with ML libraries on GPUs",
     "crumbs": [
       "Teams",
       "Team details",
-      "cute-tulip"
+      "courageous-parrot"
     ]
   },
   {
-    "objectID": "teams/cute-tulip.html#description-and-rationale",
-    "href": "teams/cute-tulip.html#description-and-rationale",
-    "title": "cute-tulip",
+    "objectID": "teams/courageous-parrot.html#description-and-rationale",
+    "href": "teams/courageous-parrot.html#description-and-rationale",
+    "title": "courageous-parrot",
     "section": "",
-    "text": "I’m an undergrad Student and data science enthusiasts passionate about solving real-world problems using AI. I joined this challenge to apply my skills, learn from practical competition settings, and benchmark my solutions against the best in the field.",
+    "text": "working on real datasets with ML libraries on GPUs",
     "crumbs": [
       "Teams",
       "Team details",
-      "cute-tulip"
+      "courageous-parrot"
     ]
   },
   {
-    "objectID": "teams/cute-tulip.html#details",
-    "href": "teams/cute-tulip.html#details",
-    "title": "cute-tulip",
+    "objectID": "teams/courageous-parrot.html#details",
+    "href": "teams/courageous-parrot.html#details",
+    "title": "courageous-parrot",
     "section": "Details",
-    "text": "Details\n\nType: Independent\nCountry: India\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nTushar\nSharma\nIndian Institute of Technology Madras",
+    "text": "Details\n\nType: Academia\nCountry: Tunisia\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nRim\nMoussa\nENI-Carthage: National Eng- School of Carthage",
     "crumbs": [
       "Teams",
       "Team details",
-      "cute-tulip"
+      "courageous-parrot"
+    ]
+  },
+  {
+    "objectID": "teams/cute-vase.html",
+    "href": "teams/cute-vase.html",
+    "title": "cute-vase",
+    "section": "",
+    "text": "To try a ensemble solution , to learn from participating in the competition no matter win or loose",
+    "crumbs": [
+      "Teams",
+      "Team details",
+      "cute-vase"
+    ]
+  },
+  {
+    "objectID": "teams/cute-vase.html#description-and-rationale",
+    "href": "teams/cute-vase.html#description-and-rationale",
+    "title": "cute-vase",
+    "section": "",
+    "text": "To try a ensemble solution , to learn from participating in the competition no matter win or loose",
+    "crumbs": [
+      "Teams",
+      "Team details",
+      "cute-vase"
+    ]
+  },
+  {
+    "objectID": "teams/cute-vase.html#details",
+    "href": "teams/cute-vase.html#details",
+    "title": "cute-vase",
+    "section": "Details",
+    "text": "Details\n\nType: Independent\nCountry: Sri Lanka\n\n\n\n\n\n\n\n\n\nID\nForename\nSurname\nAffiliation\n\n\n\n\n1\nRonith\nRashmikara\nindependent",
+    "crumbs": [
+      "Teams",
+      "Team details",
+      "cute-vase"
     ]
   },
   {

@@ -1,0 +1,29 @@
+
+---
+title: delightful-boat
+date: 2025-10-27
+subtitle: Ghana
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am Ernest Owusu Agyemang , a professional Flight Dispatcher from Ghana with a deep interest in aviation data analysis and fuel efficiency optimization. My participation in the PRC Data Challenge is driven by a passion to apply real-world flight dispatch experience to data-driven problem-solving.
+
+As someone directly involved in flight planning and operations, I understand the challenges of balancing safety, efficiency, and sustainability. This challenge presents an opportunity to use data science to uncover insights that can reduce fuel consumption and emissions, supporting a more efficient and environmentally responsible aviation industry.
+
+## Details
+
+* Type: Academia, Independent
+* Country: Ghana
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,   ~surname,                           ~affiliation,
+   1L,  "Ernest", "Agyemang", "Independent Aviation Data Researcher"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
