@@ -1,0 +1,27 @@
+
+---
+title: upstanding-barn
+date: 2025-10-27
+subtitle: Bangladesh
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+Just a software engineer, trying to make my profile stronger, and earn some money
+
+## Details
+
+* Type: Independent
+* Country: Bangladesh
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,  ~surname,  ~affiliation,
+   1L,  "Maifee", "Ul Asad", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

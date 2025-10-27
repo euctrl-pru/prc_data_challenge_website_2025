@@ -1,0 +1,27 @@
+
+---
+title: strong-zebra
+date: 2025-10-27
+subtitle: Belgium
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+The problem is super interesting and unique
+
+## Details
+
+* Type: Independent
+* Country: Belgium
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,  ~surname, ~affiliation,
+   1L,  "Motoki", "Saitama",     "Unknow"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

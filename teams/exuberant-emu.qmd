@@ -9,7 +9,7 @@ acronyms:
 
 ## Description and Rationale
 
-A group of Embry-Riddle students and researchers interested in flight data research. Participating in the challenge will enable students and researchers at Embry-Riddle Aeronautical University to explore the application of machine learning methods to ADS-B data, support sustainability initiatives in aviation, and develop the capabilities necessary for success in their data analytics professions. Dr Joao S D Garcia, faculty at the ERAU School of Graduate Studies, mentors the team.
+A group of Embry-Riddle Aeronautical University students and researchers interested in flight data research and aviation safety. Participation in the challenge will enable exploration of machine learning methods to ADS-B data, support sustainability initiatives in aviation, and help students develop competencies necessary for success in their data analytics professions. Joao S D Garcia, Daniel Pleffken, Avinash Muthu Krishnan, and Lucas Ferrando Quilez, faculty at ERAU, will mentor the team.
 
 ## Details
 
@@ -20,10 +20,20 @@ A group of Embry-Riddle students and researchers interested in flight data resea
 library(gt)
 
 gt(tibble::tribble(
-  ~id,   ~forename,            ~surname,                           ~affiliation,
-   1L,      "Joao", "Souza Dias Garcia", "Embry-Riddle Aeronautical University",
-   2L,    "Taeyun",               "Yoo",                                 "ERAU",
-   3L, "Christian",     "Yeara Herrero",                                 "ERAU"
+  ~id,         ~forename,            ~surname,                           ~affiliation,
+   1L,            "Joao", "Souza Dias Garcia", "Embry-Riddle Aeronautical University",
+   2L,          "Taeyun",               "Yoo",                                 "ERAU",
+   3L,    "Christian D.",     "Yeara Herrero",                                 "ERAU",
+   4L,   "Bharath Kumar",          "Pavuluri",                                 "ERAU",
+   5L,         "Anirudh",           "Iyengar",                                 "ERAU",
+   6L,       "Hunter M.",           "Oppedal",                                 "ERAU",
+   7L,    "Prudhvi Raju",          "Mulapaka",                                 "ERAU",
+   8L, "Chaitanya Varma",          "Racharla",                                 "ERAU",
+   9L,      "Matthew D.",            "Dickey",                                 "ERAU",
+  10L,        "Celso G.", "Ferreira De Moura",                                 "ERAU",
+  11L,           "Lucas",   "Ferrando Quilez",                                 "ERAU",
+  12L,         "Avinash",    "Muthu Krishnan",                                 "ERAU",
+  13L,       "Daniel R.",          "Pleffken",                                 "ERAU"
   )
 ) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
 ```
