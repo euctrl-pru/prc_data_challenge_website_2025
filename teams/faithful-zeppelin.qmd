@@ -1,0 +1,27 @@
+
+---
+title: faithful-zeppelin
+date: 2025-10-28
+subtitle: United States
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+It's just me. I think it's interesting.
+
+## Details
+
+* Type: Independent
+* Country: United States
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename, ~surname,  ~affiliation,
+   1L, "Jonathan",  "Kunze", "Independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

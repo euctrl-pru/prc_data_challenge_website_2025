@@ -1,0 +1,27 @@
+
+---
+title: affectionate-goblin
+date: 2025-10-28
+subtitle: India
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I’m an AI engineer with two years of experience working on machine learning and data-driven projects. I enjoy joining data science competitions to keep learning, challenge myself, and try out new ideas. I joined the PRC Data Challenge 2025 because it’s a great chance to use AI on a real aviation problem and see how technology can help improve fuel efficiency and sustainability. Even though I don’t have an aviation background, I’m excited to dive into the data, learn along the way, and share useful insights. I see this challenge as a fun and meaningful way to blend innovation, learning, and collaboration.
+
+## Details
+
+* Type: Independent
+* Country: India
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,    ~forename,     ~surname,  ~affiliation,
+   1L, "Sudharshan", "Narasimhan", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

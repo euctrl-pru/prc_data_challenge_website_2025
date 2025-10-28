@@ -148,6 +148,7 @@ get_teams_raw <- function() {
         c("johnf-test2")
     ) |>
     dplyr::mutate(address_1 = unlist(address_1)) |>
+    dplyr::select(-matches("clean")) |>
     dplyr::relocate(
       timestamp,
       status,

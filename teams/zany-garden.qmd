@@ -1,0 +1,27 @@
+
+---
+title: zany-garden
+date: 2025-10-28
+subtitle: Chile
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I’m excited by this challenge — it’s a great opportunity to learn and grow.
+
+## Details
+
+* Type: Independent
+* Country: Chile
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,  "Amanda", "Flores", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
