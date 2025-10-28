@@ -1,0 +1,30 @@
+
+---
+title: polite-gorilla
+date: 2025-10-27
+subtitle: United States
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We are a two-member team of Ph.D. students in Aerospace Engineering at Georgia Tech, Anushka Moharir and Sonal Mehta, driven by a shared interest in combining data science with real-world aviation challenges.
+
+Our motivation for joining the PRC Data Challenge 2025 is to explore how open flight datasets and machine learning can be leveraged to improve the understanding and prediction of aircraft fuel burn. The competition aligns closely with our research on data-driven and physics-based modeling of flight operations, and we are excited to contribute transparent, reproducible solutions that support sustainable and efficient aviation.
+
+## Details
+
+* Type: Academia
+* Country: United States
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,  ~surname,                      ~affiliation,
+   1L, "Anushka", "Moharir", "Georgia Institute of Technology",
+   2L,   "Sonal",   "Mehta", "Georgia Institute of Technology"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
