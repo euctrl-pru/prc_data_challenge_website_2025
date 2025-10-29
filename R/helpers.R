@@ -101,7 +101,7 @@ get_teams_members <- function(teams_raw) {
       names_from = attrib,
       values_from = val
     ) |>
-    filter(if_all(c(forename, surname, email), ~ !is.na(.x))) |>
+    filter(if_any(c(forename, surname, email), ~ !is.na(.x))) |>
     dplyr::mutate(id = as.integer(id)) |>
     arrange(team_name, id)
 }
