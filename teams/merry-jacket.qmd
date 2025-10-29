@@ -1,0 +1,28 @@
+
+---
+title: merry-jacket
+date: 2025-10-29
+subtitle: Netherlands
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We are a duo of TUDelft Aerospace Engineering Students eager to apply our knowledge and skills to tackle the problem at hand, and gain experience along the way.
+
+## Details
+
+* Type: Academia
+* Country: Netherlands
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,          ~surname, ~affiliation,
+   1L,    "Emre",         "Demirci",    "TUDelft",
+   2L, "Egeberk", "Baruh Karabulut",    "TUDelft"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
