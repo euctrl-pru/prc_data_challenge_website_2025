@@ -1,0 +1,33 @@
+
+---
+title: tiny-zeppelin
+date: 2025-10-30
+subtitle: Germany
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We are a group of research scientist based in Hamburg. Looking to use this opportunity as a means to expand our horizon in flight trajectory management for maintenance.
+
+## Details
+
+* Type: Academia, Government
+* Country: Germany
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,   ~forename,     ~surname, ~affiliation,
+   1L,    "Tanmay",       "Daga",        "DLR",
+   2L,   "Philipp",    "Lehmann",        "DLR",
+   3L,       "Tim",     "Gotzel",        "DLR",
+   4L, "Alexander", "Kamtsiuris",        "DLR",
+   5L,     "Lukas",      "Jilke",        "DLR",
+   6L,     "Colin",      "Klein",        "DLR",
+   7L,       "Emy",       "Arts",        "DLR"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
