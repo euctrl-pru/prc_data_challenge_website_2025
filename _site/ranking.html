@@ -1035,6 +1035,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./teams/resourceful-igloo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">resourceful-igloo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./teams/resourceful-quiver.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">resourceful-quiver</span></a>
   </div>
@@ -1341,7 +1347,8 @@ Attention
 </div>
 </div>
 <iframe width="100%" height="800" frameborder="0" src="https://observablehq.com/embed/@espinielli/dc25-leaderboard@484?cells=leaderboard"></iframe>
-<p>All submissions rankings can be had at the <a href="https://datacomp.opensky-network.org/api/competitions/71c49292-6139-425f-803a-52ee8730ba58/leaderboard?limit=100">full leaderboard JSON</a>.</p>
+<p>All paged submissions rankings can be retrieved via the REST API at the <a href="https://datacomp.opensky-network.org/api/competitions/71c49292-6139-425f-803a-52ee8730ba58/leaderboard?limit=100&amp;cursor=">full leaderboard JSON</a> (use the value of <code>nextCursor</code> in the <code>cursor=</code> parameter in the URL query).</p>
+<p>There are other endpoints, you can have a look <a href="https://datacomp.opensky-network.org/api/swagger-ui/">here</a></p>
 </section>
 <section id="criteria-for-ranking-submissions" class="level2">
 <h2 class="anchored" data-anchor-id="criteria-for-ranking-submissions">Criteria for Ranking Submissions</h2>
