@@ -1,0 +1,28 @@
+
+---
+title: zippy-telephone
+date: 2025-10-30
+subtitle: Turkey
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We are highly motivated to join this competition because we love using Machine Learning to solve real problems. Improving airplane fuel efficiency is very important for the planet, and we believe our skills can help reduce carbon emissions. We are excited to work with this complex data and create a smart program to predict the best ways to save fuel. This is a great chance for our team to use its knowledge to make a positive impact.
+
+## Details
+
+* Type: Independent
+* Country: Turkey
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,     ~forename, ~surname,                    ~affiliation,
+   1L, "Yusuf Kenan",  "Keleş", "İstanbul Technical University",
+   2L,       "Miraç",  "Kılıç", "İstanbul Technical University"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
