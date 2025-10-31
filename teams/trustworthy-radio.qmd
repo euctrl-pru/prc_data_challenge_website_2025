@@ -1,0 +1,27 @@
+
+---
+title: trustworthy-radio
+date: 2025-10-31
+subtitle: United Kingdom
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I'm here to learn more Data Science by practical implementations.
+
+## Details
+
+* Type: Academia
+* Country: United Kingdom
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename, ~surname,                      ~affiliation,
+   1L, "Kushagra",   "Soni", "Queen Mary University of London"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
