@@ -1,0 +1,27 @@
+
+---
+title: quick-boat
+date: 2025-10-31
+subtitle: France
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+Liked the previous challenge, and I want to have fun in this one as well !
+
+## Details
+
+* Type: Independent
+* Country: France
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,    "Reda",     "Ad", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
