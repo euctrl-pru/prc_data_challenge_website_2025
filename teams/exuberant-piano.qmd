@@ -1,0 +1,28 @@
+
+---
+title: exuberant-piano
+date: 2025-10-31
+subtitle: United States
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+At AYRYX, we put our minds towards solving the hottest challenges in aviation. The OpenSky data challenge is a fun opportunity to team up to solve a problem.
+
+## Details
+
+* Type: Industry
+* Country: United States
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,     ~surname, ~affiliation,
+   1L,    "Joel",     "Allred",      "AYRYX",
+   2L,   "Avyay", "Kuchibotla",      "AYRYX"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

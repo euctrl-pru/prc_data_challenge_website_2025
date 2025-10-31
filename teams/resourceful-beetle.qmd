@@ -1,0 +1,28 @@
+
+---
+title: resourceful-beetle
+date: 2025-10-30
+subtitle: Turkey
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+Our team brings together an academic perspective from Fırat University and operational field experience from DHMI, consisting of an Associate Professor and an active Air Traffic Controller who is also a recent M.Sc. graduate. Our primary motivation for joining this challenge is to learn and grow. We believe that working on real-world data provided by Eurocontrol will offer us invaluable experience in understanding complex ATM problems. We see this process as a key learning opportunity and an important step in our journey toward developing practical solutions for operational challenges.
+
+## Details
+
+* Type: Academia, Government
+* Country: Turkey
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,  ~surname,                                      ~affiliation,
+   1L,   "Kemal", "KOYUNCU", "DHMI (ATCO) & Fırat University (M.Sc. Graduate)",
+   2L,    "Suat", "TORAMAN",                 "Fırat University (Assoc. Prof.)"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
