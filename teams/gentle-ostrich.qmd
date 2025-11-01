@@ -1,0 +1,27 @@
+
+---
+title: gentle-ostrich
+date: 2025-11-01
+subtitle: India
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am a machine learning enthusiast and I am extremely intrigued by complex Engineering systems like Aircrafts. The Aviation industry is something I find to be very interesting from how planes get manufactured to how Airports are controlled and how air traffic operators and controllers function. To be able to work for something like that piques my deep interest and curiosity and gives me an opportunity to contribute in whatever small way I can.
+
+## Details
+
+* Type: Independent
+* Country: India
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,                                               ~affiliation,
+   1L, "Shubham", "Nahata", "Birla Institute of Technology and Science Pilani, Pilani"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
