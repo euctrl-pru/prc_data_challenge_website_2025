@@ -1,0 +1,27 @@
+
+---
+title: generous-balloon
+date: 2025-11-01
+subtitle: Nigeria
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am a Machine Learning Engineer and Blockchain Data Scientist who is passionate about providing innovative solutions. I decided to participate in this challenge to expand my knowledge and area of focus.
+
+## Details
+
+* Type: Independent
+* Country: Nigeria
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname, ~affiliation,
+   1L,  "Dairus",   "Okoh",     "Unknow"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
