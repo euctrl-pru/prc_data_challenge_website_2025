@@ -1,0 +1,29 @@
+
+---
+title: vigorous-icicle
+date: 2025-11-06
+subtitle: Kenya
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We are a data-driven team passionate about applying machine learning and geospatial analytics to solve real-world challenges. Led by Dennis Gesengi Kenyatta, a Data Scientist and Geospatial Analyst from Kenya, our focus is on building interpretable, efficient models using open data.
+
+We joined the PRC Data Challenge 2025 to contribute to aviation sustainability by predicting fuel consumption from real flight data. The challenge aligns with our mission to use data science for environmental and operational impact. We are motivated by the opportunity to work with complex datasets, learn from the OpenSky community, and share reproducible, open solutions that advance aviation analytics.
+
+## Details
+
+* Type: Academia, Independent
+* Country: Kenya
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,   ~surname, ~affiliation,
+   1L,  "Dennis", "Kenyatta",     "Unknow"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
