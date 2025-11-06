@@ -1,0 +1,28 @@
+
+---
+title: witty-orchid
+date: 2025-11-06
+subtitle: Spain
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+y porque no
+
+## Details
+
+* Type: Independent
+* Country: Spain
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,          ~surname,  ~affiliation,
+   1L,    "Jose",        "Martinez", "Independent",
+   2L,    "Iván", "Martínez Cuevas", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
