@@ -1,0 +1,27 @@
+
+---
+title: sincere-glacier
+date: 2025-11-07
+subtitle: Ethiopia
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+Motivation: to apply and test predictive modeling skills on a unique, large-scale aviation dataset. The challenge of working with noisy, real-world data to solve a critical issue like fuel efficiency is a compelling opportunity.
+
+## Details
+
+* Type: NA
+* Country: Ethiopia
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Xyzzy",  "XYZZY", "Undisclosed"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
