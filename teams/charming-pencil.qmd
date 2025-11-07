@@ -1,0 +1,27 @@
+
+---
+title: charming-pencil
+date: 2025-11-07
+subtitle: Uganda
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+An Economist who made a switch to data science and learning through among other things participating in competitive data science.
+
+## Details
+
+* Type: Industry
+* Country: Uganda
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,  ~forename, ~surname, ~affiliation,
+   1L, "Emmanuel",  "Ogwal",        "NIL"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
