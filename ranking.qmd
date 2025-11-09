@@ -41,7 +41,12 @@ There will be two phases for submissions:
 1. phase 1: till **2025-11-09T23:59:59Z** \
    Ranking will be based on `fuel_rank_submission.parquet`
 1. phase 2: from **2025-11-10T00:00:00Z** till **2025-11-30T23:59:59Z** \
-   Submission in this period will be based on a hidden dataset[^note].
+   Ranking will still be based on `fuel_rank_submission.parquet` BUT
+   the submission for eligibility to final prize will be based on
+   `fuel_final_submission.parquet` [^note]. For the **additional** flight list
+   and flight trajectories for phase 2/final phase see 
+   `flightlist_final.parquet` and
+   `flights_final/<flight_id>.parquet`.
 
 [^note]: This is to avoid the possibility of _leaning_ from the leaderboard
          results.

@@ -79,6 +79,8 @@ Dataset:
 
 1. `flightlist_train.parquet`: for training
 1. `flightlist_rank.parquet`: for ranking
+1. `flightlist_final.parquet`: the flight list of the **additional** flights
+    of the final phase.
 
 
 The following is the list of columns in the flight list dataset:
@@ -103,6 +105,8 @@ Dataset:
 
 1. `flights_train/<flight_id>.parquet`: for training
 1. `flights_rank/<flight_id>.parquet`: for rankining
+1. `flights_final/<flight_id>.parquet`: the flight trajectories of the 
+   **additional** flights of the final phase.
 
 We have trajectory files for each flight with fuel flow segments.
 These are (mainly) \acr{ADS-B} position reports for the flights in

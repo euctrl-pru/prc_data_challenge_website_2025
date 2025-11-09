@@ -1434,6 +1434,13 @@ ul.task-list li input[type="checkbox"] {
   3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 
 ...</code></pre>
 <p>We require each row to match <code>idx</code>, <code>flight_id</code>, <code>start</code> and <code>end</code> before <code>fuel_kg</code> will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.</p>
+</section>
+<section id="submission-for-phase-2final-phase" class="level3">
+<h3 class="anchored" data-anchor-id="submission-for-phase-2final-phase">Submission for phase 2/final phase</h3>
+<p>During phase 2/final phase you can continue to submit predictions like in phase 1: based on <code>fuel_rank_submission.parquet</code>.</p>
+<p>For the eligibility for final prize you should upload your (best) prediction in a file named</p>
+<p><code>&lt;team-name&gt;_final.parquet</code></p>
+<p>The rows in this file are like the ones in <code>fuel_final_submission.parquet</code> which includes the intervals of phase 1 (24289 for 1888 distinct flights) and additional ones for the final phase (37456 for 2836 distinct flights). Total rows is 61745.</p>
 
 
 </section>

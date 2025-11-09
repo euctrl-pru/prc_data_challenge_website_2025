@@ -50,3 +50,20 @@ We require each row to match `idx`, `flight_id`, `start` and `end` before
 `fuel_kg` will be considered by the ranking script when calculating the RMSE.
 Errors will be issued in case of mismatch.
 Errors will also be issued in case of missing or extra rows.
+
+
+
+### Submission for phase 2/final phase
+
+During phase 2/final phase you can continue to submit predictions like in
+phase 1: based on `fuel_rank_submission.parquet`.
+
+For the eligibility for final prize you should upload your (best) prediction
+in a file named 
+
+`<team-name>_final.parquet`
+
+The rows in this file are like the ones in `fuel_final_submission.parquet`
+which includes the intervals of phase 1 (24289 for 1888 distinct flights)
+and additional ones for the final phase (37456 for 2836 distinct flights).
+Total rows is 61745.

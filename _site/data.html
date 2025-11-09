@@ -1498,6 +1498,7 @@ Figure&nbsp;1: Entity-Relationship diagram for PRC Data Challenge.
 <ol type="1">
 <li><code>flightlist_train.parquet</code>: for training</li>
 <li><code>flightlist_rank.parquet</code>: for ranking</li>
+<li><code>flightlist_final.parquet</code>: the flight list of the <strong>additional</strong> flights of the final phase.</li>
 </ol>
 <p>The following is the list of columns in the flight list dataset:</p>
 <ul>
@@ -1518,6 +1519,7 @@ Figure&nbsp;1: Entity-Relationship diagram for PRC Data Challenge.
 <ol type="1">
 <li><code>flights_train/&lt;flight_id&gt;.parquet</code>: for training</li>
 <li><code>flights_rank/&lt;flight_id&gt;.parquet</code>: for rankining</li>
+<li><code>flights_final/&lt;flight_id&gt;.parquet</code>: the flight trajectories of the <strong>additional</strong> flights of the final phase.</li>
 </ol>
 <p>We have trajectory files for each flight with fuel flow segments. These are (mainly) <a href="#acronyms_ADS_B">Automatic Dependent Surveillance–Broadcast (ADS-B)</a> position reports for the flights in the flight list as available in OpenSky Network historical database. These flight trajectories are possibly incomplete, i.e.&nbsp;they can lack portions. We have augmented these trajectories with positional information coming from ACARS; the <code>source</code> column would categorize the origin of the data, either <code>adsb</code> or <code>acars</code>.</p>
 <p>Each trajectory is described by (units in square brackets)</p>
