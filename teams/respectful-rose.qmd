@@ -1,0 +1,27 @@
+
+---
+title: respectful-rose
+date: 2025-11-08
+subtitle: Madagascar
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+It is strongly related to the data. I have never really worked with this type of data and it is an opportunity to learn how to tackle such challenge
+
+## Details
+
+* Type: Industry
+* Country: Madagascar
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Xyzzy",  "XYZZY", "Undisclosed"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

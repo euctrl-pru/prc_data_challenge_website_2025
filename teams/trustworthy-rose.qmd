@@ -1,0 +1,27 @@
+
+---
+title: trustworthy-rose
+date: 2025-11-09
+subtitle: Nigeria
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am a Data Scientist/ML Engineer interested in solving real world problems
+
+## Details
+
+* Type: Independent
+* Country: Nigeria
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,   ~forename,  ~surname, ~affiliation,
+   1L, "Adetomiwa", "Adedeji",     "Unknow"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
