@@ -296,7 +296,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-uu, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-vv, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 #| fig-cap: 'Teams per country'
 library(countrycode)
 library(scales)
