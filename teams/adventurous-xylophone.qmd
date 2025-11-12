@@ -1,0 +1,32 @@
+
+---
+title: adventurous-xylophone
+date: 2025-11-12
+subtitle: United States
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We are a team of graduate students from The George Washington University, pursuing our M.S. in Computer Science, with strong interests in AI, data systems, and network security.
+
+Our motivation for joining the PRC Challenge is to apply our technical and analytical skills to real-world aviation data, explore innovative solutions using machine learning and data-driven modeling, and contribute to advancing research in air traffic surveillance and cybersecurity.
+
+We are excited to collaborate, learn from the global research community, and push our limits through this competition.
+
+## Details
+
+* Type: Academia
+* Country: United States
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id,       ~forename,     ~surname, ~affiliation,
+   1L, "chandan kumar", "ramamurthy",     "Unknow",
+   2L,        "nithin",      "sarva",     "Unknow"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
