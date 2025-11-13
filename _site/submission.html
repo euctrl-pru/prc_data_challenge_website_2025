@@ -1466,8 +1466,8 @@ ul.task-list li input[type="checkbox"] {
   2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04      0.0
   3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04      0.0
 ...</code></pre>
-<section id="submission-format" class="level3">
-<h3 class="anchored" data-anchor-id="submission-format">Submission format</h3>
+<section id="phase1" class="level3">
+<h3 class="anchored" data-anchor-id="phase1">Submission format</h3>
 <p>You should submit a <strong>parquet</strong> file, named <code>&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet</code>, with your predictions with exactly all entries as in in <code>fuel_rank_submission.parquet</code> (<code>fuel_final_submission.parquet</code>), i.e.&nbsp;something with a payload like:</p>
 <pre><code>idx     flight_id                start                  end  fuel_kg
   0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 
@@ -1477,12 +1477,26 @@ ul.task-list li input[type="checkbox"] {
 ...</code></pre>
 <p>We require each row to match <code>idx</code>, <code>flight_id</code>, <code>start</code> and <code>end</code> before <code>fuel_kg</code> will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.</p>
 </section>
-<section id="submission-for-phase-2final-phase" class="level3">
-<h3 class="anchored" data-anchor-id="submission-for-phase-2final-phase">Submission for phase 2/final phase</h3>
-<p>During phase 2/final phase you can continue to submit predictions like in phase 1: based on <code>fuel_rank_submission.parquet</code>.</p>
+<section id="phase2" class="level3">
+<h3 class="anchored" data-anchor-id="phase2">Submission for phase 2/final phase</h3>
+<p>During phase 2/final phase you can continue to submit predictions with filenames <code>&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet</code> like in phase 1: based on <code>fuel_rank_submission.parquet</code>.</p>
 <p>For the eligibility for final prize you should upload your (best) prediction in a file named</p>
 <p><code>&lt;team-name&gt;_final.parquet</code></p>
 <p>The rows in this file are like the ones in <code>fuel_final_submission.parquet</code> which includes the intervals of phase 1 (24289 for 1888 distinct flights) and additional ones for the final phase (37456 for 2836 distinct flights). Total rows is 61745.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="VALIDATION">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+VALIDATION
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can overwrite your <code>&lt;team-name&gt;_final.parquet</code> and each time it will be validated with checks like for phase 1, namely missing predictions, NaN, rows match on icao24,…<br>
+Feed back is written back to the bucket with the same logic as for phase 1.</p>
+</div>
+</div>
 
 
 </section>

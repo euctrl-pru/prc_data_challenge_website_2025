@@ -46,7 +46,9 @@ There will be two phases for submissions:
    `fuel_final_submission.parquet` [^note]. For the **additional** flight list
    and flight trajectories for phase 2/final phase see 
    `flightlist_final.parquet` and
-   `flights_final/<flight_id>.parquet`.
+   `flights_final/<flight_id>.parquet`.  
+   Final submission files are being validated, see 
+   [the submission section](submission.qmd#phase2) for more details.
 
 [^note]: This is to avoid the possibility of _leaning_ from the leaderboard
          results.

@@ -30,7 +30,7 @@ idx     flight_id                start                  end  fuel_kg
 ...
 ```
 
-### Submission format
+### Submission format {#phase1}
 
 You should submit a **parquet** file, named
 `<team-name>_v<incremental integer>.parquet`, with your predictions
@@ -53,10 +53,11 @@ Errors will also be issued in case of missing or extra rows.
 
 
 
-### Submission for phase 2/final phase
+### Submission for phase 2/final phase{#phase2}
 
-During phase 2/final phase you can continue to submit predictions like in
-phase 1: based on `fuel_rank_submission.parquet`.
+During phase 2/final phase you can continue to submit predictions with filenames
+`<team-name>_v<incremental integer>.parquet`
+like in phase 1: based on `fuel_rank_submission.parquet`.
 
 For the eligibility for final prize you should upload your (best) prediction
 in a file named 
@@ -67,3 +68,12 @@ The rows in this file are like the ones in `fuel_final_submission.parquet`
 which includes the intervals of phase 1 (24289 for 1888 distinct flights)
 and additional ones for the final phase (37456 for 2836 distinct flights).
 Total rows is 61745.
+
+::: {.callout-important title="VALIDATION"}
+
+You can overwrite your `<team-name>_final.parquet` and each time it will be
+validated with checks like for phase 1, namely
+missing predictions, NaN, rows match on icao24,...  
+Feed back is written back to the bucket with the same logic as for phase 1.
+
+:::
