@@ -1,0 +1,27 @@
+
+---
+title: polite-emu
+date: 2025-11-12
+subtitle: Belgium
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+French ML Engineer currently working in Belgium, 25 years old. I heard about this challenge from colleagues participating. Honestly, I don't know much about planes and all, but I thought it'd be fun to try an "alternative method" to tackle this problem 😊
+
+## Details
+
+* Type: Independent
+* Country: Belgium
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,  ~surname,  ~affiliation,
+   1L,  "Rayane", "Hachemi", "Independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

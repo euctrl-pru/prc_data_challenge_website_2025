@@ -1,0 +1,27 @@
+
+---
+title: motivated-llama
+date: 2025-11-13
+subtitle: India
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+For Learning and improving skillset
+
+## Details
+
+* Type: Independent
+* Country: India
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L, "Abhijit",   "Naik", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
