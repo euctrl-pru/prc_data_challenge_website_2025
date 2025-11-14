@@ -110,7 +110,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-yy, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-zz, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 #| fig-cap: 'Cumulative count of team creation, 2025 in **[blue]{fg="#0000FF"}**, 2024 in **[green]{fg="#008000"}**.'
 
 phase1_start_25 <- as_datetime("2025-10-01T00:00:00Z")
@@ -227,7 +227,7 @@ ggplot() +
 ```
 
 
-```{ojs yy}
+```{ojs zz}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -296,7 +296,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-yy, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-zz, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 #| fig-cap: 'Teams per country'
 library(countrycode)
 library(scales)
