@@ -182,7 +182,7 @@ ggplot() +
     x = as_date(phase2_start_25),
     y = 35,
     xend = as_date(phase2_start_25),
-    yend = max_25 |> pull(n),
+    yend = 164,
     arrow = arrow(length = unit(2, "mm"))
   ) +
   annotate(
