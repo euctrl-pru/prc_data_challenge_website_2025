@@ -1,0 +1,27 @@
+
+---
+title: polite-scarf
+date: 2025-11-14
+subtitle: India
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am interested in Data Science Competitions in general.
+
+## Details
+
+* Type: Academia
+* Country: India
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Xyzzy",  "XYZZY", "Undisclosed"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
