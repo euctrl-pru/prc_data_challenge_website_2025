@@ -10,8 +10,9 @@ final solutions.
 
 ![](media/PRC-Data-challenge-1080x1080.jpg){width="540px" height="auto" alt="PRC Data Challenge"}
 
-The 2025 edition of the \acr{PRC} Data Challenge builds on top of the 2024
-edition and proposes to build \acr{ML} models to predict the **amount of fuel
+The 2025 edition of the \acr{PRC} Data Challenge builds on top of the 
+[2024 edition](https://ansperformance.eu/study/data-challenge/dc2024/)
+and proposes to build \acr{ML} models to predict the **amount of fuel
 burnt** at certain intervals of the flight.
 The training dataset will consist of flight intervals and corresponding fuel
 burnt/flown amounts.
