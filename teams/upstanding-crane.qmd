@@ -1,0 +1,27 @@
+
+---
+title: upstanding-crane
+date: 2025-11-15
+subtitle: Mexico
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+personal growth
+
+## Details
+
+* Type: Independent
+* Country: Mexico
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Xyzzy",  "XYZZY", "Undisclosed"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

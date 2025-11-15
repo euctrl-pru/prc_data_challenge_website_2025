@@ -1,0 +1,34 @@
+
+---
+title: upstanding-dinosaur
+date: 2025-11-14
+subtitle: Mexico
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+We’re a married couple who geek out over aerospace and research, both grad students at KAUST under Prof. Eric Feron. One of us has recently begun a PhD focused on air traffic behavior and airport operations in the Middle East, where rapid aviation growth presents new modeling and optimization challenges.
+
+We’re just starting to get hands-on with real aviation data and were looking for a practical, exciting way to build skills in ADS-B data processing, trajectory analysis, and predictive modeling. The PRC Challenge came up at the perfect moment, giving us the opportunity to learn while contributing to the development of data-driven models using aircraft flight data.
+
+As part of our effort, we also plan to deploy an ADS-B listening station in the KAUST/Jeddah region to improve local coverage, since this geographic area is currently underrepresented in the OpenSky Network.
+
+We hope that participating in this competition will help us build the analytical tools, pipelines, and practical experience needed for our broader research, while allowing us to experiment and develop models that could be applied to operational insights in fast-growing hubs like Jeddah.
+
+## Details
+
+* Type: Academia
+* Country: Mexico
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,      ~surname, ~affiliation,
+   1L,   "Abril",    "Alvarado",      "KAUST",
+   2L,   "Dante", "Kobylyansky",      "KAUST"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
