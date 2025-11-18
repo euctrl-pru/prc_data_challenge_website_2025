@@ -1,0 +1,28 @@
+
+---
+title: respectful-jacket
+date: 2025-11-17
+subtitle: Iran
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+Our Motivation is to win the challenge and do something useful.
+
+## Details
+
+* Type: Academia
+* Country: Iran
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename,   ~surname,                      ~affiliation,
+   1L, "Alireza", "Alinejad", "Sharif University of Technology",
+   2L,    "Taha", "Alikhani", "Sharif University of Technology"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
