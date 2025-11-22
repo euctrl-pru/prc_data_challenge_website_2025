@@ -1,0 +1,27 @@
+
+---
+title: bouncy-x-ray
+date: 2025-11-22
+subtitle: United States
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am a graduate student from George Washington University with strong experience in data science, machine learning, and large-scale analytics. I joined the PRC Data Challenge to apply my skills to a real-world aviation problem, work with complex operational datasets, and contribute to an open, global competition. My motivation is to build robust ML models, learn from the aviation data ecosystem, and collaborate with the OpenSky community while tackling meaningful challenges in fuel-burn prediction.
+
+## Details
+
+* Type: Academia
+* Country: United States
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,  "Nithin",  "Sarva", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
