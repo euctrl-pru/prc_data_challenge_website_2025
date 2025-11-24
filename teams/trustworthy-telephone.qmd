@@ -1,0 +1,29 @@
+
+---
+title: trustworthy-telephone
+date: 2025-11-24
+subtitle: Spain
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am a data scientist with a strong passion for aviation and a professional background in applied analytics at the largest technology center in Spain. My work focuses on leveraging advanced data science, machine learning, and modeling techniques to solve complex, real-world problems—especially those related to industrial processes.
+
+I decided to register for the PRC Challenge because it represents a unique opportunity to combine my two main interests: data science and aviation. Predicting fuel consumption is a fascinating and highly relevant problem, with direct impact on efficiency, sustainability, and operational performance. Through this challenge, I aim to contribute meaningful insights, push my technical skills further, and learn from a community of experts who share a similar vision for the future of aviation.
+
+## Details
+
+* Type: Independent
+* Country: Spain
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,  ~affiliation,
+   1L,   "Asier",  "Zubia", "independent"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```

@@ -65,7 +65,7 @@ ccc <- teams_valid |>
   ) |>
   mutate(
     iso3c = countrycode(team_country, 'country.name', 'iso3c')) |> 
-  write_csv(here::here("data", "teams_country@57.csv"))
+  write_csv(here::here("data", "teams_country@58.csv"))
 
 
 
@@ -110,7 +110,7 @@ ccc |>
 
 
 
-```{r cumulative-plot-a7, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
+```{r cumulative-plot-a8, echo=FALSE, warning=FALSE, error=TRUE, message=FALSE}
 #| fig-cap: 'Cumulative count of team creation, 2025 in **[blue]{fg="#0000FF"}**, 2024 in **[green]{fg="#008000"}**.'
 
 phase1_start_25 <- as_datetime("2025-10-01T00:00:00Z")
@@ -229,7 +229,7 @@ ggplot() +
 ```
 
 
-```{ojs a7}
+```{ojs a8}
 //| echo: false
 d3 = require.alias({
   d3: 'd3@7.7.0/dist/d3.min.js',
@@ -245,7 +245,7 @@ land = topojson.feature(world, world.objects.land)
 
 countries = topojson.feature(world, world.objects.countries)
 
-teams_country = FileAttachment('../data/teams_country@57.csv').csv({ typed: true })
+teams_country = FileAttachment('../data/teams_country@58.csv').csv({ typed: true })
 
 origin = new Map(teams_country.map((d) => [d.iso3c, +d.n]))
 
@@ -298,7 +298,7 @@ Plot.plot({
 ```
 
 
-```{r teams-bar-a7, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
+```{r teams-bar-a8, echo=FALSE, warning=FALSE, error=FALSE, message=FALSE, eval=TRUE}
 #| fig-cap: 'Teams per country'
 library(countrycode)
 library(scales)
