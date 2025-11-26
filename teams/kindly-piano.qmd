@@ -1,0 +1,27 @@
+
+---
+title: kindly-piano
+date: 2025-11-26
+subtitle: India
+acronyms:
+  insert_loa: false
+---
+
+## Description and Rationale
+
+I am a first year undergrad, and I liked tracking planes on flightradar whenever i heard one. Challenge seems interesting so why not.
+
+## Details
+
+* Type: Academia
+* Country: India
+
+```{r echo=FALSE}
+library(gt)
+
+gt(tibble::tribble(
+  ~id, ~forename, ~surname,    ~affiliation,
+   1L,  "Rishav", "Sanjay", "RV University"
+  )
+) |> cols_label(id = md("**ID**"), forename = md("**Forename**"), surname ~ md("**Surname**"), affiliation ~ md("**Affiliation**"))
+```
