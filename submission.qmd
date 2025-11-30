@@ -77,3 +77,7 @@ missing predictions, NaN, rows match on icao24,...
 Feed back is written back to the bucket with the same logic as for phase 1.
 
 :::
+
+Please let us know the URL of your **public** Github repository either
+via email at `challenge` `AT` `opensky-network` `DOT` `org` or on Discord.  
+**NOTE**: we will consider till last commit before the deadline.
