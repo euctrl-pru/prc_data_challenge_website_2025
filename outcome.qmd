@@ -64,6 +64,7 @@ plot_submissions(subs, "jubilant-vase", c(199, 702))
 
 [rmse_evol]: <https://github.com/Gheed0123/PRC-Data-Challenge-2025/tree/main/leaderboard_plots>
 
+-------------------------------
 
 ## Review of teams repos
 In the following sections we summarize the review of the repo for each team.
