@@ -3,7 +3,7 @@ title: "Outcome"
 format:
   html: 
     toc: true
-    toc-depth: 2
+    toc-depth: 3
 acronyms:
   insert_loa: false
 ---
@@ -33,6 +33,8 @@ plot_submissions <- function(subs, team, ylim = c(199, 300)) {
     theme_minimal()
 }
 ```
+
+## Summary
 
 The winners of the PRC Data Challenge 2025 are determined by
 
@@ -157,7 +159,7 @@ Uses flight phases.
 No why's.  
 
 
-## exuberant-emu, RMSE = 254.10, Rank = 9
+### exuberant-emu, RMSE = 254.10, Rank = 9
 
 Hardcoded paths...  
 No much rationale on choices nor about features engineering.  
