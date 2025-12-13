@@ -72,6 +72,7 @@ plot_submissions(subs, "jubilant-vase", c(199, 702))
 In the following sections we summarize the review of the repo for each team.
 Order is by "ranking All"
 
+
 ### resourceful-quiver, RMSE = 200.83, Rank = 1
 
 Almost ready JOAS paper, nice description: SUPER.
@@ -93,7 +94,7 @@ Uses ensemble of three gradient boosting libraries.
 
 
 
-### outspoken-tornado, RMSE = 219.85, Rank = 4
+### outspoken-tornado, RMSE = 219.85, Rank = 3
 
 More ML approach, i.e. feature engineering not too domain specific.  
 Some trajectory features, mean/max TAS, mean vertical rate...but no checks on
@@ -103,7 +104,7 @@ Code is structured (over-structured?)
 
 
 
-### merry-jacket, RMSE = 220.67, Rank = 5
+### merry-jacket, RMSE = 220.67, Rank = 4
 
 Nice README but short-ish.  
 No TOW estimation.  
@@ -111,7 +112,8 @@ Some features from domain and data for aircraft type.
 Uses ensemble of 2 models.
 
 
-### zestful-mango, RMSE = 221.25, Rank = 6
+
+### zestful-mango, RMSE = 221.25, Rank = 5
 
 commit on 1st Dec.  
 Some comments and mostly in Spanish.  
@@ -119,7 +121,7 @@ Not much rationale of design decisions, feature selection.
 
 
 
-### honest-rose, RMSE = 227.14, Rank = 8
+### honest-rose, RMSE = 227.14, Rank = 6
 
 Nice description of the various features added in different stages in PDF
 with rationale for choices.  
@@ -133,7 +135,7 @@ Code sparsely documented in `R scripts/`, somewhat better in `Python scripts/`.
 
 
 
-### unique-honey, RMSE = 227.89, Rank = 10
+### unique-honey, RMSE = 227.89, Rank = 7
 
 Well structured and informative README.  
 Links to extra data sources.  
@@ -144,7 +146,7 @@ Similarly to others, it uses flight phases.
 
 
 
-### tiny-zeppelin, RMSE = 244.60, Rank = 13
+### tiny-zeppelin, RMSE = 244.60, Rank = 8
 
 Not much explicit info about where to start from, but it looks like
 `orchestrator`.  
@@ -155,7 +157,7 @@ Uses flight phases.
 No why's.  
 
 
-## exuberant-emu, RMSE = 254.10, Rank = 15
+## exuberant-emu, RMSE = 254.10, Rank = 9
 
 Hardcoded paths...  
 No much rationale on choices nor about features engineering.  
@@ -163,7 +165,7 @@ Quite ML approach but not too domain-specific, yes mean/std vertical rate or
 mean mach, but not more.  
 
 
-### unique-quicksand, RMSE = 256.27, Rank = 16
+### unique-quicksand, RMSE = 256.27, Rank = 10
 
 Nice analysis of noise in the data.  
 Developed a simple model first and then used `xgboost` but not great vs
@@ -172,32 +174,46 @@ for the final submission.
 
 
 
-### bright-lobster, RMSE = 303.02, Rank = 17
+### bright-lobster, RMSE = 303.02, Rank = 11
 
 Good unique entry point: designed for reproducibility!!!  
 It uses METAR and passenger stats.
 
-### wise-watermelon, RMSE = 350.98, Rank = 18
+
+
+### wise-watermelon, RMSE = 350.98, Rank = 12
 
 
 
-### sincere-glacier, RMSE = 540.91, Rank = 22
+### sincere-glacier, RMSE = 540.91, Rank = 13
 
 
 
-### unique-guitar, RMSE = 701.90, Rank = 24
+### unique-guitar, RMSE = 701.90, Rank = 14
 
 
 
-### likable-ant, RMSE = 709.49, Rank = 26
+### likable-ant, RMSE = 709.49, Rank = 15
 
 
 
-### confident-insect, RMSE = 709.50, Rank = 27
 
-1091.0762
-28
-240.5507
-19
-709.5037
-27
+### confident-insect, RMSE = 709.50, Rank = 16
+
+
+
+
+### polite-emu, RMSE = 729.80, Rank = 17
+
+
+
+
+### nurturing-telephone, RMSE = 738.16, Rank = 18
+
+
+
+
+### confident-hedgehog, RMSE = 5755.91 , Rank = 19
+
+
+
