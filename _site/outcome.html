@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -75,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="media/styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -350,10 +385,1159 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./outcome.html">Outcome</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PRC Data Challenge 2025</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./submission.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Submission</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ranking.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ranking</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./outcome.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Outcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Teams</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true">
+ <span class="menu-text">Team details</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/adventurous-lantern.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">adventurous-lantern</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/adventurous-xylophone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">adventurous-xylophone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/affectionate-goblin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">affectionate-goblin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/amazing-pillow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">amazing-pillow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/ambitious-tornado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ambitious-tornado</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/athletic-giraffe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">athletic-giraffe</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/bouncy-waterfall.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">bouncy-waterfall</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/bouncy-x-ray.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">bouncy-x-ray</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/breezy-hamburger.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">breezy-hamburger</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/bright-dolphin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">bright-dolphin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/bright-lobster.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">bright-lobster</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/brilliant-crane.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">brilliant-crane</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/brilliant-umbrella.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">brilliant-umbrella</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/brilliant-zebra.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">brilliant-zebra</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/brisk-beetle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">brisk-beetle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/bubbly-baker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">bubbly-baker</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/calm-utensil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">calm-utensil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/charismatic-monkey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">charismatic-monkey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/charming-pencil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">charming-pencil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/cheerful-quiche.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">cheerful-quiche</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/cheerful-sandwich.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">cheerful-sandwich</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/cheerful-waterfall.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">cheerful-waterfall</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/cheery-vase.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">cheery-vase</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/confident-hedgehog.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">confident-hedgehog</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/confident-insect.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">confident-insect</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/courageous-parrot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">courageous-parrot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/cute-tulip.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">cute-tulip</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/cute-vase.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">cute-vase</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/delightful-boat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">delightful-boat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/delightful-marshmallow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">delightful-marshmallow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/dependable-xylophone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">dependable-xylophone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/determined-dolphin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">determined-dolphin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/diligent-igloo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">diligent-igloo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/diligent-net.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">diligent-net</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/eager-apple.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">eager-apple</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/eager-crane.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">eager-crane</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/eager-ladder.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">eager-ladder</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/easygoing-pillow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">easygoing-pillow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/empathetic-utensil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">empathetic-utensil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/enthusiastic-apple.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">enthusiastic-apple</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/enthusiastic-penguin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">enthusiastic-penguin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/exuberant-emu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">exuberant-emu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/exuberant-piano.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">exuberant-piano</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/faithful-zeppelin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">faithful-zeppelin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/faithful-zipper.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">faithful-zipper</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/friendly-raccoon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">friendly-raccoon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/generous-balloon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">generous-balloon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/generous-lollipop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">generous-lollipop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/gentle-eel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gentle-eel</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/gentle-koala.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gentle-koala</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/gentle-orange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gentle-orange</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/gentle-ostrich.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gentle-ostrich</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/gentle-piano.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gentle-piano</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/genuine-zucchini.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">genuine-zucchini</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/graceful-yogurt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">graceful-yogurt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/gracious-jacket.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">gracious-jacket</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/happy-hamburger.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">happy-hamburger</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/hardworking-kiwi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">hardworking-kiwi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/helpful-deer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">helpful-deer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/helpful-dragon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">helpful-dragon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/hilarious-rocket.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">hilarious-rocket</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/hilarious-sandwich.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">hilarious-sandwich</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/hilarious-vulture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">hilarious-vulture</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/honest-rose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">honest-rose</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/honorable-yogurt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">honorable-yogurt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/honorable-zipper.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">honorable-zipper</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/incredible-kiwi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">incredible-kiwi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/ingenious-tiger.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ingenious-tiger</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/inventive-apple.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">inventive-apple</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/jovial-umbrella.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">jovial-umbrella</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/jubilant-guitar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">jubilant-guitar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/jubilant-vase.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">jubilant-vase</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/jubilant-zucchini.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">jubilant-zucchini</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/keen-feather.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">keen-feather</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/kind-dinosaur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">kind-dinosaur</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/kindhearted-muffin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">kindhearted-muffin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/kindhearted-waterfall.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">kindhearted-waterfall</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/kindly-garden.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">kindly-garden</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/kindly-kiwi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">kindly-kiwi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/kindly-piano.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">kindly-piano</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/kindly-utensil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">kindly-utensil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/knowing-violin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">knowing-violin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/knowledgeable-penguin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">knowledgeable-penguin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/lighthearted-barn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">lighthearted-barn</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/likable-ant.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">likable-ant</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/likable-forest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">likable-forest</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/likable-unicorn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">likable-unicorn</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/lovable-boat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">lovable-boat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/lovable-pencil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">lovable-pencil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/lovely-river.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">lovely-river</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/merry-jacket.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">merry-jacket</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/mindful-turtle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">mindful-turtle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/motivated-beetle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">motivated-beetle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/motivated-koala.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">motivated-koala</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/motivated-llama.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">motivated-llama</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/motivated-quartz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">motivated-quartz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/neat-noodle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">neat-noodle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/nimble-yacht.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">nimble-yacht</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/noble-tractor.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">noble-tractor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/nurturing-jar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">nurturing-jar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/nurturing-telephone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">nurturing-telephone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/nurturing-utensil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">nurturing-utensil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/organized-kangaroo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">organized-kangaroo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/outgoing-kangaroo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">outgoing-kangaroo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/outgoing-orange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">outgoing-orange</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/outspoken-pencil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">outspoken-pencil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/outspoken-tornado.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">outspoken-tornado</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/peaceful-tulip.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">peaceful-tulip</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/playful-island.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">playful-island</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/playful-moose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">playful-moose</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/pleasant-sandwich.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">pleasant-sandwich</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/polite-emu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">polite-emu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/polite-gorilla.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">polite-gorilla</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/polite-radio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">polite-radio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/polite-scarf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">polite-scarf</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/positive-nugget.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">positive-nugget</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/quick-boat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">quick-boat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/reliable-jacket.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">reliable-jacket</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/reliable-jigsaw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">reliable-jigsaw</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/reliable-moose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">reliable-moose</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/resilient-yeti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">resilient-yeti</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/resourceful-beetle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">resourceful-beetle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/resourceful-igloo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">resourceful-igloo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/resourceful-quiver.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">resourceful-quiver</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/respectful-jacket.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">respectful-jacket</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/respectful-ocean.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">respectful-ocean</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/respectful-rose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">respectful-rose</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/respectful-teapot.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">respectful-teapot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/sincere-glacier.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">sincere-glacier</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/sincere-jacket.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">sincere-jacket</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/sincere-turtle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">sincere-turtle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/sociable-lobster.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">sociable-lobster</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/strong-helicopter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">strong-helicopter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/strong-zebra.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">strong-zebra</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/talented-violin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">talented-violin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/terrific-kiwi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">terrific-kiwi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/thoughtful-goblin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">thoughtful-goblin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/thoughtful-unicorn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">thoughtful-unicorn</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/tiny-marshmallow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">tiny-marshmallow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/tiny-village.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">tiny-village</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/tiny-zeppelin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">tiny-zeppelin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/trustworthy-giraffe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">trustworthy-giraffe</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/trustworthy-hedgehog.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">trustworthy-hedgehog</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/trustworthy-radio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">trustworthy-radio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/trustworthy-rose.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">trustworthy-rose</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/trustworthy-telephone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">trustworthy-telephone</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/trustworthy-ukulele.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">trustworthy-ukulele</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/understanding-kangaroo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">understanding-kangaroo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/understated-zucchini.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">understated-zucchini</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/unique-dinosaur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">unique-dinosaur</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/unique-guitar.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">unique-guitar</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/unique-honey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">unique-honey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/unique-quicksand.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">unique-quicksand</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/unique-zeppelin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">unique-zeppelin</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/upbeat-eel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">upbeat-eel</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/upbeat-raccoon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">upbeat-raccoon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/upstanding-barn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">upstanding-barn</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/upstanding-crane.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">upstanding-crane</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/upstanding-dinosaur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">upstanding-dinosaur</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/vibrant-cabbage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">vibrant-cabbage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/vibrant-pencil.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">vibrant-pencil</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/vibrant-umbrella.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">vibrant-umbrella</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/vigorous-icicle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">vigorous-icicle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/vivacious-emu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">vivacious-emu</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/wise-dinosaur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">wise-dinosaur</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/wise-watermelon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">wise-watermelon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/witty-orchid.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">witty-orchid</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/witty-vase.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">witty-vase</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/youthful-quilt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">youthful-quilt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zany-garden.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zany-garden</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zany-waterfall.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zany-waterfall</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zealous-dragon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zealous-dragon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zestful-mango.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zestful-mango</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zestful-mushroom.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zestful-mushroom</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zestful-volcano.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zestful-volcano</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zesty-hedgehog.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zesty-hedgehog</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zesty-island.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zesty-island</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zesty-raccoon.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zesty-raccoon</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./teams/zippy-telephone.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">zippy-telephone</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -403,6 +1587,7 @@ ul.task-list li input[type="checkbox"] {
 <p>You can remark quite some shifts of ranking positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.</p>
 <p>Inspired by an exchange with team <a href="./teams/genuine-zucchini.html">genuine-zucchini</a>, below you can find some revisited reproduction of the <a href="https://github.com/Gheed0123/PRC-Data-Challenge-2025/tree/main/leaderboard_plots">RMSE evolution</a> for some of the teams.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_submissions</span>(subs, <span class="st">"resourceful-quiver"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -410,6 +1595,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_submissions</span>(subs, <span class="st">"bright-lobster"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -417,6 +1603,7 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_submissions</span>(subs, <span class="st">"jubilant-vase"</span>, <span class="fu">c</span>(<span class="dv">199</span>, <span class="dv">702</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -430,36 +1617,77 @@ ul.task-list li input[type="checkbox"] {
 <p>In the following sections we summarize the review of the repo for each team. Order is by “ranking All”</p>
 <section id="resourceful-quiver-rmse-200.83-rank-1" class="level3">
 <h3 class="anchored" data-anchor-id="resourceful-quiver-rmse-200.83-rank-1">resourceful-quiver, RMSE = 200.83, Rank = 1</h3>
+<p>Almost ready JOAS paper, nice description: SUPER.</p>
+<p>The methodology is well founded and guided by domain knowledge and not solely by ML techniques, i.e.&nbsp;uses mass estimator learning from last year’s challenge.</p>
+<p>Jupyter notebook as sparse with comments.<br>
+Python scripts/modules are somewhat commented but sparsely.</p>
 </section>
 <section id="jubilant-vase-rmse-211.99-rank-2" class="level3">
 <h3 class="anchored" data-anchor-id="jubilant-vase-rmse-211.99-rank-2">jubilant-vase, RMSE = 211.99, Rank = 2</h3>
+<p>Distilled documentation.<br>
+Scripts are well documented and structured.<br>
+Uses mass estimation as per last year’s challenge.<br>
+Uses ensemble of three gradient boosting libraries.</p>
 </section>
 <section id="outspoken-tornado-rmse-219.85-rank-4" class="level3">
 <h3 class="anchored" data-anchor-id="outspoken-tornado-rmse-219.85-rank-4">outspoken-tornado, RMSE = 219.85, Rank = 4</h3>
+<p>More ML approach, i.e.&nbsp;feature engineering not too domain specific.<br>
+Some trajectory features, mean/max TAS, mean vertical rate…but no checks on outlier/absurd values.</p>
+<p>Code is structured (over-structured?)</p>
 </section>
 <section id="merry-jacket-rmse-220.67-rank-5" class="level3">
 <h3 class="anchored" data-anchor-id="merry-jacket-rmse-220.67-rank-5">merry-jacket, RMSE = 220.67, Rank = 5</h3>
+<p>Nice README but short-ish.<br>
+No TOW estimation.<br>
+Some features from domain and data for aircraft type.<br>
+Uses ensemble of 2 models.</p>
 </section>
 <section id="zestful-mango-rmse-221.25-rank-6" class="level3">
 <h3 class="anchored" data-anchor-id="zestful-mango-rmse-221.25-rank-6">zestful-mango, RMSE = 221.25, Rank = 6</h3>
+<p>commit on 1st Dec.<br>
+Some comments and mostly in Spanish.<br>
+Not much rationale of design decisions, feature selection.</p>
 </section>
 <section id="honest-rose-rmse-227.14-rank-8" class="level3">
 <h3 class="anchored" data-anchor-id="honest-rose-rmse-227.14-rank-8">honest-rose, RMSE = 227.14, Rank = 8</h3>
+<p>Nice description of the various features added in different stages in PDF with rationale for choices.<br>
+Used weather features but found not so influential…<br>
+Used economic features (oil price)…but found not so influential.<br>
+No TOW.<br>
+Cannot find data <code>features_intervals.csv</code> mentioned in the code (also hardcoded paths): make it more reproducible by somebody cloning and using the challenge dataset.<br>
+Code sparsely documented in <code>R scripts/</code>, somewhat better in <code>Python scripts/</code>.</p>
 </section>
 <section id="unique-honey-rmse-227.89-rank-10" class="level3">
 <h3 class="anchored" data-anchor-id="unique-honey-rmse-227.89-rank-10">unique-honey, RMSE = 227.89, Rank = 10</h3>
+<p>Well structured and informative README.<br>
+Links to extra data sources.<br>
+Data cleanup is sound: remove outliers or unrealistic values.<br>
+Uses ensemble of models.<br>
+Not much info about feature engineering: the why’s.<br>
+Similarly to others, it uses flight phases.</p>
 </section>
 <section id="tiny-zeppelin-rmse-244.60-rank-13" class="level3">
 <h3 class="anchored" data-anchor-id="tiny-zeppelin-rmse-244.60-rank-13">tiny-zeppelin, RMSE = 244.60, Rank = 13</h3>
+<p>Not much explicit info about where to start from, but it looks like <code>orchestrator</code>.<br>
+Hardcoded (MS Windows) paths…difficult to clone and reproduce (on other OSs/machines.)<br>
+Sparse/rare comments in code ;-). Uses flight phases.<br>
+No why’s.</p>
 </section>
 </section>
 <section id="exuberant-emu-rmse-254.10-rank-15" class="level2">
 <h2 class="anchored" data-anchor-id="exuberant-emu-rmse-254.10-rank-15">exuberant-emu, RMSE = 254.10, Rank = 15</h2>
+<p>Hardcoded paths…<br>
+No much rationale on choices nor about features engineering.<br>
+Quite ML approach but not too domain-specific, yes mean/std vertical rate or mean mach, but not more.</p>
 <section id="unique-quicksand-rmse-256.27-rank-16" class="level3">
 <h3 class="anchored" data-anchor-id="unique-quicksand-rmse-256.27-rank-16">unique-quicksand, RMSE = 256.27, Rank = 16</h3>
+<p>Nice analysis of noise in the data.<br>
+Developed a simple model first and then used <code>xgboost</code> but not great vs the leading team, so resolved to stick to the more robust initial model for the final submission.</p>
 </section>
 <section id="bright-lobster-rmse-303.02-rank-17" class="level3">
 <h3 class="anchored" data-anchor-id="bright-lobster-rmse-303.02-rank-17">bright-lobster, RMSE = 303.02, Rank = 17</h3>
+<p>Good unique entry point: designed for reproducibility!!!<br>
+It uses METAR and passenger stats.</p>
 </section>
 <section id="wise-watermelon-rmse-350.98-rank-18" class="level3">
 <h3 class="anchored" data-anchor-id="wise-watermelon-rmse-350.98-rank-18">wise-watermelon, RMSE = 350.98, Rank = 18</h3>

@@ -3230,47 +3230,40 @@
     "href": "submission.html",
     "title": "Submission",
     "section": "",
-    "text": "We provide a submission file for each phase of the Challenge, fuel_rank_submission.parquet for phase 1 and fuel_final_submission.parquet for phase 2.\nFor phase 1 there are companion trajectories and flight list.\nEach team will have to submit its predictions in its own bucket, with a file name template as follows\n\n&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet\n\nThe fuel_rank_submission.parquet (fuel_final_submission.parquet) payload looks something like\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04      0.0\n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04      0.0\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04      0.0\n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04      0.0\n...\n\nSubmission format\nYou should submit a parquet file, named &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet, with your predictions with exactly all entries as in in fuel_rank_submission.parquet (fuel_final_submission.parquet), i.e. something with a payload like:\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 \n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04    120.8\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04   2500 \n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 \n...\nWe require each row to match idx, flight_id, start and end before fuel_kg will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.\n\n\nSubmission for phase 2/final phase\nDuring phase 2/final phase you can continue to submit predictions with filenames &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet like in phase 1: based on fuel_rank_submission.parquet.\nFor the eligibility for final prize you should upload your (best) prediction in a file named\n&lt;team-name&gt;_final.parquet\nThe rows in this file are like the ones in fuel_final_submission.parquet which includes the intervals of phase 1 (24289 for 1888 distinct flights) and additional ones for the final phase (37456 for 2836 distinct flights). Total rows is 61745.\n\n\n\n\n\n\nVALIDATION\n\n\n\nYou can overwrite your &lt;team-name&gt;_final.parquet and each time it will be validated with checks like for phase 1, namely missing predictions, NaN, rows match on icao24,…\nFeed back is written back to the bucket with the same logic as for phase 1.\n\n\nPlease let us know the URL of your public Github repository either via email at challenge AT opensky-network DOT org or on Discord.\nNOTE: we will consider till last commit before the deadline.",
+    "text": "We provide a submission file for each phase of the Challenge, fuel_rank_submission.parquet for phase 1 and fuel_final_submission.parquet for phase 2.\nFor phase 1 there are companion trajectories and flight list.\nEach team will have to submit its predictions in its own bucket, with a file name template as follows\n\n&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet\n\nThe fuel_rank_submission.parquet (fuel_final_submission.parquet) payload looks something like\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04      0.0\n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04      0.0\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04      0.0\n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04      0.0\n...\n\nSubmission format\nYou should submit a parquet file, named &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet, with your predictions with exactly all entries as in in fuel_rank_submission.parquet (fuel_final_submission.parquet), i.e. something with a payload like:\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 \n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04    120.8\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04   2500 \n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 \n...\nWe require each row to match idx, flight_id, start and end before fuel_kg will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.\n\n\nSubmission for phase 2/final phase\nDuring phase 2/final phase you can continue to submit predictions with filenames &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet like in phase 1: based on fuel_rank_submission.parquet.\nFor the eligibility for final prize you should upload your (best) prediction in a file named\n&lt;team-name&gt;_final.parquet\nThe rows in this file are like the ones in fuel_final_submission.parquet which includes the intervals of phase 1 (24289 for 1888 distinct flights) and additional ones for the final phase (37456 for 2836 distinct flights). Total rows is 61745.\n\n\n\n\n\n\nImportantVALIDATION\n\n\n\nYou can overwrite your &lt;team-name&gt;_final.parquet and each time it will be validated with checks like for phase 1, namely missing predictions, NaN, rows match on icao24,…\nFeed back is written back to the bucket with the same logic as for phase 1.\n\n\nPlease let us know the URL of your public Github repository either via email at challenge AT opensky-network DOT org or on Discord.\nNOTE: we will consider till last commit before the deadline.",
     "crumbs": [
       "Submission"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PRC Data Challenge 2025",
+    "objectID": "outcome.html",
+    "href": "outcome.html",
+    "title": "Outcome",
     "section": "",
-    "text": "The Performance Review Commission (PRC) with the support of OpenSky Network aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nThe competition runs (in two phases) from 1st Oct till 30th Nov 2025.\nThe total amount for the first 3 teams is 5000 EUR.\nCheck the conditions for eligibility for prize and then fill the following team creation request form!\nRemember to follow up the data challenge on OSN’s Discord  channel #prc-data-competition.\n(if not already done, you need to access OSN Discord server first)\nBelow you can find a couple of plots of flights showing the ACARS trajectory in red and the ADS-B one in blue.\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or synthetic exercise.",
+    "text": "The winners of the PRC Data Challenge 2025 are determined by\nThe plot below shows the ranking evolution for the submissions in the final phase of the challenge.\nYou can remark quite some shifts of ranking positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.\nInspired by an exchange with team genuine-zucchini, below you can find some revisited reproduction of the RMSE evolution for some of the teams.\nplot_submissions(subs, \"resourceful-quiver\")\n\n\n\n\n\n\n\nplot_submissions(subs, \"bright-lobster\")\n\n\n\n\n\n\n\nplot_submissions(subs, \"jubilant-vase\", c(199, 702))",
     "crumbs": [
-      "PRC Data Challenge 2025"
+      "Outcome"
     ]
   },
   {
-    "objectID": "index.html#thanks",
-    "href": "index.html#thanks",
-    "title": "PRC Data Challenge 2025",
-    "section": "Thanks",
-    "text": "Thanks\nThe organization of this challenge would have not been possible without the creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and the help of the Friends of OSN, Allan, Quinten, Martin, Rainer, Xavier and Kamil among them.\n OpenSky Network is of course the valuable organization without which we wouldn’t be able to assemble this challenge at all.",
+    "objectID": "outcome.html#review-of-teams-repos",
+    "href": "outcome.html#review-of-teams-repos",
+    "title": "Outcome",
+    "section": "Review of teams repos",
+    "text": "Review of teams repos\nIn the following sections we summarize the review of the repo for each team. Order is by “ranking All”\n\nresourceful-quiver, RMSE = 200.83, Rank = 1\nAlmost ready JOAS paper, nice description: SUPER.\nThe methodology is well founded and guided by domain knowledge and not solely by ML techniques, i.e. uses mass estimator learning from last year’s challenge.\nJupyter notebook as sparse with comments.\nPython scripts/modules are somewhat commented but sparsely.\n\n\njubilant-vase, RMSE = 211.99, Rank = 2\nDistilled documentation.\nScripts are well documented and structured.\nUses mass estimation as per last year’s challenge.\nUses ensemble of three gradient boosting libraries.\n\n\noutspoken-tornado, RMSE = 219.85, Rank = 4\nMore ML approach, i.e. feature engineering not too domain specific.\nSome trajectory features, mean/max TAS, mean vertical rate…but no checks on outlier/absurd values.\nCode is structured (over-structured?)\n\n\nmerry-jacket, RMSE = 220.67, Rank = 5\nNice README but short-ish.\nNo TOW estimation.\nSome features from domain and data for aircraft type.\nUses ensemble of 2 models.\n\n\nzestful-mango, RMSE = 221.25, Rank = 6\ncommit on 1st Dec.\nSome comments and mostly in Spanish.\nNot much rationale of design decisions, feature selection.\n\n\nhonest-rose, RMSE = 227.14, Rank = 8\nNice description of the various features added in different stages in PDF with rationale for choices.\nUsed weather features but found not so influential…\nUsed economic features (oil price)…but found not so influential.\nNo TOW.\nCannot find data features_intervals.csv mentioned in the code (also hardcoded paths): make it more reproducible by somebody cloning and using the challenge dataset.\nCode sparsely documented in R scripts/, somewhat better in Python scripts/.\n\n\nunique-honey, RMSE = 227.89, Rank = 10\nWell structured and informative README.\nLinks to extra data sources.\nData cleanup is sound: remove outliers or unrealistic values.\nUses ensemble of models.\nNot much info about feature engineering: the why’s.\nSimilarly to others, it uses flight phases.\n\n\ntiny-zeppelin, RMSE = 244.60, Rank = 13\nNot much explicit info about where to start from, but it looks like orchestrator.\nHardcoded (MS Windows) paths…difficult to clone and reproduce (on other OSs/machines.)\nSparse/rare comments in code ;-). Uses flight phases.\nNo why’s.",
     "crumbs": [
-      "PRC Data Challenge 2025"
+      "Outcome"
     ]
   },
   {
-    "objectID": "index.html#disclaimer",
-    "href": "index.html#disclaimer",
-    "title": "PRC Data Challenge 2025",
-    "section": "Disclaimer",
-    "text": "Disclaimer\nPlease note that this challenge is a challenge in its own preparation, so everything is experimental and subject to change at any moment at the organizers’ discretion.\nWe anyway do our best to prepare for an interesting and quality experience.",
+    "objectID": "outcome.html#exuberant-emu-rmse-254.10-rank-15",
+    "href": "outcome.html#exuberant-emu-rmse-254.10-rank-15",
+    "title": "Outcome",
+    "section": "exuberant-emu, RMSE = 254.10, Rank = 15",
+    "text": "exuberant-emu, RMSE = 254.10, Rank = 15\nHardcoded paths…\nNo much rationale on choices nor about features engineering.\nQuite ML approach but not too domain-specific, yes mean/std vertical rate or mean mach, but not more.\n\nunique-quicksand, RMSE = 256.27, Rank = 16\nNice analysis of noise in the data.\nDeveloped a simple model first and then used xgboost but not great vs the leading team, so resolved to stick to the more robust initial model for the final submission.\n\n\nbright-lobster, RMSE = 303.02, Rank = 17\nGood unique entry point: designed for reproducibility!!!\nIt uses METAR and passenger stats.\n\n\nwise-watermelon, RMSE = 350.98, Rank = 18\n\n\nsincere-glacier, RMSE = 540.91, Rank = 22\n\n\nunique-guitar, RMSE = 701.90, Rank = 24\n\n\nlikable-ant, RMSE = 709.49, Rank = 26\n\n\nconfident-insect, RMSE = 709.50, Rank = 27\n1091.0762 28 240.5507 19 709.5037 27",
     "crumbs": [
-      "PRC Data Challenge 2025"
+      "Outcome"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European Air Traffic Management (ATM) performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of Reference and Rules of Procedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nATM: Air Traffic Management\nPRC: Performance Review Commission"
   },
   {
     "objectID": "data.html",
@@ -3343,11 +3336,48 @@
     ]
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This website describes the PRC Data Challenge, an initiative by the Performance Review Commission (PRC).\nThe Performance Review Commission was established in 1998 by EUROCONTROL’s Permanent Commission. It provides objective information and independent advice to EUROCONTROL’s governing bodies on European Air Traffic Management (ATM) performance, based on extensive research, data analysis and consultation with stakeholders. Its purpose is “to ensure the effective management of the European air traffic management System through a strong, transparent and independent performance review” (Article 1 of Performance Review Commission 2003).\nYou can find further details in the AIU Portal PRC page.\n\nReferences\n\n\nPerformance Review Commission. 2003. “PRC Terms of Reference and Rules of Procedure.” EUROCONTROL. https://www.eurocontrol.int/sites/default/files/2021-04/prc-terms-reference-rules-procedure.pdf.\n\n\n\n\n\n\nList of Acronyms\n\nATM: Air Traffic Management\nPRC: Performance Review Commission"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PRC Data Challenge 2025",
+    "section": "",
+    "text": "The Performance Review Commission (PRC) with the support of OpenSky Network aims at engaging with data scientists, even without Aviation background, to team up and compete to solve a (big-ish) Data Challenge of interest to the wider Aviation community using open data and openly sharing final solutions.\nThe 2025 edition of the PRC Data Challenge builds on top of the 2024 edition and proposes to build Machine Learning (ML) models to predict the amount of fuel burnt at certain intervals of the flight. The training dataset will consist of flight intervals and corresponding fuel burnt/flown amounts.\nThe competition runs (in two phases) from 1st Oct till 30th Nov 2025.\nThe total amount for the first 3 teams is 5000 EUR.\nCheck the conditions for eligibility for prize and then fill the following team creation request form!\nRemember to follow up the data challenge on OSN’s Discord  channel #prc-data-competition.\n(if not already done, you need to access OSN Discord server first)\nBelow you can find a couple of plots of flights showing the ACARS trajectory in red and the ADS-B one in blue.\nThis is a data challenge that uses real data with all the inconsistencies, noise, holes of the real world: it is a challenge because it is tough in its goal and in the available data, and not a mere tutorial or synthetic exercise.",
+    "crumbs": [
+      "PRC Data Challenge 2025"
+    ]
+  },
+  {
+    "objectID": "index.html#thanks",
+    "href": "index.html#thanks",
+    "title": "PRC Data Challenge 2025",
+    "section": "Thanks",
+    "text": "Thanks\nThe organization of this challenge would have not been possible without the creativity and dedication of Junzi Sun, the proficiency of John Fitzgerald and the help of the Friends of OSN, Allan, Quinten, Martin, Rainer, Xavier and Kamil among them.\n OpenSky Network is of course the valuable organization without which we wouldn’t be able to assemble this challenge at all.",
+    "crumbs": [
+      "PRC Data Challenge 2025"
+    ]
+  },
+  {
+    "objectID": "index.html#disclaimer",
+    "href": "index.html#disclaimer",
+    "title": "PRC Data Challenge 2025",
+    "section": "Disclaimer",
+    "text": "Disclaimer\nPlease note that this challenge is a challenge in its own preparation, so everything is experimental and subject to change at any moment at the organizers’ discretion.\nWe anyway do our best to prepare for an interesting and quality experience.",
+    "crumbs": [
+      "PRC Data Challenge 2025"
+    ]
+  },
+  {
     "objectID": "ranking.html",
     "href": "ranking.html",
     "title": "Ranking",
     "section": "",
-    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll paged submissions rankings can be retrieved via the REST API at the full leaderboard JSON (use the value of nextCursor in the cursor= parameter in the URL query).\nThere are other endpoints, you can have a look here",
+    "text": "WarningAttention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll paged submissions rankings can be retrieved via the REST API at the full leaderboard JSON (use the value of nextCursor in the cursor= parameter in the URL query).\nThere are other endpoints, you can have a look here",
     "crumbs": [
       "Ranking"
     ]
@@ -3357,7 +3387,7 @@
     "href": "ranking.html#leaderboard",
     "title": "Ranking",
     "section": "",
-    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll paged submissions rankings can be retrieved via the REST API at the full leaderboard JSON (use the value of nextCursor in the cursor= parameter in the URL query).\nThere are other endpoints, you can have a look here",
+    "text": "WarningAttention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll paged submissions rankings can be retrieved via the REST API at the full leaderboard JSON (use the value of nextCursor in the cursor= parameter in the URL query).\nThere are other endpoints, you can have a look here",
     "crumbs": [
       "Ranking"
     ]
@@ -3367,7 +3397,7 @@
     "href": "ranking.html#criteria-for-ranking-submissions",
     "title": "Ranking",
     "section": "Criteria for Ranking Submissions",
-    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases for submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on fuel_rank_submission.parquet\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nRanking will still be based on fuel_rank_submission.parquet BUT the submission for eligibility to final prize will be based on fuel_final_submission.parquet 1. For the additional flight list and flight trajectories for phase 2/final phase see flightlist_final.parquet and flights_final/&lt;flight_id&gt;.parquet.\nFinal submission files are being validated, see the submission section for more details.\n\n\n\n\n\n\n\nAttention\n\n\n\nThe ranking datasets are now available for download in the buckets.\n\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made openly available to be published under the GNU GPLv3 license on the Challenge github account.\nuse of external dataset is permitted if open data and documented.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nWe reserved a total of 5000 EUR for the first 3 ranking teams.\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
+    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases for submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on fuel_rank_submission.parquet\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nRanking will still be based on fuel_rank_submission.parquet BUT the submission for eligibility to final prize will be based on fuel_final_submission.parquet 1. For the additional flight list and flight trajectories for phase 2/final phase see flightlist_final.parquet and flights_final/&lt;flight_id&gt;.parquet.\nFinal submission files are being validated, see the submission section for more details.\n\n\n\n\n\n\n\nNoteAttention\n\n\n\nThe ranking datasets are now available for download in the buckets.\n\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made openly available to be published under the GNU GPLv3 license on the Challenge github account.\nuse of external dataset is permitted if open data and documented.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nWe reserved a total of 5000 EUR for the first 3 ranking teams.\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
     "crumbs": [
       "Ranking"
     ]
@@ -6621,26 +6651,5 @@
       "Team details",
       "zesty-raccoon"
     ]
-  },
-  {
-    "objectID": "outcome.html",
-    "href": "outcome.html",
-    "title": "Outcome",
-    "section": "",
-    "text": "The winners of the PRC Data Challenge 2025 are determined by\nThe plot below shows the ranking evolution for the submissions in the final phase of the challenge.\nYou can remark quite some shifts of ranking positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.\nInspired by an exchange with team genuine-zucchini, below you can find some revisited reproduction of the RMSE evolution for some of the teams."
-  },
-  {
-    "objectID": "outcome.html#review-of-teams-repos",
-    "href": "outcome.html#review-of-teams-repos",
-    "title": "Outcome",
-    "section": "Review of teams repos",
-    "text": "Review of teams repos\nIn the following sections we summarize the review of the repo for each team. Order is by “ranking All”\n\nresourceful-quiver, RMSE = 200.83, Rank = 1\n\n\njubilant-vase, RMSE = 211.99, Rank = 2\n\n\noutspoken-tornado, RMSE = 219.85, Rank = 4\n\n\nmerry-jacket, RMSE = 220.67, Rank = 5\n\n\nzestful-mango, RMSE = 221.25, Rank = 6\n\n\nhonest-rose, RMSE = 227.14, Rank = 8\n\n\nunique-honey, RMSE = 227.89, Rank = 10\n\n\ntiny-zeppelin, RMSE = 244.60, Rank = 13"
-  },
-  {
-    "objectID": "outcome.html#exuberant-emu-rmse-254.10-rank-15",
-    "href": "outcome.html#exuberant-emu-rmse-254.10-rank-15",
-    "title": "Outcome",
-    "section": "exuberant-emu, RMSE = 254.10, Rank = 15",
-    "text": "exuberant-emu, RMSE = 254.10, Rank = 15\n\nunique-quicksand, RMSE = 256.27, Rank = 16\n\n\nbright-lobster, RMSE = 303.02, Rank = 17\n\n\nwise-watermelon, RMSE = 350.98, Rank = 18\n\n\nsincere-glacier, RMSE = 540.91, Rank = 22\n\n\nunique-guitar, RMSE = 701.90, Rank = 24\n\n\nlikable-ant, RMSE = 709.49, Rank = 26\n\n\nconfident-insect, RMSE = 709.50, Rank = 27\n1091.0762 28 240.5507 19 709.5037 27"
   }
 ]

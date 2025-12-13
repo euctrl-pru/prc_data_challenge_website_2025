@@ -208,6 +208,7 @@ website:
         - data.qmd
         - submission.qmd
         - ranking.qmd
+        - outcome.qmd
         - section: "Teams"
           contents: 
           - text: "Stats"

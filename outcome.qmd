@@ -71,39 +71,108 @@ Order is by "ranking All"
 
 ### resourceful-quiver, RMSE = 200.83, Rank = 1
 
+Almost ready JOAS paper, nice description: SUPER.
+
+The methodology is well founded and guided by domain knowledge and not solely
+by ML techniques, i.e. uses mass estimator learning from last year's challenge.
+
+Jupyter notebook as sparse with comments.  
+Python scripts/modules are somewhat commented but sparsely.  
+
+
 
 ### jubilant-vase, RMSE = 211.99, Rank = 2
+
+Distilled documentation.  
+Scripts are well documented and structured.  
+Uses mass estimation as per last year's challenge.  
+Uses ensemble of three gradient boosting libraries.
+
 
 
 ### outspoken-tornado, RMSE = 219.85, Rank = 4
 
+More ML approach, i.e. feature engineering not too domain specific.  
+Some trajectory features, mean/max TAS, mean vertical rate...but no checks on
+outlier/absurd values.
+
+Code is structured (over-structured?)
+
+
 
 ### merry-jacket, RMSE = 220.67, Rank = 5
+
+Nice README but short-ish.  
+No TOW estimation.  
+Some features from domain and data for aircraft type.  
+Uses ensemble of 2 models.
 
 
 ### zestful-mango, RMSE = 221.25, Rank = 6
 
+commit on 1st Dec.  
+Some comments and mostly in Spanish.  
+Not much rationale of design decisions, feature selection.
+
+
 
 ### honest-rose, RMSE = 227.14, Rank = 8
+
+Nice description of the various features added in different stages in PDF
+with rationale for choices.  
+Used weather features but found not so influential...  
+Used economic features (oil price)...but found not so influential.  
+No TOW.  
+Cannot find data `features_intervals.csv` mentioned in the code
+(also hardcoded paths): make it more reproducible by somebody cloning and
+using the challenge dataset.  
+Code sparsely documented in `R scripts/`, somewhat better in `Python scripts/`.
 
 
 
 ### unique-honey, RMSE = 227.89, Rank = 10
 
+Well structured and informative README.  
+Links to extra data sources.  
+Data cleanup is sound: remove outliers or unrealistic values.  
+Uses ensemble of models.  
+Not much info about feature engineering: the why's.  
+Similarly to others, it uses flight phases.
+
+
 
 ### tiny-zeppelin, RMSE = 244.60, Rank = 13
+
+Not much explicit info about where to start from, but it looks like
+`orchestrator`.  
+Hardcoded (MS Windows) paths...difficult to clone and reproduce
+(on other OSs/machines.)  
+Sparse/rare comments in code ;-). 
+Uses flight phases.  
+No why's.  
 
 
 ## exuberant-emu, RMSE = 254.10, Rank = 15
 
+Hardcoded paths...  
+No much rationale on choices nor about features engineering.  
+Quite ML approach but not too domain-specific, yes mean/std vertical rate or
+mean mach, but not more.  
+
 
 ### unique-quicksand, RMSE = 256.27, Rank = 16
+
+Nice analysis of noise in the data.  
+Developed a simple model first and then used `xgboost` but not great vs
+the leading team, so resolved to stick to the more robust initial model
+for the final submission.
 
 
 
 ### bright-lobster, RMSE = 303.02, Rank = 17
 
-
+Good unique entry point: designed for reproducibility!!!  
+It uses METAR and passenger stats.
 
 ### wise-watermelon, RMSE = 350.98, Rank = 18
 
