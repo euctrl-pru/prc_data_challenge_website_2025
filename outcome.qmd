@@ -4,6 +4,8 @@ format:
   html: 
     toc: true
     toc-depth: 2
+acronyms:
+  insert_loa: false
 ---
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
 library(conflicted)
