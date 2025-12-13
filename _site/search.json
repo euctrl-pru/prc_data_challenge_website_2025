@@ -3240,7 +3240,7 @@
     "href": "outcome.html",
     "title": "Outcome",
     "section": "",
-    "text": "The winners of the PRC Data Challenge 2025 are determined by\nThe plot below shows the ranking evolution for the submissions in the final phase of the challenge.\nYou can remark quite some shifts of ranking positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.\nInspired by an exchange with team genuine-zucchini, below you can find some revisited reproduction of the RMSE evolution for some of the teams.\nplot_submissions(subs, \"resourceful-quiver\")\n\n\n\n\n\n\n\nplot_submissions(subs, \"bright-lobster\")\n\n\n\n\n\n\n\nplot_submissions(subs, \"jubilant-vase\", c(199, 702))",
+    "text": "The winners of the PRC Data Challenge 2025 are determined by\nThe plot below shows the ranking evolution for the submissions in the final phase of the challenge.\nYou can remark quite some shifts of ranking positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.\nInspired by an exchange with team genuine-zucchini, below you can find some revisited reproduction of the RMSE evolution for some of the teams.",
     "crumbs": [
       "Outcome"
     ]

@@ -54,7 +54,7 @@ Inspired by an exchange with team
 below you can find some revisited reproduction of the 
 [RMSE evolution][rmse_evol] for some of the teams.
 
-```{r}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 plot_submissions(subs, "resourceful-quiver")
 plot_submissions(subs, "bright-lobster")
 plot_submissions(subs, "jubilant-vase", c(199, 702))
