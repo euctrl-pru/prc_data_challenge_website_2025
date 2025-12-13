@@ -71,17 +71,16 @@ plot_submissions(subs, "jubilant-vase", c(199, 702))
 ## And the winners are...
 
 1. team 1
-   - team member 1
-   
+   - team member 1  
    Spending voucher: 2500 EUR
+
 1. team 2
    - team member 1
-   - team member 2
-   
+   - team member 2  
    Spending voucher: 1750 EUR
+
 1. team 3
-   -team member 1
-   
+   - team member 1  
    Spending voucher: 750 EUR
 
 
