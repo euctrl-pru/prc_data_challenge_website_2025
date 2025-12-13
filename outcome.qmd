@@ -1,0 +1,131 @@
+---
+title: "Outcome"
+format:
+  html: 
+    toc: true
+    toc-depth: 2
+---
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+library(conflicted)
+library(tidyverse)
+library(here)
+library(scales)
+
+conflicts_prefer(dplyr::filter)
+
+subs <- here("media", "submissions.csv") |> 
+  read_csv()
+
+plot_submissions <- function(subs, team, ylim = c(199, 300)) {
+  subs |> 
+    filter(teamName == team) |>
+    ggplot() +
+    aes(x = processedAt, y = score) +
+    geom_line() + 
+    geom_point(size = 1) + 
+    coord_cartesian(
+      xlim = c(as_datetime("2025-10-01"), as_datetime("2025-12-01")),
+      ylim = ylim,
+      expand = c(bottom = FALSE)) +
+    labs(x = "date", y = "RMSE", title = team) +
+    theme_minimal()
+}
+```
+
+The winners of the PRC Data Challenge 2025 are determined by
+
+1. the ranking of the final submission (comprising fuel burnt predictions for
+   both September and October 2025)
+2. the provision of (decently documented ;-)) source code and relevant
+   documentation describing the model and eventual design decisions.
+
+
+The plot below shows the ranking evolution for the submissions in the
+final phase of the challenge.
+
+![Ranking evolution per team in final phase of the challenge](media/bump_chart_annotated_final.png){width='100%'}
+
+You can remark quite some shifts of ranking positions for some teams. 
+We speculate that this could be due to overfitting and/or eventually 
+to "learning" from the ranking algorithm.
+
+Inspired by an exchange with team 
+[genuine-zucchini](teams/genuine-zucchini.qmd),
+below you can find some revisited reproduction of the 
+[RMSE evolution][rmse_evol] for some of the teams.
+
+```{r}
+plot_submissions(subs, "resourceful-quiver")
+plot_submissions(subs, "bright-lobster")
+plot_submissions(subs, "jubilant-vase", c(199, 702))
+```
+
+
+
+[rmse_evol]: <https://github.com/Gheed0123/PRC-Data-Challenge-2025/tree/main/leaderboard_plots>
+
+
+## Review of teams repos
+In the following sections we summarize the review of the repo for each team.
+Order is by "ranking All"
+
+### resourceful-quiver, RMSE = 200.83, Rank = 1
+
+
+### jubilant-vase, RMSE = 211.99, Rank = 2
+
+
+### outspoken-tornado, RMSE = 219.85, Rank = 4
+
+
+### merry-jacket, RMSE = 220.67, Rank = 5
+
+
+### zestful-mango, RMSE = 221.25, Rank = 6
+
+
+### honest-rose, RMSE = 227.14, Rank = 8
+
+
+
+### unique-honey, RMSE = 227.89, Rank = 10
+
+
+### tiny-zeppelin, RMSE = 244.60, Rank = 13
+
+
+## exuberant-emu, RMSE = 254.10, Rank = 15
+
+
+### unique-quicksand, RMSE = 256.27, Rank = 16
+
+
+
+### bright-lobster, RMSE = 303.02, Rank = 17
+
+
+
+### wise-watermelon, RMSE = 350.98, Rank = 18
+
+
+
+### sincere-glacier, RMSE = 540.91, Rank = 22
+
+
+
+### unique-guitar, RMSE = 701.90, Rank = 24
+
+
+
+### likable-ant, RMSE = 709.49, Rank = 26
+
+
+
+### confident-insect, RMSE = 709.50, Rank = 27
+
+1091.0762
+28
+240.5507
+19
+709.5037
+27

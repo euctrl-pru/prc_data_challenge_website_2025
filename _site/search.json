@@ -6621,5 +6621,26 @@
       "Team details",
       "zesty-raccoon"
     ]
+  },
+  {
+    "objectID": "outcome.html",
+    "href": "outcome.html",
+    "title": "Outcome",
+    "section": "",
+    "text": "The winners of the PRC Data Challenge 2025 are determined by\nThe plot below shows the ranking evolution for the submissions in the final phase of the challenge.\nYou can remark quite some shifts of ranking positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.\nInspired by an exchange with team genuine-zucchini, below you can find some revisited reproduction of the RMSE evolution for some of the teams."
+  },
+  {
+    "objectID": "outcome.html#review-of-teams-repos",
+    "href": "outcome.html#review-of-teams-repos",
+    "title": "Outcome",
+    "section": "Review of teams repos",
+    "text": "Review of teams repos\nIn the following sections we summarize the review of the repo for each team. Order is by “ranking All”\n\nresourceful-quiver, RMSE = 200.83, Rank = 1\n\n\njubilant-vase, RMSE = 211.99, Rank = 2\n\n\noutspoken-tornado, RMSE = 219.85, Rank = 4\n\n\nmerry-jacket, RMSE = 220.67, Rank = 5\n\n\nzestful-mango, RMSE = 221.25, Rank = 6\n\n\nhonest-rose, RMSE = 227.14, Rank = 8\n\n\nunique-honey, RMSE = 227.89, Rank = 10\n\n\ntiny-zeppelin, RMSE = 244.60, Rank = 13"
+  },
+  {
+    "objectID": "outcome.html#exuberant-emu-rmse-254.10-rank-15",
+    "href": "outcome.html#exuberant-emu-rmse-254.10-rank-15",
+    "title": "Outcome",
+    "section": "exuberant-emu, RMSE = 254.10, Rank = 15",
+    "text": "exuberant-emu, RMSE = 254.10, Rank = 15\n\nunique-quicksand, RMSE = 256.27, Rank = 16\n\n\nbright-lobster, RMSE = 303.02, Rank = 17\n\n\nwise-watermelon, RMSE = 350.98, Rank = 18\n\n\nsincere-glacier, RMSE = 540.91, Rank = 22\n\n\nunique-guitar, RMSE = 701.90, Rank = 24\n\n\nlikable-ant, RMSE = 709.49, Rank = 26\n\n\nconfident-insect, RMSE = 709.50, Rank = 27\n1091.0762 28 240.5507 19 709.5037 27"
   }
 ]
