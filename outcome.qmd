@@ -68,6 +68,20 @@ plot_submissions(subs, "jubilant-vase", c(199, 702))
 
 [rmse_evol]: <https://github.com/Gheed0123/PRC-Data-Challenge-2025/tree/main/leaderboard_plots>
 
+## And the winners are...
+
+1. team 1
+  - team member 1
+  Spending voucher: 2500 EUR
+1. team 2
+  - team member 1
+  - team member 2
+  Spending voucher: 1750 EUR
+1. team 3
+  -tema member 1
+  Spending voucher: 750 EUR
+
+
 -------------------------------
 
 ## Review of teams repos
