@@ -101,7 +101,10 @@ Order is by "rank Final".
 
 ### resourceful-quiver, RMSE = 200.83, Rank = 1
 
-Almost ready JOAS paper (PDF), nice description: SUPER.
+Almost ready JOAS paper ([PDF][pdfpaper])!
+Nice description: SUPER.
+
+[pdfpaper]: <https://github.com/PRC-Data-Challenge-2025/resourceful-quiver/blob/main/PRC_2025_report.pdf>
 
 The methodology is well founded and guided by domain knowledge and not solely
 by ML techniques, i.e. uses mass estimator learning from last year's challenge.
