@@ -68,7 +68,7 @@ plot_submissions(subs, "bright-lobster")
 plot_submissions(subs, "jubilant-vase", c(199, 702))
 ```
 
-It would be nice to dig into the commits to see what experiments were linked
+It would be nice to dig into the commits and see what experiments were linked
 to the jumps in RMSE...this is left as an exercise for the readers :innocent:
 (or as a suggestion to the authors to write more about their attempts
 at improving the RMSE.)
