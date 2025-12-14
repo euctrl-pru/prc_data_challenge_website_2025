@@ -205,12 +205,19 @@ for the final submission.
 
 ### bright-lobster, RMSE = 303.02, Rank = 11
 
-Good unique entry point: designed for reproducibility!!!  
-It uses METAR and passenger stats.
+Good unique entry point: designed for reproducibility!!!
+Excellent documentation.
+Uses METAR and passenger stats, and SkyVector for extra airport info.
+Estimates TOW.
+Nice domain specific features.
+Perturbed training data with 5-15% gaussian noise for widebody aircraft types.
+Python code is well organized and commented.
 
 
 
 ### wise-watermelon, RMSE = 350.98, Rank = 12
+Just 2 python notebooks.
+No comments...sigh.
 
 
 
