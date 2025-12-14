@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-587e67e72293b78fd6257f9fb9230daa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -1563,16 +1566,17 @@ ul.task-list li input[type="checkbox"] {
 <p>The winners of the PRC Data Challenge 2025 are determined by</p>
 <ol type="1">
 <li>the ranking of the final submission (comprising fuel burnt predictions for both September and October 2025)</li>
-<li>the provision of (decently documented ;-)) source code and relevant documentation describing the model and eventual design decisions.</li>
+<li>the provision of (decently commented ;-)) source code and relevant documentation describing the model and eventual design decisions.</li>
 </ol>
+<p>All the publicly shared Github repositories have been forked under a dedicated organization and are available at <a href="https://github.com/prc-data-challenge-2025" class="uri">https://github.com/prc-data-challenge-2025</a>.</p>
 <p>The plot below shows the ranking evolution for the submissions in the final phase of the challenge.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="media/bump_chart_annotated_final.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p><a href="media/bump_chart_annotated_final.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Ranking evolution per team in final phase of the challenge"><img src="media/bump_chart_annotated_final.png" class="img-fluid figure-img" style="width:100.0%" alt="Ranking evolution per team in final phase of the challenge"></a></p>
 <figcaption>Ranking evolution per team in final phase of the challenge</figcaption>
 </figure>
 </div>
-<p>You can remark quite some shifts of ranking positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.</p>
+<p>You can remark quite some shifts of positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.</p>
 <p>Inspired by an exchange with team <a href="./teams/genuine-zucchini.html">genuine-zucchini</a>, below you can find some revisited reproduction of the <a href="https://github.com/Gheed0123/PRC-Data-Challenge-2025/tree/main/leaderboard_plots">RMSE evolution</a> for some of the teams.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -1597,6 +1601,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>It would be nice to dig into the commits to see what experiments were linked to the jumps in RMSE…this is left as an exercise for the readers <span class="emoji" data-emoji="innocent">😇</span> (or as a suggestion to the authors to write more about their attempts at improving the RMSE.)</p>
 </section>
 <section id="and-the-winners-are" class="level2">
 <h2 class="anchored" data-anchor-id="and-the-winners-are">And the winners are…</h2>
@@ -1622,10 +1627,10 @@ Spending voucher: 750 EUR</li>
 </section>
 <section id="review-of-teams-repos" class="level2">
 <h2 class="anchored" data-anchor-id="review-of-teams-repos">Review of teams repos</h2>
-<p>In the following sections we summarize the review of the repo for each team. Order is by “ranking All”</p>
+<p>In the following sections we summarize the review of the repo for each team. Order is by “rank Final”.</p>
 <section id="resourceful-quiver-rmse-200.83-rank-1" class="level3">
 <h3 class="anchored" data-anchor-id="resourceful-quiver-rmse-200.83-rank-1">resourceful-quiver, RMSE = 200.83, Rank = 1</h3>
-<p>Almost ready JOAS paper, nice description: SUPER.</p>
+<p>Almost ready JOAS paper (PDF), nice description: SUPER.</p>
 <p>The methodology is well founded and guided by domain knowledge and not solely by ML techniques, i.e.&nbsp;uses mass estimator learning from last year’s challenge.</p>
 <p>Jupyter notebook as sparse with comments.<br>
 Python scripts/modules are somewhat commented but sparsely.</p>
@@ -2127,6 +2132,38 @@ It uses METAR and passenger stats.</p>
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

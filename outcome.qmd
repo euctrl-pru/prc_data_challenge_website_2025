@@ -1,5 +1,6 @@
 ---
 title: "Outcome"
+from: markdown+emoji
 format:
   html: 
     toc: true
@@ -40,23 +41,26 @@ The winners of the PRC Data Challenge 2025 are determined by
 
 1. the ranking of the final submission (comprising fuel burnt predictions for
    both September and October 2025)
-2. the provision of (decently documented ;-)) source code and relevant
+2. the provision of (decently commented ;-)) source code and relevant
    documentation describing the model and eventual design decisions.
 
+All the publicly shared Github repositories have been forked under a dedicated
+organization and are available at <https://github.com/prc-data-challenge-2025>.
 
 The plot below shows the ranking evolution for the submissions in the
 final phase of the challenge.
 
-![Ranking evolution per team in final phase of the challenge](media/bump_chart_annotated_final.png){width='100%'}
+![Ranking evolution per team in final phase of the challenge](media/bump_chart_annotated_final.png){.lightbox width='100%'}
 
-You can remark quite some shifts of ranking positions for some teams. 
+You can remark quite some shifts of positions for some teams. 
 We speculate that this could be due to overfitting and/or eventually 
-to "learning" from the ranking algorithm.
+to "learning" from the ranking algorithm.  
 
 Inspired by an exchange with team 
 [genuine-zucchini](teams/genuine-zucchini.qmd),
 below you can find some revisited reproduction of the 
 [RMSE evolution][rmse_evol] for some of the teams.
+
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 plot_submissions(subs, "resourceful-quiver")
@@ -64,6 +68,10 @@ plot_submissions(subs, "bright-lobster")
 plot_submissions(subs, "jubilant-vase", c(199, 702))
 ```
 
+It would be nice to dig into the commits to see what experiments were linked
+to the jumps in RMSE...this is left as an exercise for the readers :innocent:
+(or as a suggestion to the authors to write more about their attempts
+at improving the RMSE.)
 
 
 [rmse_evol]: <https://github.com/Gheed0123/PRC-Data-Challenge-2025/tree/main/leaderboard_plots>
@@ -88,12 +96,12 @@ plot_submissions(subs, "jubilant-vase", c(199, 702))
 
 ## Review of teams repos
 In the following sections we summarize the review of the repo for each team.
-Order is by "ranking All"
+Order is by "rank Final".
 
 
 ### resourceful-quiver, RMSE = 200.83, Rank = 1
 
-Almost ready JOAS paper, nice description: SUPER.
+Almost ready JOAS paper (PDF), nice description: SUPER.
 
 The methodology is well founded and guided by domain knowledge and not solely
 by ML techniques, i.e. uses mass estimator learning from last year's challenge.
