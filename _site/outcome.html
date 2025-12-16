@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href=".//media/favicon-euctrl-960.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-80e8053d18074af87c7f30c83ce2475b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-587e67e72293b78fd6257f9fb9230daa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -85,7 +86,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./media/EUROCONTROL-logo-standard-rgb.svg" alt="" class="navbar-logo">
+    <img src="./media/EUROCONTROL-logo-standard-rgb.svg" alt="" class="navbar-logo light-content">
+    <img src="./media/EUROCONTROL-logo-standard-rgb.svg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -1583,17 +1585,17 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Scoring rules at a glance
+<span class="screen-reader-only">Note</span>Scoring rules at a glance
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
 <li>Ranking is by best team RMSE (lower is better).</li>
-<li>Prize eligibility requires: open-sourcing all code and added data (GNU GPLv3 on the Challenge GitHub), documenting any open external datasets used, sufficient docs to reproduce, and an original solution (reuse allowed only with rights and meaningful modifications).</li>
+<li>Prize eligibility requires: open-sourcing all code and added data (GNU GPLv3 on GitHub), documenting any open external datasets used, sufficient docs to reproduce, and an original solution (reuse allowed only with rights and meaningful modifications).</li>
 <li>5000 EUR total prizes for the top three;</li>
 <li>Selection committee considers final RMSE score ranking, originality, and openness of code/docs. Final decisions are binding.</li>
 </ul>
-<p>All public eligible final repository forks are live on the <a href="https://github.com/prc-data-challenge-2025">PRC Data Challenge 2025 GitHub page</a>. For more information on the final ranking criteria and eligibility see <a href="https://ansperformance.eu/study/data-challenge/dc2025/ranking.html">here</a>.</p>
+<p>All public eligible final repository forks are live on the <a href="https://github.com/prc-data-challenge-2025">PRC Data Challenge 2025 GitHub page</a>.</p>
 </div>
 </div>
 <section id="and-the-winners-are" class="level2">
@@ -1700,7 +1702,7 @@ Scoring rules at a glance
 </section>
 <section id="outspoken-tornado-rmse-219.85-rank-3" class="level3">
 <h3 class="anchored" data-anchor-id="outspoken-tornado-rmse-219.85-rank-3">outspoken-tornado, RMSE = 219.85, Rank = 3</h3>
-<p>The submission by outspoken-tornado follows a predominantly machine-learning–driven approach, with less emphasis on domain-specific feature engineering. The extracted features focus mainly on trajectory-derived statistics such as mean and maximum true airspeed and mean vertical rate. While these features are reasonable, there is limited evidence of domain-informed validation, such as checks for outliers or physically implausible values, which may affect model robustness.f</p>
+<p>The submission by outspoken-tornado follows a predominantly machine-learning–driven approach, with less emphasis on domain-specific feature engineering. The extracted features focus mainly on trajectory-derived statistics such as mean and maximum true airspeed and mean vertical rate. While these features are reasonable, there is limited evidence of domain-informed validation, such as checks for outliers or physically implausible values, which may affect model robustness.</p>
 <p>From a software engineering standpoint, the codebase is highly structured, possibly to the point of being over-structured. The team developed a dedicated prc_challenge module to handle preprocessing and feature engineering, which does cleanly separates concerns and centralizes the main data-processing logic. Although the overall organization is clear and systematic, the lack of more domain-specific feature design limits the distinctiveness of the methodological contribution.</p>
 </section>
 <section id="merry-jacket-rmse-220.67-rank-4" class="level3">
@@ -1795,13 +1797,14 @@ Scoring rules at a glance
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

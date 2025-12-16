@@ -151,7 +151,7 @@ Documentation is distilled but generally effective. The scripts are well structu
 
 ### outspoken-tornado, RMSE = 219.85, Rank = 3
 
-The submission by outspoken-tornado follows a predominantly machine-learning–driven approach, with less emphasis on domain-specific feature engineering. The extracted features focus mainly on trajectory-derived statistics such as mean and maximum true airspeed and mean vertical rate. While these features are reasonable, there is limited evidence of domain-informed validation, such as checks for outliers or physically implausible values, which may affect model robustness.f
+The submission by outspoken-tornado follows a predominantly machine-learning–driven approach, with less emphasis on domain-specific feature engineering. The extracted features focus mainly on trajectory-derived statistics such as mean and maximum true airspeed and mean vertical rate. While these features are reasonable, there is limited evidence of domain-informed validation, such as checks for outliers or physically implausible values, which may affect model robustness.
 
 From a software engineering standpoint, the codebase is highly structured, possibly to the point of being over-structured. The team developed a dedicated prc_challenge module to handle preprocessing and feature engineering, which does cleanly separates concerns and centralizes the main data-processing logic. Although the overall organization is clear and systematic, the lack of more domain-specific feature design limits the distinctiveness of the methodological contribution.
 
