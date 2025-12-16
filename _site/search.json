@@ -3260,7 +3260,7 @@
     "href": "outcome.html#ranking-evolution",
     "title": "Winner Announcement",
     "section": "Ranking evolution",
-    "text": "Ranking evolution\nTo get an overview of the competition, the plot below shows how team rankings moved during the final phase of the challenge.\n\n\n\nRanking evolution per team in final phase of the challenge\n\n\nLower scores reflect better performance; note the shifts as teams iterate.",
+    "text": "Ranking evolution\nTo get an overview of the competition, the plot below shows how each team scored for the different data intervals of the submission for the final phase of the challenge.\nWe used the &lt;team-name&gt;_final.parquet submission, and calculated the RMSE for the September intervals (Sep), October intervals (Oct) and the whole September and October intervals (Sep+Oct).\nYou reach the Final only if you shared the (documented) code and docs in a Github repository.\n\n\n\nRanking evolution per team in final phase of the challenge\n\n\nLower RMSE scores reflect better performance.",
     "crumbs": [
       "Winner Announcement"
     ]
@@ -3270,7 +3270,7 @@
     "href": "outcome.html#rmse-spotlights",
     "title": "Winner Announcement",
     "section": "RMSE spotlights",
-    "text": "RMSE spotlights\nInspired by an exchange with team genuine-zucchini, below are refreshed RMSE histories for five teams. They highlight where big swings happened during the final phase.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt would be nice to dig into the commits and see which experiments were linked to the jumps in RMSE…this is left as an exercise for the readers 😇 (or as a suggestion to the authors to write more about their attempts at improving the RMSE).",
+    "text": "RMSE spotlights\nInspired by an exchange with team genuine-zucchini, below are refreshed RMSE histories for five teams for phase 1 submissions, i.e. team-name_vY.parquet. They highlight where big swings happened during the final phase.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt would be nice to dig into the commits and see which experiments were linked to the jumps in RMSE…this is left as an exercise for the readers 😇 (or as a suggestion to the authors to write more about their attempts at improving the RMSE).",
     "crumbs": [
       "Winner Announcement"
     ]

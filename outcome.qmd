@@ -100,16 +100,24 @@ Congratulations!
 
 ## Ranking evolution
 
-To get an overview of the competition, the plot below shows how team rankings moved during the final phase of the challenge.
+To get an overview of the competition, the plot below shows how each team
+scored for the different data intervals of the submission for the final phase
+of the challenge.  
+We used the `<team-name>_final.parquet` submission, and calculated the RMSE
+for the September intervals (**`Sep`**), October intervals (**`Oct`**) and the
+whole September and October intervals (**`Sep+Oct`**).  
+You reach the Final only if you shared the (documented) code and docs 
+in a Github repository.
 
 ![Ranking evolution per team in final phase of the challenge](media/bump_chart_annotated_final.png){.lightbox width='100%' fig-alt="Line bump chart of team rankings during the final phase; lower RMSE ranks higher."}
 
-Lower scores reflect better performance; note the shifts as teams iterate.
+Lower RMSE scores reflect better performance.
 
 ## RMSE spotlights
 
 Inspired by an exchange with team [genuine-zucchini](teams/genuine-zucchini.qmd),
-below are refreshed RMSE histories for five teams. They highlight where big swings happened during the final phase.
+below are refreshed RMSE histories for five teams for phase 1 submissions, i.e.
+`team-name_vY.parquet`. They highlight where big swings happened during the final phase.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 plot_submissions(subs, "resourceful-quiver")

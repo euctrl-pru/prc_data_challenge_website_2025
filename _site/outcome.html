@@ -1634,18 +1634,20 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ranking-evolution" class="level2">
 <h2 class="anchored" data-anchor-id="ranking-evolution">Ranking evolution</h2>
-<p>To get an overview of the competition, the plot below shows how team rankings moved during the final phase of the challenge.</p>
+<p>To get an overview of the competition, the plot below shows how each team scored for the different data intervals of the submission for the final phase of the challenge.<br>
+We used the <code>&lt;team-name&gt;_final.parquet</code> submission, and calculated the RMSE for the September intervals (<strong><code>Sep</code></strong>), October intervals (<strong><code>Oct</code></strong>) and the whole September and October intervals (<strong><code>Sep+Oct</code></strong>).<br>
+You reach the Final only if you shared the (documented) code and docs in a Github repository.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="media/bump_chart_annotated_final.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Ranking evolution per team in final phase of the challenge"><img src="media/bump_chart_annotated_final.png" class="img-fluid figure-img" style="width:100.0%" alt="Line bump chart of team rankings during the final phase; lower RMSE ranks higher."></a></p>
 <figcaption>Ranking evolution per team in final phase of the challenge</figcaption>
 </figure>
 </div>
-<p>Lower scores reflect better performance; note the shifts as teams iterate.</p>
+<p>Lower RMSE scores reflect better performance.</p>
 </section>
 <section id="rmse-spotlights" class="level2">
 <h2 class="anchored" data-anchor-id="rmse-spotlights">RMSE spotlights</h2>
-<p>Inspired by an exchange with team <a href="./teams/genuine-zucchini.html">genuine-zucchini</a>, below are refreshed RMSE histories for five teams. They highlight where big swings happened during the final phase.</p>
+<p>Inspired by an exchange with team <a href="./teams/genuine-zucchini.html">genuine-zucchini</a>, below are refreshed RMSE histories for five teams for phase 1 submissions, i.e. <code>team-name_vY.parquet</code>. They highlight where big swings happened during the final phase.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
