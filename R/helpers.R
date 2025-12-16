@@ -130,6 +130,18 @@ get_teams_valid <- function(teams_raw) {
     dplyr::select(-matches("_\\d+$"))
 }
 
+# get teams' correspondents email
+get_team_correspondents <- function(teams_raw) {
+  teams_raw |>
+    dplyr::filter(status == "approved", !is.na(team_name)) |>
+    dplyr::mutate(
+      team_consent = consent_1,
+      team_correspondent = email_1
+    ) |>
+    dplyr::select(-matches("_\\d+$"))
+}
+
+
 get_teams_all <- function(teams_raw) {
   teams_raw |>
     dplyr::select(-matches("_\\d+$"))
