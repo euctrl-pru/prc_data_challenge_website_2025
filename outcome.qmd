@@ -1,5 +1,5 @@
 ---
-title: "Outcome"
+title: "Winner Announcement"
 from: markdown+emoji
 format:
   html: 
@@ -35,221 +35,161 @@ plot_submissions <- function(subs, team, ylim = c(199, 300)) {
 }
 ```
 
-## Summary
+```{r, echo=FALSE}
+final_phase <- subs |>
+  filter(processedAt >= as_datetime("2025-10-01"),
+         processedAt <= as_datetime("2025-12-01"))
 
-The winners of the PRC Data Challenge 2025 are determined by
+team_count <- n_distinct(subs$teamName)
+final_submissions <- nrow(final_phase)
+best_rmse <- min(subs$score, na.rm = TRUE)
+```
 
-1. the ranking of the final submission (comprising fuel burnt predictions for
-   both September and October 2025)
-2. the provision of (decently commented ;-)) source code and relevant
-   documentation describing the model and eventual design decisions.
+::: {.columns}
+::: {.column width="25%"}
+::: {.value-box}
+### Teams signed up
+179
+:::
+:::
+::: {.column width="25%"}
+::: {.value-box}
+### Teams submitting
+`r scales::comma(team_count)`
+:::
+:::
+::: {.column width="25%"}
+::: {.value-box}
+### Nr. of submissions
+`r scales::comma(final_submissions)`
+:::
+:::
+::: {.column width="25%"}
+::: {.value-box}
+### Best final RMSE
+200.83
+:::
+:::
+:::
 
-All the publicly shared Github repositories have been forked under a dedicated
-organization and are available at <https://github.com/prc-data-challenge-2025>.
+The winners of the PRC Data Challenge 2025 are determined by the criteria below.
 
-The plot below shows the ranking evolution for the submissions in the
-final phase of the challenge.
+::: {.callout-note appearance="simple"}
+#### Scoring rules at a glance
+- Ranking is by best team RMSE (lower is better).
+- Prize eligibility requires: open-sourcing all code and added data (GNU GPLv3 on the Challenge GitHub), documenting any open external datasets used, sufficient docs to reproduce, and an original solution (reuse allowed only with rights and meaningful modifications).
+- 5000 EUR total prizes for the top three; 
+- Selection committee considers final RMSE score ranking, originality, and openness of code/docs. Final decisions are binding.
 
-![Ranking evolution per team in final phase of the challenge](media/bump_chart_annotated_final.png){.lightbox width='100%'}
+All public eligible final repository forks are live on the [PRC Data Challenge 2025 GitHub page](https://github.com/prc-data-challenge-2025). For more information on the final ranking criteria and eligibility see [here](https://ansperformance.eu/study/data-challenge/dc2025/ranking.html).  
+:::
 
-You can remark quite some shifts of positions for some teams. 
-We speculate that this could be due to overfitting and/or eventually 
-to "learning" from the ranking algorithm.  
 
-Inspired by an exchange with team 
-[genuine-zucchini](teams/genuine-zucchini.qmd),
-below you can find some revisited reproduction of the 
-[RMSE evolution][rmse_evol] for some of the teams.
 
+
+
+## And the winners are...
+
+| Place | Team | RMSE | Prize |
+| --- | --- | --- | --- |
+| 1 | [resourceful-quiver](teams/resourceful-quiver.qmd) | 200.83 | 2500 EUR voucher |
+| 2 | [jubilant-vase](teams/jubilant-vase.qmd) | 211.99 | 1750 EUR voucher |
+| 3 | [outspoken-tornado](teams/outspoken-tornado.qmd) | 219.85 | 750 EUR voucher |
+
+Congratulations! 
+
+## Ranking evolution
+
+To get an overview of the competition, the plot below shows how team rankings moved during the final phase of the challenge.
+
+![Ranking evolution per team in final phase of the challenge](media/bump_chart_annotated_final.png){.lightbox width='100%' fig-alt="Line bump chart of team rankings during the final phase; lower RMSE ranks higher."}
+
+Lower scores reflect better performance; note the shifts as teams iterate.
+
+## RMSE spotlights
+
+Inspired by an exchange with team [genuine-zucchini](teams/genuine-zucchini.qmd),
+below are refreshed RMSE histories for five teams. They highlight where big swings happened during the final phase.
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 plot_submissions(subs, "resourceful-quiver")
 plot_submissions(subs, "bright-lobster")
+plot_submissions(subs, "zestful-mango")
+plot_submissions(subs, "outspoken-tornado")
 plot_submissions(subs, "jubilant-vase", c(199, 702))
 ```
 
 It would be nice to dig into the commits and see which experiments were linked
 to the jumps in RMSE...this is left as an exercise for the readers :innocent:
 (or as a suggestion to the authors to write more about their attempts
-at improving the RMSE.)
-
+at improving the RMSE).
 
 [rmse_evol]: <https://github.com/Gheed0123/PRC-Data-Challenge-2025/tree/main/leaderboard_plots>
 
-## And the winners are...
-
-1. team 1
-   - team member 1  
-   Spending voucher: 2500 EUR
-
-1. team 2
-   - team member 1
-   - team member 2  
-   Spending voucher: 1750 EUR
-
-1. team 3
-   - team member 1  
-   Spending voucher: 750 EUR
-
-
--------------------------------
+---
 
 ## Review of teams repos
-In the following sections we summarize the review of the repo for each team.
-Order is by "rank Final".
+In the following sections we summarize the review of the repo for each team for the top RMSE < 400. Order is by the final rank.
 
 
 ### resourceful-quiver, RMSE = 200.83, Rank = 1
 
-Almost ready JOAS paper ([PDF][pdfpaper])!
-Nice description: SUPER.
-
 [pdfpaper]: <https://github.com/PRC-Data-Challenge-2025/resourceful-quiver/blob/main/PRC_2025_report.pdf>
 
-The methodology is well founded and guided by domain knowledge and not solely
-by ML techniques, i.e. uses mass estimator learning from last year's challenge.
+The submission by resourceful-quiver presents a well-founded and thoughtful methodology that is strongly informed by domain knowledge rather than relying exclusively on machine-learning techniques. In particular, the team effectively leverages insights from last year’s competition, notably the mass estimator approach, to model ATOW. This grounding in prior work and physical understanding strengthens the credibility and robustness of the overall modeling strategy.
 
-Jupyter notebook as sparse with comments.  
-Python scripts/modules are somewhat commented but sparsely.  
+From a technical perspective, the feature engineering is advanced and carefully designed, demonstrating a clear understanding of the problem context. A notable contribution is the custom extension developed for the traffic library to handle data cleaning, which is both elegant and effective. While the Jupyter notebooks contain relatively sparse commentary, the Python scripts and modules are sufficiently documented to remain understandable for an informed reader.
 
-
+Documentation is a major strength of this submission. The near-complete [JOAS-style paper][pdfpaper] is clearly written, well structured, and provides an excellent description of the approach, methodology, and results. Although the code itself is (sometimes) sparsely documented, it remains readable and coherent, benefiting from strong conceptual clarity and domain expertise. Overall, this is a high-quality, resourceful submission that sets a strong benchmark for the challenge.
 
 ### jubilant-vase, RMSE = 211.99, Rank = 2
 
-Distilled documentation.  
-Scripts are well documented and structured.  
-Uses mass estimation as per last year's challenge.  
-Uses ensemble of three gradient boosting libraries.
+The submission by jubilant-vase demonstrates a solid and well-structured technical approach informed by domain knowledge and prior experience from last year’s challenge. The team adopts a mass estimation strategy consistent with the previous competition and combines it with an ensemble of three gradient boosting libraries, resulting in a robust and competitive modeling framework. The overall codebase is cleanly organized, reflecting good software engineering practices.
 
+Documentation is distilled but generally effective. The scripts are well structured, and many functions are clearly documented, although the level of detail is somewhat uneven across the codebase. While there is no accompanying paper describing the methodology and the README appears auto-generated(?), the clarity of the code itself compensates to a large extent. Overall, this is a strong second-place submission with a sound methodological foundation and solid implementation quality.
 
 
 ### outspoken-tornado, RMSE = 219.85, Rank = 3
 
-More ML approach, i.e. feature engineering not too domain specific.  
-Some trajectory features, mean/max TAS, mean vertical rate...but no checks on
-outlier/absurd values.
+The submission by outspoken-tornado follows a predominantly machine-learning–driven approach, with less emphasis on domain-specific feature engineering. The extracted features focus mainly on trajectory-derived statistics such as mean and maximum true airspeed and mean vertical rate. While these features are reasonable, there is limited evidence of domain-informed validation, such as checks for outliers or physically implausible values, which may affect model robustness.
 
-Code is structured (over-structured?)
-
-
+From a software engineering standpoint, the codebase is highly structured, possibly to the point of being over-structured. The team developed a dedicated prc_challenge module to handle preprocessing and feature engineering, which does cleanly separates concerns and centralizes the main data-processing logic. Although the overall organization is clear and systematic, the lack of more domain-specific feature design limits the distinctiveness of the methodological contribution.
 
 ### merry-jacket, RMSE = 220.67, Rank = 4
 
-Nice README but short-ish.  
-No TOW estimation.  
-Some features from domain and data for aircraft type.  
-Uses ensemble of 2 models.
+The merry-jacket submission presents a clear but relatively brief README and employs an ensemble of two models to address the task. While some domain- and aircraft-type–specific features are included, the absence of a dedicated TOW estimation step and more advanced feature limits the overall methodological depth.
 
 
 
 ### zestful-mango, RMSE = 221.25, Rank = 5
 
-commit on 1st Dec.  
-Some comments and mostly in Spanish.  
-Not much rationale of design decisions, feature selection.
-
+The zestful-mango submission includes some code comments, primarily in Spanish, but provides limited explanation of design choices and feature selection rationale. With a final commit on 1 December, the overall approach appears functional but lacks sufficient documentation to clearly convey the methodological intent.
 
 
 ### honest-rose, RMSE = 227.14, Rank = 6
 
-Nice description of the various features added in different stages in PDF
-with rationale for choices.  
-Used weather features but found not so influential...  
-Used economic features (oil price)...but found not so influential.  
-No TOW.  
-Cannot find data `features_intervals.csv` mentioned in the code
-(also hardcoded paths): make it more reproducible by somebody cloning and
-using the challenge dataset.  
-Code sparsely documented in `R scripts/`, somewhat better in `Python scripts/`.
-
-
+The honest-rose submission provides a well-written PDF describing the progressive addition of features and the rationale behind them, including exploratory use of weather and economic variables, which were ultimately found to have limited influence. However, the absence of TOW estimation, missing referenced data files, hardcoded paths, and sparse code documentation—particularly in the R scripts—limit reproducibility and overall robustness.
 
 ### unique-honey, RMSE = 227.89, Rank = 7
 
-Well structured and informative README.  
-Links to extra data sources.  
-Data cleanup is sound: remove outliers or unrealistic values.  
-Uses ensemble of models.  
-Not much info about feature engineering: the why's.  
-Similarly to others, it uses flight phases.
-
-
+The unique-honey submission features a well-structured and informative README, includes links to external data sources, and applies sound data-cleaning practices such as removing outliers and unrealistic values, followed by an ensemble modeling approach. However, the rationale behind feature engineering choices is only briefly discussed, and the use of flight phases largely mirrors approaches seen in other submissions rather than introducing distinct methodological insights.
 
 ### tiny-zeppelin, RMSE = 244.60, Rank = 8
 
-Not much explicit info about where to start from, but it looks like
-`orchestrator`.  
-Hardcoded (MS Windows) paths...difficult to clone and reproduce
-(on other OSs/machines.)  
-Sparse/rare comments in code ;-). 
-Uses flight phases.  
-No why's.  
-
+The tiny-zeppelin submission offers limited guidance on how to run or reproduce the workflow, with the orchestrator appearing to be the main entry point, and relies on hardcoded Windows-specific paths that hinder portability. Sparse code comments, limited justification for design and feature choices, and a largely standard use of flight phases reduce the clarity and reproducibility of the approach.
 
 ### exuberant-emu, RMSE = 254.10, Rank = 9
 
-Hardcoded paths...  
-No much rationale on choices nor about features engineering.  
-Quite ML approach but not too domain-specific, yes mean/std vertical rate or
-mean mach, but not more.  
-
+The exuberant-emu submission relies on hardcoded paths and provides limited explanation of modeling choices or feature engineering decisions. The approach is predominantly machine-learning–driven, with only basic, weakly domain-specific features such as mean or standard deviation of vertical rate and mean Mach number.
 
 ### unique-quicksand, RMSE = 256.27, Rank = 10
 
-Nice analysis of noise in the data.  
-Developed a simple model first and then used `xgboost` but not great vs
-the leading team, so resolved to stick to the more robust initial model
-for the final submission.
-
-
+The unique-quicksand submission provides a thoughtful analysis of noise in the data and follows a sensible modeling progression, starting from a simple baseline before experimenting with xgboost. Although the more complex model did not outperform the baseline, the decision to retain the more robust initial model for the final submission reflects sound judgment.
 
 ### bright-lobster, RMSE = 303.02, Rank = 11
 
-Good unique entry point: designed for reproducibility!!!
-Excellent documentation.
-Uses METAR and passenger stats, and SkyVector for extra airport info.
-Estimates TOW.
-Nice domain specific features.
-Perturbed training data with 5-15% gaussian noise for widebody aircraft types.
-Python code is well organized and commented.
-
-
+The bright-lobster submission stands out for its strong emphasis on reproducibility, excellent documentation, and a well-defined entry point, supported by cleanly organized and well-commented Python code. The team demonstrates deep domain awareness through TOW estimation, use of METAR data, passenger statistics, SkyVector airport information, domain-specific features, and data augmentation via Gaussian noise for widebody aircraft.
 
 ### wise-watermelon, RMSE = 350.98, Rank = 12
-Just 2 python notebooks.
-No comments...sigh.
 
-
-
-### sincere-glacier, RMSE = 540.91, Rank = 13
-
-
-
-### unique-guitar, RMSE = 701.90, Rank = 14
-
-
-
-### likable-ant, RMSE = 709.49, Rank = 15
-
-
-
-
-### confident-insect, RMSE = 709.50, Rank = 16
-
-
-
-
-### polite-emu, RMSE = 729.80, Rank = 17
-
-
-
-
-### nurturing-telephone, RMSE = 738.16, Rank = 18
-
-
-
-
-### confident-hedgehog, RMSE = 5755.91 , Rank = 19
-
-
-
+The wise-watermelon submission consists solely of two Python notebooks with no accompanying documentation or in-code comments. The lack of explanatory material makes it difficult to understand, assess, or reproduce the approach despite the simplicity of the setup.
