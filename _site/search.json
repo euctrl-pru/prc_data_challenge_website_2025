@@ -3230,7 +3230,7 @@
     "href": "submission.html",
     "title": "Submission",
     "section": "",
-    "text": "We provide a submission file for each phase of the Challenge, fuel_rank_submission.parquet for phase 1 and fuel_final_submission.parquet for phase 2.\nFor phase 1 there are companion trajectories and flight list.\nEach team will have to submit its predictions in its own bucket, with a file name template as follows\n\n&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet\n\nThe fuel_rank_submission.parquet (fuel_final_submission.parquet) payload looks something like\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04      0.0\n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04      0.0\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04      0.0\n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04      0.0\n...\n\nSubmission format\nYou should submit a parquet file, named &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet, with your predictions with exactly all entries as in in fuel_rank_submission.parquet (fuel_final_submission.parquet), i.e. something with a payload like:\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 \n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04    120.8\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04   2500 \n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 \n...\nWe require each row to match idx, flight_id, start and end before fuel_kg will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.\n\n\nSubmission for phase 2/final phase\nDuring phase 2/final phase you can continue to submit predictions with filenames &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet like in phase 1: based on fuel_rank_submission.parquet.\nFor the eligibility for final prize you should upload your (best) prediction in a file named\n&lt;team-name&gt;_final.parquet\nThe rows in this file are like the ones in fuel_final_submission.parquet which includes the intervals of phase 1 (24289 for 1888 distinct flights) and additional ones for the final phase (37456 for 2836 distinct flights). Total rows is 61745.\n\n\n\n\n\n\nVALIDATION\n\n\n\nYou can overwrite your &lt;team-name&gt;_final.parquet and each time it will be validated with checks like for phase 1, namely missing predictions, NaN, rows match on icao24,…\nFeed back is written back to the bucket with the same logic as for phase 1.\n\n\nPlease let us know the URL of your public Github repository either via email at challenge AT opensky-network DOT org or on Discord.\nNOTE: we will consider till last commit before the deadline.",
+    "text": "We provide a submission file for each phase of the Challenge, fuel_rank_submission.parquet for phase 1 and fuel_final_submission.parquet for phase 2.\nFor phase 1 there are companion trajectories and flight list.\nEach team will have to submit its predictions in its own bucket, with a file name template as follows\n\n&lt;team-name&gt;_v&lt;incremental integer&gt;.parquet\n\nThe fuel_rank_submission.parquet (fuel_final_submission.parquet) payload looks something like\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04      0.0\n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04      0.0\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04      0.0\n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04      0.0\n...\n\nSubmission format\nYou should submit a parquet file, named &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet, with your predictions with exactly all entries as in in fuel_rank_submission.parquet (fuel_final_submission.parquet), i.e. something with a payload like:\nidx     flight_id                start                  end  fuel_kg\n  0  prc770822360  2025-04-13 04:31:04  2025-04-13 05:01:04    250.3 \n  1  prc770822360  2025-04-13 05:01:04  2025-04-13 05:16:04    120.8\n  2  prc770822360  2025-04-13 05:16:04  2025-04-13 05:46:04   2500 \n  3  prc770822360  2025-04-13 05:46:04  2025-04-13 06:01:04   1300.9 \n...\nWe require each row to match idx, flight_id, start and end before fuel_kg will be considered by the ranking script when calculating the RMSE. Errors will be issued in case of mismatch. Errors will also be issued in case of missing or extra rows.\n\n\nSubmission for phase 2/final phase\nDuring phase 2/final phase you can continue to submit predictions with filenames &lt;team-name&gt;_v&lt;incremental integer&gt;.parquet like in phase 1: based on fuel_rank_submission.parquet.\nFor the eligibility for final prize you should upload your (best) prediction in a file named\n&lt;team-name&gt;_final.parquet\nThe rows in this file are like the ones in fuel_final_submission.parquet which includes the intervals of phase 1 (24289 for 1888 distinct flights) and additional ones for the final phase (37456 for 2836 distinct flights). Total rows is 61745.\n\n\n\n\n\n\nImportantVALIDATION\n\n\n\nYou can overwrite your &lt;team-name&gt;_final.parquet and each time it will be validated with checks like for phase 1, namely missing predictions, NaN, rows match on icao24,…\nFeed back is written back to the bucket with the same logic as for phase 1.\n\n\nPlease let us know the URL of your public Github repository either via email at challenge AT opensky-network DOT org or on Discord.\nNOTE: we will consider till last commit before the deadline.",
     "crumbs": [
       "Submission"
     ]
@@ -3246,21 +3246,31 @@
     ]
   },
   {
-    "objectID": "outcome.html#summary",
-    "href": "outcome.html#summary",
-    "title": "Outcome",
-    "section": "",
-    "text": "The winners of the PRC Data Challenge 2025 are determined by:\n\nThe ranking of the final submission (comprising fuel burnt predictions for both September and October 2025).\nThe provision of (well commented) source code and relevant documentation describing the model and eventual design decisions.\n\nAll the publicly shared Github repositories have been forked under a dedicated organization and are available at https://github.com/prc-data-challenge-2025.\nThe plot below shows the ranking evolution for the submissions in the final phase of the challenge.\n\n\n\nRanking evolution per team in final phase of the challenge\n\n\nYou can remark quite some shifts of positions for some teams. We speculate that this could be due to overfitting and/or eventually to “learning” from the ranking algorithm.\nInspired by an exchange with team genuine-zucchini, below you can find some revisited reproduction of the RMSE evolution for some of the teams.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt would be nice to dig into the commits and see which experiments were linked to the jumps in RMSE…this is left as an exercise for the readers 😇 (or as a suggestion to the authors to write more about their attempts at improving the RMSE.)",
-    "crumbs": [
-      "Outcome"
-    ]
-  },
-  {
     "objectID": "outcome.html#and-the-winners-are",
     "href": "outcome.html#and-the-winners-are",
     "title": "Winner Announcement",
     "section": "And the winners are…",
     "text": "And the winners are…\n\n\n\nPlace\nTeam\nRMSE\nPrize\n\n\n\n\n1\nresourceful-quiver\n200.83\n2500 EUR\n\n\n2\njubilant-vase\n211.99\n1750 EUR\n\n\n3\noutspoken-tornado\n219.85\n750 EUR\n\n\n\nCongratulations!",
+    "crumbs": [
+      "Winner Announcement"
+    ]
+  },
+  {
+    "objectID": "outcome.html#ranking-evolution",
+    "href": "outcome.html#ranking-evolution",
+    "title": "Winner Announcement",
+    "section": "Ranking evolution",
+    "text": "Ranking evolution\nTo get an overview of the competition, the plot below shows how team rankings moved during the final phase of the challenge.\n\n\n\nRanking evolution per team in final phase of the challenge\n\n\nLower scores reflect better performance; note the shifts as teams iterate.",
+    "crumbs": [
+      "Winner Announcement"
+    ]
+  },
+  {
+    "objectID": "outcome.html#rmse-spotlights",
+    "href": "outcome.html#rmse-spotlights",
+    "title": "Winner Announcement",
+    "section": "RMSE spotlights",
+    "text": "RMSE spotlights\nInspired by an exchange with team genuine-zucchini, below are refreshed RMSE histories for five teams. They highlight where big swings happened during the final phase.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt would be nice to dig into the commits and see which experiments were linked to the jumps in RMSE…this is left as an exercise for the readers 😇 (or as a suggestion to the authors to write more about their attempts at improving the RMSE).",
     "crumbs": [
       "Winner Announcement"
     ]
@@ -3387,7 +3397,7 @@
     "href": "ranking.html",
     "title": "Ranking",
     "section": "",
-    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll paged submissions rankings can be retrieved via the REST API at the full leaderboard JSON (use the value of nextCursor in the cursor= parameter in the URL query).\nThere are other endpoints, you can have a look here",
+    "text": "WarningAttention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll paged submissions rankings can be retrieved via the REST API at the full leaderboard JSON (use the value of nextCursor in the cursor= parameter in the URL query).\nThere are other endpoints, you can have a look here",
     "crumbs": [
       "Ranking"
     ]
@@ -3397,7 +3407,7 @@
     "href": "ranking.html#leaderboard",
     "title": "Ranking",
     "section": "",
-    "text": "Attention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll paged submissions rankings can be retrieved via the REST API at the full leaderboard JSON (use the value of nextCursor in the cursor= parameter in the URL query).\nThere are other endpoints, you can have a look here",
+    "text": "WarningAttention\n\n\n\nWe will post URGENT/IMPORTANT news here but better to follow things up on\nOSN’s Discord  channel #prc-data-competition\n(if not already done, you need to access OSN Discord server first)\n\n\n\nAll paged submissions rankings can be retrieved via the REST API at the full leaderboard JSON (use the value of nextCursor in the cursor= parameter in the URL query).\nThere are other endpoints, you can have a look here",
     "crumbs": [
       "Ranking"
     ]
@@ -3407,7 +3417,7 @@
     "href": "ranking.html#criteria-for-ranking-submissions",
     "title": "Ranking",
     "section": "Criteria for Ranking Submissions",
-    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases for submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on fuel_rank_submission.parquet\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nRanking will still be based on fuel_rank_submission.parquet BUT the submission for eligibility to final prize will be based on fuel_final_submission.parquet 1. For the additional flight list and flight trajectories for phase 2/final phase see flightlist_final.parquet and flights_final/&lt;flight_id&gt;.parquet.\nFinal submission files are being validated, see the submission section for more details.\n\n\n\n\n\n\n\nAttention\n\n\n\nThe ranking datasets are now available for download in the buckets.\n\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made openly available to be published under the GNU GPLv3 license on the Challenge github account.\nuse of external dataset is permitted if open data and documented.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nWe reserved a total of 5000 EUR for the first 3 ranking teams.\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
+    "text": "Criteria for Ranking Submissions\nRanking will be based on the best RMSE of a team’s submissions.\nThere will be two phases for submissions:\n\nphase 1: till 2025-11-09T23:59:59Z\nRanking will be based on fuel_rank_submission.parquet\nphase 2: from 2025-11-10T00:00:00Z till 2025-11-30T23:59:59Z\nRanking will still be based on fuel_rank_submission.parquet BUT the submission for eligibility to final prize will be based on fuel_final_submission.parquet 1. For the additional flight list and flight trajectories for phase 2/final phase see flightlist_final.parquet and flights_final/&lt;flight_id&gt;.parquet.\nFinal submission files are being validated, see the submission section for more details.\n\n\n\n\n\n\n\nNoteAttention\n\n\n\nThe ranking datasets are now available for download in the buckets.\n\n\n\nEligibility for Prize\nThe winning submissions/solutions will only be eligible for the awards if\n\nall source code and additional data sets used will be made openly available to be published under the GNU GPLv3 license on the Challenge github account.\nuse of external dataset is permitted if open data and documented.\nsufficient documentation is provided to understand and reproduce the results.\nthe solution is original: teams must use their own original solutions. Re-using any existing implementation is only allowed if the original authors grant you the rights to use their solution and if you made significant modifications to the algorithm or model. In particular, simply re-using existing code and rewriting the data input and output mechanism is not sufficient. Adding parameters to the model and modifying filters to match the specific peculiarities of the data, however, can be considered sufficient.\n\n\n\nFinal Prize\nWe reserved a total of 5000 EUR for the first 3 ranking teams.\nThe Selection Committee will review and discuss the top ranking teams and select final Awardees considering\n\ntheir final ranking score,\nthe originality of the proposed model\nthe open availability of the code and the relevant documentation provided.\n\nBy participating in the Challenge, you agree to be bound by the final decision of the PRC Data Challenge selection committee.",
     "crumbs": [
       "Ranking"
     ]
@@ -6660,66 +6670,6 @@
       "Teams",
       "Team details",
       "zesty-raccoon"
-    ]
-  },
-  {
-    "objectID": "outcome.html#teams-participated",
-    "href": "outcome.html#teams-participated",
-    "title": "Outcome",
-    "section": "Teams participated",
-    "text": "Teams participated\n53",
-    "crumbs": [
-      "Outcome"
-    ]
-  },
-  {
-    "objectID": "outcome.html#submissions-in-final-phase",
-    "href": "outcome.html#submissions-in-final-phase",
-    "title": "Outcome",
-    "section": "Submissions in final phase",
-    "text": "Submissions in final phase\n2,127",
-    "crumbs": [
-      "Outcome"
-    ]
-  },
-  {
-    "objectID": "outcome.html#best-rmse-lower-is-better",
-    "href": "outcome.html#best-rmse-lower-is-better",
-    "title": "Outcome",
-    "section": "Best RMSE (lower is better)",
-    "text": "Best RMSE (lower is better)\n199.91",
-    "crumbs": [
-      "Outcome"
-    ]
-  },
-  {
-    "objectID": "outcome.html#winners",
-    "href": "outcome.html#winners",
-    "title": "PRC Data Challenge 2025: Winner Announcement",
-    "section": "Winners",
-    "text": "Winners\n\n\n\nTeam\nRMSE\nPrize\n\n\n\n\nresourceful-quiver\n200.83\n2500 EUR voucher\n\n\njubilant-vase\n211.99\n1750 EUR voucher\n\n\noutspoken-tornado\n219.85\n750 EUR voucher",
-    "crumbs": [
-      "PRC Data Challenge 2025: Winner Announcement"
-    ]
-  },
-  {
-    "objectID": "outcome.html#ranking-evolution",
-    "href": "outcome.html#ranking-evolution",
-    "title": "Winner Announcement",
-    "section": "Ranking evolution",
-    "text": "Ranking evolution\nTo get an overview of the competition, the plot below shows how team rankings moved during the final phase of the challenge.\n\n\n\nRanking evolution per team in final phase of the challenge\n\n\nLower scores reflect better performance; note the shifts as teams iterate.",
-    "crumbs": [
-      "Winner Announcement"
-    ]
-  },
-  {
-    "objectID": "outcome.html#rmse-spotlights",
-    "href": "outcome.html#rmse-spotlights",
-    "title": "Winner Announcement",
-    "section": "RMSE spotlights",
-    "text": "RMSE spotlights\nInspired by an exchange with team genuine-zucchini, below are refreshed RMSE histories for five teams. They highlight where big swings happened during the final phase.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt would be nice to dig into the commits and see which experiments were linked to the jumps in RMSE…this is left as an exercise for the readers 😇 (or as a suggestion to the authors to write more about their attempts at improving the RMSE).",
-    "crumbs": [
-      "Winner Announcement"
     ]
   }
 ]
