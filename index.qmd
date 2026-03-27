@@ -30,6 +30,20 @@ and then fill the following team creation request form!\
 :::
 
 
+::: {.callout-important title="Important"}
+# Full dataset now openly available
+
+The dataset (training and ranking) used for the organization of the challenge
+is available at  
+<https://doi.org/10.5281/zenodo.19184661>
+
+and is described in a data paper openly accessible at  
+<https://doi.org/10.59490/joas.2026.8750>
+
+
+:::
+
+
 Remember to follow up the data challenge on OSN's Discord
 {{< fa brands discord >}} channel [`#prc-data-competition`][prc-discord].  
 (if not already done, you need to access [OSN Discord server](https://discord.gg/RPh89jpVVz) first)
